@@ -11,5 +11,11 @@
     "url": "git@gitlab.com:Gaya/gaya-ninja-blog.git"
   },
   "author": "Gaya Kessler",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^1.3.6",
+    "gulp": "^3.8.7",
+    "gulp-ruby-sass": "^0.7.1",
+    "vinyl-source-stream": "^0.1.1"
+  }
 }
