@@ -70,4 +70,10 @@ gulp.task('serve', ['compile', 'browser-sync'], function () {
 
     //sass
     gulp.watch(gulp.config.src + "/sass/**/*.scss", ['sass']);
+
+    //html
+    gulp.watch(gulp.config.dist + "/*.html", function () {
+        console.log("HTML changed");
+        browserSync.reload();
+    });
 });
