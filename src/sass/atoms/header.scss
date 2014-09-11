@@ -23,9 +23,14 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        color: $light-2;
+        color: $light-1;
         text-decoration: none;
-        @include transition(background-size $anim-speed, width $anim-speed, height $anim-speed, margin $anim-speed);
+        opacity: 0.71;
+        @include transition(background-size $anim-speed, width $anim-speed, height $anim-speed, margin $anim-speed, opacity $anim-speed);
+
+        &:hover {
+            opacity: 1;
+        }
 
         @include media($tablet) {
             background-size: auto rhythm(4);
