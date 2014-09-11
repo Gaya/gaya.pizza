@@ -1,4 +1,4 @@
 .main-content {
-    @include body-padding;
+    @include body-padding(rhythm(1));
     @include outer-container;
 }
