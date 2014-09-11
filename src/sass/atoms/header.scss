@@ -1,8 +1,10 @@
 .main-header {
-    background-image: url("#{$img-root}gn-pattern.svg");
-    background-size: auto rhythm(1.5);
-    background-color: $dark-2;
-    background-position: center center;
+    background: {
+        image: url("#{$img-root}gn-pattern.svg");
+        size: auto rhythm(1.5);
+        color: $dark-2;
+        position: center center;
+    }
     height: rhythm(5);
     position: relative;
     @include transition(background-size $anim-speed, height $anim-speed);
@@ -13,9 +15,12 @@
     }
 
     &__logo {
-        background-image: url("#{$img-root}gn-logo.svg");
-        background-size: auto rhythm(3);
-        background-repeat: no-repeat;
+        background: {
+            image: url("#{$img-root}gn-logo.svg");
+            size: auto rhythm(3);
+            repeat: no-repeat;
+            position: center center;
+        }
         height: rhythm(3);
         width: rhythm(3.463087248);
         margin: rhythm(-1.5) 0 0 rhythm(-1.731543624);
