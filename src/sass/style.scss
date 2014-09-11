@@ -9,24 +9,8 @@
 @import "libs/neat/neat-helpers";
 @import "libs/neat/neat";
 
-@include establish-baseline;
-
-body {
-    -webkit-text-size-adjust: 100%;
-    color: $text-color;
-
-    font: {
-        family: $body-font;
-    }
-}
-
-%base-font-size {
-    @include change-font-size($base-font-size);
-}
-
-%small-font-size {
-    @include change-font-size($smaller-font-size);
-}
+//atoms
+@import "atoms/typography";
 
 .main-header {
     background-image: url("#{$img-root}gn-pattern.svg");
