@@ -22,5 +22,12 @@
         h2 {
             @extend %big-font-size;
         }
+
+        code {
+            font-family: $code-font;
+            color: $light-1;
+            background-color: $dark-3;
+            padding: 3px 7px;
+        }
     }
 }
