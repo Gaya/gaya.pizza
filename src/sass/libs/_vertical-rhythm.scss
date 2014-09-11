@@ -1,0 +1,75 @@
+/*
+ * Vertical Rhythmn in Sass with helpful mixins and helpers
+ * Author:  Gaya Kessler
+ * Version: 0.0.1
+ * Date:    2014-05-18
+ */
+
+@if $base-font-size == null {
+    $base-font-size: 16px;
+}
+
+@if $base-line == null {
+    $base-line: 24px;
+}
+
+@if $base-line-factor == null {
+    $base-line-factor: 1.5;
+}
+
+$vr-base-browser: 10px;
+
+@mixin establish-baseline($font-size: $base-font-size, $line-height: $base-line) {
+    html {
+        font-size: 62.5%; /* Sets up the Base 10 stuff */
+    }
+
+    html body, html input, html textarea, html button {
+        font-size: px2rem($font-size);
+        line-height: px2rem($line-height);
+    }
+}
+
+@mixin change-font-size($font-size) {
+    font-size: $font-size;
+    font-size: px2rem($font-size);
+
+    $line-height: get-line-height($font-size);
+
+    line-height: $line-height;
+    line-height: px2rem($line-height);
+}
+
+@function get-line-height($font-size) {
+    @if ($font-size * $base-line-factor) > $base-line {
+        @return $base-line * ceil(($font-size * $base-line-factor) / $base-line);
+    } @else {
+        @return $base-line;
+    }
+}
+
+@function rhythm($amount: 1) {
+    @return px2rem($base-line * $amount);
+}
+
+@function rhythm-border($amount: 1, $width: 1px) {
+    @return px2rem(($base-line * $amount) - $width);
+}
+
+@function px2rem($value) {
+    @if (unit($value) == px) {
+        $value: $value / 1px;
+    }
+
+    @return ($value / ($vr-base-browser / 1px)) * 1rem;
+}
+
+@mixin baseline-grid {
+    $baseline-color: rgba(56,255,255,.8);
+
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 95%, $baseline-color 100%);
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 95%, $baseline-color 100%);
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0) 95%, $baseline-color 100%);
+    background-size: 100% $base-line;
+    background-position: 10px 0px; // Use to offset and center your grid
+}
