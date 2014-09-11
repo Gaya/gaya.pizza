@@ -1,6 +1,6 @@
 .main-header {
     background-image: url("#{$img-root}gn-pattern.svg");
     background-size: rhythm(3);
-    background-color: #1A1A1A;
+    background-color: $dark-2;
     height: rhythm(12);
 }
