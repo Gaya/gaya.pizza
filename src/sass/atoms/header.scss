@@ -1,43 +1,62 @@
 .main-header {
     background-image: url("#{$img-root}gn-pattern.svg");
-    background-size: auto rhythm(2);
+    background-size: auto rhythm(1.5);
     background-color: $dark-2;
     background-position: center center;
-    height: rhythm(6);
+    height: rhythm(5);
     position: relative;
+    @include transition(background-size $anim-speed, height $anim-speed);
+
+    @include media($tablet) {
+        background-size: auto rhythm(2);
+        height: rhythm(6);
+    }
 
     &__logo {
         background-image: url("#{$img-root}gn-logo.svg");
-        background-size: auto rhythm(4);
+        background-size: auto rhythm(3);
         background-repeat: no-repeat;
-        height: rhythm(4);
-        width: rhythm(4.617449664);
+        height: rhythm(3);
+        width: rhythm(3.463087248);
+        margin: rhythm(-1.5) 0 0 rhythm(-1.731543624);
         display: block;
         position: absolute;
         left: 50%;
         top: 50%;
-        margin: rhythm(-2) 0 0 rhythm(-2.308724832);
         color: $light-2;
         text-decoration: none;
+        @include transition(background-size $anim-speed, width $anim-speed, height $anim-speed, margin $anim-speed);
+
+        @include media($tablet) {
+            background-size: auto rhythm(4);
+            height: rhythm(4);
+            width: rhythm(4.617449664);
+            margin: rhythm(-2) 0 0 rhythm(-2.308724832);
+        }
 
         &__text {
             @extend %header-font;
             @extend %big-font-size;
             position: absolute;
-            top: rhythm(1);
-            right: rhythm(5);
+            top: rhythm(0.5);
+            right: rhythm(4.2);
             text-align: right;
+            @include transition(font-size $anim-speed, line-height $anim-speed, top $anim-speed, left $anim-speed, right $anim-speed);
 
             @include media($tablet) {
                 @include change-font-size($large-font-size);
-                top: rhythm(0.5);
+                right: rhythm(5.5);
             }
 
             &--extra {
                 @extend .main-header__logo__text;
                 right: auto;
                 text-align: left;
-                left: rhythm(5);
+                left: rhythm(4.2);
+
+                @include media($tablet) {
+                    left: rhythm(5.5);
+                }
             }
         }
     }
