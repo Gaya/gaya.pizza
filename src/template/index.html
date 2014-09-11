@@ -6,12 +6,47 @@
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Libre+Baskerville' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header class="main-header">
-    <a href="#" class="main-header__logo">
-        <span class="main-header__logo__text">Gaya</span>
-        <span class="main-header__logo__text--extra">Ninja</span>
-    </a>
-</header>
+<body itemscope itemtype="http://schema.org/Blog">
+    <header class="main-header">
+        <a href="#" class="main-header__logo">
+            <span class="main-header__logo__text">Gaya</span>
+            <span class="main-header__logo__text--extra">Ninja</span>
+        </a>
+    </header>
+
+    <section class="main-content">
+        <article class="post" itemscope itemtype="http://schema.org/Article">
+            <header class="post__header">
+                <h1 class="post__header__text"><a href="#" itemprop="name headline">MarkPress: Markdown powered journal for WordPress</a></h1>
+
+                <section class="post__header__published">
+                    <time content="2014-09-11T20:48" datetime="2014-09-11T20:48" itemprop="datePublished">Sept 11th 2014</time>
+                </section>
+
+                <meta content="Do it Yourself" itemprop="articleSection"/>
+                <section itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                    <link itemprop="sameAs" href="http://gaya.ninja/">
+                    <meta itemprop="image" content="/examples/jvanzweden_s.jpg">
+                    <meta itemprop="name" content="Gaya Kessler">
+                </section>
+            </header>
+
+            <section class="post__body" itemprop="articleBody">
+                <p>
+                    Markdown is used to quickly write a styled document with a simple syntax, great for taking notes or writing journals. MarkPress allows you to turn your WordPress install into an App to easily write and store Markdown notes.
+                </p>
+
+                <h2>What is MarkPress?</h2>
+
+                <p>
+                    Starting as an idea by <a href="#">Coen Jacobs</a>, and me wanting to do something with WordPress again, I started writing this little app.
+                </p>
+
+                <p>
+                    Its requirements were simple:
+                </p>
+            </section>
+        </article>
+    </section>
 </body>
 </html>
