@@ -29,8 +29,8 @@ body {
 }
 
 .main-header {
-    background-image: url("../images/gn-pattern.svg");
-    background-size: 80px;
+    background-image: url("#{$img-root}gn-pattern.svg");
+    background-size: rhythm(3);
     background-color: #1A1A1A;
-    height: 400px;
+    height: rhythm(12);
 }
