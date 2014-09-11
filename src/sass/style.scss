@@ -9,6 +9,12 @@
 @import "libs/neat/neat-helpers";
 @import "libs/neat/neat";
 
+//Breakpoints
+$mobile:            new-breakpoint(max-width 560px 4, 12);
+$tablet:            new-breakpoint(min-width 560px 10, 12);
+$tablet-only:       new-breakpoint(min-width 560px max-width 820px 10, 12);
+$desktop:           new-breakpoint(min-width 820px 12, 12);
+
 //atoms
 @import "atoms/typography";
 @import "atoms/header";
