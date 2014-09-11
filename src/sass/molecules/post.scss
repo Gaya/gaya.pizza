@@ -29,5 +29,21 @@
             background-color: $dark-3;
             padding: 3px 7px;
         }
+
+        ol {
+            margin-bottom: rhythm(1);
+            list-style-type: decimal;
+            padding-left: rhythm(1);
+
+            li {
+                padding-left: 1%;
+            }
+        }
+
+        ul {
+            @extend ol;
+            padding-left: rhythm(0.6);
+            list-style-type: disc;
+        }
     }
 }
