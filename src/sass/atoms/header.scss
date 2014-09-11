@@ -1,6 +1,6 @@
 .main-header {
     background-image: url("#{$img-root}gn-pattern.svg");
-    background-size: rhythm(3);
+    background-size: auto rhythm(2);
     background-color: $dark-2;
     background-position: center center;
     height: rhythm(6);
@@ -8,31 +8,31 @@
 
     &__logo {
         background-image: url("#{$img-root}gn-logo.svg");
-        background-size: rhythm(4);
+        background-size: auto rhythm(4);
         background-repeat: no-repeat;
-        height: rhythm(3.46);
-        width: rhythm(4);
+        height: rhythm(4);
+        width: rhythm(4.617449664);
         display: block;
         position: absolute;
         left: 50%;
         top: 50%;
-        margin: rhythm(-1.725) 0 0 rhythm(-2);
+        margin: rhythm(-2) 0 0 rhythm(-2.308724832);
         color: $light-2;
         text-decoration: none;
-        @extend %large-font-size;
+        @extend %big-font-size;
 
         &__text {
             @extend %header-font;
             position: absolute;
-            top: rhythm(0.75);
-            right: rhythm(4.5);
+            top: rhythm(1);
+            right: rhythm(5);
             text-align: right;
 
             &--extra {
                 @extend .main-header__logo__text;
                 right: auto;
                 text-align: left;
-                left: rhythm(4.5);
+                left: rhythm(5);
             }
         }
     }
