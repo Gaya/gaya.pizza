@@ -2,13 +2,19 @@
     background-image: url("#{$img-root}gn-pattern.svg");
     background-size: rhythm(3);
     background-color: $dark-2;
-    height: rhythm(12);
+    background-position: center center;
+    height: rhythm(6);
+    position: relative;
 
     &__logo {
         background-image: url("#{$img-root}gn-logo.svg");
-        background-size: rhythm(3);
-        height: rhythm(2.6);
-        width: rhythm(3);
+        background-size: rhythm(4);
+        height: rhythm(3.45);
+        width: rhythm(4);
         display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: rhythm(-1.725) 0 0 rhythm(-2);
     }
 }
