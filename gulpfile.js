@@ -63,6 +63,16 @@ gulp.task('browser-sync', function() {
     });
 });
 
+gulp.task('copy-images', function () {
+    gulp.src(gulp.config.src + "/images/**/*")
+        .pipe(gulp.dest(gulp.config.dist + "/images"));
+});
+
+gulp.task('copy-html', function () {
+    gulp.src(gulp.config.src + "/template/**/*")
+        .pipe(gulp.dest(gulp.config.dist));
+});
+
 gulp.task('compile', ['sass']);
 
 gulp.task('serve', ['compile', 'browser-sync'], function () {
