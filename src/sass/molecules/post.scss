@@ -4,4 +4,23 @@
             @extend %page-header;
         }
     }
+
+    &__body {
+        p {
+            margin-bottom: rhythm(1);
+        }
+
+        a {
+            color: $highlight-1;
+            @include transition(color $anim-speed);
+
+            &:hover {
+                color: lighten($highlight-1, 10);
+            }
+        }
+
+        h2 {
+            @extend %big-font-size;
+        }
+    }
 }
