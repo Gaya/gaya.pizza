@@ -22,6 +22,7 @@
         @extend %large-font-size;
 
         &__text {
+            @extend %header-font;
             position: absolute;
             top: rhythm(0.75);
             right: rhythm(4.5);
