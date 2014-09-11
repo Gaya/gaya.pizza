@@ -1,4 +1,8 @@
 .main-content {
-    @include body-padding(rhythm(1));
+    @include body-padding(rhythm(1), rhythm(1));
     @include outer-container;
+
+    @include media($tablet) {
+        @include body-padding(rhythm(2), rhythm(1));
+    }
 }

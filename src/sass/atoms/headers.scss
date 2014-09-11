@@ -1,7 +1,7 @@
 %page-header {
     @include change-font-size($bigger-font-size);
     font-weight: bold;
-    margin-bottom: rhythm(2);
+    margin-bottom: rhythm(1);
 
     a {
         text-decoration: none;
@@ -10,5 +10,6 @@
 
     @include media($tablet) {
         @include change-font-size($huge-font-size);
+        margin-bottom: rhythm(2);
     }
 }
