@@ -3,4 +3,12 @@
     background-size: rhythm(3);
     background-color: $dark-2;
     height: rhythm(12);
+
+    &__logo {
+        background-image: url("#{$img-root}gn-logo.svg");
+        background-size: rhythm(3);
+        height: rhythm(2.6);
+        width: rhythm(3);
+        display: block;
+    }
 }
