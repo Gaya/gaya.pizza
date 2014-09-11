@@ -19,7 +19,8 @@ $desktop:           new-breakpoint(min-width 820px 12, 12);
 //atoms
 @import "atoms/body";
 @import "atoms/typography";
-@import "atoms/header";
+@import "atoms/main-header";
+@import "atoms/headers";
 @import "atoms/content";
 
 //molecules

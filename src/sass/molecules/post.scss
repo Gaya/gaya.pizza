@@ -1,3 +1,7 @@
 .post {
-    
+    &__header {
+        &__text {
+            @extend %page-header;
+        }
+    }
 }
