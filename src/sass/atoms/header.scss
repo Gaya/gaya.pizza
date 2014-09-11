@@ -19,14 +19,19 @@
         margin: rhythm(-2) 0 0 rhythm(-2.308724832);
         color: $light-2;
         text-decoration: none;
-        @extend %big-font-size;
 
         &__text {
             @extend %header-font;
+            @extend %big-font-size;
             position: absolute;
             top: rhythm(1);
             right: rhythm(5);
             text-align: right;
+
+            @include media($tablet) {
+                @include change-font-size($large-font-size);
+                top: rhythm(0.5);
+            }
 
             &--extra {
                 @extend .main-header__logo__text;
