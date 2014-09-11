@@ -1,4 +1,32 @@
-@import "reset";
+//important settings
+@import "settings";
+
+//libs
+@import "libs/reset";
+@import "libs/helpers";
+@import "libs/vertical-rhythm";
+@import "libs/bourbon/bourbon";
+@import "libs/neat/neat-helpers";
+@import "libs/neat/neat";
+
+@include establish-baseline;
+
+body {
+    -webkit-text-size-adjust: 100%;
+    color: $text-color;
+
+    font: {
+        family: $body-font;
+    }
+}
+
+%base-font-size {
+    @include change-font-size($base-font-size);
+}
+
+%small-font-size {
+    @include change-font-size($smaller-font-size);
+}
 
 .main-header {
     background-image: url("../images/gn-pattern.svg");
