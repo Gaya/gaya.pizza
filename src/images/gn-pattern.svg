@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="pattern" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="124.7px" height="72px" viewBox="22.1 2.6 124.7 72" enable-background="new 22.1 2.6 124.7 72" xml:space="preserve">
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="74.2,2.6 84.5,-15.4 94.9,2.6 84.5,20.6 	
+		"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="63.8,2.6 84.6,-33.4 105.4,2.6 84.6,38.6 	
+		"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="48.2,29.6 37.8,11.6 58.5,11.6 68.9,29.6 	
+		"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="43,38.6 22.2,2.6 63.8,2.6 84.5,38.6 	"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="58.6,65.6 37.9,65.6 48.3,47.6 69,47.6 	
+		"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="63.8,74.6 22.3,74.6 43,38.6 84.6,38.6 	
+		"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="95.1,74.6 84.7,92.6 74.3,74.6 84.7,56.6 	
+		"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="105.4,74.6 84.6,110.6 63.8,74.6 
+		84.6,38.6 	"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="120.9,47.6 131.3,65.6 110.6,65.6 
+		100.2,47.6 	"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="126.1,38.6 146.9,74.6 105.3,74.6 
+		84.5,38.6 	"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="110.5,11.5 131.3,11.5 120.9,29.5 
+		100.1,29.5 	"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="105.4,2.6 146.9,2.6 126.1,38.6 84.6,38.6 
+			"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="11.7,38.6 22.1,20.6 32.5,38.6 22.1,56.6 	
+		"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="1.4,38.6 22.2,2.6 43,38.6 22.2,74.6 	"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="136.4,38.6 146.8,20.6 157.2,38.6 
+		146.8,56.6 	"/>
+	<polygon fill="none" stroke="#141414" stroke-width="5" stroke-miterlimit="10" points="126.1,38.6 146.9,2.6 167.7,38.6 
+		146.9,74.6 	"/>
+</svg>
