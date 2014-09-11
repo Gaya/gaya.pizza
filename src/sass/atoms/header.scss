@@ -49,7 +49,7 @@
             @extend %big-font-size;
             position: absolute;
             top: rhythm(0.5);
-            right: rhythm(4.2);
+            right: rhythm(3.8);
             text-align: right;
             @include transition(font-size $anim-speed, line-height $anim-speed, top $anim-speed, left $anim-speed, right $anim-speed);
 
@@ -62,7 +62,7 @@
                 @extend .main-header__logo__text;
                 right: auto;
                 text-align: left;
-                left: rhythm(4.2);
+                left: rhythm(3.8);
 
                 @include media($tablet) {
                     left: rhythm(5.5);
