@@ -1,3 +1,14 @@
 %page-header {
-    @include change-font-size($large-font-size);
+    @include change-font-size($bigger-font-size);
+    font-weight: bold;
+    margin-bottom: rhythm(2);
+
+    a {
+        text-decoration: none;
+        color: $dark-1;
+    }
+
+    @include media($tablet) {
+        @include change-font-size($huge-font-size);
+    }
 }

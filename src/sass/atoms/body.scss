@@ -1,3 +1,7 @@
 @mixin body-padding($top:0, $bottom:$top) {
     padding: $top 3% $bottom 3%;
 }
+
+body {
+    background-color: $light-1;
+}
