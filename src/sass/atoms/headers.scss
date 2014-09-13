@@ -10,6 +10,5 @@
 
     @include media($tablet) {
         @include change-font-size($huge-font-size);
-        margin-bottom: rhythm(2);
     }
 }
