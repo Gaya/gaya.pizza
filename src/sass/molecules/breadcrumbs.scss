@@ -1,5 +1,16 @@
 .breadcrumbs {
     &__link {
         color: $dark-1;
+        @include transition(color $anim-speed);
+
+        &:hover {
+            color: $highlight-1;
+        }
+    }
+
+    &__seperator {
+        @include change-font-size($smaller-font-size);
+        padding: 0 5px;
+        font-weight: bold;
     }
 }
