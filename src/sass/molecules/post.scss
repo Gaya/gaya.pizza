@@ -1,10 +1,6 @@
 .post {
     margin: rhythm(1) 0 0 0;
 
-    @include media($tablet) {
-        margin: rhythm(2) 0 0 0;
-    }
-
     &__header {
         &__text {
             @extend %page-header;
