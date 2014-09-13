@@ -25,4 +25,5 @@ $desktop:           new-breakpoint(min-width 820px 12);
 @import "atoms/content";
 
 //molecules
+@import "molecules/breadcrumbs";
 @import "molecules/post";
