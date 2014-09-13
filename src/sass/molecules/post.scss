@@ -10,17 +10,20 @@
 
         &__link {
             @include span-columns(4 of 4);
-            background: $highlight-1;
-            color: $light-1;
+            border:  1px $highlight-1 solid;
+            color: $highlight-1;
             text-decoration: none;
-            padding: rhythm(0.25) 2%;
+            padding: rhythm-border(0.25, 1px) 2%;
             margin: rhythm(-0.25) 0 rhythm(0.75) 0;
             text-align: center;
             font-style: italic;
-            @include transition(background-color $anim-speed);
+            @include transition(background-color $anim-speed, color $anim-speed, border-color $anim-speed);
+            border-radius: rhythm(0.75);
 
             &:hover {
                 background-color: $highlight-2;
+                border-color: $highlight-2;
+                color: $light-1;
             }
 
             @include media($mobile) {
