@@ -15,6 +15,13 @@
             text-decoration: none;
             padding: rhythm(0.25) 2%;
             margin: rhythm(-0.25) 0 rhythm(0.75) 0;
+            text-align: center;
+            font-style: italic;
+            @include transition(background-color $anim-speed);
+
+            &:hover {
+                background-color: $highlight-2;
+            }
 
             @include media($mobile) {
                 @include omega(1n);
