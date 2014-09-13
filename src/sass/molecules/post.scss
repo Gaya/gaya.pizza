@@ -5,6 +5,27 @@
         }
     }
 
+    &__links {
+        @include outer-container;
+
+        &__link {
+            @include span-columns(4 of 4);
+            background: $highlight-1;
+            color: $light-1;
+            text-decoration: none;
+            padding: rhythm(0.25) 2%;
+            margin: rhythm(-0.25) 0 rhythm(0.75) 0;
+
+            @include media($mobile) {
+                @include omega(1n);
+            }
+
+            @include media($tablet) {
+                @include span-columns(5 of 10);
+            }
+        }
+    }
+
     &__body {
         p {
             margin-bottom: rhythm(1);
