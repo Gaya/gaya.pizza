@@ -88,4 +88,16 @@
             word-wrap: break-word;
         }
     }
+
+    &__meta {
+        &__published {
+            font-style: italic;
+        }
+
+        &__share {
+            margin-top: rhythm(1);
+            border-top: 1px solid $light-2;
+            padding-top: rhythm-border(1, 1px);
+        }
+    }
 }
