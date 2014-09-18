@@ -109,12 +109,15 @@ gulp.task('copy-html', function () {
         .pipe(browserSync.reload({stream:true}));
 });
 
-gulp.task('compile', ['sass', 'copy-html', 'copy-images']);
+gulp.task('compile', ['sass', 'browserify-dist', 'copy-html', 'copy-images']);
 
 gulp.task('serve', ['compile', 'browser-sync'], function () {
     'use strict';
     //sass
     gulp.watch(gulp.config.src + "/sass/**/*.scss", ['sass']);
+
+    //js
+    gulp.watch(gulp.config.src + "/{js,libs}/**/*.js", ['browserify-dist']);
 
     //html
     gulp.watch(gulp.config.src + "/template/*.html", ['copy-html']);
