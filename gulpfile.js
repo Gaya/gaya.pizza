@@ -1,7 +1,9 @@
 var gulp = require('gulp'),
     source = require('vinyl-source-stream'),
     sass = require('gulp-ruby-sass'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    browserify = require('browserify'),
+    source = require('vinyl-source-stream');
 
 gulp.config = {
     src: 'src',
@@ -46,6 +48,38 @@ function sassSource(type) {
             console.log(err.toString());
             this.emit('end');
         }))
+        .pipe(gulp.dest(dest))
+        .pipe(browserSync.reload({stream:true}));
+}
+
+gulp.task('browserify-dist', function() {
+    'use strict';
+    return browserifySource("dist");
+});
+
+gulp.task('browserify-build', function() {
+    'use strict';
+    return browserifySource("build");
+});
+
+function browserifySource(type) {
+    'use strict';
+
+    var src = './' + gulp.config.src + '/js/main.js';
+    var dest = gulp.config.dist + '/js/';
+    var name = pkg.name + ".js";
+
+    if (type === "build") {
+        dest = gulp.config.build + '/js/';
+    }
+
+    return browserify(src)
+        .bundle()
+        .on('error', function (err) {
+            console.log(err.toString());
+            this.emit('end');
+        })
+        .pipe(source(name))
         .pipe(gulp.dest(dest))
         .pipe(browserSync.reload({stream:true}));
 }
