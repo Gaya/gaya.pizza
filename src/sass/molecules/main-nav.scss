@@ -15,7 +15,7 @@
             @extend .main-nav__link;
             display: none;
 
-            @include media($desktop) {
+            @include media($tablet) {
                 display: block;
             }
         }
