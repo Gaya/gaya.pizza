@@ -1,9 +1,18 @@
 .main-nav {
     background-color: $light-3;
+    top: 0;
+    width: 100%;
+    padding: rhythm(0.5) 0;
+    @include transition(padding $anim-speed);
+
+    &--fixed {
+        @extend .main-nav;
+        position: fixed;
+    }
 
     &__container {
         @include outer-container;
-        @include body-padding(rhythm(0.5), rhythm(0.5));
+        @include body-padding(0, 0);
     }
 
     &__link {
