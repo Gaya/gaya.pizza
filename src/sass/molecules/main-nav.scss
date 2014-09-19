@@ -38,6 +38,27 @@
             @extend .main-nav__link;
             margin: 0;
             float: right;
+            @include hidden-text;
+
+            &:before {
+                content: " ";
+                width: 13px;
+                height: 13px;
+                display: inline-block;
+                margin: 0 0 -6px 0;
+                background: {
+                    image: url("#{$img-root}feed-icon.svg");
+                    size: 100% 200%;
+                    repeat: no-repeat;
+                    position: top left;
+                }
+            }
+
+            &:hover {
+                &:before {
+                    background-position: bottom left;
+                }
+            }
         }
     }
 }

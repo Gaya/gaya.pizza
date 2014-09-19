@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="RSSicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="87.5px" height="87.5px" viewBox="22 19 87.5 87.5" enable-background="new 22 19 87.5 87.5" xml:space="preserve">
+	 width="87.5px" height="177px" viewBox="22 19 87.5 177" enable-background="new 22 19 87.5 177" xml:space="preserve">
 <circle fill="#2D2D2D" cx="34" cy="94.5" r="12"/>
 <path fill="#2D2D2D" d="M80,106.5H63c0-22.6-18.4-41-41-41l0,0v-17C54,48.5,80,74.5,80,106.5z"/>
 <path fill="#2D2D2D" d="M92,106.5c0-38.7-31.3-70-70-70V19c48.3,0,87.5,39.2,87.5,87.5H92z"/>
+<circle fill="#C4141D" cx="34" cy="184" r="12"/>
+<path fill="#C4141D" d="M80,196H63c0-22.6-18.4-41-41-41l0,0v-17C54,138,80,164,80,196z"/>
+<path fill="#C4141D" d="M92,196c0-38.7-31.3-70-70-70v-17.5c48.3,0,87.5,39.2,87.5,87.5H92z"/>
 </svg>
