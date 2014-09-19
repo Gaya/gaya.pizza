@@ -20,10 +20,11 @@ $desktop:           new-breakpoint(min-width 820px 12);
 //atoms
 @import "atoms/body";
 @import "atoms/typography";
-@import "atoms/main-header";
 @import "atoms/headers";
 @import "atoms/content";
 
 //molecules
+@import "molecules/main-header";
+@import "molecules/main-nav";
 @import "molecules/breadcrumbs";
 @import "molecules/post";
