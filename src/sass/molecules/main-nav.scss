@@ -2,12 +2,27 @@
     &__container {
         @include outer-container;
         @include body-padding(rhythm(0.5), rhythm(0.5));
-        background-color: $light-2;
+        background-color: $light-3;
     }
 
     &__link {
         text-decoration: none;
-        color: $light-1;
+        color: $dark-3;
+        float: left;
+        margin: 0 5% 0 0;
+
+        &--twitter {
+            @extend .main-nav__link;
+            display: none;
+
+            @include media($desktop) {
+                display: block;
+            }
+        }
+
+        &--facebook {
+            @extend .main-nav__link--twitter;
+        }
 
         &--home {
             @extend .main-nav__link;
@@ -15,6 +30,7 @@
 
         &--rss {
             @extend .main-nav__link;
+            margin: 0;
             float: right;
         }
     }
