@@ -1,0 +1,21 @@
+.main-nav {
+    &__container {
+        @include outer-container;
+        @include body-padding(rhythm(0.5), rhythm(0.5));
+        background-color: $light-2;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $light-1;
+
+        &--home {
+            @extend .main-nav__link;
+        }
+
+        &--rss {
+            @extend .main-nav__link;
+            float: right;
+        }
+    }
+}
