@@ -1,0 +1,7 @@
+.about {
+    display: none;
+
+    @include media($desktop) {
+        @include span-columns(4);
+    }
+}

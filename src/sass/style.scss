@@ -11,7 +11,7 @@
 @import "libs/monokai-hljs";
 
 //Breakpoints
-$max-width:         em(800);
+$max-width:         em(1000);
 $mobile:            new-breakpoint(max-width 560px 4);
 $tablet:            new-breakpoint(min-width 560px 10);
 $tablet-only:       new-breakpoint(min-width 560px max-width 820px 10);

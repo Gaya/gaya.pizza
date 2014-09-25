@@ -1,6 +1,10 @@
 .post {
     margin: rhythm(1) 0 0 0;
 
+    @include media($desktop) {
+        @include span-columns(8);
+    }
+
     &__header {
         &__text {
             @extend %page-header;
