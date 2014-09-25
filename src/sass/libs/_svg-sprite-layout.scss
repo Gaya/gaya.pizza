@@ -17,11 +17,21 @@
     @if $name == {{name}} {
         $s-w: {{width}};
         $s-h: {{height}};
-        $s-y: {{positionY}} * -1;
-        $s-x: {{positionX}} * -1;
+        $s-y: {{positionY}};
+        $s-x: {{positionX}};
+        $pos-x: 0;
+        $pos-y: 0;
+
+        @if ($total-w - $s-w) != 0 {
+            $pos-x: ($s-x * -1) / ($total-w - $s-w);
+        }
+
+        @if ($total-h - $s-h) != 0 {
+            $pos-y: ($s-y * -1) / ($total-h - $s-h);
+        }
 
         background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+        background-position: percentage($pos-x) percentage($pos-y);
     }
     {{/svg}}
 }
