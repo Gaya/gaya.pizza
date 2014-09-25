@@ -26,6 +26,7 @@
     width: 100%;
     padding: rhythm(0.5) 0;
     @include transition(padding $anim-speed);
+    z-index: 1;
 
     &--fixed {
         @extend .main-nav;
