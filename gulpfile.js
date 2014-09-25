@@ -113,7 +113,15 @@ gulp.task('copy-html', function () {
 gulp.task('svg-sprite', function () {
     SVGSprite.createSprite(gulp.config.src + '/images', gulp.config.dist, {
         spritedir: 'images',
-        sprite: 'gn-sprite'
+        sprite: 'gn-sprite',
+        maxwidth: 100,
+        maxheight: 100,
+        render: {
+            sass: {
+                template: gulp.config.src + '/sass/libs/_svg-sprite-layout.scss',
+                dest: 'output.scss'
+            }
+        }
     }, function () {
         console.log("svg sprite is done");
     });
