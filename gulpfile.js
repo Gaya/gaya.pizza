@@ -120,7 +120,7 @@ gulp.task('svg-sprite', function () {
         render: {
             sass: {
                 template: gulp.config.src + '/sass/libs/_svg-sprite-layout.scss',
-                dest: 'output.scss'
+                dest: "../" + gulp.config.src + '/sass/atoms/sprite.scss'
             }
         }
     }, function () {
