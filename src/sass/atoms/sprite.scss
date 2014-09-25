@@ -10,70 +10,140 @@
 @mixin svg-sprite($name) {
     @extend %sprite;
 
-    $total-w: 676;
+    $total-w: 100;
     $total-h: 617;
 
     @if $name == feed-icon {
         $s-w: 87.5;
         $s-h: 87.5;
-        $s-y: 0 * -1;
-        $s-x: 0 * -1;
+        $s-y: 0;
+        $s-x: 0;
+        $pos-x: 0;
+        $pos-y: 0;
+
+        @if ($total-w - $s-w) != 0 {
+            $pos-x: ($s-x * -1) / ($total-w - $s-w);
+        }
+
+        @if ($total-h - $s-h) != 0 {
+            $pos-y: ($s-y * -1) / ($total-h - $s-h);
+        }
 
         background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+        background-position: percentage($pos-x) percentage($pos-y);
     }
     @if $name == feed-icon-on {
         $s-w: 87.5;
         $s-h: 87.5;
-        $s-y: -88 * -1;
-        $s-x: -88 * -1;
+        $s-y: -88;
+        $s-x: 0;
+        $pos-x: 0;
+        $pos-y: 0;
+
+        @if ($total-w - $s-w) != 0 {
+            $pos-x: ($s-x * -1) / ($total-w - $s-w);
+        }
+
+        @if ($total-h - $s-h) != 0 {
+            $pos-y: ($s-y * -1) / ($total-h - $s-h);
+        }
 
         background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+        background-position: percentage($pos-x) percentage($pos-y);
     }
     @if $name == gn-logo {
         $s-w: 100;
         $s-h: 86.62790697674417;
-        $s-y: -176 * -1;
-        $s-x: -176 * -1;
+        $s-y: -176;
+        $s-x: 0;
+        $pos-x: 0;
+        $pos-y: 0;
+
+        @if ($total-w - $s-w) != 0 {
+            $pos-x: ($s-x * -1) / ($total-w - $s-w);
+        }
+
+        @if ($total-h - $s-h) != 0 {
+            $pos-y: ($s-y * -1) / ($total-h - $s-h);
+        }
 
         background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+        background-position: percentage($pos-x) percentage($pos-y);
     }
     @if $name == gn-logo-dark {
         $s-w: 100;
         $s-h: 86.62790697674417;
-        $s-y: -263 * -1;
-        $s-x: -276 * -1;
+        $s-y: -263;
+        $s-x: 0;
+        $pos-x: 0;
+        $pos-y: 0;
+
+        @if ($total-w - $s-w) != 0 {
+            $pos-x: ($s-x * -1) / ($total-w - $s-w);
+        }
+
+        @if ($total-h - $s-h) != 0 {
+            $pos-y: ($s-y * -1) / ($total-h - $s-h);
+        }
 
         background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+        background-position: percentage($pos-x) percentage($pos-y);
     }
     @if $name == gn-logo-dark-on {
         $s-w: 100;
         $s-h: 86.62790697674417;
-        $s-y: -350 * -1;
-        $s-x: -376 * -1;
+        $s-y: -350;
+        $s-x: 0;
+        $pos-x: 0;
+        $pos-y: 0;
+
+        @if ($total-w - $s-w) != 0 {
+            $pos-x: ($s-x * -1) / ($total-w - $s-w);
+        }
+
+        @if ($total-h - $s-h) != 0 {
+            $pos-y: ($s-y * -1) / ($total-h - $s-h);
+        }
 
         background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+        background-position: percentage($pos-x) percentage($pos-y);
     }
     @if $name == home-icon {
         $s-w: 100;
         $s-h: 89.05380333951763;
-        $s-y: -437 * -1;
-        $s-x: -476 * -1;
+        $s-y: -437;
+        $s-x: 0;
+        $pos-x: 0;
+        $pos-y: 0;
+
+        @if ($total-w - $s-w) != 0 {
+            $pos-x: ($s-x * -1) / ($total-w - $s-w);
+        }
+
+        @if ($total-h - $s-h) != 0 {
+            $pos-y: ($s-y * -1) / ($total-h - $s-h);
+        }
 
         background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+        background-position: percentage($pos-x) percentage($pos-y);
     }
     @if $name == home-icon-on {
         $s-w: 100;
         $s-h: 89.05380333951763;
-        $s-y: -527 * -1;
-        $s-x: -576 * -1;
+        $s-y: -527;
+        $s-x: 0;
+        $pos-x: 0;
+        $pos-y: 0;
+
+        @if ($total-w - $s-w) != 0 {
+            $pos-x: ($s-x * -1) / ($total-w - $s-w);
+        }
+
+        @if ($total-h - $s-h) != 0 {
+            $pos-y: ($s-y * -1) / ($total-h - $s-h);
+        }
 
         background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+        background-position: percentage($pos-x) percentage($pos-y);
     }
 }
