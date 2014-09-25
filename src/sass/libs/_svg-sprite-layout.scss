@@ -1,6 +1,35 @@
 /*
- * This template generates a sass file with mixins for the generated SVG
- * Calculates the position and size of the background by filename
+ * Generate a SVG-sprite mixin for Sass
+ * ====================================
+ *
+ * SVGSprite is a wonderful package, but doesn't enable responsive sprites out of the box.
+ * This moustache template generates a sass file with a mixin for the generated SVG-sprite.
+ * Calculates the position and size of the background by filename.
+ * Included SVG image scales to width and height.
+ *
+ * Usage:
+ * ======
+ * 1. In the SVGSprite options put the template in the `render` property:
+ *
+ * render: {
+ *      sass: {
+ *          template: 'svg-sprite-layout.scss',
+ *          dest: 'path/to/output/svg-sprite.scss'
+ *      }
+ * }
+ *
+ * 2. Import the generated .scss file in your Sass project:
+ *
+ * @import "path/to/output/svg-sprite.scss";
+ *
+ * 3. Use the SVG image on an element:
+ *
+ * .element {
+ *      @include svg-sprite('name-of-svg-file');
+ *      width: 15px;
+ *      height: 20px;
+ * }
+ *
  */
 
 %sprite {
