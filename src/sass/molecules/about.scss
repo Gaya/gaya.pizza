@@ -12,4 +12,14 @@
         @include change-font-size($about-font-size);
         margin: 0 0 rhythm(1) 0;
     }
+
+    &__link {
+        display: block;
+        margin: rhythm(1) 0 0 0;
+        color: $highlight-1;
+
+        &:hover {
+            color: $highlight-2;
+        }
+    }
 }
