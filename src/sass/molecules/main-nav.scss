@@ -52,8 +52,8 @@
     }
 
     &__container {
-        @include outer-container;
         @include body-padding(0, 0);
+        overflow: hidden;
     }
 
     &__link {
