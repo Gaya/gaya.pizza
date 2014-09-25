@@ -16,6 +16,7 @@ $mobile:            new-breakpoint(max-width 560px 4);
 $tablet:            new-breakpoint(min-width 560px 10);
 $tablet-only:       new-breakpoint(min-width 560px max-width 820px 10);
 $desktop:           new-breakpoint(min-width 820px 12);
+$big-desktop:       new-breakpoint(min-width 1020px 16);
 
 //atoms
 @import "atoms/sprite";
