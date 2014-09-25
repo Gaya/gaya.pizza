@@ -15,12 +15,7 @@
     }
 
     &__logo {
-        background: {
-            image: url("#{$img-root}gn-logo.svg");
-            size: auto rhythm(3);
-            repeat: no-repeat;
-            position: center center;
-        }
+        @include svg-sprite('gn-logo');
         height: rhythm(3);
         width: rhythm(3.463087248);
         margin: rhythm(-1.5) 0 0 rhythm(-1.731543624);
@@ -38,7 +33,6 @@
         }
 
         @include media($tablet) {
-            background-size: auto rhythm(4);
             height: rhythm(4);
             width: rhythm(4.617449664);
             margin: rhythm(-2) 0 0 rhythm(-2.308724832);

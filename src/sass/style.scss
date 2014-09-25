@@ -18,6 +18,7 @@ $tablet-only:       new-breakpoint(min-width 560px max-width 820px 10);
 $desktop:           new-breakpoint(min-width 820px 12);
 
 //atoms
+@import "atoms/sprite";
 @import "atoms/body";
 @import "atoms/typography";
 @import "atoms/headers";

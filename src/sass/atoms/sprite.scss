@@ -1,0 +1,51 @@
+/*
+ * This template generates a sass file with mixins for the generated SVG
+ */
+
+%sprite {
+    background-image: url(../images/gn-sprite.svg);
+}
+
+@mixin svg-sprite($name) {
+    @extend %sprite;
+
+    $total-w: 266;
+    $total-h: 387;
+
+    @if $name == feed-icon {
+        $s-w: 49.43502824858757;
+        $s-h: 100;
+        $s-y: 0 * -1;
+        $s-x: 0 * -1;
+
+        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
+        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+    }
+    @if $name == gn-logo {
+        $s-w: 100;
+        $s-h: 86.62790697674417;
+        $s-y: -100 * -1;
+        $s-x: -50 * -1;
+
+        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
+        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+    }
+    @if $name == gn-logo-dark {
+        $s-w: 58.087248322147644;
+        $s-h: 100;
+        $s-y: -187 * -1;
+        $s-x: -150 * -1;
+
+        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
+        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+    }
+    @if $name == home-icon {
+        $s-w: 56.25;
+        $s-h: 100;
+        $s-y: -287 * -1;
+        $s-x: -209 * -1;
+
+        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
+        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+    }
+}
