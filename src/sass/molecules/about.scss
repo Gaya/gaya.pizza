@@ -3,5 +3,8 @@
 
     @include media($desktop) {
         @include span-columns(4);
+        position: absolute;
+        top: rhythm(3);
+        right: 3%;
     }
 }
