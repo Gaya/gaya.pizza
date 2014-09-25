@@ -110,8 +110,8 @@ gulp.task('copy-html', function () {
         .pipe(browserSync.reload({stream:true}));
 });
 
-gulp.task('svg-sprite', function () {
-    SVGSprite.createSprite(gulp.config.src + '/icons', gulp.config.dist, {
+gulp.task('svg-sprite', function (cb) {
+    return SVGSprite.createSprite(gulp.config.src + '/icons', gulp.config.dist, {
         spritedir: 'images',
         sprite: 'gn-sprite',
         maxwidth: 100,
@@ -124,14 +124,18 @@ gulp.task('svg-sprite', function () {
             }
         }
     }, function () {
-        console.log("svg sprite is done");
+        console.log("Sprite and mixin has been generated");
+        cb();
     });
 });
 
-gulp.task('compile', ['sass', 'browserify-dist', 'copy-html', 'copy-images']);
+gulp.task('compile', ['svg-sprite', 'sass', 'browserify-dist', 'copy-html', 'copy-images']);
 
 gulp.task('serve', ['compile', 'browser-sync'], function () {
     'use strict';
+    //svg-sprite
+    gulp.watch(gulp.config.src + "/icons/**/*.svg", ['svg-sprite']);
+
     //sass
     gulp.watch(gulp.config.src + "/sass/**/*.scss", ['sass']);
 
