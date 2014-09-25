@@ -42,6 +42,12 @@
                 margin-bottom: -14px;
                 @include svg-sprite("gn-logo-dark");
             }
+
+            &:hover {
+                &:before {
+                    @include svg-sprite("gn-logo-dark-on");
+                }
+            }
         }
     }
 
