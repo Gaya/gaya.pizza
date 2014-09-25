@@ -7,4 +7,9 @@
         top: rhythm(3);
         right: 3%;
     }
+
+    &__title {
+        @include change-font-size($about-font-size);
+        margin: 0 0 rhythm(1) 0;
+    }
 }
