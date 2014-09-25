@@ -2,9 +2,32 @@
  * This template generates a sass file with mixins for the generated SVG
  */
 
+%sprite {
+    background-image: url({{sprite}});
+}
+
 $swidth: {{ swidth }};
 $sheight: {{ sheight }};
 
 {{#svg}}
-    {{name}} {{sheight}}{{positionY}}
+    {{name}}
+        w: {{width}}
+        h: {{height}}
+        y: {{positionY}}
+        x: {{positionX}}
+
+    $r-w: 138;
+    $r-h: 120;
+    $total-w: 366;
+    $total-h: 445;
+    $s-w: 100;
+    $s-h: 86.62790697674417;
+    $s-y: -100 * -1;
+    $s-x: -50 * -1;
+
+    background-color: pink;
+    background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
+    background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+    width: $r-w * 1px;
+    height: $r-h * 1px;
 {{/svg}}
