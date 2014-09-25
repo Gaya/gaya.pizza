@@ -111,7 +111,7 @@ gulp.task('copy-html', function () {
 });
 
 gulp.task('svg-sprite', function () {
-    SVGSprite.createSprite(gulp.config.src + '/images', gulp.config.dist, {
+    SVGSprite.createSprite(gulp.config.src + '/icons', gulp.config.dist, {
         spritedir: 'images',
         sprite: 'gn-sprite',
         maxwidth: 100,
