@@ -116,7 +116,7 @@ gulp.task('svg-sprite', function (cb) {
         sprite: 'gn-sprite',
         maxwidth: 100,
         maxheight: 100,
-        layout: "diagonal",
+        layout: "vertical",
         render: {
             sass: {
                 template: gulp.config.src + '/sass/libs/_svg-sprite-layout.scss',
