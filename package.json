@@ -17,6 +17,7 @@
     "browserify": "^5.11.2",
     "gulp": "^3.8.7",
     "gulp-ruby-sass": "^0.7.1",
+    "svg-sprite": "^0.3.2",
     "vinyl-source-stream": "^1.0.0"
   }
 }
