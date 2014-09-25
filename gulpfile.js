@@ -3,7 +3,8 @@ var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     browserSync = require('browser-sync'),
     browserify = require('browserify'),
-    source = require('vinyl-source-stream');
+    source = require('vinyl-source-stream'),
+    SVGSprite = require('svg-sprite');
 
 gulp.config = {
     src: 'src',
@@ -107,6 +108,15 @@ gulp.task('copy-html', function () {
     return gulp.src(gulp.config.src + "/template/**/*")
         .pipe(gulp.dest(gulp.config.dist))
         .pipe(browserSync.reload({stream:true}));
+});
+
+gulp.task('svg-sprite', function () {
+    SVGSprite.createSprite(gulp.config.src + '/images', gulp.config.dist, {
+        spritedir: 'images',
+        sprite: 'gn-sprite'
+    }, function () {
+        console.log("svg sprite is done");
+    });
 });
 
 gulp.task('compile', ['sass', 'browserify-dist', 'copy-html', 'copy-images']);
