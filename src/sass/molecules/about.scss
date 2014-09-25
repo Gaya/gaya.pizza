@@ -22,4 +22,12 @@
             color: $highlight-2;
         }
     }
+
+    &__avatar {
+        width: rhythm(3);
+        height: rhythm(3);
+        float: right;
+        border-radius: 100%;
+        margin: 0 0 rhythm(0.5) rhythm(0.5);
+    }
 }
