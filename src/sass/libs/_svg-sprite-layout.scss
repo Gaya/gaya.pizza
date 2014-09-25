@@ -3,31 +3,24 @@
  */
 
 %sprite {
-    background-image: url({{sprite}});
+    background-image: url(../{{{sprite}}});
 }
 
-$swidth: {{ swidth }};
-$sheight: {{ sheight }};
+@mixin svg-sprite($name) {
+    @extend %sprite;
 
-{{#svg}}
-    {{name}}
-        w: {{width}}
-        h: {{height}}
-        y: {{positionY}}
-        x: {{positionX}}
+    $total-w: {{ swidth }};
+    $total-h: {{ sheight }};
 
-    $r-w: 138;
-    $r-h: 120;
-    $total-w: 366;
-    $total-h: 445;
-    $s-w: 100;
-    $s-h: 86.62790697674417;
-    $s-y: -100 * -1;
-    $s-x: -50 * -1;
+    {{#svg}}
+    @if $name == {{name}} {
+        $s-w: {{width}};
+        $s-h: {{height}};
+        $s-y: {{positionY}} * -1;
+        $s-x: {{positionX}} * -1;
 
-    background-color: pink;
-    background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-    background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
-    width: $r-w * 1px;
-    height: $r-h * 1px;
-{{/svg}}
+        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
+        background-position: percentage($s-x / ($total-w - $s-w)) percentage($s-y / ($total-h - $s-h));
+    }
+    {{/svg}}
+}
