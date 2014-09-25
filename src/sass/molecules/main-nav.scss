@@ -10,17 +10,12 @@
         height: 13px;
         display: inline-block;
         margin: 0 0 -6px 0;
-        background: {
-            image: url("#{$img-root}home-icon.svg");
-            size: 100% 200%;
-            repeat: no-repeat;
-            position: top left;
-        }
+        @include svg-sprite("home-icon");
     }
 
     &:hover {
         &:before {
-            background-position: bottom left;
+            @include svg-sprite("home-icon-on");
         }
     }
 }
@@ -44,9 +39,7 @@
                 width: 34px;
                 height: 29px;
                 margin-bottom: -14px;
-                background: {
-                    image: url("#{$img-root}gn-logo-dark.svg");
-                }
+                @include svg-sprite("gn-logo-dark");
             }
         }
     }
@@ -97,9 +90,12 @@
             &:before {
                 width: 13px;
                 height: 13px;
-                background: {
-                    image: url("#{$img-root}feed-icon.svg");
-                    size: 100% 200%;
+                @include svg-sprite("feed-icon");
+            }
+
+            &:hover {
+                &:before {
+                    @include svg-sprite("feed-icon-on");
                 }
             }
         }
