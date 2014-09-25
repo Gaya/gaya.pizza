@@ -1,0 +1,10 @@
+/*
+ * This template generates a sass file with mixins for the generated SVG
+ */
+
+$swidth: {{ swidth }};
+$sheight: {{ sheight }};
+
+{{#svg}}
+    {{name}} {{sheight}}{{positionY}}
+{{/svg}}
