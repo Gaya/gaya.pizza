@@ -104,7 +104,7 @@
 
         &__share {
             &__link {
-                background: $dark-1;
+                background: $dark-3;
                 width: rhythm(1);
                 height: rhythm(1);
                 display: inline-block;
@@ -113,13 +113,21 @@
                 border-radius: 3px;
                 @include hidden-text;
                 position: relative;
+                @include transition(background $anim-speed);
+
+                &:before {
+                    content: "";
+                }
+
+                &:hover {
+                    background: $highlight-1;
+                }
 
                 &--twitter {
                     @extend .post__meta__share__link;
 
                     &:before {
                         @include svg-sprite("twitter-icon");
-                        content: "";
                         width: 19px;
                         height: 15px;
                         position: absolute;
@@ -130,6 +138,15 @@
 
                 &--facebook {
                     @extend .post__meta__share__link;
+
+                    &:before {
+                        @include svg-sprite("facebook-icon");
+                        width: 9px;
+                        height: 18px;
+                        position: absolute;
+                        top: 6px;
+                        left: 11px;
+                    }
                 }
             }
         }
