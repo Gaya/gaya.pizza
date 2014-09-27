@@ -42,12 +42,31 @@
     @extend %sprite;
 
     $total-w: 100;
-    $total-h: 617;
+    $total-h: 799;
 
+    @if $name == facebook-icon {
+        $s-w: 51.91956124314442;
+        $s-h: 100;
+        $s-y: 0;
+        $s-x: 0;
+        $pos-x: 0;
+        $pos-y: 0;
+
+        @if ($total-w - $s-w) != 0 {
+            $pos-x: ($s-x * -1) / ($total-w - $s-w);
+        }
+
+        @if ($total-h - $s-h) != 0 {
+            $pos-y: ($s-y * -1) / ($total-h - $s-h);
+        }
+
+        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
+        background-position: percentage($pos-x) percentage($pos-y);
+    }
     @if $name == feed-icon {
         $s-w: 87.5;
         $s-h: 87.5;
-        $s-y: 0;
+        $s-y: -100;
         $s-x: 0;
         $pos-x: 0;
         $pos-y: 0;
@@ -66,7 +85,7 @@
     @if $name == feed-icon-on {
         $s-w: 87.5;
         $s-h: 87.5;
-        $s-y: -88;
+        $s-y: -188;
         $s-x: 0;
         $pos-x: 0;
         $pos-y: 0;
@@ -85,7 +104,7 @@
     @if $name == gn-logo {
         $s-w: 100;
         $s-h: 86.62790697674417;
-        $s-y: -176;
+        $s-y: -276;
         $s-x: 0;
         $pos-x: 0;
         $pos-y: 0;
@@ -104,7 +123,7 @@
     @if $name == gn-logo-dark {
         $s-w: 100;
         $s-h: 86.62790697674417;
-        $s-y: -263;
+        $s-y: -363;
         $s-x: 0;
         $pos-x: 0;
         $pos-y: 0;
@@ -123,7 +142,7 @@
     @if $name == gn-logo-dark-on {
         $s-w: 100;
         $s-h: 86.62790697674417;
-        $s-y: -350;
+        $s-y: -450;
         $s-x: 0;
         $pos-x: 0;
         $pos-y: 0;
@@ -142,7 +161,7 @@
     @if $name == home-icon {
         $s-w: 100;
         $s-h: 89.05380333951763;
-        $s-y: -437;
+        $s-y: -537;
         $s-x: 0;
         $pos-x: 0;
         $pos-y: 0;
@@ -161,7 +180,26 @@
     @if $name == home-icon-on {
         $s-w: 100;
         $s-h: 89.05380333951763;
-        $s-y: -527;
+        $s-y: -627;
+        $s-x: 0;
+        $pos-x: 0;
+        $pos-y: 0;
+
+        @if ($total-w - $s-w) != 0 {
+            $pos-x: ($s-x * -1) / ($total-w - $s-w);
+        }
+
+        @if ($total-h - $s-h) != 0 {
+            $pos-y: ($s-y * -1) / ($total-h - $s-h);
+        }
+
+        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
+        background-position: percentage($pos-x) percentage($pos-y);
+    }
+    @if $name == twitter-icon {
+        $s-w: 100;
+        $s-h: 81.27286027798098;
+        $s-y: -717;
         $s-x: 0;
         $pos-x: 0;
         $pos-y: 0;
