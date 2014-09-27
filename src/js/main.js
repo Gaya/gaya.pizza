@@ -34,11 +34,3 @@ function debounce(func, wait, immediate) {
         if (callNow) { func.apply(context, args); }
     };
 }
-
-(function(){
-    var bsa = document.createElement('script');
-    bsa.type = 'text/javascript';
-    bsa.async = true;
-    bsa.src = '//s3.buysellads.com/ac/bsa.js';
-    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
-})();

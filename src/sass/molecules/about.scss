@@ -6,10 +6,6 @@
 
     @include media($big-desktop) {
         margin: 0;
-        @include span-columns(4);
-        position: absolute;
-        top: rhythm(3);
-        right: 3%;
     }
 
     &__title {
