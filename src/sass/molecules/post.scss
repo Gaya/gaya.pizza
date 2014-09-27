@@ -94,10 +94,11 @@
     }
 
     &__meta {
+        margin-top: rhythm(2);
+        border-top: 1px solid $light-2;
+        padding-top: rhythm-border(2, 1px);
+        
         &__published {
-            margin-top: rhythm(2);
-            border-top: 1px solid $light-2;
-            padding-top: rhythm-border(2, 1px);
             font-style: italic;
         }
     }
