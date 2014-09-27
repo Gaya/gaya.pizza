@@ -1,5 +1,8 @@
 .about {
-    margin: rhythm(1) 0 0 0;
+    margin: rhythm(2) 0 0 0;
+    border-top: 1px solid $light-2;
+    border-bottom: 1px solid $light-2;
+    padding: rhythm-border(1, 1px) 0;
 
     @include media($big-desktop) {
         margin: 0;
