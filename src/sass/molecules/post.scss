@@ -97,9 +97,41 @@
         margin-top: rhythm(2);
         border-top: 1px solid $light-2;
         padding-top: rhythm-border(2, 1px);
-        
+
         &__published {
             font-style: italic;
+        }
+
+        &__share {
+            &__link {
+                background: $dark-1;
+                width: rhythm(1);
+                height: rhythm(1);
+                display: inline-block;
+                overflow: hidden;
+                margin: 0 0 -9px 0;
+                border-radius: 3px;
+                @include hidden-text;
+                position: relative;
+
+                &--twitter {
+                    @extend .post__meta__share__link;
+
+                    &:before {
+                        @include svg-sprite("twitter-icon");
+                        content: "";
+                        width: 19px;
+                        height: 15px;
+                        position: absolute;
+                        top: 7px;
+                        left: 6px;
+                    }
+                }
+
+                &--facebook {
+                    @extend .post__meta__share__link;
+                }
+            }
         }
     }
 }
