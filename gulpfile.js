@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     source = require('vinyl-source-stream'),
     SVGSprite = require('svg-sprite'),
     cssshrink = require('gulp-cssshrink'),
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
+    uncss = require('gulp-uncss');
 
 gulp.config = {
     src: 'src',
@@ -146,6 +147,15 @@ gulp.task('image-min', function () {
             svgoPlugins: [{removeViewBox: false}]
         }))
         .pipe(gulp.dest(gulp.config.dist + '/images/'));
+});
+
+gulp.task('uncss', function () {
+    "use strict";
+    return gulp.src(gulp.config.dist + '/css/style.css')
+        .pipe(uncss({
+            html: [gulp.config.dist + '/index.html']
+        }))
+        .pipe(gulp.dest(gulp.config.dist + '/css'));
 });
 
 gulp.task('compile', ['svg-sprite', 'sass', 'browserify-dist', 'copy-html', 'copy-images']);
