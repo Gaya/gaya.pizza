@@ -149,15 +149,6 @@ gulp.task('image-min', function () {
         .pipe(gulp.dest(gulp.config.dist + '/images/'));
 });
 
-gulp.task('uncss', function () {
-    "use strict";
-    return gulp.src(gulp.config.dist + '/css/style.css')
-        .pipe(uncss({
-            html: [gulp.config.dist + '/index.html']
-        }))
-        .pipe(gulp.dest(gulp.config.dist + '/css'));
-});
-
 gulp.task('compile', ['svg-sprite', 'sass', 'browserify-dist', 'copy-html', 'copy-images']);
 gulp.task('optimize', ['cssshrink', 'image-min']);
 
