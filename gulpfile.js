@@ -117,6 +117,9 @@ gulp.task('svg-sprite', function (cb) {
     return SVGSprite.createSprite(gulp.config.src + '/icons', gulp.config.dist, {
         spritedir: 'images',
         sprite: 'gn-sprite',
+        variables: {
+            imagePath: "../"
+        },
         maxwidth: 100,
         maxheight: 100,
         layout: "vertical",

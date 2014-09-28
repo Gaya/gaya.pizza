@@ -35,7 +35,7 @@
  */
 
 %sprite {
-    background-image: url(../{{{sprite}}});
+    background-image: url({{{imagePath}}}{{{sprite}}});
 }
 
 @mixin svg-sprite($name) {
