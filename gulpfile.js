@@ -129,7 +129,15 @@ gulp.task('svg-sprite', function (cb) {
     });
 });
 
+gulp.task('cssshrink', function () {
+    "use strict";
+    return gulp.src(gulp.config.dist + '/css/*.css')
+        .pipe(cssshrink())
+        .pipe(gulp.dest(gulp.config.dist + '/css/'));
+});
+
 gulp.task('compile', ['svg-sprite', 'sass', 'browserify-dist', 'copy-html', 'copy-images']);
+gulp.task('optimize', ['cssshrink']);
 
 gulp.task('serve', ['compile', 'browser-sync'], function () {
     'use strict';
