@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     SVGSprite = require('svg-sprite'),
     cssshrink = require('gulp-cssshrink'),
     imagemin = require('gulp-imagemin'),
-    uncss = require('gulp-uncss');
+    critical = require('critical');
 
 gulp.config = {
     src: 'src',
@@ -147,6 +147,35 @@ gulp.task('image-min', function () {
             svgoPlugins: [{removeViewBox: false}]
         }))
         .pipe(gulp.dest(gulp.config.dist + '/images/'));
+});
+
+gulp.task('critical', function () {
+    "use strict";
+    critical.generateInline({
+        // Your base directory
+        base: gulp.config.dist,
+
+        // HTML source
+        src: 'index.html',
+
+        // Your CSS Files (optional)
+        css: [gulp.config.dist + '/css/style.css'],
+
+        // Viewport width
+        width: 320,
+
+        // Viewport height
+        height: 480,
+
+        // Target for final HTML output
+        htmlTarget: 'index-critical.html',
+
+        // Target for generated critical-path CSS (which we inline)
+        styleTarget: 'css/critical.css',
+
+        // Minify critical-path CSS when inlining
+        minify: true
+    });
 });
 
 gulp.task('compile', ['svg-sprite', 'sass', 'browserify-dist', 'copy-html', 'copy-images']);
