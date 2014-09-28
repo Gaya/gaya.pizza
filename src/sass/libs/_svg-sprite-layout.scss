@@ -41,28 +41,31 @@
 @mixin svg-sprite($name) {
     @extend %sprite;
 
+    $sprites: (
+        {{#svg}}
+        "{{name}}": (
+            "w": {{width}},
+            "h": {{height}},
+            "x": {{positionX}},
+            "y": {{positionY}}
+        ),
+        {{/svg}}
+    );
     $total-w: {{ swidth }};
     $total-h: {{ sheight }};
+    $sprite: map-get($sprites, $name);
 
-    {{#svg}}
-    @if $name == {{name}} {
-        $s-w: {{width}};
-        $s-h: {{height}};
-        $s-y: {{positionY}};
-        $s-x: {{positionX}};
-        $pos-x: 0;
-        $pos-y: 0;
+    $pos-x: 0;
+    $pos-y: 0;
 
-        @if ($total-w - $s-w) != 0 {
-            $pos-x: ($s-x * -1) / ($total-w - $s-w);
-        }
-
-        @if ($total-h - $s-h) != 0 {
-            $pos-y: ($s-y * -1) / ($total-h - $s-h);
-        }
-
-        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($pos-x) percentage($pos-y);
+    @if ($total-w - map-get($sprite, "w")) != 0 {
+        $pos-x: (map-get($sprite, "x") * -1) / ($total-w - map-get($sprite, "w"));
     }
-    {{/svg}}
+
+    @if ($total-h - map-get($sprite, "h")) != 0 {
+        $pos-y: (map-get($sprite, "y") * -1) / ($total-h - map-get($sprite, "h"));
+    }
+
+    background-size: percentage($total-w / map-get($sprite, "w")) percentage($total-h / map-get($sprite, "h"));
+    background-position: percentage($pos-x) percentage($pos-y);
 }

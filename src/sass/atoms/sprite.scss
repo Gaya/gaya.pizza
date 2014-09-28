@@ -41,178 +41,77 @@
 @mixin svg-sprite($name) {
     @extend %sprite;
 
+    $sprites: (
+        "facebook-icon": (
+            "w": 51.91956124314442,
+            "h": 100,
+            "x": 0,
+            "y": 0
+        ),
+        "feed-icon": (
+            "w": 87.5,
+            "h": 87.5,
+            "x": 0,
+            "y": -100
+        ),
+        "feed-icon-on": (
+            "w": 87.5,
+            "h": 87.5,
+            "x": 0,
+            "y": -188
+        ),
+        "gn-logo": (
+            "w": 100,
+            "h": 86.62790697674417,
+            "x": 0,
+            "y": -276
+        ),
+        "gn-logo-dark": (
+            "w": 100,
+            "h": 86.62790697674417,
+            "x": 0,
+            "y": -363
+        ),
+        "gn-logo-dark-on": (
+            "w": 100,
+            "h": 86.62790697674417,
+            "x": 0,
+            "y": -450
+        ),
+        "home-icon": (
+            "w": 100,
+            "h": 89.05380333951763,
+            "x": 0,
+            "y": -537
+        ),
+        "home-icon-on": (
+            "w": 100,
+            "h": 89.05380333951763,
+            "x": 0,
+            "y": -627
+        ),
+        "twitter-icon": (
+            "w": 100,
+            "h": 81.27286027798098,
+            "x": 0,
+            "y": -717
+        ),
+    );
     $total-w: 100;
     $total-h: 799;
+    $sprite: map-get($sprites, $name);
 
-    @if $name == facebook-icon {
-        $s-w: 51.91956124314442;
-        $s-h: 100;
-        $s-y: 0;
-        $s-x: 0;
-        $pos-x: 0;
-        $pos-y: 0;
+    $pos-x: 0;
+    $pos-y: 0;
 
-        @if ($total-w - $s-w) != 0 {
-            $pos-x: ($s-x * -1) / ($total-w - $s-w);
-        }
-
-        @if ($total-h - $s-h) != 0 {
-            $pos-y: ($s-y * -1) / ($total-h - $s-h);
-        }
-
-        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($pos-x) percentage($pos-y);
+    @if ($total-w - map-get($sprite, "w")) != 0 {
+        $pos-x: (map-get($sprite, "x") * -1) / ($total-w - map-get($sprite, "w"));
     }
-    @if $name == feed-icon {
-        $s-w: 87.5;
-        $s-h: 87.5;
-        $s-y: -100;
-        $s-x: 0;
-        $pos-x: 0;
-        $pos-y: 0;
 
-        @if ($total-w - $s-w) != 0 {
-            $pos-x: ($s-x * -1) / ($total-w - $s-w);
-        }
-
-        @if ($total-h - $s-h) != 0 {
-            $pos-y: ($s-y * -1) / ($total-h - $s-h);
-        }
-
-        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($pos-x) percentage($pos-y);
+    @if ($total-h - map-get($sprite, "h")) != 0 {
+        $pos-y: (map-get($sprite, "y") * -1) / ($total-h - map-get($sprite, "h"));
     }
-    @if $name == feed-icon-on {
-        $s-w: 87.5;
-        $s-h: 87.5;
-        $s-y: -188;
-        $s-x: 0;
-        $pos-x: 0;
-        $pos-y: 0;
 
-        @if ($total-w - $s-w) != 0 {
-            $pos-x: ($s-x * -1) / ($total-w - $s-w);
-        }
-
-        @if ($total-h - $s-h) != 0 {
-            $pos-y: ($s-y * -1) / ($total-h - $s-h);
-        }
-
-        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($pos-x) percentage($pos-y);
-    }
-    @if $name == gn-logo {
-        $s-w: 100;
-        $s-h: 86.62790697674417;
-        $s-y: -276;
-        $s-x: 0;
-        $pos-x: 0;
-        $pos-y: 0;
-
-        @if ($total-w - $s-w) != 0 {
-            $pos-x: ($s-x * -1) / ($total-w - $s-w);
-        }
-
-        @if ($total-h - $s-h) != 0 {
-            $pos-y: ($s-y * -1) / ($total-h - $s-h);
-        }
-
-        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($pos-x) percentage($pos-y);
-    }
-    @if $name == gn-logo-dark {
-        $s-w: 100;
-        $s-h: 86.62790697674417;
-        $s-y: -363;
-        $s-x: 0;
-        $pos-x: 0;
-        $pos-y: 0;
-
-        @if ($total-w - $s-w) != 0 {
-            $pos-x: ($s-x * -1) / ($total-w - $s-w);
-        }
-
-        @if ($total-h - $s-h) != 0 {
-            $pos-y: ($s-y * -1) / ($total-h - $s-h);
-        }
-
-        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($pos-x) percentage($pos-y);
-    }
-    @if $name == gn-logo-dark-on {
-        $s-w: 100;
-        $s-h: 86.62790697674417;
-        $s-y: -450;
-        $s-x: 0;
-        $pos-x: 0;
-        $pos-y: 0;
-
-        @if ($total-w - $s-w) != 0 {
-            $pos-x: ($s-x * -1) / ($total-w - $s-w);
-        }
-
-        @if ($total-h - $s-h) != 0 {
-            $pos-y: ($s-y * -1) / ($total-h - $s-h);
-        }
-
-        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($pos-x) percentage($pos-y);
-    }
-    @if $name == home-icon {
-        $s-w: 100;
-        $s-h: 89.05380333951763;
-        $s-y: -537;
-        $s-x: 0;
-        $pos-x: 0;
-        $pos-y: 0;
-
-        @if ($total-w - $s-w) != 0 {
-            $pos-x: ($s-x * -1) / ($total-w - $s-w);
-        }
-
-        @if ($total-h - $s-h) != 0 {
-            $pos-y: ($s-y * -1) / ($total-h - $s-h);
-        }
-
-        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($pos-x) percentage($pos-y);
-    }
-    @if $name == home-icon-on {
-        $s-w: 100;
-        $s-h: 89.05380333951763;
-        $s-y: -627;
-        $s-x: 0;
-        $pos-x: 0;
-        $pos-y: 0;
-
-        @if ($total-w - $s-w) != 0 {
-            $pos-x: ($s-x * -1) / ($total-w - $s-w);
-        }
-
-        @if ($total-h - $s-h) != 0 {
-            $pos-y: ($s-y * -1) / ($total-h - $s-h);
-        }
-
-        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($pos-x) percentage($pos-y);
-    }
-    @if $name == twitter-icon {
-        $s-w: 100;
-        $s-h: 81.27286027798098;
-        $s-y: -717;
-        $s-x: 0;
-        $pos-x: 0;
-        $pos-y: 0;
-
-        @if ($total-w - $s-w) != 0 {
-            $pos-x: ($s-x * -1) / ($total-w - $s-w);
-        }
-
-        @if ($total-h - $s-h) != 0 {
-            $pos-y: ($s-y * -1) / ($total-h - $s-h);
-        }
-
-        background-size: percentage($total-w / $s-w) percentage($total-h / $s-h);
-        background-position: percentage($pos-x) percentage($pos-y);
-    }
+    background-size: percentage($total-w / map-get($sprite, "w")) percentage($total-h / map-get($sprite, "h"));
+    background-position: percentage($pos-x) percentage($pos-y);
 }
