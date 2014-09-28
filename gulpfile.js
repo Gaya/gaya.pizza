@@ -4,7 +4,9 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     browserify = require('browserify'),
     source = require('vinyl-source-stream'),
-    SVGSprite = require('svg-sprite');
+    SVGSprite = require('svg-sprite'),
+    cssshrink = require('gulp-cssshrink'),
+    imagemin = require('gulp-imagemin');
 
 gulp.config = {
     src: 'src',
@@ -136,8 +138,18 @@ gulp.task('cssshrink', function () {
         .pipe(gulp.dest(gulp.config.dist + '/css/'));
 });
 
+gulp.task('image-min', function () {
+    "use strict";
+    return gulp.src(gulp.config.dist + '/images/*')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}]
+        }))
+        .pipe(gulp.dest(gulp.config.dist + '/images/'));
+});
+
 gulp.task('compile', ['svg-sprite', 'sass', 'browserify-dist', 'copy-html', 'copy-images']);
-gulp.task('optimize', ['cssshrink']);
+gulp.task('optimize', ['cssshrink', 'image-min']);
 
 gulp.task('serve', ['compile', 'browser-sync'], function () {
     'use strict';
