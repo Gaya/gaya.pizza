@@ -1,12 +1,16 @@
 .sponsor {
-    padding: rhythm(1) 0;
+    margin: rhythm(1) 0 0 0;
+    padding: rhythm(0.5);
+    background: $light-3;
+
+    .adpacks-wrap {
+        overflow: hidden;
+    }
 
     .adpacks-img {
         display: block;
         height: 120px;
         text-align: center;
-        float: left;
-
         img {
             margin-top: 10px;
         }
@@ -17,8 +21,6 @@
         text-decoration: none;
         color: $dark-3;
         @include change-font-size($tiny-font-size);
-        float: left;
-        margin: 0 0 0 15px;
 
         &:hover {
             color: $highlight-1;
