@@ -1,5 +1,6 @@
 .main-footer {
     @extend .main-header;
+    margin-top: rhythm(1);
     padding: rhythm(1) 0 0 0;
     height: auto;
     color: $light-2;
