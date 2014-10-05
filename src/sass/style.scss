@@ -28,6 +28,7 @@ $big-desktop:       new-breakpoint(min-width 1020px 16);
 
 //molecules
 @import "molecules/main-header";
+@import "molecules/main-footer";
 @import "molecules/main-nav";
 @import "molecules/breadcrumbs";
 @import "molecules/post";
