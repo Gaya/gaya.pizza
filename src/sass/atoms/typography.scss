@@ -35,3 +35,7 @@ body {
 %large-font-size {
     @include change-font-size($large-font-size);
 }
+
+a {
+    @include transition(color $anim-speed);
+}
