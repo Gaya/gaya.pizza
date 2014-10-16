@@ -1,12 +1,14 @@
 {
+  "contents": "./blog/contents",
+  "templates": "./blog/templates",
   "locals": {
     "url": "http://localhost:8080",
-    "name": "The Wintersmith's blog",
-    "owner": "Someone",
-    "description": "Ramblings of an immor(t)al demigod"
+    "name": "Gaya Ninja Blog",
+    "owner": "Gaya Kesssler",
+    "description": "Web development articles written for web developers"
   },
   "plugins": [
-    "./plugins/paginator.coffee"
+    "./blog/plugins/paginator.coffee"
   ],
   "require": {
     "moment": "moment",
