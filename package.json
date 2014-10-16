@@ -26,6 +26,7 @@
     "gulp-imagemin": "^1.0.1",
     "gulp-ruby-sass": "^0.7.1",
     "svg-sprite": "^0.3.2",
-    "vinyl-source-stream": "^1.0.0"
+    "vinyl-source-stream": "^1.0.0",
+    "wintersmith-swig": "^0.2.1"
   }
 }
