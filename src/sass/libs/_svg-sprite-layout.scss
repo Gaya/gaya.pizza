@@ -1,0 +1,71 @@
+/*
+ * Generate a SVG-sprite mixin for Sass
+ * ====================================
+ *
+ * Gaya Kessler - http://gaya.ninja - http://twitter.com/GayaNinja
+ *
+ * SVGSprite is a wonderful package, but doesn't enable responsive sprites out of the box.
+ * This moustache template generates a sass file with a mixin for the generated SVG-sprite.
+ * Calculates the position and size of the background by filename.
+ * Included SVG image scales to width and height.
+ *
+ * Usage:
+ * ======
+ * 1. In the SVGSprite options put the template in the `render` property:
+ *
+ * render: {
+ *      sass: {
+ *          template: 'svg-sprite-layout.scss',
+ *          dest: 'path/to/output/svg-sprite.scss'
+ *      }
+ * }
+ *
+ * 2. Import the generated .scss file in your Sass project:
+ *
+ * @import "path/to/output/svg-sprite.scss";
+ *
+ * 3. Use the SVG image on an element:
+ *
+ * .element {
+ *      @include svg-sprite('name-of-svg-file');
+ *      width: 15px;
+ *      height: 20px;
+ * }
+ *
+ */
+
+%sprite {
+    background-image: url({{{imagePath}}}{{{sprite}}});
+}
+
+@mixin svg-sprite($name) {
+    @extend %sprite;
+
+    $sprites: (
+        {{#svg}}
+        "{{name}}": (
+            "w": {{width}},
+            "h": {{height}},
+            "x": {{positionX}},
+            "y": {{positionY}}
+        ),
+        {{/svg}}
+    );
+    $total-w: {{ swidth }};
+    $total-h: {{ sheight }};
+    $sprite: map-get($sprites, $name);
+
+    $pos-x: 0;
+    $pos-y: 0;
+
+    @if ($total-w - map-get($sprite, "w")) != 0 {
+        $pos-x: (map-get($sprite, "x") * -1) / ($total-w - map-get($sprite, "w"));
+    }
+
+    @if ($total-h - map-get($sprite, "h")) != 0 {
+        $pos-y: (map-get($sprite, "y") * -1) / ($total-h - map-get($sprite, "h"));
+    }
+
+    background-size: percentage($total-w / map-get($sprite, "w")) percentage($total-h / map-get($sprite, "h"));
+    background-position: percentage($pos-x) percentage($pos-y);
+}

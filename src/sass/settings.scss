@@ -1,0 +1,29 @@
+$body-font:         'Lora', serif;
+$header-font:       'Libre Baskerville', serif;
+$code-font:         'Inconsolata', monospaced;
+
+$base-font-size:    18px;
+$base-line:         30px;
+$base-line-factor:  1.1;
+
+$smaller-font-size: 16px;
+$tiny-font-size:    12px;
+$about-font-size:   22px;
+$bigger-font-size:  32px;
+$large-font-size:   44px;
+$huge-font-size:    54px;
+
+$anim-speed:        150ms;
+
+$img-root: "../images/";
+
+$light-1:       #EAEAEA;
+$light-2:       #AAAAAA;
+$light-3:       #DADADA;
+
+$dark-1:        #141414;
+$dark-2:        #1e1e1e;
+$dark-3:        #2d2d2d;
+
+$highlight-1:   #C4141D;
+$highlight-2:   darken($highlight-1, 10);

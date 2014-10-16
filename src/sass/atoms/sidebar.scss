@@ -1,0 +1,8 @@
+.sidebar {
+    @include media($big-desktop) {
+        @include span-columns(4);
+        position: absolute;
+        top: rhythm(3);
+        right: 3%;
+    }
+}

@@ -1,0 +1,37 @@
+.main-footer {
+    @extend .main-header;
+    margin-top: rhythm(1);
+    padding: rhythm(1) 0 0 0;
+    height: auto;
+    color: $light-2;
+    overflow: hidden;
+
+    &__copyright {
+        @include body-padding(0, rhythm(1));
+        @include outer-container;
+
+        @include media($tablet-only) {
+            @include span-columns(3 of 9);
+        }
+
+        @include media($desktop) {
+            @include span-columns(4 of 12);
+        }
+
+        a {
+            color: $light-1;
+
+            &:hover {
+                color: $highlight-1;
+            }
+        }
+    }
+
+    &__built-with {
+        @extend .main-footer__copyright;
+    }
+
+    &__also-on {
+        @extend .main-footer__copyright;
+    }
+}

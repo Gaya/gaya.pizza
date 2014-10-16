@@ -1,0 +1,41 @@
+@include establish-baseline;
+
+body {
+    -webkit-text-size-adjust: 100%;
+    color: $dark-1;
+
+    font: {
+        family: $body-font;
+    }
+}
+
+%header-font {
+    font: {
+        family: $header-font;
+        weight: normal;
+    }
+}
+
+%base-font-size {
+    @include change-font-size($base-font-size);
+}
+
+%small-font-size {
+    @include change-font-size($smaller-font-size);
+}
+
+%tiny-font-size {
+    @include change-font-size($tiny-font-size);
+}
+
+%big-font-size {
+    @include change-font-size($bigger-font-size);
+}
+
+%large-font-size {
+    @include change-font-size($large-font-size);
+}
+
+a {
+    @include transition(color $anim-speed);
+}

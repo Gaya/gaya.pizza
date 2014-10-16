@@ -1,0 +1,5 @@
+.main-content {
+    @include body-padding(rhythm(1), rhythm(1));
+    @include outer-container;
+    position: relative;
+}

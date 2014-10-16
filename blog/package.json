@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "moment": "2.3.x",
+    "underscore": "1.4.x",
+    "typogr": "0.5.x"
+  },
+  "repository": "none",
+  "devDependencies": {
+    "assemble": "^0.4.41",
+    "browser-sync": "^1.3.5",
+    "browserify": "^5.10.1",
+    "gulp": "^3.8.7",
+    "gulp-assemble": "git://github.com/assemble/gulp-assemble",
+    "gulp-ruby-sass": "^0.7.1",
+    "handlebars-helpers": "git://github.com/assemble/handlebars-helpers#v0.6.0",
+    "vinyl-source-stream": "^0.1.1"
+  }
+}

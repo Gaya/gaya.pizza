@@ -1,0 +1,110 @@
+%bar-icon {
+    @extend .main-nav__link;
+    @include hidden-text;
+    margin-left: 8px;
+    @include transition(background-image $anim-speed);
+
+    &:before {
+        content: " ";
+        width: 15px;
+        height: 13px;
+        display: inline-block;
+        margin: 0 0 -6px 0;
+        @include svg-sprite("home-icon");
+    }
+
+    &:hover {
+        &:before {
+            @include svg-sprite("home-icon-on");
+        }
+    }
+}
+
+.main-nav {
+    background-color: $light-3;
+    top: 0;
+    width: 100%;
+    padding: rhythm(0.5) 0;
+    @include transition(padding $anim-speed);
+    z-index: 1;
+
+    &--fixed {
+        @extend .main-nav;
+        position: fixed;
+
+        .main-nav__link--home {
+            margin-left: 0px;
+            margin-right: -11px;
+
+            &:before {
+                width: 34px;
+                height: 29px;
+                margin-bottom: -14px;
+                @include svg-sprite("gn-logo-dark");
+            }
+
+            &:hover {
+                &:before {
+                    @include svg-sprite("gn-logo-dark-on");
+                }
+            }
+        }
+    }
+
+    &__container {
+        @include body-padding(0, 0);
+        overflow: hidden;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $dark-3;
+        float: left;
+        margin: 0 0 0 8%;
+        @include transition(color $anim-speed);
+
+        @include media($tablet) {
+            margin: 0 0 0 5%;
+        }
+
+        &:hover {
+            color: $highlight-1;
+        }
+
+        &--twitter {
+            @extend .main-nav__link;
+            display: none;
+
+            @include media($tablet) {
+                display: block;
+            }
+        }
+
+        &--facebook {
+            @extend .main-nav__link--twitter;
+        }
+
+        &--home {
+            @extend %bar-icon;
+            margin-left: 8px;
+        }
+
+        &--rss {
+            @extend %bar-icon;
+            margin: 0;
+            float: right;
+
+            &:before {
+                width: 13px;
+                height: 13px;
+                @include svg-sprite("feed-icon");
+            }
+
+            &:hover {
+                &:before {
+                    @include svg-sprite("feed-icon-on");
+                }
+            }
+        }
+    }
+}

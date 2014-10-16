@@ -1,0 +1,33 @@
+.about {
+    margin: rhythm(2) 0 0 0;
+    border-top: 1px solid $light-2;
+    border-bottom: 1px solid $light-2;
+    padding: rhythm-border(1, 1px) 0;
+
+    @include media($big-desktop) {
+        margin: 0;
+    }
+
+    &__title {
+        @include change-font-size($about-font-size);
+        margin: 0 0 rhythm(1) 0;
+    }
+
+    &__link {
+        display: block;
+        margin: rhythm(1) 0 0 0;
+        color: $highlight-1;
+
+        &:hover {
+            color: $highlight-2;
+        }
+    }
+
+    &__avatar {
+        width: rhythm(3);
+        height: rhythm(3);
+        float: right;
+        border-radius: 100%;
+        margin: 0 0 rhythm(0.5) rhythm(0.5);
+    }
+}

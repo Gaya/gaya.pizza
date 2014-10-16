@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Gaya Ninja Blog</title>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata|Lora:400,700,400italic,700italic|Libre+Baskerville' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+<body itemscope itemtype="http://schema.org/Blog">
+    <header class="main-header">
+        <a href="#" class="main-header__logo">
+            <span class="main-header__logo__text">Gaya</span>
+            <span class="main-header__logo__text--extra">Ninja</span>
+        </a>
+    </header>
+
+    <nav class="main-nav">
+        <section class="main-nav__container">
+            <a class="main-nav__link--home" href="#">Home</a>
+            <a class="main-nav__link" href="#">About</a>
+            <a class="main-nav__link" href="#">Contact</a>
+            <a class="main-nav__link--twitter" href="#">Twitter</a>
+            <a class="main-nav__link--facebook" href="#">Facebook</a>
+            <a class="main-nav__link--rss" href="#">RSS</a>
+        </section>
+    </nav>
+
+    <section class="main-content">
+        <section class="breadcrumbs">
+            <a href="#" class="breadcrumbs__link">Gaya Ninja Blog</a>
+            <span class="breadcrumbs__seperator">&rsaquo;</span>
+            <span class="breadcrumbs__item">MarkPress: Markdown powered journal for WordPress</span>
+        </section>
+
+        <article class="post" itemscope itemtype="http://schema.org/Article">
+            <header class="post__header">
+                <h1 class="post__header__text"><a href="#" itemprop="name headline">MarkPress: Markdown powered journal for WordPress</a></h1>
+            </header>
+
+            <section class="post__links">
+                <a class="post__links__link" href="#">
+                    <span class="post__links__link__title">Download</span>
+                    <span class="post__links__link__desc">from WordPress.org</span>
+                </a>
+                <a class="post__links__link" href="#">
+                    <span class="post__links__link__title">Visit</span>
+                    <span class="post__links__link__desc">Demonstration</span>
+                </a>
+            </section>
+
+            <section class="post__body" itemprop="articleBody">
+                <p>
+                    Markdown is used to quickly write a styled document with a simple syntax, great for taking notes or writing journals. MarkPress allows you to turn your WordPress install into an App to easily write and store Markdown notes.
+                </p>
+
+                <h2>What is MarkPress?</h2>
+
+                <p>
+                    Starting as an idea by <a href="#">Coen Jacobs</a>, and me wanting to do something with WordPress again, I started writing this little app.
+                </p>
+
+                <p>
+                    Its requirements were simple:
+                </p>
+
+                <ol>
+                    <li>Write some notes on findings you made.</li>
+                    <li>Automatically save them somewhere</li>
+                    <li>Enable tagging</li>
+                    <li><a href="http://daringfireball.net/projects/markdown/syntax">Make it nice with Markdown</a></li>
+                    <li>Available everywhere on every device</li>
+                </ol>
+
+                <p>
+                    There were not a lot of apps that do all this, so the easiest thing was to quickly write a web app and let WordPress store the data.
+                </p>
+
+                <p>
+                    And then, <code>MarkPress</code> was born.
+                </p>
+
+                <pre><code class=" hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">$initHighlight</span><span class="hljs-params">(block, flags)</span> </span>{
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">if</span> (block.className.search(<span class="hljs-regexp">/\bno\-highlight\b/</span>) != -<span class="hljs-number">1</span>)
+        <span class="hljs-keyword">return</span> processBlock(block.function, <span class="hljs-literal">true</span>, <span class="hljs-number">0x0F</span>) + <span class="hljs-string">' class=""'</span>;
+    } <span class="hljs-keyword">catch</span> (e) {
+        <span class="hljs-comment">/* handle exception */</span>
+        <span class="hljs-keyword">var</span> e4x =
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Example
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>1234<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>;</span>
+    }
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span> / <span class="hljs-number">2</span>; i &lt; classes.length; i++) { <span class="hljs-comment">// "0 / 2" should not be parsed as regexp</span>
+        <span class="hljs-keyword">if</span> (checkCondition(classes[i]) === <span class="hljs-literal">undefined</span>)
+            <span class="hljs-keyword">return</span> <span class="hljs-regexp">/\d+[\s/]/g</span>;
+    }
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Array</span>.every(classes, <span class="hljs-built_in">Boolean</span>));
+}</code></pre>
+                <p>
+                    There were not a lot of apps that do all this, so the easiest thing was to quickly write a web app and let WordPress store the data.
+                </p>
+            </section>
+
+            <footer class="post__meta">
+                <section class="post__meta__published">
+                    Published on <time content="2014-09-11T20:48" datetime="2014-09-11T20:48" itemprop="datePublished">September 11, 2014</time>
+                </section>
+                <section class="post__meta__share">
+                    Liked this article? Sharing is caring!
+                    <a href="#" class="post__meta__share__link--twitter">Tweet this article</a>
+                    <a href="#" class="post__meta__share__link--facebook">Share on Facebook</a>
+                </section>
+
+                <meta content="Do it Yourself" itemprop="articleSection"/>
+                <section itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                    <link itemprop="sameAs" href="http://gaya.ninja/">
+                    <meta itemprop="image" content="/examples/jvanzweden_s.jpg">
+                    <meta itemprop="name" content="Gaya Kessler">
+                </section>
+            </footer>
+        </article>
+
+        <aside class="sidebar">
+            <section class="about">
+                <h2 class="about__title">About Gaya Kessler</h2>
+                <p>
+                    <img src="images/gaya-kessler.jpg" class="about__avatar" alt=""/>
+                    All articles on Gaya Ninja Blog are written by Gaya Kessler, Front-end Web Engineer from the Netherlands.
+                    Loves all things JavaScript, Sass, Automatisation and Node.js.
+                </p>
+                <a class="about__link" href="http://gaya.ninja">Read more about Gaya</a>
+            </section>
+
+            <section class="sponsor">
+                <script async type="text/javascript" src="//cdn.adpacks.com/adpacks.js?zoneid=1386&serve=C6SI42Y&placement=gayadesigncom" id="_adpacks_js"></script>
+            </section>
+        </aside>
+    </section>
+
+    <footer class="main-footer">
+        <section class="main-footer__copyright">
+            2008 - 2014 © Gaya Ninja Blog, written for web developers by Gaya Kessler.
+        </section>
+        <section class="main-footer__built-with">
+            Built with <a href="#">Wintersmith</a>, styled with <a href="#">Sass</a>, automated using <a href="#">Gulp</a> and running on
+            <a href="#">node.js</a>.
+        </section>
+        <section class="main-footer__also-on">
+            Find me on: <a href="#">GitHub</a>, <a href="#">LinkedIn</a>, <a href="#">Twitter</a>, <a href="#">Facebook</a>, <a href="#">Last.fm</a>
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="js/gaya-ninja-blog.js"></script>
+</body>
+</html>

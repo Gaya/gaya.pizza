@@ -1,0 +1,68 @@
+.main-header {
+    background: {
+        image: url("#{$img-root}gn-pattern.svg");
+        size: auto rhythm(1.5);
+        color: $dark-2;
+        position: center center;
+    }
+    height: rhythm(5);
+    position: relative;
+    @include transition(background-size $anim-speed, height $anim-speed);
+
+    @include media($tablet) {
+        background-size: auto rhythm(2);
+        height: rhythm(6);
+    }
+
+    &__logo {
+        @include svg-sprite('gn-logo');
+        height: rhythm(3);
+        width: rhythm(3.463087248);
+        margin: rhythm(-1.5) 0 0 rhythm(-1.731543624);
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: $light-1;
+        text-decoration: none;
+        opacity: 0.71;
+        @include transition(background-size $anim-speed, width $anim-speed, height $anim-speed, margin $anim-speed, opacity $anim-speed);
+
+        &:hover {
+            opacity: 1;
+        }
+
+        @include media($tablet) {
+            height: rhythm(4);
+            width: rhythm(4.617449664);
+            margin: rhythm(-2) 0 0 rhythm(-2.308724832);
+        }
+
+        &__text {
+            @extend %header-font;
+            @extend %big-font-size;
+            position: absolute;
+            top: rhythm(0.5);
+            right: rhythm(3.8);
+            text-align: right;
+            @include transition(font-size $anim-speed, line-height $anim-speed, top $anim-speed, left $anim-speed, right $anim-speed);
+
+            @include media($tablet) {
+                @include change-font-size($large-font-size);
+                right: rhythm(5.5);
+                top: rhythm(1);
+            }
+
+            &--extra {
+                @extend .main-header__logo__text;
+                right: auto;
+                text-align: left;
+                left: rhythm(3.8);
+
+                @include media($tablet) {
+                    left: rhythm(5.5);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+/*
+ * Generate a SVG-sprite mixin for Sass
+ * ====================================
+ *
+ * Gaya Kessler - http://gaya.ninja - http://twitter.com/GayaNinja
+ *
+ * SVGSprite is a wonderful package, but doesn't enable responsive sprites out of the box.
+ * This moustache template generates a sass file with a mixin for the generated SVG-sprite.
+ * Calculates the position and size of the background by filename.
+ * Included SVG image scales to width and height.
+ *
+ * Usage:
+ * ======
+ * 1. In the SVGSprite options put the template in the `render` property:
+ *
+ * render: {
+ *      sass: {
+ *          template: 'svg-sprite-layout.scss',
+ *          dest: 'path/to/output/svg-sprite.scss'
+ *      }
+ * }
+ *
+ * 2. Import the generated .scss file in your Sass project:
+ *
+ * @import "path/to/output/svg-sprite.scss";
+ *
+ * 3. Use the SVG image on an element:
+ *
+ * .element {
+ *      @include svg-sprite('name-of-svg-file');
+ *      width: 15px;
+ *      height: 20px;
+ * }
+ *
+ */
+
+%sprite {
+    background-image: url(../images/gn-sprite.svg);
+}
+
+@mixin svg-sprite($name) {
+    @extend %sprite;
+
+    $sprites: (
+        "facebook-icon": (
+            "w": 51.91956124314442,
+            "h": 100,
+            "x": 0,
+            "y": 0
+        ),
+        "feed-icon": (
+            "w": 87.5,
+            "h": 87.5,
+            "x": 0,
+            "y": -100
+        ),
+        "feed-icon-on": (
+            "w": 87.5,
+            "h": 87.5,
+            "x": 0,
+            "y": -188
+        ),
+        "gn-logo": (
+            "w": 100,
+            "h": 86.62790697674417,
+            "x": 0,
+            "y": -276
+        ),
+        "gn-logo-dark": (
+            "w": 100,
+            "h": 86.62790697674417,
+            "x": 0,
+            "y": -363
+        ),
+        "gn-logo-dark-on": (
+            "w": 100,
+            "h": 86.62790697674417,
+            "x": 0,
+            "y": -450
+        ),
+        "home-icon": (
+            "w": 100,
+            "h": 89.05380333951763,
+            "x": 0,
+            "y": -537
+        ),
+        "home-icon-on": (
+            "w": 100,
+            "h": 89.05380333951763,
+            "x": 0,
+            "y": -627
+        ),
+        "twitter-icon": (
+            "w": 100,
+            "h": 81.27286027798098,
+            "x": 0,
+            "y": -717
+        ),
+    );
+    $total-w: 100;
+    $total-h: 799;
+    $sprite: map-get($sprites, $name);
+
+    $pos-x: 0;
+    $pos-y: 0;
+
+    @if ($total-w - map-get($sprite, "w")) != 0 {
+        $pos-x: (map-get($sprite, "x") * -1) / ($total-w - map-get($sprite, "w"));
+    }
+
+    @if ($total-h - map-get($sprite, "h")) != 0 {
+        $pos-y: (map-get($sprite, "y") * -1) / ($total-h - map-get($sprite, "h"));
+    }
+
+    background-size: percentage($total-w / map-get($sprite, "w")) percentage($total-h / map-get($sprite, "h"));
+    background-position: percentage($pos-x) percentage($pos-y);
+}
