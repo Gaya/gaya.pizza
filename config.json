@@ -1,6 +1,6 @@
 {
   "contents": "./blog/contents",
-  "templates": "./blog/templates",
+  "templates": "./src/templates",
   "locals": {
     "url": "http://localhost:8080",
     "name": "Gaya Ninja Blog",
@@ -23,6 +23,7 @@
     "smartypants": true
   },
   "paginator": {
-    "perPage": 3
+    "perPage": 3,
+    "template": "index.html"
   }
 }
