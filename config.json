@@ -8,7 +8,7 @@
     "description": "Web development articles written for web developers"
   },
   "plugins": [
-    "./blog/plugins/paginator.coffee", "./node_modules/wintersmith-swig/plugin.coffee"
+    "./blog/plugins/paginator.coffee", "./node_modules/wintersmith-nunjucks"
   ],
   "require": {
     "moment": "moment",
