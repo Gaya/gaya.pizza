@@ -7,7 +7,8 @@ var gulp = require('gulp'),
     SVGSprite = require('svg-sprite'),
     cssshrink = require('gulp-cssshrink'),
     imagemin = require('gulp-imagemin'),
-    critical = require('critical');
+    critical = require('critical'),
+    wintersmith = require('wintersmith');;
 
 gulp.config = {
     src: 'src',
@@ -15,6 +16,7 @@ gulp.config = {
     dist: 'dist',
     build: 'build',
     tests: 'test',
+    blog: 'blog',
     port: (process.env.PORT || 3000),
     middleware: function (req, res, next) {
         next();
@@ -181,7 +183,17 @@ gulp.task('critical', function () {
     });
 });
 
-gulp.task('compile', ['svg-sprite', 'sass', 'browserify-dist', 'copy-html', 'copy-images']);
+gulp.task('wintersmith', function () {
+    "use strict";
+    var env = wintersmith('./config.json');
+
+    env.build(function(error) {
+        if (error) { throw error; }
+        console.log('Done!');
+    });
+});
+
+gulp.task('compile', ['svg-sprite', 'sass', 'browserify-dist', 'copy-images', 'wintersmith']);
 gulp.task('optimize', ['cssshrink', 'image-min']);
 
 gulp.task('serve', ['compile', 'browser-sync'], function () {
@@ -195,8 +207,9 @@ gulp.task('serve', ['compile', 'browser-sync'], function () {
     //js
     gulp.watch(gulp.config.src + "/{js,libs}/**/*.js", ['browserify-dist']);
 
-    //html
-    gulp.watch(gulp.config.src + "/template/*.html", ['copy-html']);
+    //wintersmith
+    gulp.watch(gulp.config.src + "/templates/*.html", ['wintersmith']);
+    gulp.watch(gulp.config.blog + "/**/*", ['wintersmith']);
 
     //images
     gulp.watch(gulp.config.src + "/images/**/*", ['copy-images']);
