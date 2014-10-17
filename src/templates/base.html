@@ -35,6 +35,32 @@
         </section>
     </nav>
 
+    <section class="main-content">
+        {% block content %}
+            <article class="post" itemscope itemtype="http://schema.org/Article">
+                <header class="post__header">
+                    <h1 class="post__header__text"><a href="#" itemprop="name headline">Whoops... nothing here!</a></h1>
+                </header>
+            </article>
+        {% endblock %}
+
+        <aside class="sidebar">
+            <section class="about">
+                <h2 class="about__title">About Gaya Kessler</h2>
+                <p>
+                    <img src="{{ env.locals.url }}/images/gaya-kessler.jpg" class="about__avatar" alt=""/>
+                    All articles on Gaya Ninja Blog are written by Gaya Kessler, Front-end Web Engineer from the Netherlands.
+                    Loves all things JavaScript, Sass, Automatisation and Node.js.
+                </p>
+                <a class="about__link" href="http://gaya.ninja">Read more about Gaya</a>
+            </section>
+
+            <section class="sponsor">
+                <script async type="text/javascript" src="//cdn.adpacks.com/adpacks.js?zoneid=1386&serve=C6SI42Y&placement=gayadesigncom" id="_adpacks_js"></script>
+            </section>
+        </aside>
+    </section>
+
     <script type="text/javascript" src="{{ env.locals.url }}/js/gaya-ninja-blog.js"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
