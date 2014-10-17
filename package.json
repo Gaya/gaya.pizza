@@ -2,6 +2,11 @@
   "name": "gaya-ninja-blog",
   "version": "1.0.0",
   "description": "Gaya Ninja's weblog",
+  "dependencies": {
+    "moment": "2.3.x",
+    "underscore": "1.4.x",
+    "typogr": "0.5.x"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,6 +26,8 @@
     "gulp-imagemin": "^1.0.1",
     "gulp-ruby-sass": "^0.7.1",
     "svg-sprite": "^0.3.2",
-    "vinyl-source-stream": "^1.0.0"
+    "vinyl-source-stream": "^1.0.0",
+    "wintersmith": "^2.1.0",
+    "wintersmith-nunjucks": "^0.5.1"
   }
 }
