@@ -25,5 +25,6 @@
   "paginator": {
     "perPage": 3,
     "template": "index.html"
-  }
+  },
+  "output": "./dist"
 }
