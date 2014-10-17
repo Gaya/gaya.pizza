@@ -189,7 +189,7 @@ gulp.task('wintersmith', function () {
 
     env.build(function(error) {
         if (error) { throw error; }
-        browserSync.reload({stream:true});
+        browserSync.reload();
     });
 });
 
