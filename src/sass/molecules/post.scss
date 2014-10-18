@@ -1,9 +1,11 @@
-.post {
-    margin: rhythm(1) 0 0 0;
-
+.posts {
     @include media($big-desktop) {
         @include span-columns(11);
     }
+}
+
+.post {
+    margin: rhythm(1) 0 0 0;
 
     &__header {
         &__text {
