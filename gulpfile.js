@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     source = require('vinyl-source-stream'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
     browserify = require('browserify'),
     source = require('vinyl-source-stream'),
@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     cssshrink = require('gulp-cssshrink'),
     imagemin = require('gulp-imagemin'),
     critical = require('critical'),
-    wintersmith = require('wintersmith');;
+    wintersmith = require('wintersmith');
 
 gulp.config = {
     src: 'src',
