@@ -6,6 +6,12 @@
             <header class="post__header">
                 <h1 class="post__header__text"><a href="{{ article.url }}" itemprop="name headline">{{ article.title }}</a></h1>
             </header>
+
+            <section class="post__body" itemprop="articleBody">
+                {% if article.intro.length > 0 %}
+                    {{ typogr(article.intro).typogrify() }}
+                {% endif %}
+            </section>
         </article>
     {% endfor %}
 {% endblock %}
