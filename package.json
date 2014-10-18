@@ -25,6 +25,7 @@
     "gulp-cssshrink": "^0.1.4",
     "gulp-imagemin": "^1.0.1",
     "gulp-ruby-sass": "^0.7.1",
+    "node-sass": "^1.0.1",
     "svg-sprite": "^0.3.2",
     "vinyl-source-stream": "^1.0.0",
     "wintersmith": "^2.1.0",
