@@ -188,7 +188,9 @@ gulp.task('wintersmith', function () {
     var env = wintersmith('./config.json');
 
     env.build(function(error) {
-        if (error) { throw error; }
+        if (error) {
+            console.error(error);
+        }
         browserSync.reload();
     });
 });
