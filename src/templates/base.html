@@ -8,7 +8,10 @@
 
     <title>{% block title %}{{ env.locals.name }}{% endblock %}</title>
     <meta name="description" content="{% block description %}{{ env.locals.description }}{% endblock %}"/>
+
     <link rel="canonical" href="{% block canonical %}{{ env.locals.url }}{% endblock %}"/>
+    {% if prevPage %}<link rel="prev" href="{{ env.locals.url }}{{ prevPage.url }}" />{% endif %}
+    {% if nextPage %}<link rel="next" href="{{ env.locals.url }}{{ nextPage.url }}" />{% endif %}
 
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="alternate" type="application/rss+xml" title="{{ env.locals.name }} &raquo; Feed" href="{{ env.locals.feedurl }}"/>
