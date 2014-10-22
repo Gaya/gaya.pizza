@@ -19,7 +19,6 @@
                 {% if article.intro.length > 0 %}
                     {{ typogr(article.intro).typogrify() }}
                 {% endif %}
-
             </section>
             {% if article.hasMore %}
                 <a class="post__read-more" href="{{ article.url }}">Read more...</a>
