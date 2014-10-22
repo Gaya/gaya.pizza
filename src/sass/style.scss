@@ -25,6 +25,7 @@ $big-desktop:       new-breakpoint(min-width 1020px 16);
 @import "atoms/headers";
 @import "atoms/content";
 @import "atoms/sidebar";
+@import "atoms/button";
 
 //molecules
 @import "molecules/main-header";
