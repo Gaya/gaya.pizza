@@ -1,0 +1,11 @@
+.paginator {
+    &__pager {
+        &--prev {
+            @extend %button--left;
+        }
+
+        &--next {
+            @extend %button;
+        }
+    }
+}
