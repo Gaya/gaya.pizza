@@ -20,10 +20,10 @@
                     {{ typogr(article.intro).typogrify() }}
                 {% endif %}
 
-                {% if article.hasMore %}
-                    <a class="post__read-more" href="{{ article.url }}">Read more...</a>
-                {% endif %}
             </section>
+            {% if article.hasMore %}
+                <a class="post__read-more" href="{{ article.url }}">Read more...</a>
+            {% endif %}
         </article>
     {% endfor %}
 {% endblock %}
