@@ -39,7 +39,7 @@
     </nav>
 
     <section class="main-content">
-        <section class="posts">
+        <section class="posts{% block extraClass %}{% endblock %}">
             {% block content %}
                 <article class="post" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
                     <header class="post__header">
