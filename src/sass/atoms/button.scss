@@ -27,20 +27,22 @@
             padding: 0 6px 0 12px;
         }
     }
+}
 
-    &--left {
-        &:after {
-            display: none;
-        }
+%button--left {
+    @extend %button;
 
+    &:after {
+        display: none;
+    }
+
+    &:before {
+        display: inline;
+    }
+
+    &:hover {
         &:before {
-            display: inline;
-        }
-
-        &:hover {
-            &:before {
-                padding: 0 12px 0 6px;
-            }
+            padding: 0 12px 0 6px;
         }
     }
 }
