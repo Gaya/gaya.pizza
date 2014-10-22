@@ -8,18 +8,39 @@
     text-decoration: none;
     @include transition(background $anim-speed);
 
-    &:after {
+    &:after, &:before {
         content: "→";
-        padding-left: 6px;
+        padding: 0 0 0 6px;
         @include transition(padding $anim-speed);
+    }
+
+    &:before {
+        content: "←";
+        padding: 0 6px 0 0;
+        display: none;
     }
 
     &:hover {
         background: $highlight-1;
 
         &:after {
-            padding-left: 12px;
-            padding-right: 6px;
+            padding: 0 6px 0 12px;
+        }
+    }
+
+    &--left {
+        &:after {
+            display: none;
+        }
+
+        &:before {
+            display: inline;
+        }
+
+        &:hover {
+            &:before {
+                padding: 0 12px 0 6px;
+            }
         }
     }
 }
