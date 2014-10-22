@@ -25,4 +25,16 @@
             {% endif %}
         </article>
     {% endfor %}
+
+    <footer class="paginator">
+        {% if prevPage %}
+            <a class="paginator__pager--prev" href="{{ prevPage.url }}">Newer articles</a>
+        {% else %}
+            <a class="paginator__pager--prev" href="{{ env.locals.url }}/archive.html">Archives</a>
+        {% endif %}
+
+        {% if nextPage %}
+            <a class="paginator__pager--next" href="{{ nextPage.url }}">Older articles</a>
+        {% endif %}
+    </footer>
 {% endblock %}
