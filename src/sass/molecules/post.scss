@@ -153,4 +153,30 @@
             }
         }
     }
+
+    &__read-more {
+        color: $light-1;
+        background: $dark-3;
+        display: inline-block;
+        padding: rhythm(0.25) 10px;
+        margin: rhythm(-0.25) 0 rhythm(0.75) 0;
+        border-radius: 3px;
+        text-decoration: none;
+        @include transition(background $anim-speed);
+
+        &:after {
+            content: "→";
+            padding-left: 6px;
+            @include transition(padding $anim-speed);
+        }
+
+        &:hover {
+            background: $highlight-1;
+
+            &:after {
+                padding-left: 12px;
+                padding-right: 6px;
+            }
+        }
+    }
 }
