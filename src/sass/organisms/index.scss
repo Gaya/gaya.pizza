@@ -1,5 +1,9 @@
 .index {
     .post {
+        border-bottom: 1px solid $light-2;
+        padding-bottom: rhythm-border(1, 1px);
+        margin-bottom: rhythm(2);
+
         &__header {
             &__text {
                 margin: 0;
