@@ -1,21 +1,8 @@
 ---
-view: none
+template: page.html
+title: About Gaya Ninja Blog
 ---
 
-Wintersmith is made by [Johan Nordberg][1] and licensed under the [MIT-license][2].
-This footer text can be edited in about.md
+#What is Gaya Design all about?
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-dolore eu fugiat nulla pariatur.
-
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-deserunt mollit anim id est laborum.
-
-
-[1]: http://johan-nordberg.com
-[2]: http://opensource.org/licenses/MIT
+Gaya Design is a weblog about web development written and managed by Gaya Kessler, a guy from a small town in the Netherlands. Since I got the chance (and knowledge) to get my hands dirty with web development I’ve been in love with it. Just two years after starting to learn how to make websites I took a job as a web developer. Not much longer after that I started writing articles which ended up on this website.
