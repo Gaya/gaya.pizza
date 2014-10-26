@@ -1,4 +1,6 @@
 .paginator {
+    overflow: hidden;
+
     &__pager {
         color: $highlight-1;
         text-decoration: none;
