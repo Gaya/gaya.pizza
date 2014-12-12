@@ -7,7 +7,7 @@
     &:before {
         content: " ";
         width: 15px;
-        height: 13px;
+        height: svg-sprite-height("home-icon", 15px);
         display: inline-block;
         margin: 0 0 -6px 0;
         @include svg-sprite("home-icon");
