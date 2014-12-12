@@ -122,8 +122,7 @@ gulp.task('svg-sprite', function (cb) {
         variables: {
             imagePath: "../"
         },
-        maxwidth: 100,
-        maxheight: 100,
+        padding: 5,
         layout: "vertical",
         render: {
             sass: {
