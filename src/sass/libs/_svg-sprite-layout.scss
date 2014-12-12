@@ -42,13 +42,13 @@
 $sprite-padding: {{ padding }};
 $sprites: (
 {{#svg}}
-"{{name}}": (
-"w": {{dimensions.width}},
-"h": {{dimensions.height}},
-"rw": {{width}},
-"rh": {{height}},
-"x": {{positionX}},
-"y": {{positionY}}
+    "{{name}}": (
+    "w": {{dimensions.width}},
+    "h": {{dimensions.height}},
+    "rw": {{width}},
+    "rh": {{height}},
+    "x": {{positionX}},
+    "y": {{positionY}}
 ),
 {{/svg}}
 );
