@@ -17,8 +17,8 @@
     &__logo {
         @include svg-sprite('gn-logo');
         height: rhythm(3);
-        width: svg-sprite-width(rhythm(3));
-        margin: rhythm(-1.5) 0 0 width: svg-sprite-width(rhythm(-1.5));
+        width: svg-sprite-width("gn-logo", rhythm(3));
+        margin: rhythm(-1.5) 0 0 svg-sprite-width("gn-logo", rhythm(-1.5));
         display: block;
         position: absolute;
         left: 50%;
@@ -34,8 +34,8 @@
 
         @include media($tablet) {
             height: rhythm(4);
-            width: svg-sprite-width(rhythm(4));
-            margin: rhythm(-2) 0 0 svg-sprite-width(rhythm(-2));
+            width: svg-sprite-width("gn-logo", rhythm(4));
+            margin: rhythm(-2) 0 0 svg-sprite-width("gn-logo", rhythm(-2));
         }
 
         &__text {
