@@ -36,36 +36,51 @@
 
 %sprite {
     background-image: url({{{imagePath}}}{{{sprite}}});
+    background-origin: padding-box;
 }
+
+$sprite-padding: {{ padding }};
+$sprites: (
+{{#svg}}
+    "{{name}}": (
+    "w": {{dimensions.width}},
+    "h": {{dimensions.height}},
+    "rw": {{width}},
+    "rh": {{height}},
+    "x": {{positionX}},
+    "y": {{positionY}}
+),
+{{/svg}}
+);
+$total-w: {{ swidth }};
+$total-h: {{ sheight }};
 
 @mixin svg-sprite($name) {
     @extend %sprite;
 
-    $sprites: (
-        {{#svg}}
-        "{{name}}": (
-            "w": {{width}},
-            "h": {{height}},
-            "x": {{positionX}},
-            "y": {{positionY}}
-        ),
-        {{/svg}}
-    );
-    $total-w: {{ swidth }};
-    $total-h: {{ sheight }};
     $sprite: map-get($sprites, $name);
 
     $pos-x: 0;
     $pos-y: 0;
 
-    @if ($total-w - map-get($sprite, "w")) != 0 {
-        $pos-x: (map-get($sprite, "x") * -1) / ($total-w - map-get($sprite, "w"));
+    @if ($total-w - map-get($sprite, "rw")) != 0 {
+        $pos-x: ((map-get($sprite, "x") * -1) + $sprite-padding) / (($total-w - map-get($sprite, "rw")));
     }
 
-    @if ($total-h - map-get($sprite, "h")) != 0 {
-        $pos-y: (map-get($sprite, "y") * -1) / ($total-h - map-get($sprite, "h"));
+    @if ($total-h - map-get($sprite, "rh")) != 0 {
+        $pos-y: ((map-get($sprite, "y") * -1) + $sprite-padding) / ($total-h - map-get($sprite, "rh"));
     }
 
-    background-size: percentage($total-w / map-get($sprite, "w")) percentage($total-h / map-get($sprite, "h"));
+    background-size: percentage($total-w / map-get($sprite, "rw")) auto;
     background-position: percentage($pos-x) percentage($pos-y);
+}
+
+@function svg-sprite-width($name, $height) {
+    $sprite: map-get($sprites, $name);
+    @return map-get($sprite, "rw") * ($height / map-get($sprite, "rh"));
+}
+
+@function svg-sprite-height($name, $width) {
+    $sprite: map-get($sprites, $name);
+    @return map-get($sprite, "rh") * ($width / map-get($sprite, "rw"));
 }

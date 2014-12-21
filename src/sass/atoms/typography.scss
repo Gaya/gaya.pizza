@@ -7,6 +7,15 @@ body {
     font: {
         family: $body-font;
     }
+
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
 }
 
 %header-font {

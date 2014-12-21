@@ -1,0 +1,48 @@
+%button {
+    color: $light-1;
+    background: $dark-3;
+    display: inline-block;
+    padding: rhythm(0.25) 10px;
+    margin: rhythm(-0.25) 0;
+    border-radius: 3px;
+    text-decoration: none;
+    @include transition(background $anim-speed);
+
+    &:after, &:before {
+        content: "→";
+        padding: 0 0 0 6px;
+        @include transition(padding $anim-speed);
+    }
+
+    &:before {
+        content: "←";
+        padding: 0 6px 0 0;
+        display: none;
+    }
+
+    &:hover {
+        background: $highlight-1;
+
+        &:after {
+            padding: 0 6px 0 12px;
+        }
+    }
+}
+
+%button--left {
+    @extend %button;
+
+    &:after {
+        display: none;
+    }
+
+    &:before {
+        display: inline;
+    }
+
+    &:hover {
+        &:before {
+            padding: 0 12px 0 6px;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.paginator {
+    overflow: hidden;
+
+    &__pager {
+        color: $highlight-1;
+        text-decoration: none;
+
+        &:before, &:after {
+            @include transition(padding $anim-speed);
+        }
+
+        &--prev {
+            @extend .paginator__pager;
+            float: left;
+
+            &:before {
+                content: "←";
+                padding-right: 6px;
+            }
+
+            &:hover {
+                &:before {
+                    padding-right: 12px;
+                }
+            }
+        }
+
+        &--next {
+            @extend .paginator__pager;
+            float: right;
+
+            &:after {
+                content: "→";
+                padding-left: 6px;
+            }
+
+            &:hover {
+                &:after {
+                    padding-left: 12px;
+                }
+            }
+        }
+    }
+}

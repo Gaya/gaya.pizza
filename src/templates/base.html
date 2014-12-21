@@ -4,16 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="robots" content="noodp,noydir"/>
 
     <title>{% block title %}{{ env.locals.name }}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{{ env.locals.description }}{% endblock %}"/>
+
+    <link rel="canonical" href="{% block canonical %}{{ env.locals.url }}{% endblock %}"/>
+    {% if prevPage %}<link rel="prev" href="{{ env.locals.url }}{{ prevPage.url }}" />{% endif %}
+    {% if nextPage %}<link rel="next" href="{{ env.locals.url }}{{ nextPage.url }}" />{% endif %}
 
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="alternate" type="application/rss+xml" title="{{ env.locals.name }} &raquo; Feed" href="http://feeds.feedburner.com/gayaninja/"/>
+    <link rel="alternate" type="application/rss+xml" title="{{ env.locals.name }} &raquo; Feed" href="{{ env.locals.feedurl }}"/>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata|Lora:400,700,400italic,700italic|Libre+Baskerville' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ env.locals.url }}/css/style.css">
 </head>
 <body itemscope itemtype="http://schema.org/Blog">
-    
+    <header class="main-header">
+        <a href="{{ env.locals.url }}" class="main-header__logo">
+            <span class="main-header__logo__text">Gaya</span>
+            <span class="main-header__logo__text--extra">Ninja</span>
+        </a>
+    </header>
+
+    <nav class="main-nav">
+        <section class="main-nav__container">
+            <a class="main-nav__link--home" href="{{ env.locals.url }}">Home</a>
+            <a class="main-nav__link" href="{{ env.locals.url }}/about/">About</a>
+            <a class="main-nav__link" href="{{ env.locals.url }}/contact/">Contact</a>
+            <a class="main-nav__link--twitter" href="http://twitter.com/GayaNinja">Twitter</a>
+            <a class="main-nav__link--facebook" href="http://www.facebook.com/GayaDesign">Facebook</a>
+            <a class="main-nav__link--rss" href="{{ env.locals.feedurl }}">RSS</a>
+        </section>
+    </nav>
+
+    <section class="main-content">
+        <section class="posts{% block extraClass %}{% endblock %}">
+            {% block content %}
+                <article class="post" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post__header">
+                        <h1 class="post__header__text" itemprop="name headline">Whoops... nothing here!</h1>
+                    </header>
+                </article>
+            {% endblock %}
+        </section>
+
+        <aside class="sidebar">
+            <section class="about">
+                <h2 class="about__title">About Gaya Kessler</h2>
+                <p>
+                    <img src="{{ env.locals.url }}/images/gaya-kessler.jpg" class="about__avatar" alt=""/>
+                    All articles on Gaya Ninja Blog are written by Gaya Kessler,
+                    <em>(Front-end) Web Engineer</em> from the Netherlands.
+                    Loves all things <em>JavaScript</em>, <em>Sass</em>, <em>Automatisation</em> and <em>Node.js</em>.
+                </p>
+                <a class="about__link" href="http://gaya.ninja">Read more about Gaya</a>
+            </section>
+
+            <section class="sponsor">
+                <script async type="text/javascript" src="//cdn.adpacks.com/adpacks.js?zoneid=1386&serve=C6SI42Y&placement=gayadesigncom" id="_adpacks_js"></script>
+            </section>
+        </aside>
+    </section>
+
+    <footer class="main-footer">
+        <section class="main-footer__copyright">
+            2008 - 2014 © Gaya Ninja Blog, written for web developers by Gaya Kessler.
+        </section>
+        <section class="main-footer__built-with">
+            Built with <a href="http://wintersmith.io">Wintersmith</a>, styled with <a href="http://sass-lang.com">Sass</a>,
+            automated by <a href="http://gulpjs.com">Gulp</a> and running on <a href="http://nodejs.org">Node.js</a>.
+        </section>
+        <section class="main-footer__also-on">
+            Find me on: <a href="https://github.com/Gaya">GitHub</a>, <a href="http://linkedin.com/in/gayakessler/">LinkedIn</a>,
+            <a href="http://twitter.com/GayaNinja">Twitter</a>, <a href="http://www.facebook.com/GayaNinja">Facebook</a>,
+            <a href="http://www.last.fm/user/xgayax">Last.fm</a>
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="{{ env.locals.url }}/js/gaya-ninja-blog.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-55869043-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 </html>

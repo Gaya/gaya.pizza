@@ -1,5 +1,5 @@
 @mixin body-padding($top:0, $bottom:$top) {
-    padding: $top 3% $bottom 3%;
+    padding: $top 15px $bottom 15px;
 }
 
 body {

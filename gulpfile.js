@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     source = require('vinyl-source-stream'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
     browserify = require('browserify'),
     source = require('vinyl-source-stream'),
@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     cssshrink = require('gulp-cssshrink'),
     imagemin = require('gulp-imagemin'),
     critical = require('critical'),
-    wintersmith = require('wintersmith');;
+    wintersmith = require('wintersmith');
 
 gulp.config = {
     src: 'src',
@@ -124,7 +124,8 @@ gulp.task('svg-sprite', function (cb) {
         },
         maxwidth: 100,
         maxheight: 100,
-        layout: "vertical",
+        padding: 0,
+        layout: "diagonal",
         render: {
             sass: {
                 template: gulp.config.src + '/sass/libs/_svg-sprite-layout.scss',
@@ -188,7 +189,9 @@ gulp.task('wintersmith', function () {
     var env = wintersmith('./config.json');
 
     env.build(function(error) {
-        if (error) { throw error; }
+        if (error) {
+            console.error(error);
+        }
         browserSync.reload();
     });
 });

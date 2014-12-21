@@ -1,5 +1,38 @@
 {% extends "base.html" %}
 
+{% block extraClass %} index{% endblock %}
+
 {% block content %}
-    Dit is een test
+    {% for article in articles %}
+        <article class="post" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+            <header class="post__header">
+                <h1 class="post__header__text"><a href="{{ article.url }}" itemprop="name headline">{{ article.title }}</a></h1>
+            </header>
+
+            <section class="post__meta">
+                <section class="post__meta__published">
+                    <time content="{{ moment.utc(article.date).format() }}" datetime="{{ moment.utc(article.date).format() }}" itemprop="datePublished">{{ moment.utc(article.date).format('DD MMMM, YYYY') }}</time>
+                </section>
+            </section>
+
+            <section class="post__body" itemprop="articleBody">
+                {% if article.intro.length > 0 %}
+                    {{ typogr(article.intro).typogrify() }}
+                {% endif %}
+            </section>
+            {% if article.hasMore %}
+                <a class="post__read-more" href="{{ article.url }}">Read more</a>
+            {% endif %}
+        </article>
+    {% endfor %}
+
+    <footer class="paginator">
+        {% if prevPage %}
+            <a class="paginator__pager--prev" href="{{ prevPage.url }}">Newer articles</a>
+        {% endif %}
+
+        {% if nextPage %}
+            <a class="paginator__pager--next" href="{{ nextPage.url }}">Older articles</a>
+        {% endif %}
+    </footer>
 {% endblock %}
