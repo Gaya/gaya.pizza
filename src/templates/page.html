@@ -15,7 +15,7 @@
         </header>
 
         <section class="post__body" itemprop="text">
-            {{ page.html }}
+            {% autoescape false %}{{ page.html }}{% endautoescape %}
         </section>
     </article>
 {% endblock %}
