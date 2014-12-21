@@ -1,5 +1,5 @@
 module.exports = {
-    "gulp": "app/gulp",
+    "gulp": "gulp",
     "src": 'src',
     "dist": 'dist',
     "build": 'build',
