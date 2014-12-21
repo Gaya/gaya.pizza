@@ -5,8 +5,8 @@ module.exports = {
     "build": 'build',
     "blog": 'blog',
     "port": 3000,
-    "middleware": function handleMiddleWare (req, res, next) {
+    "middlewares": [function handleMiddleWare (req, res, next) {
         "use strict";
         next();
-    }
+    }]
 };
