@@ -7,7 +7,7 @@ module.exports = {
         return gulp.browserSync({
             server: {
                 baseDir: gulp.config.dist,
-                middleware: require("../frontend/data/middlewares.js")
+                middleware: gulp.config.middlewares
             },
             port: gulp.config.port,
             open: false

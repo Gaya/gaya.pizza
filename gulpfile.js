@@ -120,19 +120,6 @@ function browserifySource(type) {
         .pipe(browserSync.reload({stream:true}));
 }
 
-gulp.task('browser-sync', function() {
-    'use strict';
-
-    browserSync({
-        server: {
-            baseDir: gulp.config.dist,
-            middleware: gulp.config.middleware
-        },
-        port: gulp.config.port,
-        open: false
-    });
-});
-
 gulp.task('copy-images', function () {
     return gulp.src(gulp.config.src + "/images/**/*")
         .pipe(gulp.dest(gulp.config.dist + "/images"))
