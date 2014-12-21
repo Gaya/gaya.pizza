@@ -5,8 +5,6 @@ var gulp = require('gulp'),
 
 function sassSource(type) {
     "use strict";
-    neat.push(__dirname + "/../../node_modules/select2");
-
     return gulp.src(gulp.config.src + '/sass/style.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
