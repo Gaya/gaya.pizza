@@ -9,7 +9,7 @@
     "feedurl": "http://feeds.feedburner.com/gayaninja/"
   },
   "plugins": [
-    "./blog/plugins/paginator.coffee", "./node_modules/wintersmith-nunjucks"
+    "./blog/plugins/paginator.coffee", "./node_modules/wintersmith-swig"
   ],
   "require": {
     "moment": "moment",
