@@ -30,8 +30,6 @@ files.forEach(function (file) {
 
 var gulp = require('gulp'),
     source = require('vinyl-source-stream'),
-    sass = require('gulp-sass'),
-    browserSync = require('browser-sync'),
     browserify = require('browserify'),
     source = require('vinyl-source-stream'),
     SVGSprite = require('svg-sprite'),
@@ -54,39 +52,6 @@ gulp.config = {
 };
 var pkg = require('./package.json');
 
-
-gulp.task('sass', function() {
-    'use strict';
-
-    return sassSource("dist");
-});
-
-gulp.task('sass-build', function() {
-    'use strict';
-
-    return sassSource("build");
-});
-
-function sassSource(type) {
-    "use strict";
-
-    var dest = gulp.config.dist + '/css/';
-
-    if (type === "build") {
-        dest = gulp.config.build + '/css/';
-    }
-
-    return gulp.src(gulp.config.src + '/sass/style.scss')
-        .pipe(sass({
-            style: 'expanded',
-            loadPath: __dirname + '/' + gulp.config.src + '/sass/'
-        }).on('error', function (err) {
-            console.log(err.toString());
-            this.emit('end');
-        }))
-        .pipe(gulp.dest(dest))
-        .pipe(browserSync.reload({stream:true}));
-}
 
 gulp.task('browserify-dist', function() {
     'use strict';
