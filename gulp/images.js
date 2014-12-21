@@ -6,6 +6,6 @@ module.exports = [{
         "use strict";
         return gulp.src(gulp.config.src + "/images/**/*")
             .pipe(gulp.dest(gulp.config.dist + "/images"))
-            .pipe(browserSync.reload({stream:true}));
+            .pipe(gulp.browserSync.reload({stream:true}));
     }
 }];
