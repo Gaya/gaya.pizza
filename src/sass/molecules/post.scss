@@ -96,6 +96,10 @@
             word-wrap: break-word;
             display: block;
         }
+
+        img {
+            max-width: 100%;
+        }
     }
 
     &__meta {
