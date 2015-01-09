@@ -19,7 +19,8 @@ module.exports = [{
                 sass: {
                     template: gulp.config.src + '/sass/libs/_svg-sprite-layout.scss',
                     dest: "../" + gulp.config.src + '/sass/atoms/sprite.scss'
-                }
+                },
+                css: false
             }
         }, function () {
             console.log("Sprite and mixin has been generated");
