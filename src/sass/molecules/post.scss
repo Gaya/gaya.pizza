@@ -159,6 +159,20 @@
                 }
             }
         }
+
+        &__closing {
+            margin: rhythm(0.5) 0;
+
+            a {
+                text-decoration: none;
+                color: $highlight-1;
+
+                &:hover {
+                    color: $highlight-2;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 
     &__read-more {
