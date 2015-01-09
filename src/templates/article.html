@@ -24,6 +24,9 @@
             <section class="post__meta__published">
                 Published on <time content="{{ moment.utc(page.date).format() }}" datetime="{{ moment.utc(page.date).format() }}" itemprop="datePublished">{{ moment.utc(page.date).format('DD MMMM, YYYY') }}</time>
             </section>
+            <section class="post__meta__closing">
+                If you have any remarks or questions, tell me so on Twitter using <a href="http://twitter.com/GayaNinja">@GayaNinja</a>.
+            </section>
         </section>
     </article>
 {% endblock %}
