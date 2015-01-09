@@ -2,6 +2,8 @@
 
 {% block extraClass %} post{% endblock %}
 
+{% block title %}{{ page.title }}{% endblock %}
+
 {% block content %}
     <section class="breadcrumbs">
         <a href="{{ env.locals.url }}" class="breadcrumbs__link">{{ env.locals.name }}</a>
