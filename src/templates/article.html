@@ -2,6 +2,8 @@
 
 {% block extraClass %} post{% endblock %}
 
+{% block title %}{{ page.title }}{% endblock %}
+
 {% block content %}
     <section class="breadcrumbs">
         <a href="{{ env.locals.url }}" class="breadcrumbs__link">{{ env.locals.name }}</a>
@@ -16,6 +18,15 @@
 
         <section class="post__body" itemprop="articleBody">
             {{ page.html }}
+        </section>
+
+        <section class="post__meta">
+            <section class="post__meta__published">
+                Published on <time content="{{ moment.utc(page.date).format() }}" datetime="{{ moment.utc(page.date).format() }}" itemprop="datePublished">{{ moment.utc(page.date).format('DD MMMM, YYYY') }}</time>
+            </section>
+            <section class="post__meta__closing">
+                If you have any remarks or questions, tell me so on Twitter using <a href="http://twitter.com/GayaNinja">@GayaNinja</a>.
+            </section>
         </section>
     </article>
 {% endblock %}
