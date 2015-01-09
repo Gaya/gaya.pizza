@@ -69,7 +69,7 @@
 
     <footer class="main-footer">
         <section class="main-footer__copyright">
-            2008 - 2014 © Gaya Ninja Blog, written for web developers by Gaya Kessler.
+            2008 - {{ moment.utc().format('YYYY') }} © Gaya Ninja Blog, written for web developers by Gaya Kessler.
         </section>
         <section class="main-footer__built-with">
             Built with <a href="http://wintersmith.io">Wintersmith</a>, styled with <a href="http://sass-lang.com">Sass</a>,
@@ -91,7 +91,6 @@
 
         ga('create', 'UA-55869043-1', 'auto');
         ga('send', 'pageview');
-
     </script>
 </body>
 </html>
