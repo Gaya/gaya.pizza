@@ -111,55 +111,6 @@
             font-style: italic;
         }
 
-        &__share {
-            &__link {
-                background: $dark-3;
-                width: rhythm(1);
-                height: rhythm(1);
-                display: inline-block;
-                overflow: hidden;
-                margin: 0 0 -9px 7px;
-                border-radius: 3px;
-                @include hidden-text;
-                position: relative;
-                @include transition(background $anim-speed);
-
-                &:before {
-                    content: "";
-                }
-
-                &:hover {
-                    background: $highlight-1;
-                }
-
-                &--twitter {
-                    @extend .post__meta__share__link;
-
-                    &:before {
-                        @include svg-sprite("twitter-icon");
-                        width: 19px;
-                        height: 15px;
-                        position: absolute;
-                        top: 7px;
-                        left: 6px;
-                    }
-                }
-
-                &--facebook {
-                    @extend .post__meta__share__link;
-
-                    &:before {
-                        @include svg-sprite("facebook-icon");
-                        width: 9px;
-                        height: 18px;
-                        position: absolute;
-                        top: 6px;
-                        left: 11px;
-                    }
-                }
-            }
-        }
-
         &__closing {
             margin: rhythm(0.5) 0;
 
