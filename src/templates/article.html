@@ -19,5 +19,11 @@
         <section class="post__body" itemprop="articleBody">
             {{ page.html }}
         </section>
+
+        <section class="post__meta">
+            <section class="post__meta__published">
+                Published on <time content="{{ moment.utc(page.date).format() }}" datetime="{{ moment.utc(page.date).format() }}" itemprop="datePublished">{{ moment.utc(page.date).format('DD MMMM, YYYY') }}</time>
+            </section>
+        </section>
     </article>
 {% endblock %}
