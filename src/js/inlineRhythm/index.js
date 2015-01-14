@@ -7,7 +7,7 @@ var inlineRhythm = {
         var objects = document.querySelectorAll(query);
 
         for (var i = 0; i < objects.length; i++) {
-            inlineObject(objects[i].naturalHeight, lineHeight);
+            inlineObject(objects[i], this.lineHeight);
         }
     }
 };
