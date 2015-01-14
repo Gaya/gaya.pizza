@@ -1,6 +1,12 @@
 var inlineObject = {
     init: function (object) {
+        this.element = object;
 
+        this.fixInline();
+    },
+
+    fixInline: function () {
+        console.log(this.element.height);
     }
 };
 
