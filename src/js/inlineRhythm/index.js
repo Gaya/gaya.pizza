@@ -1,14 +1,13 @@
+var inlineObject = require("./inlineObject.js");
+
 var inlineRhythm = {
-    imagequery: ".post__body img",
     lineHeight: 30,
 
-    init: function() {
-        this.fixInline(document.querySelectorAll(this.imagequery));
-    },
+    init: function(query) {
+        var objects = document.querySelectorAll(query);
 
-    fixInline: function (objects) {
         for (var i = 0; i < objects.length; i++) {
-            console.log(objects[i].naturalHeight);
+            inlineObject(objects[i].naturalHeight);
         }
     }
 };
