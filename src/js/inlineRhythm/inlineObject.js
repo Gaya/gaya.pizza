@@ -11,7 +11,17 @@ var inlineObject = {
     },
 
     fixInline: function () {
-        console.log(this.element.height);
+        if (this.needsSpace(this.lineHeight, this.element.height)) {
+            var padding = ((this.lineHeight - (this.element.height % this.lineHeight)) / 2) + "px";
+            this.element.style.paddingTop = padding;
+            this.element.style.paddingBottom = padding;
+        } else {
+            this.element.style.padding = 0;
+        }
+    },
+
+    needsSpace: function (lineHeight, height) {
+        return (height % lineHeight !== 0);
     }
 };
 
