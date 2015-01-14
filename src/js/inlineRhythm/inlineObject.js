@@ -1,13 +1,15 @@
+var _ = require("underscore");
+
 var inlineObject = {
     init: function (object, lineHeight) {
         this.element = object;
         this.lineHeight = lineHeight;
 
-        this.fixInline();
+        this.element.addEventListener("load", _.bind(this.fixInline, this), false);
     },
 
     fixInline: function () {
-        console.log(this.element);
+        console.log(this.element.height);
     }
 };
 
