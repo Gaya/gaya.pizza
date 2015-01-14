@@ -5,7 +5,9 @@ var inlineObject = {
         this.element = object;
         this.lineHeight = lineHeight;
 
+        //bind the events
         this.element.addEventListener("load", _.bind(this.fixInline, this), false);
+        window.addEventListener("resize", _.bind(this.fixInline, this), false);
     },
 
     fixInline: function () {
