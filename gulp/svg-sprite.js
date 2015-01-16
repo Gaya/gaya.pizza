@@ -11,8 +11,8 @@ module.exports = [{
             variables: {
                 imagePath: "../"
             },
-            maxwidth: 100,
-            maxheight: 100,
+            maxwidth: 50,
+            maxheight: 50,
             padding: 0,
             layout: "diagonal",
             render: {
