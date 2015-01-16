@@ -2,7 +2,7 @@
   "contents": "./blog/contents",
   "templates": "./src/templates",
   "locals": {
-    "url": "http://localhost:3000",
+    "url": "",
     "name": "Gaya Ninja Blog",
     "owner": "Gaya Kesssler",
     "description": "Web development articles written for web developers",
