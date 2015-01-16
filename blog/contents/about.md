@@ -23,19 +23,10 @@ to read.
 You’ll find that I talk about anything revolving around web development. HTML, Javascript, PHP, MySQL, CSS, jQuery,
 Sass, Node.js and a lot of other subjects that I find interesting.
 
-This blog also hosts a lot of jQuery and WordPress plugins. I wrote these to make your life easier and speed up your
-development process.
-
-##A bit more about Gaya in real life
-I am fond of music and almost always have some sort of record playing in the background. You can track [my listening
-behaviours on last.fm](http://www.last.fm/user/xgayax) to see which bands and music I like. I go to concerts and
-festivals quite occasionally and you can find me there banging my head to the music and possibly drinking a few beers
-with my friends.
-
-What I also really like is looking at art and beautiful geometric stuff. I am also really into tattoo art and am
-collecting pieces myself.
+You can also find projects I've put online for you to use for free. I created a lot of jQuery plugins in the past which
+are free to use.
 
 ##Reach out to me
 You can [find me on Twitter](http://twitter.com/gayadesign), where I tweet about web development and other stuff.
-You can also [use my contact form](/contact/) to send me an email. I also have a website focussed on my professional
-achievements at: http://gaya.ninja.
+You can also [use my contact form](/contact/) to send me an email. I also have a website focused on my professional
+achievements at: [http://gaya.ninja](http://gaya.ninja).
