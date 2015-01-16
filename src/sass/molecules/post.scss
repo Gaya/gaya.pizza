@@ -100,6 +100,17 @@
         img {
             max-width: 100%;
         }
+
+        blockquote {
+            font-style: italic;
+            background: $light-3;
+            padding: rhythm(0.5);
+            margin: 0 0 rhythm(1) 0;
+
+            p {
+                margin: 0;
+            }
+        }
     }
 
     &__meta {
