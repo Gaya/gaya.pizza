@@ -4,8 +4,9 @@
   "description": "Gaya Ninja's weblog",
   "dependencies": {
     "moment": "2.3.x",
-    "underscore": "1.4.x",
-    "typogr": "0.5.x"
+    "picturefill": "^2.2.0",
+    "typogr": "0.5.x",
+    "underscore": "1.4.x"
   },
   "main": "index.js",
   "scripts": {
