@@ -17,7 +17,30 @@
     <section class="post__body" itemprop="text">
         {{ page.html }}
 
-        [contact form goes here]
+        <form action="?" method="post">
+            <fieldset>
+                <section>
+                    <label for="name">
+                        Name
+                    </label>
+                    <input type="text" name="name" id="name" />
+                </section>
+
+                <section>
+                    <label for="email">
+                        Email address
+                    </label>
+                    <input type="email" name="email" id="email" />
+                </section>
+
+                <section>
+                    <label for="message">
+                        Message
+                    </label>
+                    <textarea name="message" id="message" cols="60" rows="10"></textarea>
+                </section>
+            </fieldset>
+        </form>
     </section>
 </article>
 {% endblock %}
