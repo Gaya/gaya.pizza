@@ -8,6 +8,12 @@
     }
     display: block;
     width: 100%;
+    border-radius: 3px;
+    outline: none;
+
+    &:focus {
+        box-shadow: 0 0 0 2px $light-2;
+    }
 }
 
 %text-input {
