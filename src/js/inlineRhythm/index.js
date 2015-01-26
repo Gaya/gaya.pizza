@@ -14,5 +14,6 @@ var inlineRhythm = {
 };
 
 module.exports = function () {
+    "use strict";
     return Object.create(inlineRhythm);
 };
