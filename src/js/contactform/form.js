@@ -1,8 +1,9 @@
 var field = require('./field.js');
 
-function FormValidator(element) {
+function FormValidator(element, onsubmit) {
     "use strict";
     this.element = element;
+    this.onsubmit = onsubmit;
     this.init();
 }
 
@@ -34,7 +35,7 @@ FormValidator.prototype = {
             e.preventDefault();
 
             if (this.validateFields()) {
-                this.element.submit();
+                this.onsubmit.call(this);
             }
         }.bind(this));
     },
@@ -61,12 +62,12 @@ FormValidator.prototype = {
     }
 };
 
-module.exports = function (forms) {
+module.exports = function (forms, onsubmit) {
     "use strict";
     var formvalidators = [];
 
     for (var i = 0; i < forms.length; i++) {
-        formvalidators.push(new FormValidator(forms[i]));
+        formvalidators.push(new FormValidator(forms[i], onsubmit));
     }
 
     return formvalidators;
