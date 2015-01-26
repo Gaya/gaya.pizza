@@ -1,6 +1,6 @@
 .contact-form {
     &__text-input {
-
+        @extend %text-input;
     }
 
     &__text-area {
