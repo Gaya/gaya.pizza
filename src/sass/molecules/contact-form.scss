@@ -9,6 +9,8 @@
 
     &__submit {
         @extend %button;
+        margin-top: rhythm(1);
+        padding: rhythm(0.25) 20px;
     }
 
     &__label {
