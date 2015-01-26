@@ -8,6 +8,14 @@
     }
 
     &__submit {
+        @extend %button;
+    }
+
+    &__label {
+
+    }
+
+    &__row {
 
     }
 }
