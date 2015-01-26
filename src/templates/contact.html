@@ -24,7 +24,8 @@
                 <label class="contact-form__label" for="name">
                     Name
                 </label>
-                <input type="text" class="contact-form__text-input" name="name" id="name" tabindex="1" />
+                <input type="text" class="contact-form__text-input" data-required="true"
+                       data-required-message="Please provide your name" name="name" id="name" tabindex="1" />
                 <p class="contact-form__error">
                     Please provide a name
                 </p>
@@ -34,7 +35,9 @@
                 <label class="contact-form__label" for="email">
                     Email address
                 </label>
-                <input type="email" class="contact-form__text-input" name="email" id="email" tabindex="2" />
+                <input type="email" class="contact-form__text-input" name="email" id="email" data-required="true"
+                       data-required-message="Please enter your email address"
+                       data-invalid="Please enter a valid email address" tabindex="2" />
                 <p class="contact-form__error">
                     Please enter a valid email address
                 </p>
@@ -44,7 +47,9 @@
                 <label class="contact-form__label" for="message">
                     Message
                 </label>
-                <textarea name="message" class="contact-form__text-area" id="message" cols="60" rows="5" tabindex="3"></textarea>
+                <textarea name="message" class="contact-form__text-area" id="message" cols="60" rows="5"
+                          data-required="true" data-required-message="Entering a message is required"
+                          tabindex="3"></textarea>
                 <p class="contact-form__error">
                     Please enter a message
                 </p>
