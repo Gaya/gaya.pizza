@@ -21,4 +21,9 @@
     &__row {
         @include clearfix;
     }
+
+    &__error {
+        margin: 0;
+        float: right;
+    }
 }
