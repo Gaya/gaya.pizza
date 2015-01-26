@@ -1,10 +1,11 @@
 var form = require("./form.js");
 
 var contactform = {
+    onSubmit: function () {},
     init: function (query) {
         "use strict";
         var objects = document.querySelectorAll(query);
-        form(objects);
+        form(objects, this.onSubmit);
     }
 };
 
