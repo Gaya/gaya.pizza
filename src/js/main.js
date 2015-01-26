@@ -6,7 +6,4 @@ require("picturefill");
 //bind on scroll
 window.onscroll = scrollHeader;
 inlineRhythm().init(".post__body img");
-contactform().submit(function onSubmit() {
-    "use strict";
-    console.log(this);
-}).init("#contact-form");
+contactform().init("#contact-form");
