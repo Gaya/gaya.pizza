@@ -1,11 +1,42 @@
-var _ = require("underscore");
+var field = require('./field.js');
 
-var formObject = {
-    init: function (form) {
+function FormValidator(element) {
+    "use strict";
+    this.element = element;
+    this.init();
+}
+
+FormValidator.prototype = {
+    init: function () {
         "use strict";
-        this.element = form;
-
         this.bindSubmit();
+        this.resolveFields();
+    },
+
+    resolveFields: function () {
+        "use strict";
+        this.fields = [];
+        var formElements = this.formElements();
+
+        for (var i = 0; i < formElements.length; i++) {
+            this.fields.push(field(formElements[i]));
+        }
+    },
+
+    formElements: function () {
+        "use strict";
+        return this.element.querySelectorAll("input,textarea,select");
+    },
+
+    bindSubmit: function () {
+        "use strict";
+        this.bindEvent(this.element, 'submit', function (e) {
+            e.preventDefault();
+
+            if (this.validateFields()) {
+                this.element.submit();
+            }
+        }.bind(this));
     },
 
     bindEvent: function (target, event, action) {
@@ -17,29 +48,26 @@ var formObject = {
         }
     },
 
-    bindSubmit: function () {
-        "use strict";
-        this.bindEvent(this.element, 'submit', _.bind(function (e) {
-            e.preventDefault();
-
-            if (this.validateFields()) {
-                this.element.submit();
-            }
-        }, this));
-    },
-
     validateFields: function () {
         "use strict";
-        console.log("submit");
+        var valid = true;
+        for (var i = 0; i < this.fields.length; i++) {
+            if (!this.fields[i].validate()) {
+                valid = false;
+            }
+        }
 
-        return false;
+        return valid;
     }
 };
 
-module.exports = function (form) {
+module.exports = function (forms) {
     "use strict";
-    var contactform = Object.create(formObject);
-    contactform.init(form);
+    var formvalidators = [];
 
-    return contactform;
+    for (var i = 0; i < forms.length; i++) {
+        formvalidators.push(new FormValidator(forms[i]));
+    }
+
+    return formvalidators;
 };
