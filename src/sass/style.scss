@@ -35,6 +35,7 @@ $big-desktop:       new-breakpoint(min-width 1020px 16);
 @import "molecules/about";
 @import "molecules/sponsor";
 @import "molecules/paginator";
+@import "molecules/contact-form";
 
 //organisms
 @import "organisms/index";
