@@ -19,28 +19,28 @@
 
         <form action="?" class="contact-form" method="post">
             <fieldset>
-                <div>
-                    <label for="name">
+                <div class="contact-form__row">
+                    <label class="contact-form__label" for="name">
                         Name
                     </label>
                     <input type="text" class="contact-form__text-input" name="name" id="name" />
                 </div>
 
-                <div>
-                    <label for="email">
+                <div class="contact-form__row">
+                    <label class="contact-form__label" for="email">
                         Email address
                     </label>
                     <input type="email" class="contact-form__text-input" name="email" id="email" />
                 </div>
 
-                <div>
-                    <label for="message">
+                <div class="contact-form__row">
+                    <label class="contact-form__label" for="message">
                         Message
                     </label>
                     <textarea name="message" class="contact-form__text-area" id="message" cols="60" rows="10"></textarea>
                 </div>
 
-                <div>
+                <div class="contact-form__row">
                     <input name="submit" class="contact-form__submit" id="submit" value="Send" type="submit" />
                 </div>
             </fieldset>
