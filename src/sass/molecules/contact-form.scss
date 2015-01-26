@@ -23,7 +23,9 @@
     }
 
     &__error {
-        margin: 0;
         float: right;
+        font-style: italic;
+        color: $highlight-1;
+        display: none;
     }
 }
