@@ -30,6 +30,8 @@ var formObject = {
 
     validateFields: function () {
         "use strict";
+        console.log("submit");
+
         return false;
     }
 };
