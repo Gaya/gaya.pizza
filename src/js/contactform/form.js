@@ -1,5 +1,8 @@
 var formObject = {
+    init: function (form) {
+        "use strict";
 
+    }
 };
 
 module.exports = function (form) {
