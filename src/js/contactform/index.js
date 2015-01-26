@@ -1,4 +1,5 @@
 var form = require("./form.js");
+var _ = require("underscore");
 
 var contactform = {
     endpoint: "",
@@ -37,17 +38,17 @@ var contactform = {
         "use strict";
         var objects = document.querySelectorAll(query);
         this.endpoint = objects[0].getAttribute("action");
-        form(objects, this.onSubmit);
+        this.forms = form(objects, _.bind(this.onSubmit, this));
 
         return this;
     },
     setSend: function () {
         "use strict";
-        //success
+        this.forms[0].innerHTML = "Thank you for your message, I'll get back to you ASAP.";
     },
     setSendError: function () {
         "use strict";
-
+        alert("Whoops, something went wrong. Try again.");
     },
     serializeObject: function (obj) {
         "use strict";
