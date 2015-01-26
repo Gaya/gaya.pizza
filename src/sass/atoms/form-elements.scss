@@ -1,0 +1,25 @@
+%standard-input {
+    background: $light-4;
+    border: 0px;
+    padding: rhythm(0.25);
+    margin: rhythm(0.25) 0px;
+    font: {
+        family: $body-font;
+    }
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    outline: none;
+
+    &:focus {
+        box-shadow: 0 0 0 2px $light-2;
+    }
+}
+
+%text-input {
+    @extend %standard-input;
+}
+
+%text-area {
+    @extend %standard-input;
+}

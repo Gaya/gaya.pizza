@@ -1,0 +1,30 @@
+.contact-form {
+    &__text-input {
+        @extend %text-input;
+    }
+
+    &__text-area {
+        @extend %text-area;
+    }
+
+    &__submit {
+        @extend %button;
+        margin-top: rhythm(0.75);
+        padding: rhythm(0.25) 20px;
+        float: right;
+    }
+
+    &__label {
+        display: block;
+    }
+
+    &__row {
+        @include clearfix;
+    }
+
+    &__error {
+        float: right;
+        font-style: italic;
+        color: $highlight-1;
+    }
+}

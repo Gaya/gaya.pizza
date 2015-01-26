@@ -4,8 +4,13 @@
     display: inline-block;
     padding: rhythm(0.25) 10px;
     margin: rhythm(-0.25) 0;
+    border: 0px;
     border-radius: 3px;
     text-decoration: none;
+    font: {
+        family: $body-font;
+    }
+    cursor: pointer;
     @include transition(background $anim-speed);
 
     &:after, &:before {
