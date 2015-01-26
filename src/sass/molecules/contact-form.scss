@@ -18,6 +18,6 @@
     }
 
     &__row {
-
+        @include clearfix;
     }
 }
