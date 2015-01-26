@@ -15,7 +15,7 @@ Error.prototype = {
     createElement: function () {
         "use strict";
         this.element = document.createElement("p");
-        this.element.setAttribute("class", "form__error");
+        this.element.setAttribute("class", "contact-form__error");
         this.text = document.createTextNode("");
         this.element.appendChild(this.text);
 
