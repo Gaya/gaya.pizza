@@ -3,6 +3,11 @@
     border: 0px;
     padding: rhythm(0.25);
     margin: rhythm(0.25) 0px;
+    font: {
+        family: $body-font;
+    }
+    display: block;
+    width: 100%;
 }
 
 %text-input {
