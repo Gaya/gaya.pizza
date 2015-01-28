@@ -16,6 +16,17 @@
             <h1 class="post__header__text"><a href="{{ url }}{{ page.url }}" itemprop="name headline">{{ page.title }}</a></h1>
         </header>
 
+        {% if page.metadata.links %}
+            <section class="post__links">
+                {% for link in page.metadata.links %}
+                    <a class="post__links__link" href="{{ link.url }}">
+                        <span class="post__links__link__title">{{ link.title }}</span>
+                        <span class="post__links__link__desc">{{ link.desc }}</span>
+                    </a>
+                {% endfor %}
+            </section>
+        {% endif %}
+
         <section class="post__body" itemprop="articleBody">
             {{ page.html }}
         </section>
