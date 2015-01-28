@@ -1,3 +1,18 @@
+---
+title: Customize the default alert() function of Javascript
+author: Gaya
+date: 2009-03-11
+template: article.html
+links:
+  -
+    title: Download
+    desc: GdAlert zip-archive
+    url: http://www.gayadesign.com/scripts/gdalert/gdalert.zip
+  -
+    title: Example
+    desc: Open the GdAlert example
+    url: http://www.gayadesign.com/scripts/gdalert/
+---
 Web designers, developers and web users know them. We all have run across one of these; the Javascript alert message. Most of the time, I don't even read them and click them away. But the more important thing is that they just look ugly, no matter which browser you use.
 
 So why not remake the whole Javascript alert function? This article will give you the basics of my customization of the alert message.

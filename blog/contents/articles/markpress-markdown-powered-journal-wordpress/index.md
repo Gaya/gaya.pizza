@@ -1,3 +1,14 @@
+---
+title: MarkPress: Markdown powered journal for WordPress
+author: Gaya
+date: 2014-08-05
+template: article.html
+links:
+  -
+    title: Download
+    desc: from WordPress.org
+    url: http://wordpress.org/plugins/markpress/
+---
 Markdown is used to quickly write a styled document with a simple syntax, great for taking notes or writing journals. MarkPress allows you to turn your WordPress install into an App to easily write and store Markdown notes. [![MarkPress: Markdown powered journal for WordPress](/articles/markpress-markdown-powered-journal-wordpress1.jpg)](http://www.gayadesign.com/diy/markpress-markdown-powered-journal-wordpress/)<span id="more-1474"></span> ![Example of how you'd write a journal note.](/articles/screenshot-1.jpg) Example of how you'd write a journal note.
 
 What is MarkPress?

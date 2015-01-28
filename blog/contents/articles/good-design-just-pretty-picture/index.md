@@ -1,3 +1,9 @@
+---
+title: Good design is not just the pretty picture
+author: Gaya
+date: 2013-08-28
+template: article.html
+---
 In the time I spend working in web development I had the chance to work on some great looking designs which were fun to work with most of the time. There is however a problem with many designs I see lately and that's that they miss the fundamentals. Maybe it's weird to hear a design lecture from a developer, but I really think it's good to see things from a different direction. I'll give you my view on designs and how they lack some important things a lot of the time. [![Good design is not just the pretty picture](/articles/poster-good-design-pretty-picture.jpg)](http://www.gayadesign.com/articles/good-design-just-pretty-picture/ "Good design is not just the pretty picture")<span id="more-1285"></span>
 
 Let's do the same thing the crowd does!

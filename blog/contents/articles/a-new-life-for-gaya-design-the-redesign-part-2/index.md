@@ -1,3 +1,9 @@
+---
+title: A new life for Gaya Design, the redesign part 2
+author: Gaya
+date: 2013-03-27
+template: article.html
+---
 Since my blog is based around web development and I don't want to be behind on things I decided it has time to kick new life into my blog. I needed a new format which would allow short posts and have a blog that loads fast. I needed a redo of the website. From the ground up. [![A new life for Gaya Design, the redesign part 2](/articles/a-new-life.jpg "A new life for Gaya Design, the redesign part 2")](http://www.gayadesign.com/articles/a-new-life-for-gaya-design-the-redesign-part-2/)<span id="more-1138"></span> A while ago I started to regret the fact that there are so little posts on Gaya Design lately and realised I never got / made the time to create content for this blog. It takes a lot of time researching new stuff and getting to know cool new findings around web development. As some of you might have already heard, [I switched jobs](http://www.brandmerchandise.nl/2013/02/25/hello-merchandise-nl/) and so far it has been awesome. Working here makes me realise just more and more how important it is to inspire myself to get to know new stuff about web development. You can get stuck in a pace at your job where you just do the same trick over and over again. It's time to step out of that comfort zone. Gaya Design has been a great escape from that before, and will be again, but I needed a different approach since I also learned a thing or two the last couple of years as a web developer. I will get back on the subject of getting stuck in your comfort zone in a later post.
 
 Time for something fresh.

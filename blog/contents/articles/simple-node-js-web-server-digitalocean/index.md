@@ -1,3 +1,9 @@
+---
+title: Simple Node.js web server on DigitalOcean
+author: Gaya
+date: 2014-10-30
+template: article.html
+---
 With [DigitalOcean](https://www.digitalocean.com/?refcode=d5a2f709c373) you can deploy your very own cloud based server in a very short time. This makes is perfect for hosting web apps. You can use Node.js to run as a web server and serve files and responses to the client. Setting up a Node.js powered web server is relatively easy when using DigitalOcean. In this article I'll guide you from setting up a DigitalOcean droplet to running a simple HTTP static file server in Node.js. [![Simple Node.js web server on DigitalOcean](/articles/simple-node-js-web-server-on-digitalocean.jpg)](http://www.gayadesign.com/diy/simple-node-js-web-server-digitalocean/)<span id="more-1870"></span> You can use Node.js to act as a static file server. It receives a request for a file, and Node.js returns the file contents. It's very basic and standard functionality you see in most HTTP servers like Apache and nginx. In order to get the web server running we need to do four things:
 
 1. [Sign up for DigitalOcean](#sign-up)

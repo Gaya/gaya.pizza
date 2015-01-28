@@ -1,3 +1,9 @@
+---
+title: Curse of the Open Source libraries and frameworks
+author: Gaya
+date: 2013-10-30
+template: article.html
+---
 The web development population has grown significantly over the past years. A lot of people are choosing development as their trade and make a good living out of it. The number of people using frameworks or libraries to speed up their development, or solve the parts of development they can't do themselves has increased as well. Is it a good thing, or are we shooting ourselves in the foot? I will share my view on the matter in this article. [![Curse of the Open Source libraries and frameworks](/articles/curse-of-the-open-source-libraries-frameworks1.jpg)](http://www.gayadesign.com/articles/curse-of-the-open-source-libraries-frameworks/)<span id="more-1344"></span>
 
 Learning to code

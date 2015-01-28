@@ -1,3 +1,73 @@
+---
+title: QueryLoader2 – Preload your images with ease
+author: Gaya
+date: 2011-10-26
+template: article.html
+links:
+  -
+    title: Download
+    desc: Download on Github
+    url: https://github.com/Gaya/QueryLoader2
+  -
+    title: Example
+    desc: See it in action!
+    url: http://scripts.gayadesign.com/queryLoader2/
+docs:
+  name: "QueryLoader2"
+  functions:
+    -
+      name: "QueryLoader2"
+      params:
+        -
+          type: "element"
+          name: "DOMElement"
+
+        -
+          type: "options"
+          name: "object"
+
+      desc: "You can add options to loader."
+      tables:
+        -
+          name: "options"
+          rows:
+            -
+              name: "fadeOutTime"
+              type: "int"
+              desc: "Time in miliseconds it takes for the overlay to fade out at the end."
+            -
+              name: "minimumTime"
+              type: "int"
+              desc: "Time in miliseconds which the loading has to run. If time has not passed the animation will still show."
+            -
+              name: "maxTime"
+              type: "int"
+              desc: "Maximum time in milliseconds the loader may take. Go past this time and the loader with automatically close."
+            -
+              name: "backgroundColor"
+              type: "string"
+              desc: "Background color of the loader (in hex)."
+            -
+              name: "barColor"
+              type: "string"
+              desc: "Background color of the bar (in hex)."
+            -
+              name: "barHeight"
+              type: "int"
+              desc: "Height of the bar in pixels. Default: 1"
+            -
+              name: "deepSearch"
+              type: "bool"
+              desc: "Set to true to find ALL images with the selected elements. If you don't want queryLoader to look in the children, set to false. Default: true."
+            -
+              name: "percentage"
+              type: "bool"
+              desc: "Set to true to enable percentage visualising. Default is false."
+            -
+              name: "onComplete"
+              type: "function"
+              desc: "This function is called once the loading and animation are completed."
+---
 Gaya Design is back in business and hitting hard with a redo of the 2009 script QueryLoader. I kept getting e-mails and comments about it and thought I had left it just hanging there for way too long. It had become very outdated. So here it is: version 2 of QueryLoader! [![QueryLoader2 - Preload your images with ease](/articles/ql2header.jpg "QueryLoader2 - Preload your images with ease")](http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/)<span id="more-678"></span> A direct link to the zipfile: [https://github.com/Gaya/QueryLoader2/zipball/master](https://github.com/Gaya/QueryLoader2/zipball/master) View the example here: [http://scripts.gayadesign.com/queryLoader2/](http://scripts.gayadesign.com/queryLoader2/)
 
 Reason behind v2

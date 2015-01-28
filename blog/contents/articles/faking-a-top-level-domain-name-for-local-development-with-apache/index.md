@@ -1,3 +1,9 @@
+---
+title: Faking a top-level domain name for local development with Apache
+author: Gaya
+date: 2013-04-09
+template: article.html
+---
 Developing a website on your local webserver environment can become complicated when it comes to URLs. Not every CMS (looking at you Wordpress!) has relative paths to their content. These full paths get placed in the database, which makes it harder to test and create content with pointers to wrong URLs. This guide will tell you how to fake a top-level domain name so you can redirect any domain name to your local development environment and keep your source code in separate folders. [![Faking a top level domain name for local development with Apache](/articles/poster-top-level-domain-dev.jpg "Faking a top level domain name for local development with Apache")](http://www.gayadesign.com/articles/faking-a-top-level-domain-name-for-local-development-with-apache/)<span id="more-1202"></span>
 
 What we will be doing:

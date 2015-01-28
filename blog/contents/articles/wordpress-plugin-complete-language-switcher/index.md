@@ -1,3 +1,14 @@
+---
+title: WordPress Plugin: Complete Language Switcher
+author: Gaya
+date: 2012-01-04
+template: article.html
+links:
+  -
+    title: Download
+    desc: Download the plugin
+    url: http://wordpress.org/extend/plugins/complete-language-switch/
+---
 A while ago I uploaded a new plugin to the Wordpress plugin directory called Complete Language Switcher. Using this plugin enables you to easily make a multilingual blog with Wordpress to give the user the best experience in a language you provide. [![Wordpress Plugin: Complete Language Switcher](/articles/completelangswitcher.jpg "Wordpress Plugin: Complete Language Switcher")](http://www.gayadesign.com/diy/wordpress-plugin-complete-language-switcher/)<span id="more-766"></span> Complete Language Switcher provides an easy way to filter out posts in a certain language. It will only display content in the set language and also view the template in the language set by the user. If there is no language set the plugin will pick the standard language set in the config of your Wordpress blog.
 
 What do I need?

@@ -1,3 +1,9 @@
+---
+title: Stuck at your web development job? Break your routine
+author: Gaya
+date: 2013-06-15
+template: article.html
+---
 Getting stuck in the same cycle at work can be fatal for your creativity and motivation to go on. If you're doing the same trick over and over again, project after project, you will find yourself out of energy pretty soon. I'll try to explain what might be going wrong and what to do about it in this article. [![Stuck at your web development job? Break your routine](/articles/poster-stuck.jpg "Stuck at your web development job? Break your routine")](http://www.gayadesign.com/articles/stuck-at-your-web-development-job-break-your-routine/ "Stuck at your web development job? Break your routine")<span id="more-1251"></span>
 
 Sailing in the comfort zone

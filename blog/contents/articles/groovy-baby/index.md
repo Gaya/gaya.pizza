@@ -1,3 +1,14 @@
+---
+title: Groovy, baby!
+author: Gaya
+date: 2009-02-03
+template: article.html
+links:
+  -
+    title: Download
+    desc: Getting Groovy in an SOA
+    url: http://www.gayadesign.com/scripts/uploads/researchpaper.pdf
+---
 The last six months I've been researching a fairly new programming language with some of my classmates. In this period we've come to learn a lot about the language and the community surrounding it. Our task was to investigate [Groovy](http://groovy.codehaus.org/), [Grails](http://grails.org/), and their position in a [SOA environment](http://en.wikipedia.org/wiki/Service-oriented_architecture). After lots and lots of hours of work we managed to finally complete our research study and hold a course day for approx. 20 people at [HAN University of Applied Sciences](http://www.han.nl/start-en/).
 
 <div class="border">[![Groovy, baby!](/articles/grandeur.jpg "Groovy, baby!")](http://www.gayadesign.com/general/groovy-baby/)</div> I want to thank Bart van Zeeland, [Youssef El Messaoudi](http://koffieislekker.nl/), [Marco Kuiper](http://www.marcofolio.net/) and Jaap Mengers for being my colleagues during this study. I'd also like to thank Rody Middelkoop and Sander Leer for lecturing us. <span id="more-134"></span> Download it here: [http://www.gayadesign.com/scripts/uploads/researchpaper.pdf](http://www.gayadesign.com/scripts/uploads/researchpaper.pdf) This paper is aimed at answering the following question: > *'What are the characteristics of Groovy (and Grails) and what impact do they have for an implementation in an SOA within enterprise applications?'*

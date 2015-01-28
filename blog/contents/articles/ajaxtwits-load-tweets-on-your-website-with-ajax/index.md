@@ -1,3 +1,18 @@
+---
+title: AjaxTwits – Load Tweets on your website with AJAX
+author: Gaya
+date: 2009-03-26
+template: article.html
+links:
+  -
+    title: Download
+    desc: AjaxTwits zip-archive
+    url: http://www.gayadesign.com/scripts/ajaxtwits/ajaxtwits.zip
+  -
+    title: Example
+    desc: AjaxTwits in action!
+    url: http://www.gayadesign.com/scripts/ajaxtwits/
+---
 [Twitter](http://www.twitter.com "Twitter") is an amazing service to keep in touch with everyone on the Internet. It's easy, fast and there are a lot of [Twitter applications](http://twitter.com/downloads "Twitter Applications"). I came up with the idea to Ajaxify (is that even a word?) the tweets on [my website](http://www.gayadesign.com "Gaya Design"). As you can see, it's on the right, below the last.fm recently played. It's called [AjaxTwits](http://www.gayadesign.com/diy/ajaxtwits-load-tweets-on-your-website-with-ajax "AjaxTwits")! This article will show you how to use AjaxTwits and how to install it on your website. [![AjaxTwits - Load Tweets on your website with AJAX](/articles/ajaxtwits.jpg "AjaxTwits - Load Tweets on your website with AJAX")](http://www.gayadesign.com/diy/ajaxtwits-load-tweets-on-your-website-with-ajax)<span id="more-172"></span> Example of AjaxTwits is located at: [http://www.gayadesign.com/scripts/ajaxtwits/](http://www.gayadesign.com/scripts/ajaxtwits/) AjaxTwits and all it's files can be downloaded here: [http://www.gayadesign.com/scripts/ajaxtwits/ajaxtwits.zip](http://www.gayadesign.com/scripts/ajaxtwits/ajaxtwits.zip) or the [old version](http://www.gayadesign.com/scripts/ajaxtwits/ajaxtwits_old.zip)Update notice:
 --------------
 

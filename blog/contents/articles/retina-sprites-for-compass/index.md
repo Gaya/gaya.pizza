@@ -1,3 +1,18 @@
+---
+title: Retina Sprites for Compass
+author: Gaya
+date: 2013-01-14
+template: article.html
+links:
+  -
+    title: Download
+    desc: Get on Github
+    url: https://github.com/Gaya/Retina-Sprites-for-Compass
+  -
+    title: Example
+    desc: Demo (check with a retina device)
+    url: http://gayadesign.com/scripts/retina-example/
+---
 Creating CSS rules for retina sprites and background images can be a drag. I wrote a quick mixin that will help you with this. It allows you to use sprites in Compass with added retina variants. Works just like the normal sprites helpers, but has been made a lot easier with these mixins. [![](/articles/post-image.jpg "Retina Sprites for Compass")](http://www.gayadesign.com/diy/retina-sprites-for-compass/)<span id="more-869"></span> Take a look at the example to see the results.
 
 The problem:

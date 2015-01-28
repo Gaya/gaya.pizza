@@ -1,3 +1,9 @@
+---
+title: Fight the spammers
+author: Gaya
+date: 2009-02-08
+template: article.html
+---
 In the first few weeks of [my website's](http://www.gayadesign.com/) existence, the spam machine left my website alone. But as soon as my site got linked on various webpages around the world. The spam started to slip in. Online casinos, free slot machines and oh-so-hot girls. There had to be something to quickly protect my site against spam. I know captcha works quite well, but the problem with captcha is that users always have to read unreadable images. These impossible captchas annoy the hell out of me, so that was out of the question. I know [Wordpress](http://wordpress.org/)****has a nice plugin called [Akismet](http://akismet.com/) which is filtering spam quite good. I've been using it for some time on my [DS article site](http://ds.gayadesign.nl/), and it has been filtering a lot of spam.
 
 <div class="border">[![Fight the spammers](/articles/akismet.jpg "Fight the spammers")](http://www.gayadesign.com/diy/fight-the-spammers/)</div><span id="more-135"></span> Here are the things I used to filter spam: - [http://www.achingbrain.net/stuff/php/akismet](http://www.achingbrain.net/stuff/php/akismet)

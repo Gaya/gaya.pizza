@@ -1,3 +1,9 @@
+---
+title: PHP ORM: Models and PHP Object Generator
+author: Gaya
+date: 2009-07-27
+template: article.html
+---
 If you are a developer, especially in the object orientated parts, you must heard of the Model View Controller design pattern. This post will tell you a bit about models and how you can use them to lift your code to a higher level and safe a lot of time in the development process. I will also tell you about [PHP Object Generator](http://www.phpobjectgenerator.com/) (POG) to use for implementing your models. [![PHP ORM: Models and PHP Object Generator](/articles/postimgpost.jpg "PHP ORM: Models and PHP Object Generator")](http://www.gayadesign.com/articles/php-orm-models-and-php-object-generator)<span id="more-419"></span> Models are the application's place for storing information. If you have your model right, the application tends to work out better than applications without models. In the model you can store properties of all your objects (tables) and apply rules to them.
 
 Making the model
