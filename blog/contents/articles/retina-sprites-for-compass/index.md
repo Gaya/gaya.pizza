@@ -13,7 +13,7 @@ links:
     desc: Demo (check with a retina device)
     url: http://gayadesign.com/scripts/retina-example/
 ---
-Creating CSS rules for retina sprites and background images can be a drag. I wrote a quick mixin that will help you with this. It allows you to use sprites in Compass with added retina variants. Works just like the normal sprites helpers, but has been made a lot easier with these mixins. [![](/articles/\/post-image.jpg "Retina Sprites for Compass")](http://www.gayadesign.com/diy/retina-sprites-for-compass/)<span id="more-869"></span> Take a look at the example to see the results.
+Creating CSS rules for retina sprites and background images can be a drag. I wrote a quick mixin that will help you with this. It allows you to use sprites in Compass with added retina variants. Works just like the normal sprites helpers, but has been made a lot easier with these mixins. [![](/articles/retina-sprites-for-compass/post-image.jpg "Retina Sprites for Compass")](http://www.gayadesign.com/diy/retina-sprites-for-compass/)<span id="more-869"></span> Take a look at the example to see the results.
 
 The problem:
 ------------
@@ -60,9 +60,9 @@ The problem:
  The nice thing about this is that the browser will only get the sprite image it needs:
 ###Non-retina:
 
-![Network on non retina device](/articles/\/network-non-retina.jpg "Network on non retina device")### **Retina:**
+![Network on non retina device](/articles/retina-sprites-for-compass/network-non-retina.jpg "Network on non retina device")### **Retina:**
 
-![Network on retina device](/articles/\/network-retina.jpg "Network on retina device")
+![Network on retina device](/articles/retina-sprites-for-compass/network-retina.jpg "Network on retina device")
 
 Bonus: retina background-images
 -------------------------------

@@ -9,7 +9,7 @@ links:
     desc: Compass Boilerplate project
     url: https://github.com/Gaya/Compass-Boilerplate
 ---
-Lately I've been getting a lot of questions from people how to begin using Sass and Compass. Even though it's pretty easy, a little push in the right direction is all you need to quickly start utilising Sass and Compass in your next project. I'll give you installing instructions, a bit of information on what happens and a sample project setup I use myself to get you started quickly. [![How to start using Sass and Compass in 10 minutes](/articles/\/how-to-sass-compass.jpg)](http://www.gayadesign.com/diy/how-to-start-using-sass-and-compass-in-10-minutes/ "How to start using Sass and Compass in 10 minutes")<span id="more-1304"></span>
+Lately I've been getting a lot of questions from people how to begin using Sass and Compass. Even though it's pretty easy, a little push in the right direction is all you need to quickly start utilising Sass and Compass in your next project. I'll give you installing instructions, a bit of information on what happens and a sample project setup I use myself to get you started quickly. [![How to start using Sass and Compass in 10 minutes](/articles/how-to-start-using-sass-and-compass-in-10-minutes/how-to-sass-compass.jpg)](http://www.gayadesign.com/diy/how-to-start-using-sass-and-compass-in-10-minutes/ "How to start using Sass and Compass in 10 minutes")<span id="more-1304"></span>
 
 What will Sass and Compass do for me?
 -------------------------------------

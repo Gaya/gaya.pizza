@@ -13,34 +13,34 @@ links:
     desc: Look at the goods
     url: http://gayadesign.com/scripts/fullscreenbackground/
 docs:
-  name: "Fullscreen Background: Options"
+  name: " Fullscreen Background: Options"
   functions:
     -
-      name: "fullscreenBackground"
+      name: "fullscreenBackground "
       params:
         -
-          type: "options"
+          type: " options"
           name: "object"
 
       desc: "The plugin allows a few settings to give to the function:"
       tables:
         -
-          name: "options"
+          name: "options "
           rows:
             -
-              name: "selector"
+              name: " selector"
               type: "string"
-              desc: "The selector that will be used when digging through the element you’re calling the function on. Default: \"img\""
+              desc: "The selector that will be used when digging through the element you’re calling the function on. Default: "img""
             -
-              name: "fillOnResize"
+              name: " fillOnResize"
               type: "bool"
               desc: "Set to true if the image has to resize to the screen if the screensize changes. I think most will leave this set to true. Default: true"
             -
-              name: "defaultCss"
+              name: " defaultCss"
               type: "bool"
               desc: "Set to true if you want to add some standard CSS to the elements. If you are experiencing problems you can set this to false and do the CSS in your own stylesheet. Default: true"
 ---
-If you're a webdeveloper or designer I am pretty sure you've run into the problem of people wanting to have "fullscreen content" or just background images that will stretch in the most optimal way to the users screen. Lately I found that a lot of people are asking for fullscreen backgrounds, videos and other types on stuff. So to prevent myself from reinventing the wheel over and over again I made a small jQuery plugin, and thought you guys might like it too. So here it is: Fullscreen Background for jQuery. [![jQuery plugin: Fullscreen Background](/articles/\/fullscreengdpost.jpg "jQuery plugin: Fullscreen Background")](http://www.gayadesign.com/diy/jquery-plugin-fullscreen-background/)<span id="more-845"></span>
+If you're a webdeveloper or designer I am pretty sure you've run into the problem of people wanting to have "fullscreen content" or just background images that will stretch in the most optimal way to the users screen. Lately I found that a lot of people are asking for fullscreen backgrounds, videos and other types on stuff. So to prevent myself from reinventing the wheel over and over again I made a small jQuery plugin, and thought you guys might like it too. So here it is: Fullscreen Background for jQuery. [![jQuery plugin: Fullscreen Background](/articles/jquery-plugin-fullscreen-background/fullscreengdpost.jpg "jQuery plugin: Fullscreen Background")](http://www.gayadesign.com/diy/jquery-plugin-fullscreen-background/)<span id="more-845"></span>
 
 How to use.
 -----------
