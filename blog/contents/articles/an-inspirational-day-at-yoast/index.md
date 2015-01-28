@@ -1,10 +1,10 @@
 ---
-title: An inspirational day at Yoast
+title: "An inspirational day at Yoast"
 author: Gaya
 date: 2013-09-14
 template: article.html
 ---
-Yesterday, friday the 13th, I went to [Yoast](http://yoast.com "Yoast") for a day of coding, sharing knowledge and good old fun. It's great to see that a company like Yoast can thrive when it's most know for its WordPress plugin. Let me tell you the impressions I got from Yoast, its people and a non standard environment. [![An inspirational day at Yoast](/articles/an-inspirational-day-at-yoast.jpg)](http://www.gayadesign.com/articles/an-inspirational-day-at-yoast/)<span id="more-1293"></span>
+Yesterday, friday the 13th, I went to [Yoast](http://yoast.com "Yoast") for a day of coding, sharing knowledge and good old fun. It's great to see that a company like Yoast can thrive when it's most know for its WordPress plugin. Let me tell you the impressions I got from Yoast, its people and a non standard environment. [![An inspirational day at Yoast](/articles/\/an-inspirational-day-at-yoast.jpg)](http://www.gayadesign.com/articles/an-inspirational-day-at-yoast/)<span id="more-1293"></span>
 
 Who is Yoast?
 -------------

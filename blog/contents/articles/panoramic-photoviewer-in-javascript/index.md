@@ -1,5 +1,5 @@
 ---
-title: Panoramic Photoviewer in Javascript
+title: "Panoramic Photoviewer in Javascript"
 author: Gaya
 date: 2009-01-14
 template: article.html
@@ -13,7 +13,7 @@ links:
     desc: Open the PhotoNav examples
     url: http://www.gayadesign.com/scripts/photonav/
 ---
-As a webdesigner you might have had this problem: "I've got a nice looking wide image, but I don't want my visitors to scroll horizontally." A [colleague](http://www.siebdesign.nl/) showed me a new project he was working on. A large image appeared and I had the ability to drag and move the image around in a container. Not super efficient if you ask me, I still had to grab the image and move it around holding my mouse button. Can't there be an easier way? This article will show you my solution to the problem and maybe even a different approach on navigation. [![Panoramic Photoviewer in Javascript](/articles/postimage.jpg "Panoramic Photoviewer in Javascript")](http://www.gayadesign.com/diy/panoramic-photoviewer-in-javascript/)<span id="more-133"></span> The *example page* is located here: [http://www.gayadesign.com/scripts/photonav/](http://www.gayadesign.com/scripts/photonav/) And the *archive is downloadable* here: [http://www.gayadesign.com/scripts/photonav/photonav.zip](http://www.gayadesign.com/scripts/photonav/photonav.zip)
+As a webdesigner you might have had this problem: "I've got a nice looking wide image, but I don't want my visitors to scroll horizontally." A [colleague](http://www.siebdesign.nl/) showed me a new project he was working on. A large image appeared and I had the ability to drag and move the image around in a container. Not super efficient if you ask me, I still had to grab the image and move it around holding my mouse button. Can't there be an easier way? This article will show you my solution to the problem and maybe even a different approach on navigation. [![Panoramic Photoviewer in Javascript](/articles/\/postimage.jpg "Panoramic Photoviewer in Javascript")](http://www.gayadesign.com/diy/panoramic-photoviewer-in-javascript/)<span id="more-133"></span> The *example page* is located here: [http://www.gayadesign.com/scripts/photonav/](http://www.gayadesign.com/scripts/photonav/) And the *archive is downloadable* here: [http://www.gayadesign.com/scripts/photonav/photonav.zip](http://www.gayadesign.com/scripts/photonav/photonav.zip)
 
 **What is it?**
 ---------------

@@ -1,5 +1,5 @@
 ---
-title: Using WordPress plugins as Symbolic Links
+title: "Using WordPress plugins as Symbolic Links"
 author: Gaya
 date: 2013-10-10
 template: article.html
@@ -9,7 +9,7 @@ links:
     desc: SymbolicPress on GitHub
     url: https://gist.github.com/Gaya/6918966
 ---
-If you want to use a single plugin on different WordPress installs you might want to go for a symlinked plugin folder. That way we can have one codebase and apply it on multiple installs. That would be great right? Sadly, WordPress doesn't support this (yet). In this post I'll explain how I got WordPress to accept my plugins as symbolic links. [![Using WordPress plugins as Symbolic Links](/articles/using-wordpress-plugins-as-symbolic-links.jpg "Using WordPress plugins as Symbolic Links")](http://www.gayadesign.com/diy/using-wordpress-plugins-as-symbolic-links)<span id="more-1332"></span>
+If you want to use a single plugin on different WordPress installs you might want to go for a symlinked plugin folder. That way we can have one codebase and apply it on multiple installs. That would be great right? Sadly, WordPress doesn't support this (yet). In this post I'll explain how I got WordPress to accept my plugins as symbolic links. [![Using WordPress plugins as Symbolic Links](/articles/\/using-wordpress-plugins-as-symbolic-links.jpg "Using WordPress plugins as Symbolic Links")](http://www.gayadesign.com/diy/using-wordpress-plugins-as-symbolic-links)<span id="more-1332"></span>
 
 The Problem
 -----------

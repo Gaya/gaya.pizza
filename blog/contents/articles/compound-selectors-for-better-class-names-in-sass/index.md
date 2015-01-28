@@ -1,10 +1,10 @@
 ---
-title: Compound Selectors for Better Class Names in Sass
+title: "Compound Selectors for Better Class Names in Sass"
 author: Gaya
 date: 2014-04-04
 template: article.html
 ---
-There are a few class naming conventions you can live by, the problem with most of them is writing long class names that tend to give your CSS a messy look without compound selectors. Luckily Sass now supports compound selectors which will make our stylesheets a lot easier and better to maintain. [![Better Class Names with Sass Compound Selectors](/articles/better-class-names-sass-compound-selectors.jpg)](http://www.gayadesign.com/front-end/compound-selectors-for-better-class-names-in-sass/)<span id="more-1417"></span>
+There are a few class naming conventions you can live by, the problem with most of them is writing long class names that tend to give your CSS a messy look without compound selectors. Luckily Sass now supports compound selectors which will make our stylesheets a lot easier and better to maintain. [![Better Class Names with Sass Compound Selectors](/articles/\/better-class-names-sass-compound-selectors.jpg)](http://www.gayadesign.com/front-end/compound-selectors-for-better-class-names-in-sass/)<span id="more-1417"></span>
 
 Naming conventions
 ------------------

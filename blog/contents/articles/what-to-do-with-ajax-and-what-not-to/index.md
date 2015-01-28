@@ -1,10 +1,10 @@
 ---
-title: What to do with AJAX and what not to
+title: "What to do with AJAX and what not to"
 author: Gaya
 date: 2009-03-20
 template: article.html
 ---
-[AJAX](http://en.wikipedia.org/wiki/Ajax_%28programming%29) is one the nicest concept I've seen in web development. The basics are simple and quite easy to use. There are a lot of [AJAX frameworks](http://en.wikipedia.org/wiki/List_of_Ajax_frameworks) around like [jQuery](http://jquery.com/), [Prototype](http://www.prototypejs.org/) and [backbase](http://bdn.backbase.com/). These frameworks help you create an AJAX application with ease. But is AJAX really that good? No, but if you use it correctly, it is! In this article I wish to share my view on AJAX and the possibilities it gives to web developers and designers, and why AJAX is wrong in several situations. <div class="border">[![What to do with AJAX and what not to](/articles/ajaxpost.jpg "What to do with AJAX and what not to")](http://www.gayadesign.com/articles/what-to-do-with-ajax-and-what-not-to/)</div><span id="more-143"></span>**Case 1: Page loading**
+[AJAX](http://en.wikipedia.org/wiki/Ajax_%28programming%29) is one the nicest concept I've seen in web development. The basics are simple and quite easy to use. There are a lot of [AJAX frameworks](http://en.wikipedia.org/wiki/List_of_Ajax_frameworks) around like [jQuery](http://jquery.com/), [Prototype](http://www.prototypejs.org/) and [backbase](http://bdn.backbase.com/). These frameworks help you create an AJAX application with ease. But is AJAX really that good? No, but if you use it correctly, it is! In this article I wish to share my view on AJAX and the possibilities it gives to web developers and designers, and why AJAX is wrong in several situations. <div class="border">[![What to do with AJAX and what not to](/articles/\/ajaxpost.jpg "What to do with AJAX and what not to")](http://www.gayadesign.com/articles/what-to-do-with-ajax-and-what-not-to/)</div><span id="more-143"></span>**Case 1: Page loading**
 ------------------------
 
  What's up with websites and dynamically loading pages through AJAX? Isn't it a bit strange that when you want to switch to another page, there is no real page switch? Sure, I like it when content is loaded into the website dynamically, saving me bandwidth, time and irritation. But a whole page? Isn't that kind of missing the point? - First of all: What about the back and forward buttons of your browser? No use for them if you load a whole page in AJAX.

@@ -1,10 +1,10 @@
 ---
-title: Looking back at WordCamp Europe 2013
+title: "Looking back at WordCamp Europe 2013"
 author: Gaya
 date: 2013-10-08
 template: article.html
 ---
-Last weekend I went to WordCamp Europe in Leiden. It was my first WordCamp and I have to say; it was very awesome. Can't believe I've never been to an event like this before and I should really start doing it more in the future. I'll fill you in on the experience, the speakers and give you my two cents of what I thought about the talks. [![Looking back at WordCamp Europe 2013](/articles/looking-back-at-wordcamp-europe-2013.jpg "Looking back at WordCamp Europe 2013")](http://www.gayadesign.com/general/looking-back-at-wordcamp-europe-2013/)<span id="more-1323"></span>
+Last weekend I went to WordCamp Europe in Leiden. It was my first WordCamp and I have to say; it was very awesome. Can't believe I've never been to an event like this before and I should really start doing it more in the future. I'll fill you in on the experience, the speakers and give you my two cents of what I thought about the talks. [![Looking back at WordCamp Europe 2013](/articles/\/looking-back-at-wordcamp-europe-2013.jpg "Looking back at WordCamp Europe 2013")](http://www.gayadesign.com/general/looking-back-at-wordcamp-europe-2013/)<span id="more-1323"></span>
 
 How I got into WordPress and going to WordCamp
 ----------------------------------------------

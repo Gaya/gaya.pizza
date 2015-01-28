@@ -1,5 +1,5 @@
 ---
-title: QueryLoader2 – Preload your images with ease
+title: "QueryLoader2 – Preload your images with ease"
 author: Gaya
 date: 2011-10-26
 template: article.html
@@ -68,7 +68,7 @@ docs:
               type: "function"
               desc: "This function is called once the loading and animation are completed."
 ---
-Gaya Design is back in business and hitting hard with a redo of the 2009 script QueryLoader. I kept getting e-mails and comments about it and thought I had left it just hanging there for way too long. It had become very outdated. So here it is: version 2 of QueryLoader! [![QueryLoader2 - Preload your images with ease](/articles/ql2header.jpg "QueryLoader2 - Preload your images with ease")](http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/)<span id="more-678"></span> A direct link to the zipfile: [https://github.com/Gaya/QueryLoader2/zipball/master](https://github.com/Gaya/QueryLoader2/zipball/master) View the example here: [http://scripts.gayadesign.com/queryLoader2/](http://scripts.gayadesign.com/queryLoader2/)
+Gaya Design is back in business and hitting hard with a redo of the 2009 script QueryLoader. I kept getting e-mails and comments about it and thought I had left it just hanging there for way too long. It had become very outdated. So here it is: version 2 of QueryLoader! [![QueryLoader2 - Preload your images with ease](/articles/\/ql2header.jpg "QueryLoader2 - Preload your images with ease")](http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/)<span id="more-678"></span> A direct link to the zipfile: [https://github.com/Gaya/QueryLoader2/zipball/master](https://github.com/Gaya/QueryLoader2/zipball/master) View the example here: [http://scripts.gayadesign.com/queryLoader2/](http://scripts.gayadesign.com/queryLoader2/)
 
 Reason behind v2
 ----------------

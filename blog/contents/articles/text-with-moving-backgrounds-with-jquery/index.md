@@ -1,5 +1,5 @@
 ---
-title: Text with Moving Backgrounds with jQuery
+title: "Text with Moving Backgrounds with jQuery"
 author: Gaya
 date: 2010-01-08
 template: article.html
@@ -9,7 +9,7 @@ links:
     desc: How does this look?
     url: http://www.gayadesign.com/scripts/textmovingbg/
 ---
-Personally, I am a huge fan of negative space in design. This got me thinking while I was trying to accomplish something different. Normally a textual caption would be positioned above a background, but I wanted to do it the other way around: place the background in the letters. I also wanted to add some nice dynamic effects to enhance the effect. This was amazingly easy to accomplish in jQuery with the use of a little creativity. This article will explain what you need to do create an effect like this yourself. [![Text with Moving Backgrounds with jQuery](/articles/movingbgcover.jpg "Text with Moving Backgrounds with jQuery")](http://www.gayadesign.com/diy/text-with-moving-backgrounds-with-jquery/)<span id="more-632"></span>
+Personally, I am a huge fan of negative space in design. This got me thinking while I was trying to accomplish something different. Normally a textual caption would be positioned above a background, but I wanted to do it the other way around: place the background in the letters. I also wanted to add some nice dynamic effects to enhance the effect. This was amazingly easy to accomplish in jQuery with the use of a little creativity. This article will explain what you need to do create an effect like this yourself. [![Text with Moving Backgrounds with jQuery](/articles/\/movingbgcover.jpg "Text with Moving Backgrounds with jQuery")](http://www.gayadesign.com/diy/text-with-moving-backgrounds-with-jquery/)<span id="more-632"></span>
 
 What are we going to do?
 ------------------------
@@ -22,11 +22,11 @@ What are we going to do?
 ---------------------------
 
  To create the overlaying mask I am going to use Photoshop. You can do this with any other image manipulation application, but I am going to explain what I did using screenshots of Photoshop. 1. **First create a new image and fill the background with the foreground of the mask. **This is the part that will be visible for the users. I used a black solid fill for this, so it stays clean.
-2. **Create a new text layer on the fill you just made.**![Mask in Photoshop](/articles/movingbgpost_1.jpg "Mask in Photoshop") This gives us the right impression, and we just have to imagine that the white letters will be punched out later.
-3. **Hold CMD / CTRL and click on the text layer icon**![Select the text](/articles/movingbgpost_2.jpg "Select the text") Doing this the text will get a selection around it which should look like this: ![Selected text in Photoshop](/articles/movingbgpost_3.jpg "Selected text in Photoshop")
-4. **Click: Select > Inverse**![Inverse selection](/articles/movingbgpost_5.jpg "Inverse selection") Now the area that will be visible on the mask image is selected. It will look like this: ![Inversed text selection in Photoshop](/articles/movingbgpost_6.jpg "Inversed text selection in Photoshop")
-5. **Select the fill layer and click on "Add mask"**![Add layer mask](/articles/movingbgpost_4.jpg "Add layer mask") This will create a mask for the fill and the letters have been punched out.
-6. **Hide the text layer**![Hide text layer](/articles/movingbgpost_7.jpg "Hide text layer") You have now punched out the letters of the fill!
+2. **Create a new text layer on the fill you just made.**![Mask in Photoshop](/articles/\/movingbgpost_1.jpg "Mask in Photoshop") This gives us the right impression, and we just have to imagine that the white letters will be punched out later.
+3. **Hold CMD / CTRL and click on the text layer icon**![Select the text](/articles/\/movingbgpost_2.jpg "Select the text") Doing this the text will get a selection around it which should look like this: ![Selected text in Photoshop](/articles/\/movingbgpost_3.jpg "Selected text in Photoshop")
+4. **Click: Select > Inverse**![Inverse selection](/articles/\/movingbgpost_5.jpg "Inverse selection") Now the area that will be visible on the mask image is selected. It will look like this: ![Inversed text selection in Photoshop](/articles/\/movingbgpost_6.jpg "Inversed text selection in Photoshop")
+5. **Select the fill layer and click on "Add mask"**![Add layer mask](/articles/\/movingbgpost_4.jpg "Add layer mask") This will create a mask for the fill and the letters have been punched out.
+6. **Hide the text layer**![Hide text layer](/articles/\/movingbgpost_7.jpg "Hide text layer") You have now punched out the letters of the fill!
 7. **Save as .png!** PNG handles transparency very well and looks right in almost all current browsers (nope, not IE6). It also support opacity per pixel, so it's not like the the GIF transparency.
 
 Step 2: A little documenting and styling
