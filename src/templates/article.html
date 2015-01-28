@@ -45,9 +45,38 @@
                                     {% endfor %});
                                 </div>
 
-                                <div class="function__description">
-                                    {{ function.desc }}
-                                </div>
+                                {% if function.desc %}
+                                    <div class="function__description">
+                                        {{ function.desc }}
+                                    </div>
+                                {% endif %}
+
+                                {% if function.tables %}
+                                    <section class="function__tables">
+                                        {% for table in function.tables %}
+                                            <table class="function__table">
+                                                <tr class="function__table__header">
+                                                    <th class="function__table__header__cell" colspan="2">{{ table.name }}</th>
+                                                </tr>
+                                                {% for row in table.rows %}
+                                                    <tr class="function__table__row">
+                                                        <td class="function__table__param">
+                                                            <span class="function__syntax__type">
+                                                                {{ row.type }}
+                                                            </span>
+                                                            <span class="function__syntax__name">
+                                                                {{ row.name }}
+                                                            </span>
+                                                        </td>
+                                                        <td class="function__table__desc">
+                                                            {{ row.desc }}
+                                                        </td>
+                                                    </tr>
+                                                {% endfor %}
+                                            </table>
+                                        {% endfor %}
+                                    </section>
+                                {% endif %}
                             </li>
                         {% endfor %}
                     </ul>
