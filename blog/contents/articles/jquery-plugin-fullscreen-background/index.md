@@ -13,30 +13,30 @@ links:
     desc: Look at the goods
     url: http://gayadesign.com/scripts/fullscreenbackground/
 docs:
-  name: " Fullscreen Background: Options"
+  name: "Fullscreen Background: Options"
   functions:
     -
-      name: "fullscreenBackground "
+      name: "fullscreenBackground"
       params:
         -
-          type: " options"
+          type: "options"
           name: "object"
 
       desc: "The plugin allows a few settings to give to the function:"
       tables:
         -
-          name: "options "
+          name: "options"
           rows:
             -
-              name: " selector"
+              name: "selector"
               type: "string"
-              desc: "The selector that will be used when digging through the element you’re calling the function on. Default: "img""
+              desc: "The selector that will be used when digging through the element you’re calling the function on. Default: \"img\""
             -
-              name: " fillOnResize"
+              name: "fillOnResize"
               type: "bool"
               desc: "Set to true if the image has to resize to the screen if the screensize changes. I think most will leave this set to true. Default: true"
             -
-              name: " defaultCss"
+              name: "defaultCss"
               type: "bool"
               desc: "Set to true if you want to add some standard CSS to the elements. If you are experiencing problems you can set this to false and do the CSS in your own stylesheet. Default: true"
 ---
