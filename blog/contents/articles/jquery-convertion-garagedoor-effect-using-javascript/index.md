@@ -1,5 +1,5 @@
 ---
-title: jQuery convertion: Garagedoor effect using Javascript
+title: "jQuery convertion: Garagedoor effect using Javascript"
 author: Gaya
 date: 2009-04-08
 template: article.html

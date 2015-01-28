@@ -1,5 +1,5 @@
 ---
-title: Presentation Cycle: Cycle with a progressbar
+title: "Presentation Cycle: Cycle with a progressbar"
 author: Gaya
 date: 2009-11-03
 template: article.html

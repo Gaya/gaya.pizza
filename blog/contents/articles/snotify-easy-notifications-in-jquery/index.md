@@ -1,5 +1,5 @@
 ---
-title: sNotify: Easy notifications in jQuery
+title: "sNotify: Easy notifications in jQuery"
 author: Gaya
 date: 2009-08-19
 template: article.html

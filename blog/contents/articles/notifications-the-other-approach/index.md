@@ -1,5 +1,5 @@
 ---
-title: Notifications: the other approach
+title: "Notifications: the other approach"
 author: Gaya
 date: 2009-10-20
 template: article.html

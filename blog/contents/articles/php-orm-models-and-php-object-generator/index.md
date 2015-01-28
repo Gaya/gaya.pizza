@@ -1,5 +1,5 @@
 ---
-title: PHP ORM: Models and PHP Object Generator
+title: "PHP ORM: Models and PHP Object Generator"
 author: Gaya
 date: 2009-07-27
 template: article.html

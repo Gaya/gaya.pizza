@@ -1,5 +1,5 @@
 ---
-title: WordPress Plugin: Mark as Read
+title: "WordPress Plugin: Mark as Read"
 author: Gaya
 date: 2009-06-09
 template: article.html

@@ -1,5 +1,5 @@
 ---
-title: WordPress Plugin: Complete Language Switcher
+title: "WordPress Plugin: Complete Language Switcher"
 author: Gaya
 date: 2012-01-04
 template: article.html

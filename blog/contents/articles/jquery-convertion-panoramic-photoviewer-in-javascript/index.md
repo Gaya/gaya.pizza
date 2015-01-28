@@ -1,5 +1,5 @@
 ---
-title: jQuery convertion: Panoramic Photoviewer in Javascript
+title: "jQuery convertion: Panoramic Photoviewer in Javascript"
 author: Gaya
 date: 2009-04-09
 template: article.html

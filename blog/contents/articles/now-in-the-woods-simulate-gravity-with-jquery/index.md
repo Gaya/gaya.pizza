@@ -1,5 +1,5 @@
 ---
-title: Now in The Woods: Simulate Gravity with jQuery
+title: "Now in The Woods: Simulate Gravity with jQuery"
 author: Gaya
 date: 2009-05-04
 template: article.html
