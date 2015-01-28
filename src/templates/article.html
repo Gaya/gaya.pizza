@@ -16,6 +16,17 @@
             <h1 class="post__header__text"><a href="{{ url }}{{ page.url }}" itemprop="name headline">{{ page.title }}</a></h1>
         </header>
 
+        <section class="post__links">
+            <a class="post__links__link" href="#">
+                <span class="post__links__link__title">Download</span>
+                <span class="post__links__link__desc">from WordPress.org</span>
+            </a>
+            <a class="post__links__link" href="#">
+                <span class="post__links__link__title">Visit</span>
+                <span class="post__links__link__desc">Demonstration</span>
+            </a>
+        </section>
+
         <section class="post__body" itemprop="articleBody">
             {{ page.html }}
         </section>
