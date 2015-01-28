@@ -13,6 +13,7 @@ links:
     desc: demo page
     url: http://www.google.com
 docs:
+  name: QueryLoader2
   functions:
     -
       name: QueryLoader2
