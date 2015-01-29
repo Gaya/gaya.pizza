@@ -59,7 +59,7 @@ docs:
             -
               name: "deepSearch"
               type: "bool"
-              desc: "Set to true to find ALL images with the selected elements. If you don\'t want queryLoader to look in the children, set to false. Default: true."
+              desc: "Set to true to find ALL images with the selected elements. If you don't want queryLoader to look in the children, set to false. Default: true."
             -
               name: "percentage"
               type: "bool"
