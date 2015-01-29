@@ -3,6 +3,8 @@ title: "Vertical rhythm on DOM elements with dynamic heights – Keep the Rhythm
 author: Gaya
 date: 2013-04-02
 template: article.html
+seo_desc: "This jQuery plugin will allow you to maintain a vertical rhythm with elements that have dynamic heights. Works on responsive layouts too."
+seo_title: "Vertical rhythm on DOM elements with dynamic heights - Keep the Rhythm"
 links:
   -
     title: Download
@@ -40,7 +42,7 @@ docs:
               type: "string"
               desc: "Choose between padding or margin spacing. Default: \"padding\"."
 ---
-That is a lot in one sentence, but basically it explains it all. Maintaining a vertical rhythm is hard enough by itself and takes a lot of time and thinking to accomplish. The problem with maintaining a proper rhythm are objects (like images) that have dynamic heights. Like the images on this blog, or when you have clients uploading their content which isn't perfectly resized / cropped to your line-height. For this I created a jQuery plugin that fixes the rhythm: Keep the Rhythm. [![Keep the Rhythm: Vertical rhythm on objects having dynamic heights](/articles/keep-the-rhythm-vertical-rhythm-on-objects-having-dynamic-heights/keep-the-rhythm.jpg "Keep the Rhythm: Vertical rhythm on objects having dynamic heights")](http://www.gayadesign.com/diy/keep-the-rhythm-vertical-rhythm-on-objects-having-dynamic-heights/ "Keep the Rhythm: Vertical rhythm on objects having dynamic heights")<span id="more-1103"></span> Rhythms are sexy and make the web a better place. It makes it way easier to read the page and it will look very balanced at the same time. It might be a bit of extra work to create a vertical rhythm, but it's really worth the time.
+That is a lot in one sentence, but basically it explains it all. Maintaining a vertical rhythm is hard enough by itself and takes a lot of time and thinking to accomplish. The problem with maintaining a proper rhythm are objects (like images) that have dynamic heights. Like the images on this blog, or when you have clients uploading their content which isn't perfectly resized / cropped to your line-height. For this I created a jQuery plugin that fixes the rhythm: Keep the Rhythm. [![Keep the Rhythm: Vertical rhythm on objects having dynamic heights](/articles/keep-the-rhythm-vertical-rhythm-on-objects-having-dynamic-heights/keep-the-rhythm.jpg "Keep the Rhythm: Vertical rhythm on objects having dynamic heights")](http://www.gayadesign.com/diy/keep-the-rhythm-vertical-rhythm-on-objects-having-dynamic-heights/ "Keep the Rhythm: Vertical rhythm on objects having dynamic heights")<span class="more"></span> Rhythms are sexy and make the web a better place. It makes it way easier to read the page and it will look very balanced at the same time. It might be a bit of extra work to create a vertical rhythm, but it's really worth the time.
 
 What is a vertical rhythm?
 --------------------------

@@ -3,8 +3,9 @@ title: "Why SASS and Compass should be in your workflow"
 author: Gaya
 date: 2011-11-17
 template: article.html
+seo_desc: "Compiling CSS is becoming more and more popular. This article will convince you to use SASS and Compass to boost your productivity."
 ---
-Admit it: CSS is awesome, but it's default syntax is insanely stupid. Are you tired of the way CSS is written and proves to be quite useless and cluttered once the project grows and gets more styling? It just takes up way too much of our time to organize and it's plain stupid if we stick with this kind of workflow. That's when CSS compilers came around, and it will change your life. This post will describe the benefits of CSS compiling and in which possible ways you can use it. [![Why SASS and Compass should be in your workflow](/articles/why-sass-and-compass-should-be-in-your-workflow/sassworkflow.jpg "Why SASS and Compass should be in your workflow")](http://www.gayadesign.com/articles/why-sass-and-compass-should-be-in-your-workflow/)<span id="more-728"></span>
+Admit it: CSS is awesome, but it's default syntax is insanely stupid. Are you tired of the way CSS is written and proves to be quite useless and cluttered once the project grows and gets more styling? It just takes up way too much of our time to organize and it's plain stupid if we stick with this kind of workflow. That's when CSS compilers came around, and it will change your life. This post will describe the benefits of CSS compiling and in which possible ways you can use it. [![Why SASS and Compass should be in your workflow](/articles/why-sass-and-compass-should-be-in-your-workflow/sassworkflow.jpg "Why SASS and Compass should be in your workflow")](http://www.gayadesign.com/articles/why-sass-and-compass-should-be-in-your-workflow/)<span class="more"></span>
 
 Time to keep it simple, no time for the stupid!
 -----------------------------------------------

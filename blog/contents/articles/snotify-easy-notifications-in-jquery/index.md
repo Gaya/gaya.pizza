@@ -3,6 +3,7 @@ title: "sNotify: Easy notifications in jQuery"
 author: Gaya
 date: 2009-08-19
 template: article.html
+seo_desc: "sNotify is a script which is handy for people who are developing webapplications. It allows the developer to display notifications in a fast and easy way."
 links:
   -
     title: Download
@@ -13,7 +14,7 @@ links:
     desc: See the notifications in action!
     url: http://www.gayadesign.com/scripts/sNotify/
 ---
-There hasn't been a jQuery tutorial / script on Gaya Design for a while. This is because I've been working on this particular script for a while and have a lot of other scripts in development. sNotify is a script which is particularly handy for people who are developing web applications. sNotify allows the developer to display notifications in a fast and easy way. [![sNotify: Easy notifications in jQuery](/articles/snotify-easy-notifications-in-jquery/snotify.jpg "sNotify: Easy notifications in jQuery")](http://www.gayadesign.com/diy/snotify-easy-notifications-in-jquery/)<span id="more-453"></span> Download the source code here: [http://www.gayadesign.com/scripts/sNotify/sNotify.zip](http://www.gayadesign.com/scripts/sNotify/sNotify.zip) View the examples here: [http://www.gayadesign.com/scripts/sNotify/](http://www.gayadesign.com/scripts/sNotify/) The idea for sNotify struck me when I was playing the Sims 3. Its way of notifying the user of important events looked simple but effective. A message box slides in screen from the top right, containing just a small bit of information. The thing I liked most was the way it sorted notifications and displayed them in an orderly way. By this I mean: When there is more than one notification, it displays them one after another.
+There hasn't been a jQuery tutorial / script on Gaya Design for a while. This is because I've been working on this particular script for a while and have a lot of other scripts in development. sNotify is a script which is particularly handy for people who are developing web applications. sNotify allows the developer to display notifications in a fast and easy way. [![sNotify: Easy notifications in jQuery](/articles/snotify-easy-notifications-in-jquery/snotify.jpg "sNotify: Easy notifications in jQuery")](http://www.gayadesign.com/diy/snotify-easy-notifications-in-jquery/)<span class="more"></span> Download the source code here: [http://www.gayadesign.com/scripts/sNotify/sNotify.zip](http://www.gayadesign.com/scripts/sNotify/sNotify.zip) View the examples here: [http://www.gayadesign.com/scripts/sNotify/](http://www.gayadesign.com/scripts/sNotify/) The idea for sNotify struck me when I was playing the Sims 3. Its way of notifying the user of important events looked simple but effective. A message box slides in screen from the top right, containing just a small bit of information. The thing I liked most was the way it sorted notifications and displayed them in an orderly way. By this I mean: When there is more than one notification, it displays them one after another.
 
 Features:
 ---------

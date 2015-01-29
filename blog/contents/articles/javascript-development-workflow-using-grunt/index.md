@@ -3,13 +3,14 @@ title: "Automating your JavaScript workflow using Grunt"
 author: Gaya
 date: 2013-11-17
 template: article.html
+seo_desc: "This article will go into detail about the way I like to use Grunt to improve my workflow and make it easier to maintain and test my JavaScript projects."
 links:
   -
     title: Download
     desc: Gruntfile.js result from this tutorial
     url: https://gist.github.com/Gaya/7498780#file-build-gruntfile-js
 ---
-Using tools like Grunt to improve your JavaScript development has been popular for quite a while. It's not a surprise since it will truly improve your workflow and takes care of pesky tasks we so hate to do. This article will go into detail about the way I like to use Grunt to improve my workflow and make it way easier to maintain and test my JavaScript projects. [![Automating your JavaScript workflow using Grunt](/articles/javascript-development-workflow-using-grunt/Automating-your-JavaScript-workflow-using-Grunt.png "Automating your JavaScript workflow using Grunt")](http://www.gayadesign.com/front-end/javascript-development-workflow-using-grunt/)<span id="more-1377"></span> Grunt manages tasks automatically which we would otherwise do ourselves with separate tools. Think in the lines of concatenation, minification and other tasks which can become a drag if we have to do them yourself. Grunt will solves this for us. If you're not familiar with using Grunt, there is a really [good getting started guide on their site](http://gruntjs.com/getting-started "Getting started with Grunt") to get you going. It will immediately give you some insights.
+Using tools like Grunt to improve your JavaScript development has been popular for quite a while. It's not a surprise since it will truly improve your workflow and takes care of pesky tasks we so hate to do. This article will go into detail about the way I like to use Grunt to improve my workflow and make it way easier to maintain and test my JavaScript projects. [![Automating your JavaScript workflow using Grunt](/articles/javascript-development-workflow-using-grunt/Automating-your-JavaScript-workflow-using-Grunt.png "Automating your JavaScript workflow using Grunt")](http://www.gayadesign.com/front-end/javascript-development-workflow-using-grunt/)<span class="more"></span> Grunt manages tasks automatically which we would otherwise do ourselves with separate tools. Think in the lines of concatenation, minification and other tasks which can become a drag if we have to do them yourself. Grunt will solves this for us. If you're not familiar with using Grunt, there is a really [good getting started guide on their site](http://gruntjs.com/getting-started "Getting started with Grunt") to get you going. It will immediately give you some insights.
 
 What my workflow does.
 ----------------------

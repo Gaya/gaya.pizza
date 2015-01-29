@@ -3,8 +3,10 @@ title: "Compound Selectors for Better Class Names in Sass"
 author: Gaya
 date: 2014-04-04
 template: article.html
+seo_desc: "Sass has the ability to compound selectors for your CSS. It gives you the power to nest long class names. This article explains how."
+seo_title: "Compound Selectors for Better Class Names in Sass"
 ---
-There are a few class naming conventions you can live by, the problem with most of them is writing long class names that tend to give your CSS a messy look without compound selectors. Luckily Sass now supports compound selectors which will make our stylesheets a lot easier and better to maintain. [![Better Class Names with Sass Compound Selectors](/articles/compound-selectors-for-better-class-names-in-sass/better-class-names-sass-compound-selectors.jpg)](http://www.gayadesign.com/front-end/compound-selectors-for-better-class-names-in-sass/)<span id="more-1417"></span>
+There are a few class naming conventions you can live by, the problem with most of them is writing long class names that tend to give your CSS a messy look without compound selectors. Luckily Sass now supports compound selectors which will make our stylesheets a lot easier and better to maintain. [![Better Class Names with Sass Compound Selectors](/articles/compound-selectors-for-better-class-names-in-sass/better-class-names-sass-compound-selectors.jpg)](http://www.gayadesign.com/front-end/compound-selectors-for-better-class-names-in-sass/)<span class="more"></span>
 
 Naming conventions
 ------------------

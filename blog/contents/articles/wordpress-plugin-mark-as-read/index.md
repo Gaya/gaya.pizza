@@ -9,7 +9,7 @@ links:
     desc: Get the plugin!
     url: http://wordpress.org/extend/plugins/mark-as-read/
 ---
-For the first time ever I created my own plugin. Starting out as a hacking attempt, it quickly changed into a prototype plugin. What it basically does is list the articles that haven't been read yet by a logged in user. Whenever a change to the post is made or a new comment is posted, the post moves to the top of the unread list. [![WordPress Plugin: Mark as Read](/articles/wordpress-plugin-mark-as-read/markasread.jpg "WordPress Plugin: Mark as Read")](http://www.gayadesign.com/general/wordpress-plugin-mark-as-read/)<span id="more-395"></span>
+For the first time ever I created my own plugin. Starting out as a hacking attempt, it quickly changed into a prototype plugin. What it basically does is list the articles that haven't been read yet by a logged in user. Whenever a change to the post is made or a new comment is posted, the post moves to the top of the unread list. [![WordPress Plugin: Mark as Read](/articles/wordpress-plugin-mark-as-read/markasread.jpg "WordPress Plugin: Mark as Read")](http://www.gayadesign.com/general/wordpress-plugin-mark-as-read/)<span class="more"></span>
 
 Functionality:
 --------------

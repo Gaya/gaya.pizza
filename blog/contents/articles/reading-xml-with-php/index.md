@@ -4,7 +4,7 @@ author: Gaya
 date: 2008-12-29
 template: article.html
 ---
-Since **webservices** and **RESTful** services are becoming more and more popular, **XML** is getting a common format to exchange information. XML is easy to read and has a nice tree structure, which can be easily interpreted. This post will show you how easy it is to *read XML in PHP*. [![Reading XML with PHP](/articles/reading-xml-with-php/xml.jpg "Reading XML with PHP")](/diy/reading-xml-with-php/)<span id="more-131"></span> In this tutorial I'll teach you how to read information which a simple webservice provides. The webservice I choose is [Last.fm](http://www.last.fm/api). It's quick, fun and has a lot of features. We'll use the **Recent Tracks** information of a user profile. According to the [API of Last.fm](http://www.last.fm/api/) the XML which will be returned will look something like this: 
+Since **webservices** and **RESTful** services are becoming more and more popular, **XML** is getting a common format to exchange information. XML is easy to read and has a nice tree structure, which can be easily interpreted. This post will show you how easy it is to *read XML in PHP*. [![Reading XML with PHP](/articles/reading-xml-with-php/xml.jpg "Reading XML with PHP")](/diy/reading-xml-with-php/)<span class="more"></span> In this tutorial I'll teach you how to read information which a simple webservice provides. The webservice I choose is [Last.fm](http://www.last.fm/api). It's quick, fun and has a lot of features. We'll use the **Recent Tracks** information of a user profile. According to the [API of Last.fm](http://www.last.fm/api/) the XML which will be returned will look something like this: 
 ```html
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">

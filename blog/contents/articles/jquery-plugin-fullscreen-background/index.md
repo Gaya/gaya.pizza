@@ -3,6 +3,7 @@ title: "jQuery plugin: Fullscreen Background"
 author: Gaya
 date: 2012-04-25
 template: article.html
+seo_desc: "Fullscreen Background allows you to create background objects easily. Be it images or video: it will scale to the viewport."
 links:
   -
     title: Download
@@ -40,7 +41,7 @@ docs:
               type: "bool"
               desc: "Set to true if you want to add some standard CSS to the elements. If you are experiencing problems you can set this to false and do the CSS in your own stylesheet. Default: true"
 ---
-If you're a webdeveloper or designer I am pretty sure you've run into the problem of people wanting to have "fullscreen content" or just background images that will stretch in the most optimal way to the users screen. Lately I found that a lot of people are asking for fullscreen backgrounds, videos and other types on stuff. So to prevent myself from reinventing the wheel over and over again I made a small jQuery plugin, and thought you guys might like it too. So here it is: Fullscreen Background for jQuery. [![jQuery plugin: Fullscreen Background](/articles/jquery-plugin-fullscreen-background/fullscreengdpost.jpg "jQuery plugin: Fullscreen Background")](http://www.gayadesign.com/diy/jquery-plugin-fullscreen-background/)<span id="more-845"></span>
+If you're a webdeveloper or designer I am pretty sure you've run into the problem of people wanting to have "fullscreen content" or just background images that will stretch in the most optimal way to the users screen. Lately I found that a lot of people are asking for fullscreen backgrounds, videos and other types on stuff. So to prevent myself from reinventing the wheel over and over again I made a small jQuery plugin, and thought you guys might like it too. So here it is: Fullscreen Background for jQuery. [![jQuery plugin: Fullscreen Background](/articles/jquery-plugin-fullscreen-background/fullscreengdpost.jpg "jQuery plugin: Fullscreen Background")](http://www.gayadesign.com/diy/jquery-plugin-fullscreen-background/)<span class="more"></span>
 
 How to use.
 -----------

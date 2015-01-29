@@ -3,8 +3,10 @@ title: "Better JavaScript Dependency Management with Browserify"
 author: Gaya
 date: 2014-07-23
 template: article.html
+seo_desc: "Browserify can require dependencies for JavaScript like modules in node.js. I'll explain how to use and the advantages it brings to our development."
+seo_title: "Better JavaScript Dependency Management with Browserify"
 ---
-Writing bundled JavaScript code for the browser tends to become a mess rather soon. We spend a lot of time arranging the code that has to be concatenated in the right order so every dependency gets loaded correctly. Browserify can require dependencies for JavaScript like modules in node.js. This brings a lot of advantages to the way we can handle our required libraries. [![better-javascript-dependency-management-with-browserify](/articles/better-javascript-dependency-management-with-browserify/better-javascript-dependency-management-with-browserify.jpg)](http://www.gayadesign.com/front-end/better-javascript-dependency-management-with-browserify/)<span id="more-1452"></span>
+Writing bundled JavaScript code for the browser tends to become a mess rather soon. We spend a lot of time arranging the code that has to be concatenated in the right order so every dependency gets loaded correctly. Browserify can require dependencies for JavaScript like modules in node.js. This brings a lot of advantages to the way we can handle our required libraries. [![better-javascript-dependency-management-with-browserify](/articles/better-javascript-dependency-management-with-browserify/better-javascript-dependency-management-with-browserify.jpg)](http://www.gayadesign.com/front-end/better-javascript-dependency-management-with-browserify/)<span class="more"></span>
 
 What is wrong with plain JavaScript concatenation?
 --------------------------------------------------
