@@ -31,6 +31,10 @@
             {{ page.html }}
         </section>
 
+        {% if page.metadata.docs %}
+            {% include "docs.html" %}
+        {% endif %}
+
         <section class="post__meta">
             <section class="post__meta__published">
                 Published on <time content="{{ moment.utc(page.date).format() }}" datetime="{{ moment.utc(page.date).format() }}" itemprop="datePublished">{{ moment.utc(page.date).format('DD MMMM, YYYY') }}</time>
