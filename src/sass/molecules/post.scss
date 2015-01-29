@@ -62,6 +62,10 @@
             @extend %big-font-size;
         }
 
+        h3 {
+            @include change-font-size($about-font-size);
+        }
+
         code {
             font-family: $code-font;
             color: $light-1;
