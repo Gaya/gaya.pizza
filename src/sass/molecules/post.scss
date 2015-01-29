@@ -117,6 +117,16 @@
                 margin: 0;
             }
         }
+
+        hr {
+            border: 0;
+            border-top: 1px solid $light-2;
+            margin: rhythm(1) 0 rhythm-border(1, 1px) 0;
+
+            @include media($desktop) {
+                margin: rhythm(2) 0 rhythm-border(2, 1px) 0;
+            }
+        }
     }
 
     &__meta {
