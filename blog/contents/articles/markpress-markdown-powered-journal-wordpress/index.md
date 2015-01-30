@@ -17,8 +17,6 @@ Markdown is used to quickly write a styled document with a simple syntax, great 
 
 <span class="more"></span>
 
-![Example of how you'd write a journal note.](/articles/markpress-markdown-powered-journal-wordpress/screenshot-1.jpg) Example of how you'd write a journal note.
-
 What is MarkPress?
 ------------------
 
@@ -35,6 +33,8 @@ Its requirements were simple:
 There were not a lot of apps that do all this, so the easiest thing was to quickly write a web app and let WordPress store the data.
 
 And then, MarkPress was born.
+
+![Example of how you'd write a journal note.](/articles/markpress-markdown-powered-journal-wordpress/screenshot-1.jpg) *Example of how you'd write a journal note.*
 
 How to install:
 ---------------
