@@ -87,7 +87,7 @@ All there is left to do is call the GarageDoor to enable the effect!
 ```
 
 
-The first line in the **<script>** tag sets the amount of scrolling the overlay has to do when the cursor is floating over an item. In this example the overlay has to go 55 up, which means move -55px on the Y-axis.  
+The first line in the `<script>` tag sets the amount of scrolling the overlay has to do when the cursor is floating over an item. In this example the overlay has to go 55 up, which means move -55px on the Y-axis.
  You can also make it scroll horizontal.
 
 Give the **id** of the **garagedoor container** to the **setBindings** method and the GarageDoor effect will be initialized! Be sure to make the call **after** creating the **html**.

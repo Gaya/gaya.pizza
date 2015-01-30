@@ -14,6 +14,3 @@ After a few days of thinking and many drafts I created a version suited better f
 
 Tell me what you think about this concept. It's not fully done yet, but it gives an idea of what the looks will be.  
  Thanks for watching!
-
-[![gayadesignprev](/articles/new-looks-coming-your-way/gayadesignprev-300x254.jpg "gayadesignprev")  
- Click to enlarge](http://www.gayadesign.com/wp-content/uploads/2009/04/gayadesignprev.jpg)

@@ -82,7 +82,7 @@ Take a look at the code below:
 
 
 The overall container “navigate” will always be hidden prior to the actual Javascript call. I also gave the *fixed* div a second class. This classname will point to the options of the container; the height and the background image (the actual image that needs scrolling).  
- You can add *<a> tags* to the *fixed* container. I gave them all classnames so they can be positioned in the CSS. This part is optional.
+ You can add *`<a>` tags* to the *fixed* container. I gave them all classnames so they can be positioned in the CSS. This part is optional.
 
 Remember to include the jQuery library and the PhotoNav Javascript files in the header. Also include the CSS file *photonav.css*.
 
