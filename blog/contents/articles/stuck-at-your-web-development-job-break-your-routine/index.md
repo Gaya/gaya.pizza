@@ -30,7 +30,7 @@ It's a good thing to fool around with the demos that are available everywhere an
 
 If the company your work for allows it, you could try to get a completely different project from time to time.
 
-![Working at a dead end job](/articles/stuck-at-your-web-development-job-break-your-routine/werken-bij-twisted.jpg) Working at a dead end job
+![Working at a dead end job](/articles/stuck-at-your-web-development-job-break-your-routine/werken-bij-twisted.jpg)
 
 - Try to make a mashup of services, or try to make a service yourself.
 - Create a completely different website for once.

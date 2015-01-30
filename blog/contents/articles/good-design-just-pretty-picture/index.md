@@ -39,7 +39,7 @@ Stop overcomplicating things
 
 Just because something looks better doesn't mean that it's better. Just because an important element looks better in a certain part of the page doesn't mean it's logical to put it there.
 
-![A very "complicated" maze](/articles/good-design-just-pretty-picture/a-complicated-maze.jpg) A very "complicated" maze
+![A very "complicated" maze](/articles/good-design-just-pretty-picture/a-complicated-maze.jpg)
 
 A good design always starts with some sort of wireframe where the layout and structure of the website is put together. In this layout you can see where the important parts of the page will be. You'll also get a feeling of what the user will be drawn to. Huge headers and useless elements will not help the end user is most of the cases.
 
