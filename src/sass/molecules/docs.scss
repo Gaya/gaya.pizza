@@ -21,6 +21,9 @@
 
         &__type {
             color: #bf79db;
+            &:after {
+                content: " ";
+            }
         }
 
         &__var {
@@ -28,7 +31,9 @@
         }
 
         &__separator {
-
+            &:after {
+                content: " ";
+            }
         }
     }
 
