@@ -52,7 +52,8 @@ I am not only aiming at jQuery in this case, but also at software like WordPress
 
 This means that you'll most likely add some code and functionality to your site you don't really need to have. This could make your site slower, bigger and break in some cases.
 
-![Very bad practice](/articles/curse-of-the-open-source-libraries-frameworks/script-overload.jpg) One of the worst cases I've come across.
+![Very bad practice](/articles/curse-of-the-open-source-libraries-frameworks/script-overload.jpg)
+*One of the worst cases I've come across.*
 
 This webpage loads 88 resources, counting 37 scripts. That's an insanely large number. These guys have no clue what they're doing.
 
