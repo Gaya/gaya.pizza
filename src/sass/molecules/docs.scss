@@ -13,6 +13,7 @@
         background-color: $dark-3;
         padding: 3px 7px;
         margin: -3px 0;
+        white-space: pre;
 
         &__name {
             color: #f92672;
@@ -28,6 +29,16 @@
 
         &__separator {
 
+        }
+    }
+
+    &__description {
+        margin: rhythm(0.5) 0;
+    }
+
+    &__table {
+        &__header {
+            @include change-font-size($about-font-size);
         }
     }
 }
