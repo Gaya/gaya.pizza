@@ -2,7 +2,11 @@
 
 {% block extraClass %}{% endblock %}
 
-{% block title %}{% if page.metadata.seo_title %}{{ page.metadata.seo_title }}{% else %}{{ page.title }}{% endif %}{% endblock %}
+{% if page.metadata.seo_title %}
+    {% block title %}{{ page.metadata.seo_title }}{% endblock %}
+{% endif %}
+
+{% block description %}{% endblock %}
 
 {% block content %}
     <section class="breadcrumbs">
