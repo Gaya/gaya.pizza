@@ -69,7 +69,7 @@ First we're going to set the URI to the smoke / cloud image and the size in pixe
 
 Make sure the values match your smoke image. The smoke image is preferably a PNG image to make the effect look better and to be able to see the background. If you have a solid colour background, you can also use other formats.
 
-Now start up the script by including the following code in the same <script> tag:
+Now start up the script by including the following code in the same `<script>` tag:
 
 
 ```javascript
