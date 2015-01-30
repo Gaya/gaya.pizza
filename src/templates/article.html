@@ -2,7 +2,7 @@
 
 {% block extraClass %}{% endblock %}
 
-{% block title %}{{ page.title }}{% endblock %}
+{% block title %}{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{{% endif %}}{% endblock %}
 
 {% block content %}
     <section class="breadcrumbs">
