@@ -5,15 +5,7 @@
     <ul class="docs__functions">
         {% for function in page.metadata.docs.functions %}
         <li class="docs__functions__function function">
-            <div class="function__syntax">
-                <span class="function__syntax__name">{{ function.name }}</span>({% for param in function.params %}
-                    <span class="function__syntax__type">{{ param.type }}</span>
-                    <span class="function__syntax__var">{{ param.name }}</span>
-                    {% if not loop.last %}
-                    <span class="function__syntax__separator">,</span>
-                    {% endif %}
-                {% endfor %});
-            </div>
+            <div class="function__syntax"><span class="function__syntax__name">{{ function.name }}</span>({% for param in function.params %}<span class="function__syntax__type">{{ param.type }}</span><span class="function__syntax__var">{{ param.name }}</span>{% if not loop.last %}<span class="function__syntax__separator">,</span>{% endif %}{% endfor %});</div>
 
             {% if function.desc %}
             <div class="function__description">
@@ -31,14 +23,7 @@
                     {% for row in table.rows %}
                     <tr class="function__table__row">
                         <td class="function__table__param">
-                            <div class="function__syntax">
-                                <span class="function__syntax__type">
-                                    {{ row.type }}
-                                </span>
-                                <span class="function__syntax__name">
-                                    {{ row.name }}
-                                </span>
-                            </div>
+                            <div class="function__syntax"><span class="function__syntax__type">{{ row.type }}</span><span class="function__syntax__var">{{ row.name }}</span></div>
                         </td>
                         <td class="function__table__desc">
                             {{ row.desc }}
