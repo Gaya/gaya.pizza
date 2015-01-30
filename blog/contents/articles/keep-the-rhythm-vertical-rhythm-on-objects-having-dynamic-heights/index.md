@@ -75,7 +75,7 @@ Imagine you have a baseline of 24 pixels and the image is 50 pixels tall, this m
 
 ### It fixes this:
 
-![Incorrect Rhythm](/articles/keep-the-rhythm-vertical-rhythm-on-objects-having-dynamic-heights/incorrect-rhythm.jpg) Incorrect Rhythm, overlap marked in red.
+![Incorrect Rhythm](/articles/keep-the-rhythm-vertical-rhythm-on-objects-having-dynamic-heights/incorrect-rhythm.jpg) *Incorrect Rhythm, overlap marked in red.*
 
 ### To this:
 
