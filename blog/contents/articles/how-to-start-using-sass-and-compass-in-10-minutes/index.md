@@ -48,8 +48,7 @@ This tutorial will take you through the following steps in understanding and set
 4. Your first .scss
 5. Trying out Compass' helpers
 
-1. Install Compass on your computer
------------------------------------
+##1. Install Compass on your computer
 
 First we're going to install Ruby. If you're on OS X; Ruby is already installed (great!). If you're working on a Windows machine you can grab [RubyInstaller for Windows](http://rubyinstaller.org/ "RubyInstaller"). Be sure to check the "export Ruby executables to PATH" box when installing.
 
@@ -59,11 +58,15 @@ Now we can install Compass. So let's open up a *Terminal* (CMD on Windows).
 
 ### On Windows:
 
-`gem install compass`
+```
+gem install compass
+```
 
 ### On OS X
 
-`sudo gem install compass`
+```
+sudo gem install compass
+```
 
 2. Use the test project
 -----------------------
