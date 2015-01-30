@@ -20,12 +20,12 @@ docs:
       name: "QueryLoader2"
       params:
         -
-          type: "element"
-          name: "DOMElement"
+          type: "DOMElement"
+          name: "element"
 
         -
-          type: "options"
-          name: "object"
+          type: "object"
+          name: "options"
 
       desc: "You can add options to loader."
       tables:

@@ -20,8 +20,8 @@ docs:
       name: "fullscreenBackground"
       params:
         -
-          type: "options"
-          name: "object"
+          type: "object"
+          name: "options"
 
       desc: "The plugin allows a few settings to give to the function:"
       tables:
