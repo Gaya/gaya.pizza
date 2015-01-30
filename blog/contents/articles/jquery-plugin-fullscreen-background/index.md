@@ -84,12 +84,6 @@ Here's a short step by step installation guide:
 $("#background-image").fullscreenBackground();
 ```
 
-
-Documentation:
---------------
-
-
-
 Conclusion:
 -----------
 
