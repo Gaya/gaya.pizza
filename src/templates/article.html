@@ -6,7 +6,9 @@
     {% block title %}{{ page.metadata.seo_title }}{% endblock %}
 {% endif %}
 
-{% block description %}{% endblock %}
+{% if page.metadata.seo_desc %}
+    {% block description %}{{ page.metadata.seo_desc }}{% endblock %}
+{% endif %}
 
 {% block content %}
     <section class="breadcrumbs">
