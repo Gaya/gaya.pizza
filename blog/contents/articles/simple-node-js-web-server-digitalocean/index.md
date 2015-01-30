@@ -34,7 +34,8 @@ Once you're signed up and logged in to your account, you'll end up on the list o
 
 Go ahead and press the big green 'create' or blue 'create droplet' button to [create a new droplet](https://cloud.digitalocean.com/droplets/new).
 
-![Create new droplet in Digital Ocean](/articles/simple-node-js-web-server-digitalocean/create-new-droplet-digital-ocean.jpg) Create new droplet in Digital Ocean
+![Create new droplet in Digital Ocean](/articles/simple-node-js-web-server-digitalocean/create-new-droplet-digital-ocean.jpg)
+*Create new droplet in Digital Ocean*
 
 Enter a host name for your droplet. Choose a size and region.
 
@@ -44,7 +45,8 @@ It's probably smart to choose a region that is close to you or where the applica
 
 Now select the predefined Node.js image. It runs on Ubuntu 14.04 at the time of writing.
 
-![Select the Node.js image](/articles/simple-node-js-web-server-digitalocean/select-node-js-image-digital-ocean.jpg) Select the Node.js image
+![Select the Node.js image](/articles/simple-node-js-web-server-digitalocean/select-node-js-image-digital-ocean.jpg)
+*Select the Node.js image*
 
 Hit 'create droplet' at the bottom of the page and your droplet will be created.
 
