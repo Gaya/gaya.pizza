@@ -55,7 +55,7 @@ In this case my plugin is called `awesome-plugin` so I can assume a file called
 Include the Symbolic Press class in this file and create a new instance of the class passing `__FILE__` as a parameter like so:
 
 
-```clike
+```php
 include "libs/class-symbolic-press.php";
 new Symbolic_Press(__FILE__);
 ```
@@ -66,7 +66,7 @@ Every time you use `plugins_url()` it won't include the path to your symlinked 
 What it does is this:
 
 
-```clike
+```php
 add_filter( 'plugins_url', 'plugins_symbolic_filter' );
 
 public function plugins_symbolic_filter( $url ) {
@@ -100,7 +100,7 @@ For this I created a small function in Symbolic Press: `plugin_basename`. Which 
 The solution is a copy of the original `plugin_basename` but with two lines added before the `preg_replace` and a replacement for the `preg_replace`:
 
 
-```clike
+```php
 $sp_plugin_dir = dirname( dirname( $sp_plugin_dir ) );
 $sp_plugin_dir = preg_replace( '|/+|', '/', $sp_plugin_dir ); // remove any duplicate slash
 $file          = preg_replace( '#^' . preg_quote( $sp_plugin_dir, '#' ) . '/|^' . preg_quote( $plugin_dir, '#' ) . '/|^' . preg_quote( $mu_plugin_dir, '#' ) . '/#', '', $file ); // get relative path from plugins dir
@@ -113,7 +113,7 @@ How do I use the registration, deregistration and uninstall hooks?
 When you're using a registration or deregistration hook WordPress does no more than:
 
 
-```clike
+```php
 add_action( 'activate_awesome-plugin/awesome-plugin.php', $function );
 ```
 
@@ -121,7 +121,7 @@ add_action( 'activate_awesome-plugin/awesome-plugin.php', $function );
 For this you can use:
 
 
-```clike
+```php
 $plugin_basename = Symbolic_Press::plugin_basename( $file );
 
 //bind the activation action
@@ -132,7 +132,7 @@ add_action( 'activate_' . $plugin_basename, $function );
 Or the respectable static functions you can use to register these hooks.
 
 
-```clike
+```php
 Symbolic_Press::register_activation_hook( $filepath, $function ); Symbolic_Press::register_deactivation_hook( $filepath, $function );
 Symbolic_Press::register_uninstall_hook( $filepath, $function );
 ```

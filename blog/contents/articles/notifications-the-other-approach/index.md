@@ -160,7 +160,7 @@ The PHP script has to do the following:
 The basic code will look like this:
 
 
-```clike
+```php
 //determine the starting time and the max execution time
 
 //set default response
@@ -183,7 +183,7 @@ To determine the maximum execution time of a PHP script you can get this informa
 The first part of the script would look like this:
 
 
-```clike
+```php
 //determine the starting time and the max timeout
 $start_time = time();
 $max_timeout = ini_get('max_execution_time');
@@ -198,7 +198,7 @@ It determines the start time of the request and the maximum time PHP can put the
 Next part contains a bit more code:
 
 
-```clike
+```php
 //go into the loop
 while((time() - $start_time) < $max_timeout) {
 

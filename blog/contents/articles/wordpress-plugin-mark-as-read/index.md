@@ -47,7 +47,7 @@ Usage:
 To output the list all you need to do is to put the following code inside a template file of your theme:
 
 
-```clike
+```php
 <ul>
     <?php the_unread_posts(); ?>
 </ul>
@@ -59,7 +59,7 @@ This will output all the unread content of **all** categories.
 The following parameters are accepted:
 
 
-```clike
+```php
 the_unread_posts($categoryID, $noPostsMessage, $updateText, $rowStyle);
 ```
 

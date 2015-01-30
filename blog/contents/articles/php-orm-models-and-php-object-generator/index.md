@@ -93,7 +93,7 @@ Now it's time to change the configuration of POG, this contains the database con
  Open *configuration.example.php* and edit the following information:
 
 
-```clike
+```php
 $configuration['db'] = 'test'; // database name
 $configuration['host'] = 'localhost'; // database host
 $configuration['user'] = 'root'; // database user
@@ -105,7 +105,7 @@ $configuration['port'] = '3306'; // database port
 and also:
 
 
-```clike
+```php
 //plugin settings
 $configuration['plugins_path'] = '';
 ```
@@ -125,7 +125,7 @@ Let's create a small test script to see how POG works and what it can do.
  Create a file in the root called "test.php". Add the following lines of code:
 
 
-```clike
+```php
 include('configuration.php');
 include('objects/class.database.php');
 
@@ -140,7 +140,7 @@ This will include all the necessary files needed to make POG work and include th
 In the next piece of code I am going to create a region, give it a name and a description, create a town that belongs to that region and put a home inside the town.
 
 
-```clike
+```php
 //create a region
 $region = new Region();
 

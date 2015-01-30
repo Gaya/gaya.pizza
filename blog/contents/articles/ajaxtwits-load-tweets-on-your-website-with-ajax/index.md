@@ -86,7 +86,7 @@ Step 2: Adjust the request file
 In the "*AjaxTwits*" folder you just uploaded****is a file called "*AjaxTwitsRequest.php*" and "*AjaxTwitsUpdate.php*". Open this file in an editor.
 
 
-```clike
+```php
 //include AjaxTwits and create an object
 include('AjaxTwits.php');
 $ajaxTwits = new AjaxTwits;

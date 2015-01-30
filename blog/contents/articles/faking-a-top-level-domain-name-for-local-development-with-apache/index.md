@@ -56,7 +56,7 @@ Now open and edit the file in the line you just uncommented.
 Replace the content for the following:
 
 
-```clike
+```php
 NameVirtualHost *:80
 
 <Directory "/Users/username/Sites/*">

@@ -30,7 +30,7 @@ First, we need to get an **.htaccess** rule going. To do this you have to adjust
 Put the following lines in the **.htaccess** file:
 
 
-```clike
+```php
 #Let's do rewriting!
 RewriteEngine on
 RewriteRule ^(.*).(rar|zip|pdf)$ /download.php?file=$1.$2 [R,L]
@@ -51,7 +51,7 @@ Next up, we are going to create a table in MySQL. You can do this in phpMyAdmin,
 If you already have a table called **download**, you have to change the SQL code.
 
 
-```clike
+```php
 CREATE TABLE `download` (
 `filename` varchar(255) NOT NULL,
 `stats` int(11) NOT NULL,
@@ -67,7 +67,7 @@ Now it's time to get the PHP to work.
 The following code allows you to keep track of download requests in the table you created above:
 
 
-```clike
+```php
 <?php
 
     //put connection to database here

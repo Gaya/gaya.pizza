@@ -51,7 +51,7 @@ It only needs the URI to the XML file and it will convert the string into an XM
 Create a new PHP file and place this code somewhere:
 
 
-```clike
+```php
 $completeurl = "http://ws.audioscrobbler.com/2.0/?method=&amp;user=xgayax" .
 "&api_key=b25b959554ed76058ac220b7b2e0a026";
 $xml = simplexml_load_file($completeurl);
@@ -65,7 +65,7 @@ All what's left for us to do is to loop through the given object.
 Take a look at the following code:
 
 
-```clike
+```php
 $tracks = $xml->recenttracks->track;
 
 for ($i = 0; $i < 3; $i++) {

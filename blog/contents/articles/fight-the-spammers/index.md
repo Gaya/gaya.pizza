@@ -21,7 +21,7 @@ I already had the Wordpress API key because of my DS blog. You can also use one 
 The main thing you need to do in order to filter spam content is to let Akismet check the content of the posted data. This can be for comments, short messages or just any content a user is able to post.
 
 
-```clike
+```php
 include('/path/to/akismet/class.php');
 $WordPressAPIKey = 'aoeu1aoue';
 $MyBlogURL = 'http://www.example.com/blog/';

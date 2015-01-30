@@ -35,7 +35,7 @@ Next up is to create a new PHP class which is going to handle our caching and th
 Take a look at this skeleton:
 
 
-```clike
+```php
 <?php
 /*
 * Caching A small PHP class to
@@ -80,7 +80,7 @@ First we need a constructor which will accept the path to the file and a URI to 
 I've set up the following piece of code for the constructor:
 
 
-```clike
+```php
 function __construct($filePath, $apiURI) {
     //check if the file path and api URI are specified, if not: break out of construct.
     if (strlen($filePath) > 0 && strlen($apiURI) > 0) {
@@ -120,7 +120,7 @@ First up is the time check called "checkForRenewal". In this function we'll be c
 Use the following code for the "checkForRenewal" function:
 
 
-```clike
+```php
 function checkForRenewal() {
     //set the caching time (in seconds)
     $cachetime = (60 * 60 * 24 * 7); //one week
@@ -150,7 +150,7 @@ In getExternalInfo() we are going to make the API call and just return the resul
 Take a look at the following code:
 
 
-```clike
+```php
 function getExternalInfo() {
     if ($xml = @simplexml_load_file($this->apiURI)) {
         return $xml;
@@ -173,7 +173,7 @@ Looking at [the XML returned by Last.fm](http://ws.audioscrobbler.com/2.0/?metho
 Take a look at what I wrote:
 
 
-```clike
+```php
 function stripAndSaveFile($xml) {
     //put the artists in an array
     $artists = $xml->weeklyartistchart->artist;
@@ -213,7 +213,7 @@ Making the call!
 Up until now we haven't called the function once. So create a new script and put the following code in it:
 
 
-```clike
+```php
 <?php
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -238,7 +238,7 @@ Missed anything? Here is the source in it's full galore!
 The Caching class:
 
 
-```clike
+```php
 <?php
 /*
 * Caching A small PHP class to get data from Last.fm and cache it
@@ -334,7 +334,7 @@ class Caching {
 Calling the scripts:
 
 
-```clike
+```php
 <?php
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
