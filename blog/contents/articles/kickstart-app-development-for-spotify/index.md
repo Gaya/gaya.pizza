@@ -54,7 +54,7 @@ First: Go to the search field in Spotify
 
 You should see something similar to this:
 
-<div class="border">![Hello world in Spotify](/articles/kickstart-app-development-for-spotify/spotify01.jpg "Hello world in Spotify")</div>You just included your app in Spotify. Nice.
+![Hello world in Spotify](/articles/kickstart-app-development-for-spotify/spotify01.jpg "Hello world in Spotify") *You just included your app in Spotify. Nice.*
 
 The "add application to sidebar" button will put it in the sidebar until you close Spotify again. This will come in handy when you're debugging the app.
 
