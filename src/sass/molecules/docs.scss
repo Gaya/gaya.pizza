@@ -2,4 +2,32 @@
     &__title {
         @extend %big-font-size;
     }
+
+
+}
+
+.function {
+    &__syntax {
+        font-family: $code-font;
+        color: $light-1;
+        background-color: $dark-3;
+        padding: 3px 7px;
+        margin: -3px 0;
+
+        &__name {
+            color: #f92672;
+        }
+
+        &__type {
+
+        }
+
+        &__var {
+
+        }
+
+        &__separator {
+
+        }
+    }
 }
