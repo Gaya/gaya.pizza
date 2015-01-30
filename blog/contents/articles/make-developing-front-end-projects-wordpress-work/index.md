@@ -43,7 +43,9 @@ If you'd go about and request data from the system directly in your views you're
 
 We can't move our code and use the templates in another project that doesn't use WordPress. We're too heavily coupled to WordPress.
 
-![Architecture in WordPress gets pretty awkward since we can't really decouple front-end from server-side.](/articles/make-developing-front-end-projects-wordpress-work/architecture-wordpress.jpg) Architecture in WordPress gets pretty awkward since we can't really decouple front-end from server-side.
+![Architecture in WordPress gets pretty awkward since we can't really decouple front-end from server-side.](/articles/make-developing-front-end-projects-wordpress-work/architecture-wordpress.jpg)
+
+Architecture in WordPress gets pretty awkward since we can't really decouple front-end from server-side.
 
 ### We're front-end developers, and we're using PHP
 
@@ -201,7 +203,6 @@ There is a [Gulp plugin for Twig.js](https://www.npmjs.org/package/gulp-twig), a
 
 This way you don't have to use WordPress to create dynamic webpages.
 
-
 - - - - - -
 
 My approach to developing front-end for WordPress and Timber using Gulp and Twig.js
@@ -227,18 +228,15 @@ The task will do a few things:
 
 We need a few things in order for the script to work. Install them with `npm`.
 
-
 ```
 npm install --save-dev twig underscore gulp
 ```
-
 
 ### The gulp task
 
 The following is the gulp task I came up with. Feel free to fiddle with it a bit and test is out by running `gulp timber` in the terminal.
 
 I've placed [an example of using only Gulp and Twig in a project on GitHub](https://github.com/Gaya/gulp-timber-example). It illustrates how to use the following task in Gulp.
-
 
 ```javascript
 var gulp = require('gulp'),
@@ -288,7 +286,6 @@ gulp.task('timber', function (cb) {
     cb();
 });
 ```
-
 
 The [basic timber.json file](https://github.com/Gaya/gulp-timber-example/blob/master/data/timber.json) which is being referred to in the code can be used as a data template for the Twig template you can find in the Timber Starter Theme. It has the structure to get you going.
 
