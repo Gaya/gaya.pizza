@@ -21,8 +21,8 @@ docs:
       name: "keepTheRhythm"
       params:
         -
-          type: "options"
-          name: "object"
+          type: "object"
+          name: "options"
 
       desc: "The main function to make the elements align to the vertical rhythm."
       tables:
