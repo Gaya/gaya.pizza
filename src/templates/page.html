@@ -4,10 +4,14 @@
 
 {% if page.metadata.seo_title %}
     {% block title %}{{ page.metadata.seo_title }}{% endblock %}
+{% else %}
+    {% block title %}{{ page.title }}{% endblock %}
 {% endif %}
 
 {% if page.metadata.seo_desc %}
     {% block description %}{{ page.metadata.seo_desc }}{% endblock %}
+{% else %}
+    {% block description %}{{ env.locals.description }}{% endblock %}
 {% endif %}
 
 {% block content %}
