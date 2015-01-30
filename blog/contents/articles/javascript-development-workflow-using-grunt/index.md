@@ -23,7 +23,9 @@ If you're not familiar with using Grunt, there is a really [good getting started
 What my workflow does.
 ----------------------
 
-![Grunt logo](/articles/javascript-development-workflow-using-grunt/grunt-logo.png) It's basically a way to separate my development and production versions of my script while not changing the source for either of them. There will be two versions of our JavaScript file in the end, one I include in the development version of the website, one for the production version.
+It's basically a way to separate my development and production versions of my script while not changing the source for either of them. There will be two versions of our JavaScript file in the end, one I include in the development version of the website, one for the production version.
+
+![Grunt logo](/articles/javascript-development-workflow-using-grunt/grunt-logo.png)
 
 While in development I want my script to give me as many debugging info as possible, run a few unit tests and is easy to debug when the console gives me an error.
 
@@ -181,7 +183,8 @@ The Gruntfile.js file [should be looking like this](https://gist.github.com/Gaya
 
 Now, go back to your command line and run `grunt watch`. Adjust a file in your src folder. If you get something like this, you're done with the first phase.
 
-![Grunt watch in terminal example](/articles/javascript-development-workflow-using-grunt/grunt-watch-concat.gif) Example terminal output for `grunt watch`
+![Grunt watch in terminal example](/articles/javascript-development-workflow-using-grunt/grunt-watch-concat.gif)
+*Example terminal output for `grunt watch`*
 
 If you want to can also add unit testing tasks to your watch task set. It's a great time to run these so you immediately know if you messed up your scripts.
 
@@ -270,7 +273,6 @@ Go back to command line and let Grunt execute your newly created task.
 ```
 grunt build
 ```
-
 
 ![grunt-build](/articles/javascript-development-workflow-using-grunt/grunt-build.gif)
 
