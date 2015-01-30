@@ -1,9 +1,8 @@
 .docs {
     &__title {
         @extend %big-font-size;
+        margin-bottom: rhythm(1);
     }
-
-
 }
 
 .function {
@@ -13,7 +12,10 @@
         background-color: $dark-3;
         padding: 3px 7px;
         margin: -3px 0;
-        white-space: pre;
+
+        @include media($desktop) {
+            white-space: pre;
+        }
 
         &__name {
             color: #f92672;
@@ -38,12 +40,49 @@
     }
 
     &__description {
-        margin: rhythm(0.5) 0;
+        margin: rhythm(1) 0;
     }
 
     &__table {
+        display: block;
+
+        @include media($tablet) {
+            display: table;
+        }
+
         &__header {
             @include change-font-size($about-font-size);
+        }
+
+        &__row {
+            display: block;
+
+            @include media($tablet) {
+                display: table-row;
+            }
+        }
+
+        &__param {
+            display: block;
+
+            @include media($tablet) {
+                display: table-cell;
+
+                .function__syntax {
+                    display: inline-block;
+                }
+            }
+        }
+
+        &__desc {
+            display: block;
+            margin: rhythm(0.5) 0;
+
+            @include media($tablet) {
+                display: table-cell;
+                margin: 0;
+                padding: 0 0 rhythm(1) 20px;
+            }
         }
     }
 }
