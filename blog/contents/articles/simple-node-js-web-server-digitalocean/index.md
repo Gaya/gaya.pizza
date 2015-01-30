@@ -16,13 +16,12 @@ You can use Node.js to act as a static file server. It receives a request for a 
 
 In order to get the web server running we need to do four things:
 
-1. [Sign up for DigitalOcean](#sign-up)
-2. [Create a Droplet from a predefined image](#create-droplet)
-3. [Install a Node.js web server on your droplet](#install-server)
-4. [Create startup script to run your application as a service](#startup-script)
+1. [Sign up for DigitalOcean](#1-sign-up-for-digitalocean)
+2. [Create a Droplet from a predefined image](#2-create-a-droplet-from-a-predefined-image)
+3. [Install a Node.js web server on your droplet](#3-install-a-node-js-web-server-on-your-droplet)
+4. [Create startup script to run your application as a service](#4-create-startup-script-to-run-your-application-as-a-service)
 
-1. Sign up for DigitalOcean
----------------------------
+##1. Sign up for DigitalOcean
 
 First things first, in order to follow this tutorial you'll have to [register for an account at DigitalOcean](https://www.digitalocean.com/?refcode=d5a2f709c373). With this referral link you'll get $10 in credits for free!
 
@@ -49,8 +48,8 @@ Now select the predefined Node.js image. It runs on Ubuntu 14.04 at the time of 
 
 Hit 'create droplet' at the bottom of the page and your droplet will be created.
 
-Install a Node.js web server on your droplet
---------------------------------------------
+3. Install a Node.js web server on your droplet
+-----------------------------------------------
 
 When DigitalOcean is done creating your droplet, you should receive an email with the ip address of the droplet, the username and the password. These are used to login to your droplet using ssh.
 
@@ -129,8 +128,8 @@ To stop running the server (do so for the purpose of this tutorial) press `ctrl 
 
 Next up is making the server execute the script on startup or reboot. So when something goes wrong you don't have to manually rerun the Node.js script.
 
-Create startup script to run your application as a service
-----------------------------------------------------------
+4. Create startup script to run your application as a service
+-------------------------------------------------------------
 
 To run the Node.js powered web server as a service, we can use [Upstart](http://upstart.ubuntu.com/). Upstart provides an easy and scriptable way to add your own daemons.
 
