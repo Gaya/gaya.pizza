@@ -64,6 +64,7 @@
 
         h3 {
             @include change-font-size($about-font-size);
+            padding: rhythm(0.5) 0;
         }
 
         code {
