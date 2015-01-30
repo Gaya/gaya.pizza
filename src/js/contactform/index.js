@@ -37,8 +37,11 @@ var contactform = {
     init: function (query) {
         "use strict";
         var objects = document.querySelectorAll(query);
-        this.endpoint = objects[0].getAttribute("action");
-        this.forms = form(objects, _.bind(this.onSubmit, this));
+
+        if (objects.length > 0) {
+            this.endpoint = objects[0].getAttribute("action");
+            this.forms = form(objects, _.bind(this.onSubmit, this));
+        }
 
         return this;
     },

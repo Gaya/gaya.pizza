@@ -16,6 +16,10 @@
     &__links {
         @include outer-container;
 
+        @include media($desktop) {
+            margin: rhythm(2) 0 rhythm(1) 0;
+        }
+
         &__link {
             @include span-columns(4 of 4);
             border:  1px $highlight-1 solid;
@@ -27,6 +31,10 @@
             font-style: italic;
             @include transition(background-color $anim-speed, color $anim-speed, border-color $anim-speed);
             border-radius: rhythm(0.75);
+
+            &__title {
+                display: block;
+            }
 
             &:hover {
                 background-color: $highlight-2;
@@ -60,6 +68,11 @@
 
         h2 {
             @extend %big-font-size;
+        }
+
+        h3 {
+            @include change-font-size($about-font-size);
+            padding: rhythm(0.5) 0;
         }
 
         code {
@@ -99,6 +112,8 @@
 
         img {
             max-width: 100%;
+            display: block;
+            margin: 0 auto;
         }
 
         blockquote {
@@ -109,6 +124,16 @@
 
             p {
                 margin: 0;
+            }
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid $light-2;
+            margin: rhythm(1) 0 rhythm-border(1, 1px) 0;
+
+            @include media($desktop) {
+                margin: rhythm(2) 0 rhythm-border(2, 1px) 0;
             }
         }
     }
