@@ -9,6 +9,7 @@
     <title>{% block title %}{{ env.locals.name }}{% endblock %}</title>
     <meta name="description" content="{% block description %}{{ env.locals.description }}{% endblock %}"/>
 
+    <meta name="robots" content="noodp,noydir"/>
     <link rel="canonical" href="{% block canonical %}{{ env.locals.url }}{% endblock %}"/>
     {% if prevPage %}<link rel="prev" href="{{ env.locals.url }}{{ prevPage.url }}" />{% endif %}
     {% if nextPage %}<link rel="next" href="{{ env.locals.url }}{{ nextPage.url }}" />{% endif %}
