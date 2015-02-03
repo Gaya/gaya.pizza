@@ -10,3 +10,10 @@
 <meta property="article:modified_time" content="{{ moment.utc(page.date).format() }}"/>
 <meta property="og:updated_time" content="{{ moment.utc(page.date).format() }}"/>
 <meta property="og:image" content="{% block poster %}{{ env.locals.url }}/images/fb-poster.jpg{% endblock %}"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:description" content="{% block description %}{{ env.locals.description }}{% endblock %}"/>
+<meta name="twitter:title" content="{% block title %}{{ env.locals.name }}{% endblock %}"/>
+<meta name="twitter:site" content="@gayaninja"/>
+<meta name="twitter:creator" content="@gayaninja"/>
+<meta name="twitter:image:src" content="{% block poster %}{{ env.locals.url }}/images/fb-poster.jpg{% endblock %}"/>
