@@ -9,6 +9,7 @@
     <title>{% block title %}{{ env.locals.name }}{% endblock %}</title>
     <meta name="description" content="{% block description %}{{ env.locals.description }}{% endblock %}"/>
 
+    <meta name="robots" content="noodp,noydir"/>
     <link rel="canonical" href="{% block canonical %}{{ env.locals.url }}{% endblock %}"/>
     {% if prevPage %}<link rel="prev" href="{{ env.locals.url }}{{ prevPage.url }}" />{% endif %}
     {% if nextPage %}<link rel="next" href="{{ env.locals.url }}{{ nextPage.url }}" />{% endif %}
@@ -18,6 +19,8 @@
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata|Lora:400,700,400italic,700italic|Libre+Baskerville' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ env.locals.url }}/css/style.css">
+
+    {% include 'social.html' %}
 
     {% include 'icons.html' %}
 </head>
