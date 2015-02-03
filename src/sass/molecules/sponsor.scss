@@ -3,11 +3,11 @@
     padding: rhythm(0.5);
     background: $light-3;
 
-    .adpacks-wrap {
+    .carbon-wrap {
         overflow: hidden;
     }
 
-    .adpacks-img {
+    .carbon-img {
         display: block;
         height: 120px;
         text-align: center;
@@ -16,7 +16,7 @@
         }
     }
 
-    .adpacks-text, .adpacks-poweredby {
+    .carbon-text, .carbon-poweredby {
         display: block;
         text-decoration: none;
         color: $dark-3;
@@ -25,5 +25,10 @@
         &:hover {
             color: $highlight-1;
         }
+    }
+
+    .carbon-poweredby {
+        text-align: right;
+        font-style: italic;
     }
 }
