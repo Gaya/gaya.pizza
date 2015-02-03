@@ -6,6 +6,10 @@
     color: $light-2;
     overflow: hidden;
 
+    @include media($desktop) {
+        padding: rhythm(2) 0 rhythm(1);
+    }
+
     &__copyright {
         @include body-padding(0, rhythm(1));
         @include outer-container;
