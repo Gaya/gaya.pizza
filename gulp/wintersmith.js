@@ -8,6 +8,11 @@ module.exports = [{
         "use strict";
         config.output = "./" + gulp.config.dist;
 
+        //build settings
+        if (gulp.config.dist === gulp.config.build) {
+            config.locals.url = "http://localhost:5000";
+        }
+
         var env = wintersmith(config);
 
         env.build(function(error) {
