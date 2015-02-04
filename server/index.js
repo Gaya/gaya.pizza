@@ -1,12 +1,15 @@
-var app = require('express')();
-var mail = require("./mail.js");
-var bodyParser = require('body-parser');
-var serveStatic = require('serve-static');
+var app = require('express')(),
+    mail = require("./mail.js"),
+    bodyParser = require('body-parser'),
+    serveStatic = require('serve-static'),
+    compression = require('compression');
 
 //parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post('/contact', mail);
+
+app.use(compression());
 
 app.use(serveStatic(__dirname + '/../public/', {'index': ['index.html']}));
 
