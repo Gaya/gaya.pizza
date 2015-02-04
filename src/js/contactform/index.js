@@ -5,6 +5,8 @@ var contactform = {
     endpoint: "",
     onSubmit: function () {
         "use strict";
+        this.setFormValues();
+
         var xmlhttp = new XMLHttpRequest();
 
         xmlhttp.open("POST", this.endpoint, true);
@@ -67,6 +69,12 @@ var contactform = {
         }
 
         return str;
+    },
+    setFormValues: function () {
+        "use strict";
+        this.name = document.querySelector("#name").value;
+        this.email = document.querySelector("#email").value;
+        this.message = document.querySelector("#message").value;
     }
 };
 
