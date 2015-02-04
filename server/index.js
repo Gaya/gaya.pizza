@@ -6,11 +6,7 @@ var serveStatic = require('serve-static');
 //parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.post('/contact', function (req, res) {
-    "use strict";
-    console.log(req.body);
-    res.send('welcome');
-});
+app.post('/contact', mail);
 
 app.use(serveStatic(__dirname + '/../public/', {'index': ['index.html']}));
 
