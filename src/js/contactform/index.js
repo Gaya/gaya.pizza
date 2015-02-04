@@ -5,23 +5,24 @@ var contactform = {
     endpoint: "",
     onSubmit: function () {
         "use strict";
+        this.setFormValues();
+
         var xmlhttp = new XMLHttpRequest();
 
         xmlhttp.open("POST", this.endpoint, true);
         xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
         xmlhttp.form = this;
-        xmlhttp.onreadystatechange = function(e) {
+        xmlhttp.onreadystatechange = _.bind(function(e) {
             if (xmlhttp.readyState === 4) {
                 var response = JSON.parse(xmlhttp.responseText);
-                var source = e.target || e.srcElement;
 
                 if (response.send) {
-                    source.form.setSend();
+                    this.setSend();
                 } else {
-                    source.form.setSendError();
+                    this.setSendError();
                 }
             }
-        };
+        }, this);
         xmlhttp.send(this.serializeObject({
             name: this.name,
             email: this.email,
@@ -47,11 +48,11 @@ var contactform = {
     },
     setSend: function () {
         "use strict";
-        this.forms[0].innerHTML = "Thank you for your message, I'll get back to you ASAP.";
+        this.forms[0].element.innerHTML = "Thank you for your message! I'll get back to you ASAP.";
     },
     setSendError: function () {
         "use strict";
-        alert("Whoops, something went wrong. Try again.");
+        window.alert("Whoops, something went wrong. Try again.");
     },
     serializeObject: function (obj) {
         "use strict";
@@ -65,6 +66,12 @@ var contactform = {
         }
 
         return str;
+    },
+    setFormValues: function () {
+        "use strict";
+        this.name = document.querySelector("#name").value;
+        this.email = document.querySelector("#email").value;
+        this.message = document.querySelector("#message").value;
     }
 };
 

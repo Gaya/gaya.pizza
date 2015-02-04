@@ -3,14 +3,21 @@
   "version": "1.0.0",
   "description": "Gaya Ninja's weblog",
   "dependencies": {
+    "akismet": "0.0.13",
+    "body-parser": "^1.11.0",
+    "compression": "^1.4.0",
+    "express": "^4.11.2",
     "moment": "2.3.x",
+    "nodemailer": "^0.7.1",
     "picturefill": "^2.2.0",
+    "serve-static": "^1.8.1",
     "typogr": "0.5.x",
     "underscore": "1.4.x"
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "node ./node_modules/gulp/bin/gulp.js build",
+    "start": "node ./server/"
   },
   "repository": {
     "type": "git",
@@ -28,6 +35,7 @@
     "gulp-ruby-sass": "^0.7.1",
     "gulp-sass": "^1.2.0",
     "gulp-sourcemaps": "^1.2.8",
+    "gulp-uglify": "^1.1.0",
     "node-neat": "^1.4.2",
     "picturefill": "^2.2.0",
     "svg-sprite": "^0.3.2",
