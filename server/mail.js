@@ -2,10 +2,12 @@ var nodemailer = require("nodemailer");
 var akismet = require('akismet').client({ blog: 'http://gaya.ninja', apiKey: '7a03b4068f58' });
 
 akismet.verifyKey(function(err, verified) {
-    if (verified)
+    "use strict";
+    if (verified) {
         console.log('API key successfully verified.');
-    else
+    } else {
         console.log('Unable to verify API key.');
+    }
 });
 
 var smtpTransport = nodemailer.createTransport("SMTP",{
@@ -25,13 +27,14 @@ var mailOptions = {
 };
 
 function sendMail(req) {
+    "use strict";
     var name = "Not found";
-    if (typeof req.body.name != "undefined") {
+    if (typeof req.body.name !== "undefined") {
         name = req.body.name;
     }
 
     var email = "unknown@what.com";
-    if (typeof req.body.email != "undefined") {
+    if (typeof req.body.email !== "undefined") {
         email = req.body.email;
     }
 
@@ -58,23 +61,20 @@ function sendMail(req) {
 }
 
 module.exports = function handleMailRequest(req, res, next) {
-    if (req.method == 'POST') {
-        akismet.checkSpam({
-            user_ip: req.connection.remoteAddress,
-            permalink: 'http://gaya.ninja',
-            comment_author: (typeof req.body.name != "undefined" ? req.body.name : "" ),
-            comment_content: (typeof req.body.message != "undefined" ? req.body.message : "" )
-        }, function(err, spam) {
-            if(spam) {
-                console.log('Spam caught.');
-            } else {
-                console.log('No spam, sent mail.');
-                sendMail(req);
-            }
-        });
+    "use strict";
+    akismet.checkSpam({
+        user_ip: req.connection.remoteAddress,
+        permalink: 'http://gaya.ninja',
+        comment_author: (typeof req.body.name != "undefined" ? req.body.name : "" ),
+        comment_content: (typeof req.body.message != "undefined" ? req.body.message : "" )
+    }, function(err, spam) {
+        if(spam) {
+            console.log('Spam caught.');
+        } else {
+            console.log('No spam, sent mail.');
+            sendMail(req);
+        }
+    });
 
-        res.end(JSON.stringify({ send: true }));
-    } else {
-        next();
-    }
+    res.end(JSON.stringify({ send: true }));
 };
