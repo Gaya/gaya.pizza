@@ -5,6 +5,7 @@ module.exports = [{
     pre: ["set-target", "compile"],
     task: function () {
         "use strict";
+        gulp.start("optimize");
         console.log("Done");
     }
 }, {
