@@ -48,7 +48,7 @@ var contactform = {
     },
     setSend: function () {
         "use strict";
-        this.forms[0].element.innerHTML = "Thank you for your message, I'll get back to you ASAP.";
+        this.forms[0].element.innerHTML = "Thank you for your message! I'll get back to you ASAP.";
     },
     setSendError: function () {
         "use strict";
