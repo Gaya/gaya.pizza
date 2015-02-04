@@ -1,11 +1,14 @@
 var gulp = require("gulp"),
-    wintersmith = require("wintersmith");
+    wintersmith = require("wintersmith"),
+    config = require('../config.json');
 
 module.exports = [{
     name: "wintersmith",
     task: function () {
         "use strict";
-        var env = wintersmith('./config.json');
+        config.output = "./" + gulp.config.dist;
+
+        var env = wintersmith(config);
 
         env.build(function(error) {
             if (error) {
