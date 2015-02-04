@@ -12,20 +12,19 @@ var contactform = {
         xmlhttp.open("POST", this.endpoint, true);
         xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
         xmlhttp.form = this;
-        xmlhttp.onreadystatechange = function(e) {
-            console.log(xmlhttp.readyState);
-
+        xmlhttp.onreadystatechange = _.bind(function(e) {
             if (xmlhttp.readyState === 4) {
                 var response = JSON.parse(xmlhttp.responseText);
-                var source = e.target || e.srcElement;
 
                 if (response.send) {
-                    source.form.setSend();
+                    this.setSend();
                 } else {
-                    source.form.setSendError();
+                    this.setSendError();
                 }
+            } else {
+                console.log("Wait");
             }
-        };
+        }, this);
         xmlhttp.send(this.serializeObject({
             name: this.name,
             email: this.email,
