@@ -12,6 +12,6 @@ app.post('/contact', function (req, res) {
     res.send('welcome');
 });
 
-app.use(serveStatic('../public/', {'index': ['index.html']}));
+app.use(serveStatic(__dirname + '/../public/', {'index': ['index.html']}));
 
 app.listen(process.env.PORT || 5000);
