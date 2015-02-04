@@ -21,8 +21,6 @@ var contactform = {
                 } else {
                     this.setSendError();
                 }
-            } else {
-                console.log("Wait");
             }
         }, this);
         xmlhttp.send(this.serializeObject({
@@ -50,7 +48,7 @@ var contactform = {
     },
     setSend: function () {
         "use strict";
-        this.forms[0].innerHTML = "Thank you for your message, I'll get back to you ASAP.";
+        this.forms[0].element.innerHTML = "Thank you for your message, I'll get back to you ASAP.";
     },
     setSendError: function () {
         "use strict";
