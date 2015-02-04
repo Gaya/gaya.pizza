@@ -11,6 +11,8 @@ var contactform = {
         xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
         xmlhttp.form = this;
         xmlhttp.onreadystatechange = function(e) {
+            console.log(xmlhttp.readyState);
+
             if (xmlhttp.readyState === 4) {
                 var response = JSON.parse(xmlhttp.responseText);
                 var source = e.target || e.srcElement;
@@ -51,7 +53,7 @@ var contactform = {
     },
     setSendError: function () {
         "use strict";
-        alert("Whoops, something went wrong. Try again.");
+        window.alert("Whoops, something went wrong. Try again.");
     },
     serializeObject: function (obj) {
         "use strict";
