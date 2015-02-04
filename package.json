@@ -15,6 +15,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "postinstall": "node ./node_modules/gulp/bin/gulp.js build",
     "start": "node ./server/"
   },
   "repository": {
