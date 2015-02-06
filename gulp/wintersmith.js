@@ -4,7 +4,7 @@ var gulp = require("gulp"),
 
 module.exports = [{
     name: "wintersmith",
-    task: function () {
+    task: function (cb) {
         "use strict";
         config.output = "./" + gulp.config.dist;
 
@@ -20,6 +20,10 @@ module.exports = [{
                 console.error(error);
             }
             gulp.browserSync.reload();
+
+            cb();
         });
+
+        return false;
     }
 }];
