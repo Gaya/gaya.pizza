@@ -11,6 +11,9 @@ app.post('/contact', mail);
 
 app.use(compression());
 
-app.use(serveStatic(__dirname + '/../public/', {'index': ['index.html']}));
+app.use(serveStatic(__dirname + '/../public/', {
+    'index': ['index.html'],
+    'maxAge': '2 years'
+}));
 
 app.listen(process.env.PORT || 5000);
