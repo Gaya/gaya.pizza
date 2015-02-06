@@ -17,12 +17,12 @@ module.exports = [{
     name: "image-min",
     task: function () {
         "use strict";
-        return gulp.src(gulp.config.dist + '/images/**/*')
+        return gulp.src(gulp.config.dist + '/**/*')
             .pipe(imageop({
                 progressive: true,
                 svgoPlugins: [{removeViewBox: false}]
             }))
-            .pipe(gulp.dest(gulp.config.dist + '/images/'));
+            .pipe(gulp.dest(gulp.config.dist + '/'));
     }
 }, {
     name: "critical",
