@@ -4,7 +4,7 @@
   "description": "Gaya Ninja's weblog",
   "engines": {
     "node": "0.10.35",
-    "npm": "2.1.5"
+    "npm": "2.1.x"
   },
   "dependencies": {
     "akismet": "0.0.13",
