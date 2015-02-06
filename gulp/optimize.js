@@ -64,5 +64,5 @@ module.exports = [{
     }
 }, {
     name: "optimize",
-    pre: ['cssshrink', 'image-min', 'uglify-js']
-}]
+    pre: ['cssshrink', 'uglify-js'] //'image-min'
+}];
