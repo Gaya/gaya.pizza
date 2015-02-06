@@ -10,7 +10,7 @@ With [DigitalOcean](https://www.digitalocean.com/?refcode=d5a2f709c373) you can 
 
 In this article I'll guide you from setting up a DigitalOcean droplet to running a simple HTTP static file server in Node.js.
 
-[![Simple Node.js web server on DigitalOcean](/articles/simple-node-js-web-server-digitalocean/simple-node-js-web-server-on-digitalocean.jpg)](http://www.gayadesign.com/diy/simple-node-js-web-server-digitalocean/)<span class="more"></span>
+[![Simple Node.js web server on DigitalOcean](/articles/simple-node-js-web-server-digitalocean/simple-node-js-web-server-on-digitalocean.jpg)](/articles/simple-node-js-web-server-digitalocean/)<span class="more"></span>
 
 You can use Node.js to act as a static file server. It receives a request for a file, and Node.js returns the file contents. It's very basic and standard functionality you see in most HTTP servers like Apache and nginx.
 

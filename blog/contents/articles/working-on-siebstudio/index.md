@@ -14,7 +14,7 @@ Last week a friend of mine, [Sieb](http://www.siebstudio.com), launched his new 
  The website got mentioned on [creattica](http://creattica.com/css/siebstudio/52315) and got some nice exposure through it.  
  This article will explain my part in the development and what we did to create a site like this.
 
-[![](/articles/working-on-siebstudio/ssworkingon.jpg "Working on Siebstudio")](http://www.gayadesign.com/articles/working-on-siebstudio/)
+[![](/articles/working-on-siebstudio/ssworkingon.jpg "Working on Siebstudio")](/articles/working-on-siebstudio/)
 
 <span class="more"></span>
 

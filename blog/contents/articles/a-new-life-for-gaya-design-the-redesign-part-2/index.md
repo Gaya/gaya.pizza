@@ -10,7 +10,7 @@ Since my blog is based around web development and I don't want to be behind on t
 
 I needed a redo of the website. From the ground up.
 
-[![A new life for Gaya Design, the redesign part 2](/articles/a-new-life-for-gaya-design-the-redesign-part-2/a-new-life.jpg "A new life for Gaya Design, the redesign part 2")](http://www.gayadesign.com/articles/a-new-life-for-gaya-design-the-redesign-part-2/)
+[![A new life for Gaya Design, the redesign part 2](/articles/a-new-life-for-gaya-design-the-redesign-part-2/a-new-life.jpg "A new life for Gaya Design, the redesign part 2")](/articles/a-new-life-for-gaya-design-the-redesign-part-2/)
 
 <span class="more"></span>
 

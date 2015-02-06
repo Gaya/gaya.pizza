@@ -12,7 +12,7 @@ The problem is that you still don't know how to do such things.
 
 In this article I'll discuss the viral points of planning out a Javascript / jQuery script with ease.
 
-[![How to start writing your own sweet jQuery scripts](/articles/how-to-start-writing-your-own-sweet-jquery-scripts/startjquery.jpg "How to start writing your own sweet jQuery scripts")](http://www.gayadesign.com/articles/how-to-start-writing-your-own-sweet-jquery-scripts/)
+[![How to start writing your own sweet jQuery scripts](/articles/how-to-start-writing-your-own-sweet-jquery-scripts/startjquery.jpg "How to start writing your own sweet jQuery scripts")](/articles/how-to-start-writing-your-own-sweet-jquery-scripts/)
 
 <span class="more"></span>
 

@@ -17,7 +17,7 @@ links:
 It's time for another jQuery script from Gaya Design. This time I created an interactive menu, which can be used in CMSes, applications or just on your own website.  
  This post will show you how this script works and how to apply it in your own environment.
 
-[![Circular InterAction menu](/articles/circular-interaction-menu/interactionpost.jpg "Circular InterAction menu")](http://www.gayadesign.com/diy/circular-interaction-menu/)
+[![Circular InterAction menu](/articles/circular-interaction-menu/interactionpost.jpg "Circular InterAction menu")](/articles/circular-interaction-menu/)
 
 <span class="more"></span>
 

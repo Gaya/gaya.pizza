@@ -10,7 +10,7 @@ There are a few class naming conventions you can live by, the problem with most 
 
 Luckily Sass now supports compound selectors which will make our stylesheets a lot easier and better to maintain.
 
-[![Better Class Names with Sass Compound Selectors](/articles/compound-selectors-for-better-class-names-in-sass/better-class-names-sass-compound-selectors.jpg)](http://www.gayadesign.com/front-end/compound-selectors-for-better-class-names-in-sass/)
+[![Better Class Names with Sass Compound Selectors](/articles/compound-selectors-for-better-class-names-in-sass/better-class-names-sass-compound-selectors.jpg)](/articles/compound-selectors-for-better-class-names-in-sass/)
 
 <span class="more"></span>
 

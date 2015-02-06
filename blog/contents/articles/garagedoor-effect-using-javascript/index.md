@@ -17,7 +17,7 @@ You might have noticed the menu at the top right corner of the website. That's s
 
 Creating one has now been made easy! This tutorial explains everything you need to know on how to create the same effect yourself.
 
-[![Garagedoor effect using Javascript](/articles/garagedoor-effect-using-javascript/garageprev1.jpg "Garagedoor effect using Javascript")](/diy/garagedoor-effect-using-javascript/)
+[![Garagedoor effect using Javascript](/articles/garagedoor-effect-using-javascript/garageprev1.jpg "Garagedoor effect using Javascript")](/articles/garagedoor-effect-using-javascript/)
 
 <span class="more"></span>
 

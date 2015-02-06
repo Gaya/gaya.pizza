@@ -15,11 +15,11 @@ links:
 ---
 [Twitter](http://www.twitter.com "Twitter") is an amazing service to keep in touch with everyone on the Internet. It's easy, fast and there are a lot of [Twitter applications](http://twitter.com/downloads "Twitter Applications").
 
-I came up with the idea to Ajaxify (is that even a word?) the tweets on [my website](http://www.gayadesign.com "Gaya Design"). As you can see, it's on the right, below the last.fm recently played. It's called [AjaxTwits](http://www.gayadesign.com/diy/ajaxtwits-load-tweets-on-your-website-with-ajax "AjaxTwits")!
+I came up with the idea to Ajaxify (is that even a word?) the tweets on [my website](http://www.gayadesign.com "Gaya Design"). As you can see, it's on the right, below the last.fm recently played. It's called [AjaxTwits](/articles/ajaxtwits-load-tweets-on-your-website-with-ajax "AjaxTwits")!
 
 This article will show you how to use AjaxTwits and how to install it on your website.
 
-[![AjaxTwits - Load Tweets on your website with AJAX](/articles/ajaxtwits-load-tweets-on-your-website-with-ajax/ajaxtwits.jpg "AjaxTwits - Load Tweets on your website with AJAX")](http://www.gayadesign.com/diy/ajaxtwits-load-tweets-on-your-website-with-ajax)
+[![AjaxTwits - Load Tweets on your website with AJAX](/articles/ajaxtwits-load-tweets-on-your-website-with-ajax/ajaxtwits.jpg "AjaxTwits - Load Tweets on your website with AJAX")](/articles/ajaxtwits-load-tweets-on-your-website-with-ajax)
 
 <span class="more"></span>
 

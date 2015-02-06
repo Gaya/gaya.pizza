@@ -10,7 +10,7 @@ template: article.html
 
 In this article I wish to share my view on AJAX and the possibilities it gives to web developers and designers, and why AJAX is wrong in several situations.
 
-<div class="border">[![What to do with AJAX and what not to](/articles/what-to-do-with-ajax-and-what-not-to/ajaxpost.jpg "What to do with AJAX and what not to")](http://www.gayadesign.com/articles/what-to-do-with-ajax-and-what-not-to/)</div><span class="more"></span>
+<div class="border">[![What to do with AJAX and what not to](/articles/what-to-do-with-ajax-and-what-not-to/ajaxpost.jpg "What to do with AJAX and what not to")](/articles/what-to-do-with-ajax-and-what-not-to/)</div><span class="more"></span>
 
 **Case 1: Page loading**
 ------------------------

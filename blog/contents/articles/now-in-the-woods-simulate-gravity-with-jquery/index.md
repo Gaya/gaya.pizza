@@ -11,4 +11,4 @@ The article will show you how to fake gravity using jQuery, creating real life s
 Read the post here:  
 [http://blog.themeforest.net/tutorials/simulate-gravity-with-jquery/](http://blog.themeforest.net/tutorials/simulate-gravity-with-jquery/)
 
-[![Now in The Woods: Simulate Gravity with jQuery](/articles/now-in-the-woods-simulate-gravity-with-jquery/gravitythemeforest.jpg "Now in The Woods: Simulate Gravity with jQuery")](http://www.gayadesign.com/general/now-in-the-woods-simulate-gravity-with-jquery)
+[![Now in The Woods: Simulate Gravity with jQuery](/articles/now-in-the-woods-simulate-gravity-with-jquery/gravitythemeforest.jpg "Now in The Woods: Simulate Gravity with jQuery")](/articles/now-in-the-woods-simulate-gravity-with-jquery)

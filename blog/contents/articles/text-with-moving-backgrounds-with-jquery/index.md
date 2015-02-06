@@ -15,7 +15,7 @@ Personally, I am a huge fan of negative space in design. This got me thinking wh
 
 This article will explain what you need to do create an effect like this yourself.
 
-[![Text with Moving Backgrounds with jQuery](/articles/text-with-moving-backgrounds-with-jquery/movingbgcover.jpg "Text with Moving Backgrounds with jQuery")](http://www.gayadesign.com/diy/text-with-moving-backgrounds-with-jquery/)
+[![Text with Moving Backgrounds with jQuery](/articles/text-with-moving-backgrounds-with-jquery/movingbgcover.jpg "Text with Moving Backgrounds with jQuery")](/articles/text-with-moving-backgrounds-with-jquery/)
 
 <span class="more"></span>
 

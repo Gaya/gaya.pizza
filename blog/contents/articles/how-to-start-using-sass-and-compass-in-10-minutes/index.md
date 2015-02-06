@@ -14,7 +14,7 @@ Lately I've been getting a lot of questions from people how to begin using Sass 
 
 I'll give you installing instructions, a bit of information on what happens and a sample project setup I use myself to get you started quickly.
 
-[![How to start using Sass and Compass in 10 minutes](/articles/how-to-start-using-sass-and-compass-in-10-minutes/how-to-sass-compass.jpg)](http://www.gayadesign.com/diy/how-to-start-using-sass-and-compass-in-10-minutes/ "How to start using Sass and Compass in 10 minutes")
+[![How to start using Sass and Compass in 10 minutes](/articles/how-to-start-using-sass-and-compass-in-10-minutes/how-to-sass-compass.jpg)](/articles/how-to-start-using-sass-and-compass-in-10-minutes/ "How to start using Sass and Compass in 10 minutes")
 
 <span class="more"></span>
 

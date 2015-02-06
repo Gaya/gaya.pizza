@@ -14,7 +14,7 @@ If you want to use a single plugin on different WordPress installs you might wan
 
 That would be great right? Sadly, WordPress doesn't support this (yet). In this post I'll explain how I got WordPress to accept my plugins as symbolic links.
 
-[![Using WordPress plugins as Symbolic Links](/articles/using-wordpress-plugins-as-symbolic-links/using-wordpress-plugins-as-symbolic-links.jpg "Using WordPress plugins as Symbolic Links")](http://www.gayadesign.com/diy/using-wordpress-plugins-as-symbolic-links)  
+[![Using WordPress plugins as Symbolic Links](/articles/using-wordpress-plugins-as-symbolic-links/using-wordpress-plugins-as-symbolic-links.jpg "Using WordPress plugins as Symbolic Links")](/articles/using-wordpress-plugins-as-symbolic-links)
 <span class="more"></span>
 
 The Problem

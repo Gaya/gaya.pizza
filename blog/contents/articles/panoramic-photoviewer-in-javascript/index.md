@@ -19,7 +19,7 @@ A [colleague](http://www.siebdesign.nl/) showed me a new project he was working 
 
 This article will show you my solution to the problem and maybe even a different approach on navigation.
 
-[![Panoramic Photoviewer in Javascript](/articles/panoramic-photoviewer-in-javascript/postimage.jpg "Panoramic Photoviewer in Javascript")](http://www.gayadesign.com/diy/panoramic-photoviewer-in-javascript/)
+[![Panoramic Photoviewer in Javascript](/articles/panoramic-photoviewer-in-javascript/postimage.jpg "Panoramic Photoviewer in Javascript")](/articles/panoramic-photoviewer-in-javascript/)
 
 <span class="more"></span>
 

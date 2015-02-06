@@ -15,7 +15,7 @@ While working on a frontend project you'll easily come to a point where you need
 
 Luckily there is a way to easily write middleware using Connect for NodeJS. Other great thing: works with task-runners!
 
-[![Static Mockup Data for your Endpoints with Connect](/articles/static-mockup-data-endpoints-connect/static-mockup-data-endpoints-connect.jpg)](http://www.gayadesign.com/front-end/static-mockup-data-endpoints-connect/)  
+[![Static Mockup Data for your Endpoints with Connect](/articles/static-mockup-data-endpoints-connect/static-mockup-data-endpoints-connect.jpg)](/articles/static-mockup-data-endpoints-connect/)
 <span class="more"></span>
 
 Separation between front and back-end development becomes more important every day. We see projects grow bigger and tasks are assigned a lot better in development teams. While one developer can focus mainly on the front-end part of the project, the back-end developer will handle all the server requests.
@@ -39,7 +39,7 @@ We can use different task runners to run Connect and handle the middleware secti
 Setting up Grunt
 ----------------
 
-First [you need to install Grunt](http://www.gayadesign.com/front-end/javascript-development-workflow-using-grunt/ "Automating your JavaScript workflow using Grunt"). After that you must add `grunt-contrib-connect` as a dependency to your project.
+First [you need to install Grunt](/articles/javascript-development-workflow-using-grunt/ "Automating your JavaScript workflow using Grunt"). After that you must add `grunt-contrib-connect` as a dependency to your project.
 
 Run in the terminal:  
  

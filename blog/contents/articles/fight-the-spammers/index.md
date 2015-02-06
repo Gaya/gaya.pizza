@@ -9,7 +9,7 @@ In the first few weeks of [my website's](http://www.gayadesign.com/) existence, 
 
 I know [Wordpress](http://wordpress.org/)****has a nice plugin called [Akismet](http://akismet.com/) which is filtering spam quite good. I've been using it for some time on my [DS article site](http://ds.gayadesign.nl/), and it has been filtering a lot of spam.
 
-<div class="border">[![Fight the spammers](/articles/fight-the-spammers/akismet.jpg "Fight the spammers")](http://www.gayadesign.com/diy/fight-the-spammers/)</div><span class="more"></span>
+<div class="border">[![Fight the spammers](/articles/fight-the-spammers/akismet.jpg "Fight the spammers")](/articles/fight-the-spammers/)</div><span class="more"></span>
 
 Here are the things I used to filter spam:
 

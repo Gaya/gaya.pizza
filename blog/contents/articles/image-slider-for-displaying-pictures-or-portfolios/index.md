@@ -15,7 +15,7 @@ links:
 ---
 I love [image slideshows](http://www.noupe.com/javascript/30-javascriptajax-techniques-for-sliders-scrollers-and-scrollbars.html) and [portfolios with an extra bit of interaction and effects](http://www.siebdesign.nl/ "Sieb Design"). The problem I found when I wanted to make one of my own was that I always ran out of ideas how to display portfolio items / pictures in a special way. But then it hit me, and the idea for this image slider was born.
 
-[![Image slider for displaying pictures or portfolios](/articles/image-slider-for-displaying-pictures-or-portfolios/imageslider.jpg "Image slider for displaying pictures or portfolios")](http://www.gayadesign.com/diy/image-slider-for-displaying-pictures-or-portfolios/)
+[![Image slider for displaying pictures or portfolios](/articles/image-slider-for-displaying-pictures-or-portfolios/imageslider.jpg "Image slider for displaying pictures or portfolios")](/articles/image-slider-for-displaying-pictures-or-portfolios/)
 
 <span class="more"></span>
 

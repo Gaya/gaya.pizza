@@ -8,7 +8,7 @@ The current design has been around for almost five months now. When I made that 
 
 After a few days of thinking and many drafts I created a version suited better for my blogging needs. Read the post to see a large preview.
 
-[![New looks coming your way](/articles/new-looks-coming-your-way/prevgdpost.jpg "New looks coming your way")](http://www.gayadesign.com/general/new-looks-coming-your-way/)
+[![New looks coming your way](/articles/new-looks-coming-your-way/prevgdpost.jpg "New looks coming your way")](/articles/new-looks-coming-your-way/)
 
 <span class="more"></span>
 

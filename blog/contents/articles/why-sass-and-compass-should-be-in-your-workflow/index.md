@@ -9,7 +9,7 @@ Admit it: CSS is awesome, but it's default syntax is insanely stupid. Are you ti
 
 That's when CSS compilers came around, and it will change your life. This post will describe the benefits of CSS compiling and in which possible ways you can use it.
 
-[![Why SASS and Compass should be in your workflow](/articles/why-sass-and-compass-should-be-in-your-workflow/sassworkflow.jpg "Why SASS and Compass should be in your workflow")](http://www.gayadesign.com/articles/why-sass-and-compass-should-be-in-your-workflow/)
+[![Why SASS and Compass should be in your workflow](/articles/why-sass-and-compass-should-be-in-your-workflow/sassworkflow.jpg "Why SASS and Compass should be in your workflow")](/articles/why-sass-and-compass-should-be-in-your-workflow/)
 
 <span class="more"></span>
 

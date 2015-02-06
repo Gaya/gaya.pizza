@@ -10,7 +10,7 @@ Last weekend I went to WordCamp Europe in Leiden. It was my first WordCamp and I
 
 I'll fill you in on the experience, the speakers and give you my two cents of what I thought about the talks.
 
-[![Looking back at WordCamp Europe 2013](/articles/looking-back-at-wordcamp-europe-2013/looking-back-at-wordcamp-europe-2013.jpg "Looking back at WordCamp Europe 2013")](http://www.gayadesign.com/general/looking-back-at-wordcamp-europe-2013/)<span class="more"></span>
+[![Looking back at WordCamp Europe 2013](/articles/looking-back-at-wordcamp-europe-2013/looking-back-at-wordcamp-europe-2013.jpg "Looking back at WordCamp Europe 2013")](/articles/looking-back-at-wordcamp-europe-2013/)<span class="more"></span>
 
 How I got into WordPress and going to WordCamp
 ----------------------------------------------

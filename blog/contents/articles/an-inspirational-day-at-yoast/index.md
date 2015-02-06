@@ -10,7 +10,7 @@ Yesterday, friday the 13th, I went to [Yoast](http://yoast.com "Yoast") for a da
 
 Let me tell you the impressions I got from Yoast, its people and a non standard environment.
 
-[![An inspirational day at Yoast](/articles/an-inspirational-day-at-yoast/an-inspirational-day-at-yoast.jpg)](http://www.gayadesign.com/articles/an-inspirational-day-at-yoast/)
+[![An inspirational day at Yoast](/articles/an-inspirational-day-at-yoast/an-inspirational-day-at-yoast.jpg)](/articles/an-inspirational-day-at-yoast/)
 
 <span class="more"></span>
 

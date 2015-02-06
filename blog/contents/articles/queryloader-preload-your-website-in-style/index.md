@@ -19,11 +19,11 @@ There is always a minor problem when it comes to preloading image on a website. 
 
 This preloader has it all. Loading bar, custom animations and getting all images included in the web page.
 
-<div style="background-color: #fcf8bb; text-align: center; margin-bottom: 1.5em; padding: 0.75em;">[ There is a new version of QueryLoader. Consider this one obselete!](http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/)</div>[![QueryLoader - preload your website in style](/articles/queryloader-preload-your-website-in-style/qloader.jpg "QueryLoader - preload your website in style")](http://www.gayadesign.com/diy/queryloader-preload-your-website-in-style/)
+<div style="background-color: #fcf8bb; text-align: center; margin-bottom: 1.5em; padding: 0.75em;">[ There is a new version of QueryLoader. Consider this one obselete!](/articles/queryloader2-preload-your-images-with-ease/)</div>[![QueryLoader - preload your website in style](/articles/queryloader-preload-your-website-in-style/qloader.jpg "QueryLoader - preload your website in style")](/articles/queryloader-preload-your-website-in-style/)
 
 <span class="more"></span>
 
-<div style="background-color: #fcf8bb; text-align: center; margin-bottom: 1.5em; padding: 0.75em;">[ There is a new version of QueryLoader. Consider this one obselete!](http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/)</div>(a special shout out goes to Sieb of [Siebdesign](http://www.siebdesign.nl) for coming up with the animation and the idea of building a preloader)
+<div style="background-color: #fcf8bb; text-align: center; margin-bottom: 1.5em; padding: 0.75em;">[ There is a new version of QueryLoader. Consider this one obselete!](/articles/queryloader2-preload-your-images-with-ease/)</div>(a special shout out goes to Sieb of [Siebdesign](http://www.siebdesign.nl) for coming up with the animation and the idea of building a preloader)
 
 Download the source code here:  
 [http://www.gayadesign.com/scripts/queryLoader/queryLoader.zip](http://www.gayadesign.com/scripts/queryLoader/queryLoader.zip)

@@ -21,7 +21,7 @@ As you might know, I have created a [Panoramic Photoviewer in Javascript](http:/
 
 I created LightNav for this. It runs along Lightbox without changing the script, so you can always update Lightbox if needed.
 
-<div class="border">[![Lightbox + PhotoNav = LightNav](/articles/lightbox-photonav-lightnav/lightnav.jpg "Lightbox + PhotoNav = LightNav")](http://www.gayadesign.com/diy/lightbox-photonav-lightnav/)</div><span class="more"></span>
+<div class="border">[![Lightbox + PhotoNav = LightNav](/articles/lightbox-photonav-lightnav/lightnav.jpg "Lightbox + PhotoNav = LightNav")](/articles/lightbox-photonav-lightnav/)</div><span class="more"></span>
 
 The *example page* is located here:  
 [http://www.gayadesign.com/scripts/lightnav/](http://www.gayadesign.com/scripts/lightnav/)

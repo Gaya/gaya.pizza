@@ -13,7 +13,7 @@ Ever had this thought: "I want to fire something **extra **up when somebody down
 
 This article will explain how to make pre-download conditions in php using .htaccess. I'll make a download counter in this one.
 
-<div class="border">[![Download counter in PHP using .htaccess](/articles/download-counter-in-php-using-htaccess/downloadcounter.jpg "Download counter in PHP using .htaccess")](http://www.gayadesign.com/diy/download-counter-in-php-using-htaccess/)</div><span class="more"></span>
+<div class="border">[![Download counter in PHP using .htaccess](/articles/download-counter-in-php-using-htaccess/downloadcounter.jpg "Download counter in PHP using .htaccess")](/articles/download-counter-in-php-using-htaccess/)</div><span class="more"></span>
 
 Think of the possibilities! You could build a download counter, a place to check if the user has rights to download a certain file, create a bandwidth limit, and the list goes on and on.
 

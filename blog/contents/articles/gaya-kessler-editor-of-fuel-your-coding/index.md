@@ -8,7 +8,7 @@ You might have noticed, but for the ones that haven't already read: I am now the
 
 [Visit the site](http://www.fuelyourcoding.com) for tutorials, tips, freebies and interview about coding, coders and tools! Along with the articles on this site, I'll be posting development articles for you to read.
 
-[![Gaya Kessler, editor of Fuel Your Coding](/articles/gaya-kessler-editor-of-fuel-your-coding/fuelcodingheader.jpg "Gaya Kessler, editor of Fuel Your Coding")](http://www.gayadesign.com/general/gaya-kessler-editor-of-fuel-your-coding/ "Fuel Your Coding")
+[![Gaya Kessler, editor of Fuel Your Coding](/articles/gaya-kessler-editor-of-fuel-your-coding/fuelcodingheader.jpg "Gaya Kessler, editor of Fuel Your Coding")](/articles/gaya-kessler-editor-of-fuel-your-coding/ "Fuel Your Coding")
 
 <span class="more"></span>
 
