@@ -13,7 +13,10 @@ app.use(compression());
 
 app.use(serveStatic(__dirname + '/../public/', {
     'index': ['index.html'],
-    'maxAge': '2 years'
+    'maxAge': (86400000 * 365),
+    'setHeaders': function setHeaders(res, path) {
+        res.setHeader('Expires', new Date(Date.now() + 345600000).toUTCString());
+    }
 }));
 
 app.listen(process.env.PORT || 5000);
