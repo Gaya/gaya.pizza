@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Gaya Ninja's weblog",
   "engines": {
-    "npm": "2.1.x",
+    "npm": "2.1.5",
     "node": "0.10.35"
   },
   "dependencies": {
