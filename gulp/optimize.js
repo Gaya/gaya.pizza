@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     cssshrink = require('gulp-cssshrink'),
-    imagemin = require('gulp-imagemin'),
+    //imagemin = require('gulp-imagemin'),
     critical = require('critical'),
     uglify = require('gulp-uglify');
 
@@ -18,10 +18,10 @@ module.exports = [{
     task: function () {
         "use strict";
         return gulp.src(gulp.config.dist + '/images/**/*')
-            .pipe(imagemin({
-                progressive: true,
-                svgoPlugins: [{removeViewBox: false}]
-            }))
+            //.pipe(imagemin({
+            //    progressive: true,
+            //    svgoPlugins: [{removeViewBox: false}]
+            //}))
             .pipe(gulp.dest(gulp.config.dist + '/images/'));
     }
 }, {
@@ -64,5 +64,5 @@ module.exports = [{
     }
 }, {
     name: "optimize",
-    pre: ['cssshrink', 'uglify-js'] //'image-min'
+    pre: ['cssshrink', 'image-min', 'uglify-js']
 }];
