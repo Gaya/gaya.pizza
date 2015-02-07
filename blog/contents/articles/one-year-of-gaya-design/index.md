@@ -5,10 +5,10 @@ date: 2009-12-28
 template: article.html
 seo_desc: "Celebrating my first year of blogging on Gaya Design. It took some blood sweat and tears, but it became an awesome product."
 ---
-On this day, but about 365 days ago, I published [my first article](http://www.gayadesign.com/diy/garagedoor-effect-using-javascript/). From that day I devoted quite a lot of my free time to this weblog, and still doing it with a smile!  
+On this day, but about 365 days ago, I published [my first article](/articles/garagedoor-effect-using-javascript/). From that day I devoted quite a lot of my free time to this weblog, and still doing it with a smile!
  It's great to know where my little blog is after a year and I am very thankful for the people who made this possible.
 
-[![One year of Gaya Design](/articles/one-year-of-gaya-design/oneyear.jpg "One year of Gaya Design")](http://www.gayadesign.com/general/one-year-of-gaya-design/)
+[![One year of Gaya Design](/articles/one-year-of-gaya-design/oneyear.jpg "One year of Gaya Design")](/articles/one-year-of-gaya-design/)
 
 <span class="more"></span>
 

@@ -46,7 +46,7 @@ If you're a webdeveloper or designer I am pretty sure you've run into the proble
 
 So here it is: Fullscreen Background for jQuery.
 
-[![jQuery plugin: Fullscreen Background](/articles/jquery-plugin-fullscreen-background/fullscreengdpost.jpg "jQuery plugin: Fullscreen Background")](http://www.gayadesign.com/diy/jquery-plugin-fullscreen-background/)
+[![jQuery plugin: Fullscreen Background](/articles/jquery-plugin-fullscreen-background/fullscreengdpost.jpg "jQuery plugin: Fullscreen Background")](/articles/jquery-plugin-fullscreen-background/)
 
 <span class="more"></span>
 

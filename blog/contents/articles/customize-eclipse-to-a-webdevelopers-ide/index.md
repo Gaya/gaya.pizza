@@ -9,7 +9,7 @@ There are a lot of ways to become a better, or at least faster, webdeveloper. Fo
 
 This article will describe how to create a PHP developer's IDE using Eclipse, Aptana and PDT.
 
-[![Customize Eclipse to a webdeveloper's IDE](/articles/customize-eclipse-to-a-webdevelopers-ide/idepost.jpg "Customize Eclipse to a webdeveloper's IDE")](http://www.gayadesign.com/articles/customize-eclipse-to-a-webdevelopers-ide/)
+[![Customize Eclipse to a webdeveloper's IDE](/articles/customize-eclipse-to-a-webdevelopers-ide/idepost.jpg "Customize Eclipse to a webdeveloper's IDE")](/articles/customize-eclipse-to-a-webdevelopers-ide/)
 
 <span class="more"></span>
 

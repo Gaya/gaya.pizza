@@ -4,13 +4,13 @@ var gulp = require("gulp"),
 
 module.exports = [{
     name: "wintersmith",
-    task: function () {
+    task: function (cb) {
         "use strict";
         config.output = "./" + gulp.config.dist;
 
         //build settings
         if (gulp.config.dist === gulp.config.build) {
-            config.locals.url = "http://localhost:5000";
+            config.locals.url = "http://blog.gaya.ninja";
         }
 
         var env = wintersmith(config);
@@ -20,6 +20,10 @@ module.exports = [{
                 console.error(error);
             }
             gulp.browserSync.reload();
+
+            cb();
         });
+
+        return false;
     }
 }];

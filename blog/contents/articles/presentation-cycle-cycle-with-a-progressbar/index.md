@@ -20,7 +20,7 @@ Presentation Cycle is a variation on the functionality of Cycle. Instead of gene
 
 In this article I'll explain how to implement this on your web page and give you some tips on how to adjust the looks of the cycle elements and progress bar.
 
-[![Presentation Cycle: Cycle with a progressbar](/articles/presentation-cycle-cycle-with-a-progressbar/presentationCycle.jpg "Presentation Cycle: Cycle with a progressbar")](http://www.gayadesign.com/diy/presentation-cycle-cycle-with-a-progressbar)
+[![Presentation Cycle: Cycle with a progressbar](/articles/presentation-cycle-cycle-with-a-progressbar/presentationCycle.jpg "Presentation Cycle: Cycle with a progressbar")](/articles/presentation-cycle-cycle-with-a-progressbar)
 
 <span class="more"></span>
 

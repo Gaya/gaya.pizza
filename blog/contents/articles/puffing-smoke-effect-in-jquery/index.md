@@ -17,7 +17,7 @@ Since the launch of the new looks, I've been getting some requests on how to mak
 
 Thinking it might be a funny effect, I'd like to take this opportunity to discuss this effect.
 
-[![Puffing Smoke Effect in jQuery](/articles/puffing-smoke-effect-in-jquery/puffingsmoke.jpg "Puffing Smoke Effect in jQuery")](http://www.gayadesign.com/diy/puffing-smoke-effect-in-jquery/)
+[![Puffing Smoke Effect in jQuery](/articles/puffing-smoke-effect-in-jquery/puffingsmoke.jpg "Puffing Smoke Effect in jQuery")](/articles/puffing-smoke-effect-in-jquery/)
 
 <span class="more"></span>
 

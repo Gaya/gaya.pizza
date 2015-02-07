@@ -20,7 +20,7 @@ I can hear you think: AJAX! Yes, I'll use AJAX for sure. But there is a little p
 
 In this article I'll approach pushing notifications from another perspective, regulating them in the backend rather than the frontend.
 
-[![Notifications: the other approach](/articles/notifications-the-other-approach/notifications.jpg "Notifications: the other approach")](http://www.gayadesign.com/articles/notifications-the-other-approach/)
+[![Notifications: the other approach](/articles/notifications-the-other-approach/notifications.jpg "Notifications: the other approach")](/articles/notifications-the-other-approach/)
 
 <span class="more"></span>
 
@@ -259,7 +259,7 @@ Future:
 Now it's time to customize the script to meet your needs, not reading a file on the server, but rather getting updates from your database and creating a better output on the frontend side.
 
 I didn't make this too fancy because I only wanted to show you another approach to the problem of pushing notifications to the frontend.  
- This example would work perfectly in cooperation with [sNotify, which I made a while ago](http://www.gayadesign.com/diy/snotify-easy-notifications-in-jquery/).
+ This example would work perfectly in cooperation with [sNotify, which I made a while ago](/articles/snotify-easy-notifications-in-jquery/).
 
 If you have any ideas, suggestions and like to discuss this solution, please comment below.
 

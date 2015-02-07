@@ -10,7 +10,7 @@ Writing bundled JavaScript code for the browser tends to become a mess rather so
 
 Browserify can require dependencies for JavaScript like modules in node.js. This brings a lot of advantages to the way we can handle our required libraries.
 
-[![better-javascript-dependency-management-with-browserify](/articles/better-javascript-dependency-management-with-browserify/better-javascript-dependency-management-with-browserify.jpg)](http://www.gayadesign.com/front-end/better-javascript-dependency-management-with-browserify/)
+[![better-javascript-dependency-management-with-browserify](/articles/better-javascript-dependency-management-with-browserify/better-javascript-dependency-management-with-browserify.jpg)](/articles/better-javascript-dependency-management-with-browserify/)
 
 <span class="more"></span>
 

@@ -9,7 +9,7 @@ Caching data. If you are a developer you must have heard about it somewhere. Is 
 
 In this article I will be telling you how to cache data given from an external service, but can also be used to save local results.
 
-[![Caching external data in PHP](/articles/caching-external-data-in-php/cachingpost.jpg "Caching external data in PHP")](http://www.gayadesign.com/diy/caching-external-data-in-php/)
+[![Caching external data in PHP](/articles/caching-external-data-in-php/cachingpost.jpg "Caching external data in PHP")](/articles/caching-external-data-in-php/)
 
 <span class="more"></span>
 
@@ -140,7 +140,7 @@ function checkForRenewal() {
 
 What this function does is get the time which the file was last modified and add the set seconds to it and see if that time is smaller than now. The cache time is defined in second, so 60 seconds * 60 minutes * 24 hours * 7 days would make a week worth of seconds. You can adjust this to any given time you want. *For debugging I suggest setting the time to only 60 seconds.*
 
-The next function will be how to get the external of the URI we specified in the constructor. I've written a post about [how to read XML in PHP](http://www.gayadesign.com/diy/reading-xml-with-php/) before, so I'll go over this function very briefly.
+The next function will be how to get the external of the URI we specified in the constructor. I've written a post about [how to read XML in PHP](/articles/reading-xml-with-php/) before, so I'll go over this function very briefly.
 
 Reading the XML and saving it
 -----------------------------
@@ -165,7 +165,7 @@ This must have been one of the shortest PHP function I ever wrote, this is all y
 
 Next up is going through the XML and only keeping parts you want to save in your XML file.
 
-Again: going to skip through some parts of the next function because you can [read more about reading xml in an older article](http://www.gayadesign.com/diy/reading-xml-with-php/).
+Again: going to skip through some parts of the next function because you can [read more about reading xml in an older article](/articles/reading-xml-with-php/).
 
 Looking at [the XML returned by Last.fm](http://ws.audioscrobbler.com/2.0/?method=user.getweeklyartistchart&user=xgayax&api_key=b25b959554ed76058ac220b7b2e0a026) I saw the first problem: unnecessary information. The name of the artist and play count are the only things I am interested in. Mbid? Don't need that. Url? Not this time!  
  So the next function, "stripAndSaveFile", will make us read XML, create our own and save it to a file. Sounds simple enough right?

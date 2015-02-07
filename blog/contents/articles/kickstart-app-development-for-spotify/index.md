@@ -10,7 +10,7 @@ So you've decided to go ahead and develop an app for Spotify. Great! Starting of
 
 App development for Spotify is not hard! It's mainly HTML, CSS and Javascript, which you are probably already familiar with.
 
-[![Kickstart app development for Spotify](/articles/kickstart-app-development-for-spotify/spotify.jpg "Kickstart app development for Spotify")](http://www.gayadesign.com/diy/kickstart-app-development-for-spotify)
+[![Kickstart app development for Spotify](/articles/kickstart-app-development-for-spotify/spotify.jpg "Kickstart app development for Spotify")](/articles/kickstart-app-development-for-spotify)
 
 <span class="more"></span>
 

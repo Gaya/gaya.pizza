@@ -13,7 +13,7 @@ links:
     desc: PhotoNav jQuery examples
     url: http://www.gayadesign.com/scripts/jqueryphotonav/
 ---
-This is part two of my script convertions. From [scriptaculous](http://script.aculo.us/) to [jQuery](http://jquery.com) in just a few minutes of work. This time it's the [Panoramic Photoviewer](http://www.gayadesign.com/diy/panoramic-photoviewer-in-javascript/) to get a [jQuery makeover](http://www.gayadesign.com/diy/jquery-convertion-panoramic-photoviewer-in-javascript/).
+This is part two of my script convertions. From [scriptaculous](http://script.aculo.us/) to [jQuery](http://jquery.com) in just a few minutes of work. This time it's the [Panoramic Photoviewer](/articles/panoramic-photoviewer-in-javascript/) to get a [jQuery makeover](/articles/jquery-convertion-panoramic-photoviewer-in-javascript/).
 
 **A few highlights:**  
  From 200 to 80 lines of code (wow).  
@@ -22,11 +22,11 @@ This is part two of my script convertions. From [scriptaculous](http://script.ac
 
 **For all the jQuery lovers: Here is the Panoramic Photoviewer. Now in jQuery!**
 
-[![jQuery convertion: Panoramic Photoviewer in Javascript](/articles/jquery-convertion-panoramic-photoviewer-in-javascript/jqueryphotonav.jpg "jQuery convertion: Panoramic Photoviewer in Javascript")](http://www.gayadesign.com/diy/jquery-convertion-panoramic-photoviewer-in-javascript/)
+[![jQuery convertion: Panoramic Photoviewer in Javascript](/articles/jquery-convertion-panoramic-photoviewer-in-javascript/jqueryphotonav.jpg "jQuery convertion: Panoramic Photoviewer in Javascript")](/articles/jquery-convertion-panoramic-photoviewer-in-javascript/)
 
 <span class="more"></span>
 
-Since this article is a redo of [Panoramic Photoviewer in Javascript](http://www.gayadesign.com/diy/panoramic-photoviewer-in-javascript/) I’ll just make it so that it fits jQuery.
+Since this article is a redo of [Panoramic Photoviewer in Javascript](/articles/panoramic-photoviewer-in-javascript/) I’ll just make it so that it fits jQuery.
 
 The *example page* is located here:  
 [http://www.gayadesign.com/scripts/jqueryphotonav/](http://www.gayadesign.com/scripts/jqueryphotonav/)

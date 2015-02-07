@@ -10,7 +10,7 @@ Developing a website on your local webserver environment can become complicated 
 
 This guide will tell you how to fake a top-level domain name so you can redirect any domain name to your local development environment and keep your source code in separate folders.
 
-[![Faking a top level domain name for local development with Apache](/articles/faking-a-top-level-domain-name-for-local-development-with-apache/poster-top-level-domain-dev.jpg "Faking a top level domain name for local development with Apache")](http://www.gayadesign.com/articles/faking-a-top-level-domain-name-for-local-development-with-apache/)
+[![Faking a top level domain name for local development with Apache](/articles/faking-a-top-level-domain-name-for-local-development-with-apache/poster-top-level-domain-dev.jpg "Faking a top level domain name for local development with Apache")](/articles/faking-a-top-level-domain-name-for-local-development-with-apache/)
 
 <span class="more"></span>
 

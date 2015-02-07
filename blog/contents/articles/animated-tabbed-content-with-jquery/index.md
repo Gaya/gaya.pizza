@@ -15,7 +15,7 @@ links:
 ---
 A lot of websites on the Internet have tabbed content now a days. The problem I find with most of them is that most of the time they can be quite dull. For my new looks I created a container which has the ability to switch content through tabs, but with an animation. This tutorial will show you how to create your own tabbed content step by step.
 
-[![Animated tabbed content with jQuery](/articles/animated-tabbed-content-with-jquery/tabbedpost.jpg "Animated tabbed content with jQuery")](http://www.gayadesign.com/diy/animated-tabbed-content-with-jquery/)
+[![Animated tabbed content with jQuery](/articles/animated-tabbed-content-with-jquery/tabbedpost.jpg "Animated tabbed content with jQuery")](/articles/animated-tabbed-content-with-jquery/)
 
 <span class="more"></span>
 

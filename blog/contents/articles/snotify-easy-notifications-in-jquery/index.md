@@ -18,7 +18,7 @@ There hasn't been a jQuery tutorial / script on Gaya Design for a while. This is
 
 sNotify is a script which is particularly handy for people who are developing web applications. sNotify allows the developer to display notifications in a fast and easy way.
 
-[![sNotify: Easy notifications in jQuery](/articles/snotify-easy-notifications-in-jquery/snotify.jpg "sNotify: Easy notifications in jQuery")](http://www.gayadesign.com/diy/snotify-easy-notifications-in-jquery/)
+[![sNotify: Easy notifications in jQuery](/articles/snotify-easy-notifications-in-jquery/snotify.jpg "sNotify: Easy notifications in jQuery")](/articles/snotify-easy-notifications-in-jquery/)
 
 <span class="more"></span>
 

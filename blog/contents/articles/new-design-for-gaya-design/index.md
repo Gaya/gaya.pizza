@@ -8,13 +8,13 @@ Yesterday I finally launched my new layout for the world to see! There are even 
 
 After about a month of hard work it's done, ready to be shown in public.
 
-[![New design for Gaya Design](/articles/new-design-for-gaya-design/newlayout.jpg "New design for Gaya Design")](http://www.gayadesign.com/general/new-design-for-gaya-design/)
+[![New design for Gaya Design](/articles/new-design-for-gaya-design/newlayout.jpg "New design for Gaya Design")](/articles/new-design-for-gaya-design/)
 
 <span class="more"></span>
 
 I wanted to go for a retro, colourful and playful layout. With these things in mind I got working on an idea of the layout. I really like out of the box and semi 3D effects in web designs, looks different and so simple at the same time.
 
-That's why this layout looks like it does right now. After a few weeks of designing, coding the layout, designing again and coding again [it was time to put the layout to the test](http://www.gayadesign.com/general/new-looks-coming-your-way/). I got a lot of feedback from you guys and I am very thankful for that! You guys seriously rock!
+That's why this layout looks like it does right now. After a few weeks of designing, coding the layout, designing again and coding again [it was time to put the layout to the test](/articles/new-looks-coming-your-way/). I got a lot of feedback from you guys and I am very thankful for that! You guys seriously rock!
 
 A few things about the new design:
 

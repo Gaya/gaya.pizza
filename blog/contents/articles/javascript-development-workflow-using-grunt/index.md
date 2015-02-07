@@ -14,7 +14,7 @@ Using tools like Grunt to improve your JavaScript development has been popular f
 
 This article will go into detail about the way I like to use Grunt to improve my workflow and make it way easier to maintain and test my JavaScript projects.
 
-[![Automating your JavaScript workflow using Grunt](/articles/javascript-development-workflow-using-grunt/Automating-your-JavaScript-workflow-using-Grunt.png "Automating your JavaScript workflow using Grunt")](http://www.gayadesign.com/front-end/javascript-development-workflow-using-grunt/)<span class="more"></span>
+[![Automating your JavaScript workflow using Grunt](/articles/javascript-development-workflow-using-grunt/Automating-your-JavaScript-workflow-using-Grunt.png "Automating your JavaScript workflow using Grunt")](/articles/javascript-development-workflow-using-grunt/)<span class="more"></span>
 
 Grunt manages tasks automatically which we would otherwise do ourselves with separate tools. Think in the lines of concatenation, minification and other tasks which can become a drag if we have to do them yourself. Grunt will solves this for us.
 

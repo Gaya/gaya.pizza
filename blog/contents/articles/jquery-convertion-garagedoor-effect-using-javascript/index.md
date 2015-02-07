@@ -14,17 +14,17 @@ links:
     url: http://www.gayadesign.com/scripts/jquerygaragedoor/
 ---
 Today I finally found the courage to go and try [jQuery](http://jquery.com/ "jQuery"). After getting some people say: "You should use jQuery instead of scriptaculous." I began thinking. What is the reason I choose script.aculo.us again? Must have been something I read in that time.  
- Anyway, today I found the time to look at jQuery a bit and thought: Let's convert [my very first posted script](http://www.gayadesign.com/diy/garagedoor-effect-using-javascript/) to jQuery!
+ Anyway, today I found the time to look at jQuery a bit and thought: Let's convert [my very first posted script](/articles/garagedoor-effect-using-javascript/) to jQuery!
 
 After 5 minutes of reading about selectors in jQuery and 15 minutes of coding it was born. I am super amazed by the results! About 40%/50% less code and about 200% less time needed to write the script. I bet that in the future 400% less time is reachable!
 
 **For all the jQuery lovers: Here is the Garage Door effect. Now in jQuery!**
 
-[![jQuery convertion: Garagedoor effect using Javascript](/articles/jquery-convertion-garagedoor-effect-using-javascript/jquerygarage.jpg "jQuery convertion: Garagedoor effect using Javascript")](http://www.gayadesign.com/diy/jquery-convertion-garagedoor-effect-using-javascript/)
+[![jQuery convertion: Garagedoor effect using Javascript](/articles/jquery-convertion-garagedoor-effect-using-javascript/jquerygarage.jpg "jQuery convertion: Garagedoor effect using Javascript")](/articles/jquery-convertion-garagedoor-effect-using-javascript/)
 
 <span class="more"></span>
 
-Since this article is a redo of [Garagedoor effect using Javascript](http://www.gayadesign.com/diy/garagedoor-effect-using-javascript/) I'll just make it so that it fits jQuery.
+Since this article is a redo of [Garagedoor effect using Javascript](/articles/garagedoor-effect-using-javascript/) I'll just make it so that it fits jQuery.
 
 An example of the GarageDoor effect in work is found here: [http://www.gayadesign.com/scripts/jquerygaragedoor/](http://www.gayadesign.com/scripts/jquerygaragedoor/)
 

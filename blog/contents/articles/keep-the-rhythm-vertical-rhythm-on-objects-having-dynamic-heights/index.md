@@ -48,7 +48,7 @@ The problem with maintaining a proper rhythm are objects (like images) that have
 
 For this I created a jQuery plugin that fixes the rhythm: Keep the Rhythm.
 
-[![Keep the Rhythm: Vertical rhythm on objects having dynamic heights](/articles/keep-the-rhythm-vertical-rhythm-on-objects-having-dynamic-heights/keep-the-rhythm.jpg "Keep the Rhythm: Vertical rhythm on objects having dynamic heights")](http://www.gayadesign.com/diy/keep-the-rhythm-vertical-rhythm-on-objects-having-dynamic-heights/ "Keep the Rhythm: Vertical rhythm on objects having dynamic heights")
+[![Keep the Rhythm: Vertical rhythm on objects having dynamic heights](/articles/keep-the-rhythm-vertical-rhythm-on-objects-having-dynamic-heights/keep-the-rhythm.jpg "Keep the Rhythm: Vertical rhythm on objects having dynamic heights")](/articles/keep-the-rhythm-vertical-rhythm-on-objects-having-dynamic-heights/ "Keep the Rhythm: Vertical rhythm on objects having dynamic heights")
 
 <span class="more"></span>
 

@@ -17,7 +17,7 @@ Web designers, developers and web users know them. We all have run across one of
 
 So why not remake the whole Javascript alert function? This article will give you the basics of my customization of the alert message.
 
-<div class="border">[![Customize the default alert() function of Javascript](/articles/customize-the-default-alert-function-of-javascript/gdalertintro.jpg "Customize the default alert() function of Javascript")](http://www.gayadesign.com/diy/customize-the-default-alert-function-of-javascript/)</div><span class="more"></span>
+<div class="border">[![Customize the default alert() function of Javascript](/articles/customize-the-default-alert-function-of-javascript/gdalertintro.jpg "Customize the default alert() function of Javascript")](/articles/customize-the-default-alert-function-of-javascript/)</div><span class="more"></span>
 
 While working on a new project which will launch in a few months (I hope!) I used a lot of alert messages in Javascript, just because it's easy and quick to use. The problem still is that it looks ugly. So, I decided to **overwrite the alert function** and create my own version of it. Sweet, not?
 

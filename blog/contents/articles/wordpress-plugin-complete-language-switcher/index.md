@@ -12,7 +12,7 @@ links:
 ---
 A while ago I uploaded a new plugin to the Wordpress plugin directory called Complete Language Switcher. Using this plugin enables you to easily make a multilingual blog with Wordpress to give the user the best experience in a language you provide.
 
-[![Wordpress Plugin: Complete Language Switcher](/articles/wordpress-plugin-complete-language-switcher/completelangswitcher.jpg "Wordpress Plugin: Complete Language Switcher")](http://www.gayadesign.com/diy/wordpress-plugin-complete-language-switcher/)
+[![Wordpress Plugin: Complete Language Switcher](/articles/wordpress-plugin-complete-language-switcher/completelangswitcher.jpg "Wordpress Plugin: Complete Language Switcher")](/articles/wordpress-plugin-complete-language-switcher/)
 
 <span class="more"></span>
 

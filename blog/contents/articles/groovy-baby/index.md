@@ -14,7 +14,7 @@ The last six months I've been researching a fairly new programming language with
 
 After lots and lots of hours of work we managed to finally complete our research study and hold a course day for approx. 20 people at [HAN University of Applied Sciences](http://www.han.nl/start-en/).
 
-<div class="border">[![Groovy, baby!](/articles/groovy-baby/grandeur.jpg "Groovy, baby!")](http://www.gayadesign.com/general/groovy-baby/)</div>I want to thank Bart van Zeeland, [Youssef El Messaoudi](http://koffieislekker.nl/), [Marco Kuiper](http://www.marcofolio.net/) and Jaap Mengers for being my colleagues during this study. I'd also like to thank Rody Middelkoop and Sander Leer for lecturing us.
+<div class="border">[![Groovy, baby!](/articles/groovy-baby/grandeur.jpg "Groovy, baby!")](/articles/groovy-baby/)</div>I want to thank Bart van Zeeland, [Youssef El Messaoudi](http://koffieislekker.nl/), [Marco Kuiper](http://www.marcofolio.net/) and Jaap Mengers for being my colleagues during this study. I'd also like to thank Rody Middelkoop and Sander Leer for lecturing us.
 
 <span class="more"></span>
 

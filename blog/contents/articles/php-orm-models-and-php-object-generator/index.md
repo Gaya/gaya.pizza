@@ -8,7 +8,7 @@ If you are a developer, especially in the object orientated parts, you must hear
  This post will tell you a bit about models and how you can use them to lift your code to a higher level and safe a lot of time in the development process.  
  I will also tell you about [PHP Object Generator](http://www.phpobjectgenerator.com/) (POG) to use for implementing your models.
 
-[![PHP ORM: Models and PHP Object Generator](/articles/php-orm-models-and-php-object-generator/postimgpost.jpg "PHP ORM: Models and PHP Object Generator")](http://www.gayadesign.com/articles/php-orm-models-and-php-object-generator)
+[![PHP ORM: Models and PHP Object Generator](/articles/php-orm-models-and-php-object-generator/postimgpost.jpg "PHP ORM: Models and PHP Object Generator")](/articles/php-orm-models-and-php-object-generator)
 
 <span class="more"></span>
 

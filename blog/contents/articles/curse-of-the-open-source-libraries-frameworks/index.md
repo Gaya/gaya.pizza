@@ -11,7 +11,7 @@ The number of people using frameworks or libraries to speed up their development
 
 Is it a good thing, or are we shooting ourselves in the foot? I will share my view on the matter in this article.
 
-[![Curse of the Open Source libraries and frameworks](/articles/curse-of-the-open-source-libraries-frameworks/curse-of-the-open-source-libraries-frameworks1.jpg)](http://www.gayadesign.com/articles/curse-of-the-open-source-libraries-frameworks/)
+[![Curse of the Open Source libraries and frameworks](/articles/curse-of-the-open-source-libraries-frameworks/curse-of-the-open-source-libraries-frameworks1.jpg)](/articles/curse-of-the-open-source-libraries-frameworks/)
 
 <span class="more"></span>
 

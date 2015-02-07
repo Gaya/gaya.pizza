@@ -16,7 +16,7 @@ Working as a front-end developer should be a job where you worry about the stuff
 
 This article is aimed to convince you why WordPress is bad to front-end developers, what has to be done about it, and finally how a better way of developing can be achieved.
 
-[![Make Developing Front-end Projects in WordPress Work](/articles/make-developing-front-end-projects-wordpress-work/make-developing-front-end-projects-wordpress-work1.jpg)](http://www.gayadesign.com/front-end/make-developing-front-end-projects-wordpress-work)<span class="more"></span>
+[![Make Developing Front-end Projects in WordPress Work](/articles/make-developing-front-end-projects-wordpress-work/make-developing-front-end-projects-wordpress-work1.jpg)](/articles/make-developing-front-end-projects-wordpress-work)<span class="more"></span>
 
 TL;DR
 -----

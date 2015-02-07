@@ -8,7 +8,7 @@ Since **webservices** and **RESTful** services are becoming more and more popula
 
 This post will show you how easy it is to *read XML in PHP*.
 
-[![Reading XML with PHP](/articles/reading-xml-with-php/xml.jpg "Reading XML with PHP")](/diy/reading-xml-with-php/)
+[![Reading XML with PHP](/articles/reading-xml-with-php/xml.jpg "Reading XML with PHP")](/articles/reading-xml-with-php/)
 
 <span class="more"></span>
 
