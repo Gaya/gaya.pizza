@@ -45,6 +45,5 @@
   "author": "Gaya Kessler",
   "license": "ISC",
   "devDependencies": {
-    "gulp-imagemin": "^2.1.0"
   }
 }
