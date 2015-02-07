@@ -88,23 +88,5 @@
             @extend %bar-icon;
             margin-left: 8px;
         }
-
-        &--rss {
-            @extend %bar-icon;
-            margin: 0;
-            float: right;
-
-            &:before {
-                width: 13px;
-                height: 13px;
-                @include svg-sprite("feed-icon");
-            }
-
-            &:hover {
-                &:before {
-                    @include svg-sprite("feed-icon-on");
-                }
-            }
-        }
     }
 }
