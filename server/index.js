@@ -4,7 +4,7 @@ var app = require('express')(),
     serveStatic = require('serve-static'),
     compression = require('compression'),
     fs = require("fs"),
-    __public_root = __dirname + '/../public/';
+    __public_root = __dirname.replace('server', 'public');
 
 //parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
