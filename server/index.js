@@ -2,7 +2,8 @@ var app = require('express')(),
     mail = require("./mail.js"),
     bodyParser = require('body-parser'),
     serveStatic = require('serve-static'),
-    compression = require('compression');
+    compression = require('compression'),
+    fs = require("fs");
 
 //parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -28,7 +29,7 @@ app.use(function(req, res, next){
     res.status(404);
 
     if (req.accepts('html')) {
-        res.render('404', { url: req.url });
+        res.send('404', { url: req.url });
         return;
     }
 
