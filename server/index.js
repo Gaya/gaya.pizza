@@ -29,7 +29,7 @@ app.use(function(req, res, next){
     res.status(404);
 
     if (req.accepts('html')) {
-        res.send('404', { url: req.url });
+        res.sendfile(__dirname + '/../public/index.html');
         return;
     }
 
@@ -38,7 +38,9 @@ app.use(function(req, res, next){
         return;
     }
 
-    res.type('txt').send('Not found');
+    if (!req.accepts('html') && !req.accepts('json')) {
+        res.type('txt').send('Not found');
+    }
 });
 
 app.listen(process.env.PORT || 5000);
