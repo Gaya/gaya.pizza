@@ -4,7 +4,7 @@
 
 {% block content %}
     {% for article in articles %}
-        <article class="post" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
             <header class="post__header">
                 <h2 class="post__header__text"><a href="{{ article.url }}" itemprop="name headline">{{ article.title }}</a></h2>
             </header>
