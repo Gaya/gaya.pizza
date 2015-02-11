@@ -3,7 +3,8 @@ var app = require('express')(),
     bodyParser = require('body-parser'),
     serveStatic = require('serve-static'),
     compression = require('compression'),
-    fs = require("fs");
+    fs = require("fs"),
+    __public_root = __dirname + '/../public/';
 
 //parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -15,7 +16,7 @@ app.post('/contact', mail);
 app.use(compression());
 
 //serve static files
-app.use(serveStatic(__dirname + '/../public/', {
+app.use(serveStatic(__public_root, {
     'index': ['index.html'],
     'maxAge': (86400000 * 365),
     'setHeaders': function setHeaders(res, next) {
@@ -29,7 +30,7 @@ app.use(function(req, res, next){
     res.status(404);
 
     if (req.accepts('html')) {
-        res.sendfile(__dirname + '/../public/404.html');
+        res.sendfile(__public_root + '404.html');
         return;
     }
 
