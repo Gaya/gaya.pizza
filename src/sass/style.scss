@@ -41,3 +41,4 @@ $big-desktop:       new-breakpoint(min-width 1020px 16);
 
 //organisms
 @import "organisms/index";
+@import "organisms/print";
