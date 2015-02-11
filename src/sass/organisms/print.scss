@@ -1,3 +1,9 @@
 @media print {
+    body {
+        background: white;
+    }
 
+    .main-nav, .sponsor, .main-footer {
+        display: none;
+    }
 }
