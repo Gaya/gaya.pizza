@@ -4,7 +4,7 @@ var app = require('express')(),
     serveStatic = require('serve-static'),
     compression = require('compression'),
     fs = require("fs"),
-    __public_root = __dirname.replace('server', 'public');
+    __public_root = __dirname.replace('server', 'public') + '/';
 
 //parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -31,6 +31,7 @@ app.use(function(req, res, next){
 
     if (req.accepts('html')) {
         res.sendFile(__public_root + '404.html');
+        return;
     }
 
     if (req.accepts('json')) {
