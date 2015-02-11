@@ -29,7 +29,7 @@ app.use(function(req, res, next){
     res.status(404);
 
     if (req.accepts('html')) {
-        res.sendfile(__dirname + '/../public/index.html');
+        res.sendfile(__dirname + '/../public/404.html');
         return;
     }
 
