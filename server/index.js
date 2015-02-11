@@ -31,7 +31,6 @@ app.use(function(req, res, next){
 
     if (req.accepts('html')) {
         res.sendFile(__public_root + '404.html');
-        return;
     }
 
     if (req.accepts('json')) {
