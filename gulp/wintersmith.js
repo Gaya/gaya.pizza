@@ -10,7 +10,7 @@ module.exports = [{
 
         //build settings
         if (gulp.config.dist === gulp.config.build) {
-            config.locals.url = "http://blog.gaya.ninja";
+            config.locals.url = "https://blog.gaya.ninja";
         }
 
         var env = wintersmith(config);
