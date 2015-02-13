@@ -5,7 +5,7 @@ module.exports = [{
     name: "svg-sprite",
     task: function (cb) {
         "use strict";
-        return SVGSprite.createSprite(gulp.config.src + '/icons', gulp.config.dist, {
+        SVGSprite.createSprite(gulp.config.src + '/icons', gulp.config.dist, {
             spritedir: 'images',
             sprite: 'gn-sprite',
             variables: {
