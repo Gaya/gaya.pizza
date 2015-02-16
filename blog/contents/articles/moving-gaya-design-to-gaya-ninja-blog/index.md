@@ -18,12 +18,18 @@ a blog I kind of struggled with the name. It's one I made up a long time ago whe
 At that time I didn't even know whether I'd go with design or development. I really liked both at the time, but went
 with development pretty soon, which I am very thankful for.
 
-When I finally found the time to do something about this problem I began rebranding small parts of my online presence.
+When I finally found the time to do something about this problem I began re-branding small parts of my online presence.
 [My Twitter account](https://twitter.com/gayaninja) has been renamed to @GayaNinja for a while now and I launched a
 website for my personal / professional profile at [http://gaya.ninja](http://gaya.ninja).
 
+##New looks
+The looks of Gaya Ninja Blog are not that different from Gaya Design. The logo is the same, and I basically use the same
+colours. I did change the layout and typography, making it more fluid using a grid system.
+
+I believe that the new looks convey my message in a better and more readable way.
+
 ##Going static
-I've been WordPress as my blog engine on Gaya Design, but it felt like I was using it for the wrong reasons. I don't
+WordPress has been my blog engine on Gaya Design, but it felt like I was using it for the wrong reasons. I don't
 like admin panels, configuring stuff in what seem to be endless forms and writing in a WYSIWYG editor.
 
 Static website generators have become more popular over time, and since they come so close to front-end development work
@@ -32,3 +38,17 @@ I took the plunge and dug into different generator.
 The cool thing now is that I can write my posts in the editor I work mostly in and it's blazing fast. No need for
 sluggish dynamic web pages to write my content in, but plain text in combination with
 [Markdown](http://daringfireball.net/projects/markdown/).
+
+##No traditional shared hosting
+One of the reasons I wanted to make something new was to experience deployment of applications in a very different way.
+Most shared hosting services just have simple FTP deployment and don't support any custom packages you might want to use.
+
+I wanted an environment where I could deploy code to and it would build and run my application, in my case my blog.
+
+##How I switched
+Currently I am writing up the way I converted my WordPress blog to a static website and the process behind it. How it
+was a lot more than I had expected, and how much better the outcome works is for me.
+
+##Let me know what you think
+I'd love to hear what you think about the new blog. If you have any suggestions you can tell my on
+[Twitter](http://twitter.com/GayaNinja) or [use my contact form](/contact/).
