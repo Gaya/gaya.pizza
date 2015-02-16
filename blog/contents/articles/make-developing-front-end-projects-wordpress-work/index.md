@@ -12,11 +12,11 @@ links:
     url: https://github.com/Gaya/gulp-timber-example
 ---
 Working as a front-end developer should be a job where you worry about the stuff you're good at: creating HTML, CSS and JavaScript. In a perfect setting you don't have to worry about the CMS or framework the website / app is going to use.  
- When the team chooses to use WordPress, you might be in for a struggle though. Seperation between front and back-end development in WordPress is quite vague and is smeared all over the place.
+ When the team chooses to use WordPress, you might be in for a struggle though. Separation between front and back-end development in WordPress is quite vague and is smeared all over the place.
 
 This article is aimed to convince you why WordPress is bad to front-end developers, what has to be done about it, and finally how a better way of developing can be achieved.
 
-[![Make Developing Front-end Projects in WordPress Work](/articles/make-developing-front-end-projects-wordpress-work/make-developing-front-end-projects-wordpress-work1.jpg)](/articles/make-developing-front-end-projects-wordpress-work)<span class="more"></span>
+[![Make Developing Front-end Projects in WordPress Work](make-developing-front-end-projects-wordpress-work1.jpg)](/articles/make-developing-front-end-projects-wordpress-work)<span class="more"></span>
 
 TL;DR
 -----
