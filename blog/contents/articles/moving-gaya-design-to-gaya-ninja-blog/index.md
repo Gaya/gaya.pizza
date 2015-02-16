@@ -19,8 +19,8 @@ At that time I didn't even know whether I'd go with design or development. I rea
 with development pretty soon, which I am very thankful for.
 
 When I finally found the time to do something about this problem I began rebranding small parts of my online presence.
-(My Twitter account)[https://twitter.com/gayaninja] has been renamed to @GayaNinja for a while now and I launched a
-website for my personal / professional profile at (http://gaya.ninja)[http://gaya.ninja].
+[My Twitter account](https://twitter.com/gayaninja) has been renamed to @GayaNinja for a while now and I launched a
+website for my personal / professional profile at [http://gaya.ninja](http://gaya.ninja).
 
 ##Going static
 I've been WordPress as my blog engine on Gaya Design, but it felt like I was using it for the wrong reasons. I don't
@@ -31,4 +31,4 @@ I took the plunge and dug into different generator.
 
 The cool thing now is that I can write my posts in the editor I work mostly in and it's blazing fast. No need for
 sluggish dynamic web pages to write my content in, but plain text in combination with
-(Markdown)[http://daringfireball.net/projects/markdown/].
+[Markdown](http://daringfireball.net/projects/markdown/).
