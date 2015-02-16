@@ -8,3 +8,9 @@ Since 2008 I've been blogging with the name "Gaya Design". Which is pretty weird
 design and am not professionally a designer. It was time to make a move to a different domain and operate on a new name.
 
 I am very proud to introduce to you: Gaya Ninja Blog.
+
+<span class="more"></span>
+
+##My branding needed a change
+Ever since my blog took off I felt like I was stuck with the name I once choose to host my blog on. Even before it was
+a blog I kind of struggled with the name. It's one I made up a long time ago when I started getting into web design.
