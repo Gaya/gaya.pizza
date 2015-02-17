@@ -36,7 +36,8 @@ module.exports = [{
             height: 480,
             htmlTarget: 'index.html',
             styleTarget: '',
-            minify: true
+            minify: true,
+            extract: false
         });
     }
 }, {
