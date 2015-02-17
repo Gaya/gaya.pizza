@@ -2,7 +2,8 @@ var gulp = require('gulp'),
     cssshrink = require('gulp-cssshrink'),
     imageop = require('gulp-image-optimization'),
     critical = require('critical'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    findit = require('findit');
 
 
 module.exports = [{
@@ -28,30 +29,27 @@ module.exports = [{
     name: "critical",
     task: function () {
         "use strict";
-        critical.generateInline({
-            // Your base directory
-            base: gulp.config.dist,
+        process.setMaxListeners(0);
+        var finder = findit(gulp.config.dist);
 
-            // HTML source
-            src: 'index.html',
+        finder.on('file', function (file, stat) {
+            if (file.substr(-10) === "index.html") {
+                file = file.replace(gulp.config.dist + "/", "");
 
-            // Your CSS Files (optional)
-            css: [gulp.config.dist + '/css/style.css'],
+                critical.generateInline({
+                    base: gulp.config.dist,
+                    src: file,
+                    css: [gulp.config.dist + '/css/style.css'],
+                    width: 320,
+                    height: 480,
+                    htmlTarget: file,
+                    styleTarget: '',
+                    minify: true,
+                    extract: false
+                });
 
-            // Viewport width
-            width: 320,
-
-            // Viewport height
-            height: 480,
-
-            // Target for final HTML output
-            htmlTarget: 'index-critical.html',
-
-            // Target for generated critical-path CSS (which we inline)
-            styleTarget: 'css/critical.css',
-
-            // Minify critical-path CSS when inlining
-            minify: true
+                console.log("Critical " + file);
+            }
         });
     }
 }, {
@@ -64,5 +62,8 @@ module.exports = [{
     }
 }, {
     name: "optimize",
-    pre: ['cssshrink', 'image-min', 'uglify-js']
+    pre: ['cssshrink', 'image-min', 'uglify-js'],
+    task: function () {
+        gulp.start("critical");
+    }
 }];
