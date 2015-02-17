@@ -31,10 +31,26 @@ module.exports = [{
         "use strict";
         process.setMaxListeners(0);
         var finder = findit(gulp.config.dist);
+        var files = [];
+        var working = false;
 
         finder.on('file', function (file, stat) {
             if (file.substr(-10) === "index.html") {
                 file = file.replace(gulp.config.dist + "/", "");
+
+                files.push(file);
+
+                console.log("Added " + file);
+                doCritical();
+            }
+        });
+
+        var doCritical = function () {
+            if (files.length > 0 && working == false) {
+                working = true;
+
+                var file = files.pop();
+                console.log("Working on " + file);
 
                 critical.generateInline({
                     base: gulp.config.dist,
@@ -46,11 +62,12 @@ module.exports = [{
                     styleTarget: '',
                     minify: true,
                     extract: false
+                }, function (err, output) {
+                    working = false;
+                    doCritical();
                 });
-
-                console.log("Critical " + file);
             }
-        });
+        }
     }
 }, {
     name: "uglify-js",
