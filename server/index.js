@@ -19,9 +19,13 @@ app.use(compression());
 app.use(serveStatic(__public_root, {
     'index': ['index.html'],
     'maxAge': (86400000 * 365),
-    'setHeaders': function setHeaders(res, next) {
+    'setHeaders': function setHeaders(res, path) {
         "use strict";
-        res.setHeader('Expires', new Date(Date.now() + 345600000).toUTCString());
+        var expire = 345600000;
+        if (path.substr(-10) === "index.html") {
+            expire = 43200000;
+        }
+        res.setHeader('Expires', new Date(Date.now() + expire).toUTCString());
     }
 }));
 
