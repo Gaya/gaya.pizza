@@ -2,7 +2,8 @@ var gulp = require('gulp'),
     cssshrink = require('gulp-cssshrink'),
     imageop = require('gulp-image-optimization'),
     critical = require('critical'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    findit = require('findit');
 
 
 module.exports = [{
@@ -28,16 +29,22 @@ module.exports = [{
     name: "critical",
     task: function () {
         "use strict";
-        critical.generateInline({
-            base: gulp.config.dist,
-            src: 'index.html',
-            css: [gulp.config.dist + '/css/style.css'],
-            width: 320,
-            height: 480,
-            htmlTarget: 'index.html',
-            styleTarget: '',
-            minify: true,
-            extract: false
+        var finder = findit(gulp.config.dist);
+
+        finder.on('file', function (file, stat) {
+            if (file.substr(-10) === "index.html") {
+                critical.generateInline({
+                    base: gulp.config.dist,
+                    src: file,
+                    css: [gulp.config.dist + '/css/style.css'],
+                    width: 320,
+                    height: 480,
+                    htmlTarget: file,
+                    styleTarget: '',
+                    minify: true,
+                    extract: false
+                });
+            }
         });
     }
 }, {
