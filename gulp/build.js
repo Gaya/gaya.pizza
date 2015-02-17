@@ -6,7 +6,6 @@ module.exports = [{
     task: function () {
         "use strict";
         gulp.start("optimize");
-        console.log("Done");
     }
 }, {
     name: "set-target",

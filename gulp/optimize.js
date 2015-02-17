@@ -49,5 +49,8 @@ module.exports = [{
     }
 }, {
     name: "optimize",
-    pre: ['cssshrink', 'image-min', 'uglify-js', 'critical']
+    pre: ['cssshrink', 'image-min', 'uglify-js'],
+    task: function () {
+        gulp.start("critical");
+    }
 }];
