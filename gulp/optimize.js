@@ -29,10 +29,13 @@ module.exports = [{
     name: "critical",
     task: function () {
         "use strict";
+        process.setMaxListeners(0);
         var finder = findit(gulp.config.dist);
 
         finder.on('file', function (file, stat) {
             if (file.substr(-10) === "index.html") {
+                file = file.replace(gulp.config.dist + "/", "");
+
                 critical.generateInline({
                     base: gulp.config.dist,
                     src: file,
@@ -44,6 +47,8 @@ module.exports = [{
                     minify: true,
                     extract: false
                 });
+
+                console.log("Critical " + file);
             }
         });
     }
