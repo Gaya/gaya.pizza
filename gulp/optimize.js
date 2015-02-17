@@ -29,28 +29,13 @@ module.exports = [{
     task: function () {
         "use strict";
         critical.generateInline({
-            // Your base directory
             base: gulp.config.dist,
-
-            // HTML source
             src: 'index.html',
-
-            // Your CSS Files (optional)
             css: [gulp.config.dist + '/css/style.css'],
-
-            // Viewport width
             width: 320,
-
-            // Viewport height
             height: 480,
-
-            // Target for final HTML output
-            htmlTarget: 'index-critical.html',
-
-            // Target for generated critical-path CSS (which we inline)
-            styleTarget: 'css/critical.css',
-
-            // Minify critical-path CSS when inlining
+            htmlTarget: 'index.html',
+            styleTarget: '',
             minify: true
         });
     }
