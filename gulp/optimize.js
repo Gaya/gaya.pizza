@@ -50,6 +50,7 @@ module.exports = [{
                 working = true;
 
                 var file = files.pop();
+                console.log("Working on " + file);
 
                 critical.generateInline({
                     base: gulp.config.dist,
