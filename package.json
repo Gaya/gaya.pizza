@@ -14,6 +14,7 @@
     "compression": "^1.4.0",
     "critical": "^0.5.4",
     "express": "^4.11.2",
+    "findit": "^2.0.0",
     "gulp": "^3.8.7",
     "gulp-cssshrink": "^0.1.4",
     "gulp-image-optimization": "^0.1.3",
@@ -43,6 +44,5 @@
   },
   "author": "Gaya Kessler",
   "license": "ISC",
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
