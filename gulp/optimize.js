@@ -32,7 +32,7 @@ module.exports = [{
         process.setMaxListeners(0);
         var finder = findit(gulp.config.dist);
         var files = [];
-        var working = false;
+        var working = 0;
 
         finder.on('file', function (file, stat) {
             if (file.substr(-10) === "index.html") {
@@ -46,8 +46,8 @@ module.exports = [{
         });
 
         var doCritical = function () {
-            if (files.length > 0 && working == false) {
-                working = true;
+            if (files.length > 0 && working < 4) {
+                working = working + 1;
 
                 var file = files.pop();
                 console.log("Working on " + file);
@@ -63,7 +63,7 @@ module.exports = [{
                     minify: true,
                     extract: false
                 }, function (err, output) {
-                    working = false;
+                    working = working - 1;
                     doCritical();
                 });
             }
