@@ -43,7 +43,7 @@ function sendMail(req) {
         message = req.body.message;
     }
 
-    var subject = "New NinjaMail from " + name;
+    var subject = "Contact Gaya Ninja Blog from " + name;
     var text = name + " (" + email + ")\n\r" + message;
     var html = "<p>" + name + " (" + email + ")</p><p>" + message + "</p>";
 
