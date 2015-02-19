@@ -46,7 +46,7 @@ module.exports = [{
         });
 
         var doCritical = function () {
-            if (files.length > 0 && working < 4) {
+            if (files.length > 0 && working < 2) {
                 working = working + 1;
 
                 var file = files.pop();
