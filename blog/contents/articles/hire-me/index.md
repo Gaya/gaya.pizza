@@ -6,15 +6,14 @@ template: article.html
 ---
 
 After a long time of hard consideration I decided to leave my current job. It's an awesome place to work at and the
-management couldn't be better, but it feels like I am getting stuck again.
+management couldn't be better, but I feel like I am moving in a different direction.
 
 That said: I am looking for a new job.
 
 <span class="more"></span>
 
-##Motivation
-[As I mentioned before](/articles/stuck-at-your-web-development-job-break-your-routine/), being stuck at your job is not
-something I want. Being unhappy is something I want to avoid and this is the best solution.
+[As I mentioned before](/articles/stuck-at-your-web-development-job-break-your-routine/), being stuck at my job is not
+something I want. Being unhappy is something I want to avoid and looking for something else seems like the best solution.
 
 ##What I am looking for
 Currently I am largely interested in working on JavaScript applications, from in-browser web applications to server-side
