@@ -20,6 +20,8 @@ Currently I am largely interested in working on JavaScript applications, from in
 Node.js applications. I also love automating all the things and streamlining the development process, the less coders
 need to do, the better.
 
+As much as I love working in offices, I am also open to working remote.
+
 ##Let me know if you know something
 If you might know a company that is looking for a JavaScript developer and wants to talk to me, please let me know by
 sending an [email to hi@gaya.ninja](mailto:hi@gaya.ninja). You can also [reach me through my contact page](/contact) or
