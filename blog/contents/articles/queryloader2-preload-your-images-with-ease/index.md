@@ -68,6 +68,10 @@ docs:
               name: "onComplete"
               type: "function"
               desc: "This function is called once the loading and animation are completed."
+            -
+              name: "onProgress"
+              type: "function"
+              desc: "This function is called when an image is loaded. Gets parameters percentage, imagesLoaded, totalImages."
 ---
 Gaya Design is back in business and hitting hard with a redo of the 2009 script QueryLoader. I kept getting e-mails and comments about it and thought I had left it just hanging there for way too long. It had become very outdated. So here it is: version 2 of QueryLoader!
 
