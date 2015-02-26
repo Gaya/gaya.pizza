@@ -3,6 +3,7 @@ title: "Hire Me"
 author: Gaya
 date: 2015-02-23
 template: article.html
+seo_desc: "JavaScript developer looking for a job."
 ---
 
 After a long time of hard consideration I decided to leave my current job. It's an awesome place to work at and the
