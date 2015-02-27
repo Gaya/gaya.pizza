@@ -13,15 +13,41 @@ This article explains the process and what I did to achieve the current static w
 
 <span class="more"></span>
 
-1. Reden van switch
-    - WordPress sloom
-    - Wil geen admin panel
-    - Leuke uitdaging
+##Why static?
 
-1.5. Plan van Aanpak
-    - source intakt
-    - deployen van source -> genereren site
-    - alles vanuit een repo
+WordPress was my platform of choice back in 2008 when I started writing and publishing articles. Back then I liked the
+comfort of not having to write my own content management system for posting blogposts and the amount of plugins that
+helped me with stuff I didn't know how to make really spoke to me.
+
+Years later and a lot of experience later I learned that WordPress is not for me. I explained why in a [previous post
+about rebranding Gaya Design](https://blog.gaya.ninja/articles/moving-gaya-design-to-gaya-ninja-blog/).
+
+With static I could make my blog behave the way I think it should behave. Calculate the content before it will be served,
+not at the time it is requested, like what happens on a typical system. You can kind of prevent calculations using
+caching tools, but it still is no holy grail.
+
+It was a nice challenge for me too since I never really made a statically generated site before. My weblog was the
+perfect case for me to go and try it out. I was going to rebrand my name, so I might as well go ahead and create a new
+site along with it.
+
+##Planning it all out
+
+There were a few requirements my new weblog had to meet. Since I am quite picky on the quality of my own workflow I
+decided I wouldn't make it easy for myself.
+
+The things I really wanted were:
+
+1. Generate everything from a source. Do *not* have any compiled or generated content in my version controlling.
+2. Write posts using MarkDown.
+3. Being able to test and write for my site locally and deploy it with the same code.
+4. Deployment from my weblog's repository. Having my server generate the whole thing before publishing.
+
+This meant that I had to go and search for a static site generator that handles first. If it had blogging support it
+would be even better.
+
+##Looking for a Static Site Generator
+
+To be more specific, I was really looking for a static blog generator.
 
 2. Opzoek naar een static site generator
     - Opties
