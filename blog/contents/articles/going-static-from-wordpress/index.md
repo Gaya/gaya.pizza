@@ -64,6 +64,19 @@ The templating looked easy enough, and there is a [large variety of Wintersmith 
 available. Along with the dynamically generated stuff I was going to need, Wintersmith looked like a solid choice. Sorry
 Hexo!
 
+##Creating the templates
+
+In order to go about and create the looks of the website I picked my typical workflow. First I setup my Gulp tasks to
+handle generating my Sass files, JavaScript and [have BrowserSync serve](http://www.browsersync.io) it with the HTML to
+my browser.
+
+To process my Sass I used [gulp-sass](https://github.com/dlmanning/gulp-sass). It runs on [libsass](https://github.com/sass/libsass),
+which makes it super fast too. That's a great thing when using BrowserSync because the newly generated assets will be
+available in the browser really quick. Especially when you have two monitors where one holds a browser window and the
+other your editor.
+
+
+
 3. Bouwen templates
     - Gulp, Browserify, Sass en BrowserSync
     - Neat
