@@ -6,6 +6,13 @@ template: article.html
 seo_desc: "GayaDesign.com was converted into a static blog from WordPress to Wintersmith. This article explains how."
 ---
 
+Static websites are blazing fast and fun to make. The time of having your website calculated for every request is almost
+gone. I went through the process of turning my WordPress version of this blog into a static served website.
+
+This article explains the process and what I did to achieve the current static website.
+
+<span class="more"></span>
+
 1. Reden van switch
     - WordPress sloom
     - Wil geen admin panel
@@ -30,6 +37,9 @@ seo_desc: "GayaDesign.com was converted into a static blog from WordPress to Win
     - Nunjucks voor jinja2
     - templates ombouwen tot mijn html
     - pagina's aanmaken
+
+4.5. WP to Wintersmith hell
+    -
 
 5. Optimaliseren van assets
     - imageop
