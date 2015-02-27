@@ -50,7 +50,7 @@ would be even better.
 To be more specific, I was really looking for a static blog generator. I played around with a few, one was [Jekyll](http://jekyllrb.com).
 Which is pretty nice, but I came to the conclusion that I wanted to make a Node.js powered blog.
 
-I quickly came across [hexo](https://github.com/hexojs/hexo), [Assemble](http://assemble.io) and
+I quickly came across [Hexo](https://github.com/hexojs/hexo), [Assemble](http://assemble.io) and
 [Wintersmith](http://wintersmith.io), which are all fine frameworks in their way.
 
 Before I used [Gulp](http://gulpjs.com) I was using [Grunt](http://gruntjs.com), and in that time I had some experience
@@ -62,7 +62,7 @@ to work with. So that will work out perfectly if I want to integrate Wintersmith
 
 The templating looked easy enough, and there is a [large variety of Wintersmith template plugins](https://github.com/jnordberg/wintersmith/wiki/Plugins#template-plugins)
 available. Along with the dynamically generated stuff I was going to need, Wintersmith looked like a solid choice. Sorry
-hexo!
+Hexo!
 
 3. Bouwen templates
     - Gulp, Browserify, Sass en BrowserSync
