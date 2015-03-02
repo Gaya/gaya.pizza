@@ -88,15 +88,39 @@ To generate the SVG sprite from a source folder I used [svg-sprite](https://gith
 module that gathers and optimises the output. It also always you to output a `.sass` file to be used. So with that I
 generated a sass file that calculated all the necessary widths and heights. I'll get back to this in a later post.
 
+##Working with Wintersmith
 
+The first thing I noticed about Wintersmith is that it uses Jade, like a lot of other great Node.js project. I don't
+really like it so much, so I looked for an alternative. [Nunjucks](http://mozilla.github.io/nunjucks/) is a templating
+language heavily inspired by jinja2, which I was already familiar with. It looked pretty straight-forward, so I went
+with it. Looking at [the examples of Wintersmith](https://github.com/jnordberg/wintersmith/tree/master/examples/blog/templates)
+it was relatively easy to convert my HTML files to Wintersmith templates.
 
-4. Wintersmith ombouwen
-    - Nunjucks voor jinja2
-    - templates ombouwen tot mijn html
-    - pagina's aanmaken
+The only thing I had to do was to create a 404, about and contact page. And that was that. Pretty harmless task since
+it already look care of most of my requirements.
 
-4.5. WP to Wintersmith hell
-    -
+As I said before, Wintersmith works really well as a Node.js module, so I create a watcher in Gulp that looks for changes
+and regenerates the whole blog. The great thing is that it only takes about 1 second for Wintersmith to do that.
+
+##Converting content from WordPress to Wintersmith
+
+Wintersmith is pretty clean in its article structure. It follows a convention that allow me to create a new article in a
+folder which contains the MarkDown file with the post. All the images that are used in the MarkDown file can be put in
+the same folder.
+
+The challenge here was to get all the posts from WordPress, add the correct meta data in YAML format and convert the
+posts to MarkDown syntax while copying all the images. All the code snippets and internal URL in the posts had to be
+changed as well.
+
+I wrote a quick convert script for this and it saved me a lot of time. It was a dirty job, but I **had** to do it.
+
+##Optimasing all the assets
+
+From the source folder all the assets had to be optimised before serving them to the browser. This happens after all the
+files are put in the folder that gets served. After which the server checks all the files and optimises them.
+
+For image optimisation I used [imagemin](https://github.com/imagemin/imagemin), a pretty quick module that minifies the
+images it gets passed in.
 
 5. Optimaliseren van assets
     - imageop
