@@ -75,12 +75,20 @@ which makes it super fast too. That's a great thing when using BrowserSync becau
 available in the browser really quick. Especially when you have two monitors where one holds a browser window and the
 other your editor.
 
+Frameworks I used for styling worth mentioning are: [Neat for responsive layout grids](http://neat.bourbon.io)
+and [Bourbon for standard mixins](http://bourbon.io).
+
+##SVG
+
+For my SVG images on the site I used a SVG sprite generator. I choose not to include the SVGs as images in my DOM so I
+could keep styling of icons out of my templates. This way I can keep my HTML clean. The only problem was that I needed
+a way to calculate the SVG sprite width and height for each element to scale dynamically.
+
+To generate the SVG sprite from a source folder I used [svg-sprite](https://github.com/jkphl/svg-sprite), a Node.js
+module that gathers and optimises the output. It also always you to output a `.sass` file to be used. So with that I
+generated a sass file that calculated all the necessary widths and heights. I'll get back to this in a later post.
 
 
-3. Bouwen templates
-    - Gulp, Browserify, Sass en BrowserSync
-    - Neat
-    - SVG sprite
 
 4. Wintersmith ombouwen
     - Nunjucks voor jinja2
