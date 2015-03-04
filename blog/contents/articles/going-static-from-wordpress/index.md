@@ -114,18 +114,23 @@ changed as well.
 
 I wrote a quick convert script for this and it saved me a lot of time. It was a dirty job, but I **had** to do it.
 
-##Optimasing all the assets
+##Optimising all the assets
 
 From the source folder all the assets had to be optimised before serving them to the browser. This happens after all the
 files are put in the folder that gets served. After which the server checks all the files and optimises them.
 
 For image optimisation I used [imagemin](https://github.com/imagemin/imagemin), a pretty quick module that minifies the
-images it gets passed in.
+images it gets passed in. This way I don't have to optimise the images myself before committing them.
 
-5. Optimaliseren van assets
-    - imageop
-    - critical
-    - uglify
+For my JavaScript I used [uglify](https://github.com/terinjokes/gulp-uglify) after it had been bundled using Browserify
+and my CSS is done with [cssshrink](https://github.com/torrottum/gulp-cssshrink).
+
+To optimise the loading speed of my pages I extracted and inlined the critical-path CSS from my generated pages. This
+will allow the pages of my site to be loaded with visual content without blocking the loading for the external CSS file.
+To do this I used [critical](https://github.com/addyosmani/critical) which scans my pages one by one and injects the
+corrected inline CSS.
+
+
 
 6. Server maken voor serven content
     - express
