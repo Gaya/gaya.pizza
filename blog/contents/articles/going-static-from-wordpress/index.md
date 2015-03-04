@@ -130,13 +130,30 @@ will allow the pages of my site to be loaded with visual content without blockin
 To do this I used [critical](https://github.com/addyosmani/critical) which scans my pages one by one and injects the
 corrected inline CSS.
 
+##Creating a server to serve my content
 
+What I needed was a simple web server that could serve static files (which were build by my tasks), compress those files
+and create a fallback for pages that are not found. An easy way to get this done is to use [express](http://expressjs.com)
+as the framework.
 
-6. Server maken voor serven content
-    - express
-    - contact form
-    - compression
-    - serveStatic
+For serving content the [serve-static](https://github.com/expressjs/serve-static) middleware is really easy to use. For
+compression of the output I used [compression](https://github.com/expressjs/compression). For the pages that are not
+found I wrote my own middleware that serves my `404.html` file I created.
+
+All that was left was to build a middleware that handles my contact form. I wrote up a little tool that handles the
+given data, puts it in a mail and sends it to me. It responds with a simple JSON object telling the sender everything
+worked out.
+
+##Deploying it all
+
+I went a bit into deploying Node.js applications and came across [dokku](https://github.com/progrium/dokku). It behaves
+like Heroku in a way that I can deploy my code on a repository that is hosted on my server and let it do the rest.
+
+Once I push code to my dokku server through Git it will start to install all the dependencies defined in `package.json`.
+It will than execute the npm scripts I defined in my `package.json` file. It will build the site, optimise everything and
+test if it worked afterwards. Then it will switch my current running version with the new one.
+
+Now I can finally keep all my source the same on every machine and deploy my article whenever I want them to.
 
 7. Deployment
     - dokku
