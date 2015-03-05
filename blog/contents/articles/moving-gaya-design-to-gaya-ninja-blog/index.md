@@ -50,8 +50,8 @@ Writing my posts in static files also means I can add them to my git repository,
 post evolved and not having to sync a local and remote database for my data.
 
 ##How I switched
-Currently I am writing up the way I converted my WordPress blog to a static website and the process behind it. How it
-was a lot more than I had expected, and how much better the outcome works is for me.
+You can read about how I switched from WordPress to a static website in another article called [Migrating from WordPress
+to Wintersmith](/articles/migrating-wordpress-to-wintersmith/).
 
 ##Let me know what you think
 I'd love to hear what you think about the new blog. If you have any suggestions you can tell my on
