@@ -12,8 +12,6 @@
 
 {% if page.metadata.seo_desc %}
     {% block description %}{{ page.metadata.seo_desc }}{% endblock %}
-{% else %}
-    {% block description %}{{ env.locals.description }}{% endblock %}
 {% endif %}
 
 {% block content %}
