@@ -98,8 +98,8 @@ language heavily inspired by jinja2, which I was already familiar with. It looke
 with it. Looking at [the examples of Wintersmith](https://github.com/jnordberg/wintersmith/tree/master/examples/blog/templates)
 it was relatively easy to convert my HTML files to Wintersmith templates.
 
-The only thing I had to do was to create a 404, about and a contact page. And that was that. Pretty harmless task since
-it already look care of most of my requirements.
+The only thing I had to do was to create a 404, about and contact page. That was it. Pretty harmless task since
+it already took care of most of my requirements.
 
 As I said before, Wintersmith works really well as a Node.js module, so I created a watcher in Gulp that looks for
 changes and regenerates the whole blog on change. The great thing is that it only takes about 1 second for Wintersmith
