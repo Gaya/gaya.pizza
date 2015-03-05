@@ -154,9 +154,3 @@ It will than execute the npm scripts I defined in my `package.json` file. It wil
 test if it worked afterwards. Then it will switch my current running version with the new one.
 
 Now I can finally keep all my source the same on every machine and deploy my article whenever I want them to.
-
-7. Deployment
-    - dokku
-    - builden van site op server
-    - na builden testen of het werkt
-    - switch
