@@ -1,23 +1,24 @@
 ---
-title: "Going Static from a WordPress blog"
+title: "Migrating from WordPress to Wintersmith"
 author: Gaya
 date: 2015-02-26
 template: article.html
 seo_desc: "GayaDesign.com was converted into a static blog from WordPress to Wintersmith. This article explains how."
 ---
 
-Static websites are blazing fast and fun to make. The time of having your website calculated for every request is almost
-gone. I went through the process of turning my WordPress version of this blog into a static served website.
+Static websites load blazing fast and are fun to make. Having your website calculated for each request is getting out
+of style and is becoming less necessary.
 
-This article explains the process and what I did to achieve the current static website.
+I went through the process of turning the WordPress version of this blog into a statically served website. This article
+explains the process behind it and what I did to achieve the current static website.
 
 <span class="more"></span>
 
 ##Why static?
 
 WordPress was my platform of choice back in 2008 when I started writing and publishing articles. Back then I liked the
-comfort of not having to write my own content management system for posting blogposts and the amount of plugins that
-helped me with stuff I didn't know how to make really spoke to me.
+comfort of not having to write my own content management system for posting blog posts. The amount of plugins available
+helped me implement stuff I didn't really know how to make.
 
 Years later and a lot of experience later I learned that WordPress is not for me. I explained why in a [previous post
 about rebranding Gaya Design](https://blog.gaya.ninja/articles/moving-gaya-design-to-gaya-ninja-blog/).
