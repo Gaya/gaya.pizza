@@ -25,6 +25,30 @@
                 display: block;
                 color: $light-4;
                 text-decoration: none;
+                padding: 0 10px;
+                border-radius: 5px;
+                @include transition(background-color 0.2s);
+            }
+
+            &--twitter {
+                a {
+                    background: $twitter;
+
+                    &:hover {
+                        background: darken($twitter, 10);
+                    }
+                }
+            }
+
+            &--facebook {
+                a {
+                    background: $facebook;
+                    margin-left: 4px;
+
+                    &:hover {
+                        background: darken($facebook, 10);
+                    }
+                }
             }
         }
     }
