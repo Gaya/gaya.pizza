@@ -28,8 +28,12 @@
 
         <ul class="post__social">
             <li class="post__social__item--twitter">
-                <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ url }}{{ page.url }}&via=GayaNinja"
+                <a href="https://twitter.com/intent/tweet?text={{ urlencode(page.title) }}&url={{ urlencode(url) }}{{ urlencode(page.url) }}&via=GayaNinja"
                    data-related="twitter">Tweet this</a>
+            </li>
+            <li class="post__social__item--facebook">
+                <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ url }}{{ page.url }}&via=GayaNinja">
+                    Share on Facebook</a>
             </li>
         </ul>
 
