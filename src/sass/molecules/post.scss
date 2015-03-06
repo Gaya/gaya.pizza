@@ -13,6 +13,22 @@
         }
     }
 
+    &__social {
+        &__item {
+            &--twitter, &--facebook {
+                @extend .post__social__item;
+            }
+
+            display: inline-block;
+
+            a {
+                display: block;
+                color: $light-4;
+                text-decoration: none;
+            }
+        }
+    }
+
     &__links {
         @include outer-container;
 
