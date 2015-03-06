@@ -26,6 +26,17 @@
             <h1 class="post__header__text"><a href="{{ url }}{{ page.url }}" itemprop="name headline">{{ page.title }}</a></h1>
         </header>
 
+        <ul class="post__social">
+            <li class="post__social__item--twitter">
+                <a href="https://twitter.com/intent/tweet?text={{ urlencode(page.title) }}&url={{ urlencode(url) }}{{ urlencode(page.url) }}&via=GayaNinja"
+                   data-related="twitter">Tweet this</a>
+            </li>
+            <li class="post__social__item--facebook">
+                <a href="https://www.facebook.com/dialog/share?app_id=705919162852726&display=popup&href={{ urlencode(url) }}{{ urlencode(page.url) }}&redirect_uri={{ urlencode(url) }}{{ urlencode(page.url) }}">
+                    Share on Facebook</a>
+            </li>
+        </ul>
+
         {% if page.metadata.links %}
             <section class="post__links">
                 {% for link in page.metadata.links %}

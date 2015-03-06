@@ -14,7 +14,8 @@
   "require": {
     "moment": "moment",
     "_": "underscore",
-    "typogr": "typogr"
+    "typogr": "typogr",
+    "urlencode": "urlencode"
   },
   "jade": {
     "pretty": true
