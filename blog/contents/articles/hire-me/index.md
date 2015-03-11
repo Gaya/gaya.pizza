@@ -9,14 +9,14 @@ seo_desc: "JavaScript developer looking for a job."
 After a long time of hard consideration I decided to leave my current job. It's an awesome place to work at and the
 management couldn't be better, but I feel like I am moving in a different direction.
 
-That said: ~~I am looking for a new job~~.
+That said: ~~I am looking for a new job~~. I have found a fitting position. A big thank you to all who shared.
 
 <span class="more"></span>
 
 [As I mentioned before](/articles/stuck-at-your-web-development-job-break-your-routine/), being stuck at my job is not
 something I want. Being unhappy is something I want to avoid and looking for something else seems like the best solution.
 
-##What I am looking for
+##What I ~~am~~ was looking for
 Currently I am largely interested in working on JavaScript applications, from in-browser web applications to server-side
 Node.js applications. I also love automating all the things and streamlining the development process, the less coders
 need to do, the better.
