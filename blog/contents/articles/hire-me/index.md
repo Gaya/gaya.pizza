@@ -9,7 +9,7 @@ seo_desc: "JavaScript developer looking for a job."
 After a long time of hard consideration I decided to leave my current job. It's an awesome place to work at and the
 management couldn't be better, but I feel like I am moving in a different direction.
 
-That said: I am looking for a new job.
+That said: ~~I am looking for a new job~~.
 
 <span class="more"></span>
 
