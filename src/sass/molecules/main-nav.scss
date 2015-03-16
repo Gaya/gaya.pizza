@@ -80,7 +80,7 @@
             }
         }
 
-        &--facebook {
+        &--facebook, &--github {
             @extend .main-nav__link--twitter;
         }
 
