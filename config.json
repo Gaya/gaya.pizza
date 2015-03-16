@@ -4,7 +4,7 @@
   "locals": {
     "url": "http://localhost:3000",
     "name": "Gaya Ninja Blog",
-    "owner": "Gaya Kesssler",
+    "owner": "Gaya Kessler",
     "description": "Web development articles written for web developers",
     "feedurl": "http://feeds.feedburner.com/GayaNinja/"
   },

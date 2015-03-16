@@ -34,7 +34,7 @@
     "wintersmith": "^2.1.0",
     "wintersmith-nunjucks": "^0.5.1"
   },
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "postinstall": "node ./node_modules/gulp/bin/gulp.js build",
     "start": "node ./server/"
