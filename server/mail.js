@@ -1,5 +1,5 @@
 var nodemailer = require("nodemailer");
-var akismet = require('akismet').client({ blog: 'http://gaya.ninja', apiKey: 'lol' });
+var akismet = require('akismet').client({ blog: 'http://gaya.ninja', apiKey: process.env.akismet_apikey });
 
 akismet.verifyKey(function(err, verified) {
     "use strict";
@@ -14,7 +14,7 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
     service: "Gmail",
     auth: {
         user: "gaya.kessler@gmail.com",
-        pass: "lol"
+        pass: process.env.mailpass
     }
 });
 
