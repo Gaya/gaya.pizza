@@ -15,3 +15,84 @@ article is aimed to get you started with testing using BrowserSync, Mocha and Ph
 
 <span class="more"></span>
 
+What we're going to make
+------------------------
+We are going to make a fairly straightforward test that can be tested in the browser and on command-line. This way we can
+also integrate our tests with services like Travis CI to automatically perform tests on future releases.
+
+At the end of the article you'll have a project where you can write your tests in, have JavaScript code that can be
+tested on command-line and a HTML page where the script you want to test will live. This allows us to actually *see* the
+tests.
+
+We're going to use Gulp for this workflow. You can also do without, but it comes in handy later when we want to watch
+our files for changes and reloading the tests in BrowserSync.
+
+For bundling our code and not breaking the Mocha way of testing NodeJS code we're going to use Browserify.
+
+1. Getting started
+------------------
+
+First off, create a project folder which will hold the files and navigate to that folder in your terminal.
+
+Init an npm project:
+
+    npm init
+
+Install Gulp globally if you haven't already:
+
+    npm install -g gulp
+
+Install all the dependencies we'll be using:
+
+    npm install --save-dev browser-sync browserify gulp-mocha-phantomjs mocha-phantomjs mocha
+
+The reason I install `gulp-mocha-phantomjs`, `mocha-phantomjs` and `mocha` is for easier access later on.
+
+2. Creating something to test
+-----------------------------
+
+Let's say we want to create a JavaScript library that changes the text inside a given DOM element to something else.
+
+To know what to do next is to determine the way the library will be used and what the outcome should be.
+
+We'll call the library `TextChanger` which holds a method called `replaceText`. The `replaceText` method will accept two
+parameters: a DOM element and a string with text which will be placed inside.
+
+If we're going to follow a TDD approach we need to write tests for this method before even implementing the code of
+`TextChanger`.
+
+Create a new folder called `test` and place a file called `tests.js` in it. Place the following inside the file:
+
+```javascript
+var assert = require("assert");
+
+describe('TextChanger', function(){
+    var element = document.createElement("section");
+        element.appendChild(
+            document.createElement("span")
+                .appendChild(
+                    document.createTextNode("Replace me")
+                )
+        );
+        document.body.appendChild(element);
+
+    describe('#changeText(element, text)', function() {
+
+        it('should replace the content of the element with given text', function() {
+            assert.equal(false, true);
+        });
+
+        it('should throw and error if element is not a DOM element', function() {
+            assert.equal(false, true);
+        });
+
+    });
+});
+```
+
+These tests do not do anything yet. They fail because `false` is not `true`. I do this on purpose because we have to
+write correct tests first.
+
+Would you run this test using just `mocha test/tests.js` it would complain `ReferenceError: document is not defined`.
+Mocha is not run in a browser environment, just like Node.js. In order to enable testing in a browser environment we are
+going to use PhantomJS.
