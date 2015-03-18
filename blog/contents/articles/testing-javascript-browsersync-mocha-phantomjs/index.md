@@ -100,3 +100,32 @@ going to use PhantomJS.
 3. An HTML document to run the tests
 ------------------------------------
 
+In order to run the tests in a browser environment we're going to need an HTML document which will load the necessary
+scripts and styles. While Mocha can test `.js` files, Mocha PhantomJS takes `.html` files. In this document we're going
+to load Mocha and our tests.
+
+Create a new file in the `test` folder called `tests.html` and place the following content in it.
+
+```
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>TextChanger tests</title>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css"/>
+</head>
+<body>
+    <div id="mocha"></div>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script src="tests-browserify.js"></script>
+    <script>
+        if (window.mochaPhantomJS) {
+            mochaPhantomJS.run();
+        } else {
+            mocha.run();
+        }
+    </script>
+</body>
+</html>
+```
