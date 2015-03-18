@@ -44,7 +44,7 @@ Install Gulp globally if you haven't already:
 
 Install all the dependencies we'll be using:
 
-    npm install --save-dev browser-sync browserify gulp-mocha-phantomjs mocha-phantomjs mocha
+    npm install --save-dev browser-sync browserify gulp gulp-mocha-phantomjs mocha-phantomjs mocha vinyl-source-stream
 
 The reason I install `gulp-mocha-phantomjs`, `mocha-phantomjs` and `mocha` is for easier access later on.
 
@@ -106,7 +106,7 @@ to load Mocha and our tests.
 
 Create a new file in the `test` folder called `tests.html` and place the following content in it.
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -128,4 +128,62 @@ Create a new file in the `test` folder called `tests.html` and place the followi
     </script>
 </body>
 </html>
+```
+
+We are loading Mocha from the `node_modules` folder, our tests (which do not exist yet) and running the tests in the end.
+
+The reason we need a different test file from the one we created earlier is because the browser doesn't understand
+`require()`. We can solve this by using Browserify to bundle our script.
+
+4. Watching and serving the tests
+---------------------------------
+
+In this step we're going to create our workflow. We'll use Gulp as our runner, use BrowserSync as our web server which
+can automatically reload and Browserify to bundle our test script.
+
+Create a `gulpfile.js` file in the root of your project. Add the following contents.
+
+```javascript
+var gulp = require("gulp"),
+    browserSync = require("browser-sync"),
+    browserify = require("browserify"),
+    source = require("vinyl-source-stream"),
+    mochaPhantomJS = require("gulp-mocha-phantomjs");
+
+gulp.task("browser-sync", function () {
+    "use strict";
+    browserSync({
+        server: {
+            //serve tests and the root as base dirs
+            baseDir: ["./test/", "./"],
+            //make tests.html the index file
+            index: "tests.html"
+        }
+    });
+});
+
+gulp.task("browserify", function() {
+    "use strict";
+    return browserify("./test/tests.js")
+        .bundle()
+        .on("error", function (err) {
+            console.log(err.toString());
+            this.emit("end");
+        })
+        .pipe(source("tests-browserify.js"))
+        .pipe(gulp.dest("test/"))
+        .pipe(browserSync.reload({stream:true}));
+});
+
+gulp.task("test", function () {
+    "use strict";
+    return gulp.src("./test/tests.html")
+        .pipe(mochaPhantomJS());
+});
+
+gulp.task("serve", ["browserify", "browser-sync"], function () {
+    "use strict";
+    //when tests.js changes, browserify code and execute tests
+    gulp.watch("test/tests.js", ["browserify", "test"]);
+});
 ```
