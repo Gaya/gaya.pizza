@@ -184,7 +184,7 @@ gulp.task("test", function () {
 gulp.task("serve", ["browserify", "browser-sync"], function () {
     "use strict";
     //when tests.js changes, browserify code and execute tests
-    gulp.watch("test/tests.js", ["browserify", "test"]);
+    gulp.watch(["test/tests.js", "src/text-changer.js"], ["browserify", "test"]);
 });
 ```
 
