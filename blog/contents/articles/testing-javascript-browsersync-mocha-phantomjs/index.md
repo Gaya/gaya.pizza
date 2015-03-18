@@ -5,6 +5,11 @@ date: 2015-03-17
 template: article.html
 seo_desc: "Get started with testing using BrowserSync, Mocha and PhantomJs. This tutorial helps you to get started."
 seo_title: "Testing JavaScript using BrowserSync, Mocha and PhantomJS"
+links:
+  -
+    title: Repository
+    desc: Code of this tutorial
+    url: https://github.com/Gaya/testing-javascript
 ---
 
 It's a good idea to test your JavaScript application using a testing framework. It improves the integrity of your
