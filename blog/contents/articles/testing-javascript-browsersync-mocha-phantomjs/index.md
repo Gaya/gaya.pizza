@@ -245,3 +245,11 @@ it('should throw and error if element is not a DOM element', function() {
 
 Now that the tests are ready to check our implementation we can continue to coding the module. The biggest advantage we
 have now is that we know what the implementation should look like.
+
+6. Implementing your module
+---------------------------
+
+It is time to make our tests succeed. We know how the module has to work, now we have to make it work.
+
+Open up the empty `src/text-changer.js` file.
+
