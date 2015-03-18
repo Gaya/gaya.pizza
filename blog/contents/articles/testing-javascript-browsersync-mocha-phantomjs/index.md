@@ -1,7 +1,7 @@
 ---
 title: "Testing JavaScript using BrowserSync, Mocha and PhantomJS"
 author: Gaya
-date: 2015-03-17
+date: 2015-03-18
 template: article.html
 seo_desc: "Get started with testing using BrowserSync, Mocha and PhantomJs. This tutorial helps you to get started."
 seo_title: "Testing JavaScript using BrowserSync, Mocha and PhantomJS"
@@ -12,30 +12,33 @@ links:
     url: https://github.com/Gaya/testing-javascript
 ---
 
-It's a good idea to test your JavaScript application using a testing framework. It improves the integrity of your
+It's a good idea to test your JavaScript applications using a testing framework. It improves the integrity of your
 software and enables you to do Test Driven Development.
 
 You can do your testing in Mocha, but you can also expand it a bit further with browser specific behaviour testing. This
-article is aimed to get you started with testing using BrowserSync, Mocha and PhantomJs.
+article is aimed to get you started with testing using [BrowserSync](http://www.browsersync.io),
+[Mocha](http://mochajs.org) and [PhantomJs](http://phantomjs.org).
 
 <span class="more"></span>
 
 What we're going to make
 ------------------------
-We are going to make a fairly straightforward test that can be tested in the browser and on command-line. This way we can
-also integrate our tests with services like Travis CI to automatically perform tests on future releases.
+We are going to make a fairly straightforward test that can be tested in the browser and on command-line. This way we
+can also integrate our tests with services like [Travis CI](https://travis-ci.org/) to automatically perform tests on
+future releases.
 
-At the end of the article you'll have a project where you can write your tests in, have JavaScript code that can be
-tested on command-line and an HTML page where the script you want to test will live. This allows us to actually *see* the
-tests.
+At the end of the article you'll have a project where you can write your tests in. You'll have JavaScript code that can
+be tested on command-line and an HTML page where the script you want to test will live. It will allow us to actually
+*see* the tests.
 
-All changes will be watched and checked automatically. This way you can keep your focus on writing code while the test
-results get updated elsewhere.
+All changes will be watched and checked automatically. You can keep your focus on writing code while the test results
+get updated elsewhere.
 
-We're going to use Gulp for this workflow. You can also do without, but it comes in handy later when we want to watch
-our files for changes and reloading the tests in BrowserSync.
+We're going to use [Gulp](http://gulpjs.com) for this workflow. You can also do without, but it comes in handy later
+when we want to watch our files for changes and automatically reload the tests in BrowserSync.
 
-For bundling our code and not breaking the Mocha way of testing Node.js code we're going to use Browserify.
+For bundling our code and not breaking the Mocha way of testing Node.js code we're going to use
+[Browserify](http://browserify.org).
 
 1. Getting started
 ------------------
@@ -52,7 +55,7 @@ Install Gulp globally if you haven't already:
 
 Install all the dependencies we'll be using:
 
-    npm install --save-dev browser-sync browserify gulp gulp-mocha-phantomjs mocha-phantomjs mocha vinyl-source-stream
+    npm install --save browser-sync browserify gulp gulp-mocha-phantomjs mocha-phantomjs mocha vinyl-source-stream
 
 The reason I install `gulp-mocha-phantomjs`, `mocha-phantomjs` and `mocha` is for easier access later on.
 
@@ -61,9 +64,9 @@ The reason I install `gulp-mocha-phantomjs`, `mocha-phantomjs` and `mocha` is fo
 
 Let's say we want to create a JavaScript library that changes the text inside a given DOM element to something else.
 
-To know what to do next is to determine the way the library will be used and what the outcome should be.
+In order to know what to do next is to determine the way our module will be used and what the outcome should be.
 
-We'll call the library `TextChanger` which holds a method called `replaceText`. The `replaceText` method will accept two
+We'll call the module `TextChanger` which holds a method called `replaceText`. The `replaceText` method will accept two
 parameters: a DOM element and a string with text which will be placed inside.
 
 If we're going to follow a TDD approach we need to write tests for this method before even implementing the code of
@@ -84,7 +87,6 @@ describe('TextChanger', function(){
     );
 
     describe('#changeText(element, text)', function() {
-
         it('should replace the content of the element with given text', function() {
             assert.equal(false, true);
         });
@@ -92,7 +94,6 @@ describe('TextChanger', function(){
         it('should throw and error if element is not a DOM element', function() {
             assert.equal(false, true);
         });
-
     });
 });
 ```
@@ -100,9 +101,9 @@ describe('TextChanger', function(){
 These tests do not do anything yet. They fail because `false` is not `true`. I do this on purpose because we have to
 write correct tests first.
 
-Would you run this test using just `mocha test/tests.js` it would complain `ReferenceError: document is not defined`.
-Mocha is not run in a browser environment, just like Node.js. In order to enable testing in a browser environment we are
-going to use PhantomJS.
+Would you run this test using just `mocha test/tests.js`, Mocha would complain `ReferenceError: document is not defined`.
+Mocha is not run in a browser environment, just like Node.js. In order to enable testing in a browser environment we
+need to use PhantomJS.
 
 3. An HTML document to run the tests
 ------------------------------------
@@ -230,9 +231,9 @@ var assert = require("assert"),
     textChanger = require("../src/text-changer.js");
 ```
 
-Now that we included our fake module, we can use it in our tests. The first one need to check if the given element holds
-a `textNode` with a string value. The `textChanger` object will be a factory which returns an object which holds the
-method `replaceText`. Given this info the first test can be:
+Now that we've included our empty module, we can use it in our tests. The first test will check if the given element
+holds a `textNode` with a string value. The `textChanger` object will be a factory which returns an object which holds
+the method `replaceText`. Given this info the first test can be made.
 
 ```javascript
 it('should replace the content of the element with given text', function() {
@@ -299,8 +300,8 @@ removeChildren: function (element) {
 }
 ```
 
-So far we're not doing anything in our main method which gets called yet. It's time to implement the first rule we
-defined in our tests: *"it should replace the content of the element with given text"*.
+So far we're not doing anything in the `replaceText` method which gets called yet. It's time to implement the first rule
+we defined in our tests: *"it should replace the content of the element with given text"*.
 
 Place the following in the `replaceText` method and save the file:
 
@@ -323,7 +324,8 @@ if (!this.isDomElement(element)) {
 }
 ```
 
-Save the file and... success!
+Save the file and... success! Both tests succeed and should be green in the future of your application. It's okay to
+refactor your tests, as long the integrity stays the same.
 
 The finished implementation should look like this:
 
