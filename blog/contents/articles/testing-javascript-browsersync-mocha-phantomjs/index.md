@@ -202,3 +202,12 @@ command in your terminal.
 
     gulp serve
 
+5. Finishing the tests
+----------------------
+
+If you have your web server running using the `gulp serve` command we just implemented you'll see a web page with two
+errors complaining that `true` does not equal `false`. Which is good. Now we can make write some useful tests.
+
+With the watcher in Gulp running it will run Browserify and reload the tests once you make a change. You don't have to
+run the test command yourself.
+
