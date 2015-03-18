@@ -187,3 +187,18 @@ gulp.task("serve", ["browserify", "browser-sync"], function () {
     gulp.watch("test/tests.js", ["browserify", "test"]);
 });
 ```
+
+The `browser-sync` task makes sure the `test` folder and the root of the project get served as a web server. It will
+also set `tests.html` as the index so it will open said file when browsing to `http://localhost:3000`. When this task
+is run it automatically opens the link in your browser.
+
+The `browserify` task bundles the `tests.js` file and creates a browser runnable tests file.
+
+The `test` tasks executes `mocha-phantomjs` and outputs the outcome in the terminal. This is the same output you get in
+your browser.
+
+To start serving the tests and rerun them every time you make a change in the tests file you need to run the following
+command in your terminal.
+
+    gulp serve
+
