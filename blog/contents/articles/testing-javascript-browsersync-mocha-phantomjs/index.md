@@ -96,3 +96,7 @@ write correct tests first.
 Would you run this test using just `mocha test/tests.js` it would complain `ReferenceError: document is not defined`.
 Mocha is not run in a browser environment, just like Node.js. In order to enable testing in a browser environment we are
 going to use PhantomJS.
+
+3. An HTML document to run the tests
+------------------------------------
+
