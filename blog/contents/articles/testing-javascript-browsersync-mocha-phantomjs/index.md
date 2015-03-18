@@ -239,7 +239,9 @@ The second test checks if the method throws an error if no real DOM element is g
 
 ```javascript
 it('should throw and error if element is not a DOM element', function() {
-    assert.throws(textChanger().replaceText(null, "test"));
+    assert.throws(function () {
+        textChanger().replaceText(null, "test");
+    });
 });
 ```
 
