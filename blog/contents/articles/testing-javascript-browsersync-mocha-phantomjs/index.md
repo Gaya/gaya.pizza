@@ -211,3 +211,37 @@ errors complaining that `true` does not equal `false`. Which is good. Now we can
 With the watcher in Gulp running it will run Browserify and reload the tests once you make a change. You don't have to
 run the test command yourself.
 
+Let's create a file where the source of `TextChanger` will be defined. Create a folder called `src` and create a new file
+called `text-changer.js`. Leave it empty for now.
+
+Open up the `test/tests.js` file, it's time to fill in the tests.
+
+First we need to require the `TextChanger` module. Do so after `var assert = require("assert");` by adding:
+
+```javascript
+var assert = require("assert"),
+    textChanger = require("../src/text-changer.js");
+```
+
+Now that we included our fake module, we can use it in our tests. The first one need to check if the given element holds
+a `textNode` with a string value. The `textChanger` object will be a factory which returns an object which holds the
+method `replaceText`. Given this info the first test can be:
+
+```javascript
+it('should replace the content of the element with given text', function() {
+    textChanger().replaceText(element, "test");
+
+    assert.equal(element.childNodes[0].nodeValue, "test");
+});
+```
+
+The second test checks if the method throws an error if no real DOM element is given. Which can be done by doing:
+
+```javascript
+it('should throw and error if element is not a DOM element', function() {
+    assert.throws(textChanger().replaceText(null, "test"));
+});
+```
+
+Now that the tests are ready to check our implementation we can continue to coding the module. The biggest advantage we
+have now is that we know what the implementation should look like.
