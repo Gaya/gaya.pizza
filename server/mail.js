@@ -50,6 +50,7 @@ function sendMail(req) {
     mailOptions.subject = subject;
     mailOptions.text = text;
     mailOptions.html = html;
+    mailOptions.replyTo = email;
 
     smtpTransport.sendMail(mailOptions, function(error, response){
         if(error){
