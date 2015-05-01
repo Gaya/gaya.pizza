@@ -169,8 +169,6 @@ script
 
     exec /usr/local/bin/node /var/www/server.js >> /var/log/node.log 2>&1
 end script
-
-post-start script
 ```
 
 
