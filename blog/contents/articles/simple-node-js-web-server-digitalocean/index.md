@@ -141,7 +141,7 @@ It will run commands on startup and power down of the server, which will be perf
 
 
 ```
-vim /etc/init/node-server.js
+vim /etc/init/node-server.conf
 ```
 
 
@@ -169,8 +169,6 @@ script
 
     exec /usr/local/bin/node /var/www/server.js >> /var/log/node.log 2>&1
 end script
-
-post-start script
 ```
 
 
