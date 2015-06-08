@@ -2,6 +2,8 @@
 
 {% block extraClass %} page contact{% endblock %}
 
+{% block canonical %}{{ url }}{{ page.url }}{% endblock %}
+
 {% if page.metadata.seo_title %}
     {% block title %}{{ page.metadata.seo_title }}{% endblock %}
 {% else %}
