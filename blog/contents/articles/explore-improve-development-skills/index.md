@@ -14,7 +14,8 @@ and work flows than I was used to.
 
 <span class="more"></span>
 
-##Be not afraid of change
+Be not afraid of change
+-----------------------
 
 Change is hard, especially for people who tend to follow a strict pattern of applied methods. I am one of those people
 who likes to do the things I do following a strict way and thinks teams should all do that. It can improve team work and
@@ -28,7 +29,8 @@ fond of, but there were no better alternatives in my stack. I had grown to love 
 After a while I grew to like Node.js and started working in the backend again, which opened my eyes to all the great
 things I was missing out on. This triggered my will or maybe even the need to change.
 
-##Learn from broken systems
+Learn from broken systems
+-------------------------
 
 Even if you're not willing to learn a certain method a team is using, just try it out. Especially in JavaScript development
 there is an overload in different frameworks. Some you might not like, some you might want to use. Since I joined a team
@@ -41,7 +43,8 @@ you made them yourself in the past.
 It might take some time to get into something new, but it's really worth it in the end. You'll help yourself to a lot
 more knowledge and insights.
 
-##The problem of different programming languages
+The problem of different programming languages
+----------------------------------------------
 
 In the past, I always had trouble switching programming languages. The syntax was hard for me to learn, nothing really
 went right the first time and it frustrated me a lot. The problem was, which I recently realised, was that I was not an
@@ -56,7 +59,8 @@ of gave me an headache. When I started learning the syntax I quickly learned how
 from the languages I am used to write. The only hurdles I had to overcome were how to do certain things in the language
 which I already use in other languages.
 
-##In closing
+In closing
+----------
 
 Try something different. Learn a new language. Create something totally different. Not all the methods and principles
 have to be followed as strict as you're used to, but try to apply what you've learned in the past on new information
