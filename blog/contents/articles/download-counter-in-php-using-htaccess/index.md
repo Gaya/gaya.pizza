@@ -9,7 +9,7 @@ links:
     desc: Counter in PHP using .htaccess
     url: http://gayadesign.nl/scripts/uploads/downloadhtaccess.zip
 ---
-Ever had this thought: "I want to fire something **extra **up when somebody downloads a certain file."? This can be easily fixed by making all you download links link to a php page and output the download file for you. But what if the file is called directly in the browser, say [http://www.gayadesign.com/scripts/photonav/photonav.zip](http://www.gayadesign.com/scripts/photonav/photonav.zip)? Apache will happily give the file to the user, without me noticing it. Luckily for us, .htaccess is a great place to mess around with Apache.
+Ever had this thought: "I want to fire something **extra **up when somebody downloads a certain file."? This can be easily fixed by making all you download links link to a php page and output the download file for you. But what if the file is called directly in the browser, say [http://gaya.github.io/scripts/photonav/photonav.zip](http://gaya.github.io/scripts/photonav/photonav.zip)? Apache will happily give the file to the user, without me noticing it. Luckily for us, .htaccess is a great place to mess around with Apache.
 
 This article will explain how to make pre-download conditions in php using .htaccess. I'll make a download counter in this one.
 

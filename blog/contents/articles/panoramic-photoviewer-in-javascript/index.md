@@ -7,11 +7,11 @@ links:
   -
     title: Download
     desc: PhotoNav zip-archive
-    url: http://www.gayadesign.com/scripts/photonav/photonav.zip
+    url: http://gaya.github.io/scripts/photonav/photonav.zip
   -
     title: Example
     desc: Open the PhotoNav examples
-    url: http://www.gayadesign.com/scripts/photonav/
+    url: http://gaya.github.io/scripts/photonav/
 ---
 As a webdesigner you might have had this problem: "I've got a nice looking wide image, but I don't want my visitors to scroll horizontally."
 
@@ -24,10 +24,10 @@ This article will show you my solution to the problem and maybe even a different
 <span class="more"></span>
 
 The *example page* is located here:  
-[http://www.gayadesign.com/scripts/photonav/](http://www.gayadesign.com/scripts/photonav/)
+[http://gaya.github.io/scripts/photonav/](http://gaya.github.io/scripts/photonav/)
 
 And the *archive is downloadable* here:  
-[http://www.gayadesign.com/scripts/photonav/photonav.zip](http://www.gayadesign.com/scripts/photonav/photonav.zip)
+[http://gaya.github.io/scripts/photonav/photonav.zip](http://gaya.github.io/scripts/photonav/photonav.zip)
 
 **What is it?**
 ---------------

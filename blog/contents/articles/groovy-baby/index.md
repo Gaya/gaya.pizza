@@ -7,7 +7,7 @@ links:
   -
     title: Download
     desc: Getting Groovy in an SOA
-    url: http://www.gayadesign.com/scripts/uploads/researchpaper.pdf
+    url: http://gaya.github.io/scripts/uploads/researchpaper.pdf
 ---
 The last six months I've been researching a fairly new programming language with some of my classmates. In this period we've come to learn a lot about the language and the community surrounding it.  
  Our task was to investigate [Groovy](http://groovy.codehaus.org/), [Grails](http://grails.org/), and their position in a [SOA environment](http://en.wikipedia.org/wiki/Service-oriented_architecture).
@@ -20,7 +20,7 @@ After lots and lots of hours of work we managed to finally complete our research
 
 Download it here:
 
-[http://www.gayadesign.com/scripts/uploads/researchpaper.pdf](http://www.gayadesign.com/scripts/uploads/researchpaper.pdf)
+[http://gaya.github.io/scripts/uploads/researchpaper.pdf](http://gaya.github.io/scripts/uploads/researchpaper.pdf)
 
 This paper is aimed at answering the following question:
 

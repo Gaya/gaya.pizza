@@ -13,7 +13,7 @@ links:
   -
     title: Example
     desc: See how it aligns
-    url: http://www.gayadesign.com/scripts/keeptherhythm/
+    url: http://gaya.github.io/scripts/keeptherhythm/
 docs:
   name: "Keep the Rhythm"
   functions:
@@ -59,7 +59,7 @@ What is a vertical rhythm?
 
 Vertical rhythms make sure the text and elements on your page are aligned to a baseline rhythm. Look at it as if you had a notebook with line, these are the guides we write on.
 
-You can get the concept of vertical alignment pretty quick when you [take a look at the example](http://www.gayadesign.com/scripts/keeptherhythm/).
+You can get the concept of vertical alignment pretty quick when you [take a look at the example](http://gaya.github.io/scripts/keeptherhythm/).
 
 How can I create a vertical rhythm?
 -----------------------------------

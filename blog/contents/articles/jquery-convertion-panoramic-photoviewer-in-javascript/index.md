@@ -7,11 +7,11 @@ links:
   -
     title: Download
     desc: PhotoNav jQuery zip-archive
-    url: http://www.gayadesign.com/scripts/jqueryphotonav/jqueryphotonav.zip
+    url: http://gaya.github.io/scripts/jqueryphotonav/jqueryphotonav.zip
   -
     title: Example
     desc: PhotoNav jQuery examples
-    url: http://www.gayadesign.com/scripts/jqueryphotonav/
+    url: http://gaya.github.io/scripts/jqueryphotonav/
 ---
 This is part two of my script convertions. From [scriptaculous](http://script.aculo.us/) to [jQuery](http://jquery.com) in just a few minutes of work. This time it's the [Panoramic Photoviewer](/articles/panoramic-photoviewer-in-javascript/) to get a [jQuery makeover](/articles/jquery-convertion-panoramic-photoviewer-in-javascript/).
 
@@ -29,10 +29,10 @@ This is part two of my script convertions. From [scriptaculous](http://script.ac
 Since this article is a redo of [Panoramic Photoviewer in Javascript](/articles/panoramic-photoviewer-in-javascript/) I’ll just make it so that it fits jQuery.
 
 The *example page* is located here:  
-[http://www.gayadesign.com/scripts/jqueryphotonav/](http://www.gayadesign.com/scripts/jqueryphotonav/)
+[http://gaya.github.io/scripts/jqueryphotonav/](http://gaya.github.io/scripts/jqueryphotonav/)
 
 And the *archive is downloadable* here:  
-[http://www.gayadesign.com/scripts/jqueryphotonav/jqueryphotonav.zip](http://www.gayadesign.com/scripts/jqueryphotonav/jqueryphotonav.zip)
+[http://gaya.github.io/scripts/jqueryphotonav/jqueryphotonav.zip](http://gaya.github.io/scripts/jqueryphotonav/jqueryphotonav.zip)
 
 **What is it? **
 ----------------

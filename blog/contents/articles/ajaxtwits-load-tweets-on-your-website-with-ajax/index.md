@@ -7,11 +7,11 @@ links:
   -
     title: Download
     desc: AjaxTwits zip-archive
-    url: http://www.gayadesign.com/scripts/ajaxtwits/ajaxtwits.zip
+    url: http://gaya.github.io/scripts/ajaxtwits/ajaxtwits.zip
   -
     title: Example
     desc: AjaxTwits in action!
-    url: http://www.gayadesign.com/scripts/ajaxtwits/
+    url: http://gaya.github.io/scripts/ajaxtwits/
 ---
 [Twitter](http://www.twitter.com "Twitter") is an amazing service to keep in touch with everyone on the Internet. It's easy, fast and there are a lot of [Twitter applications](http://twitter.com/downloads "Twitter Applications").
 
@@ -23,17 +23,17 @@ This article will show you how to use AjaxTwits and how to install it on your we
 
 <span class="more"></span>
 
-Example of AjaxTwits is located at: [http://www.gayadesign.com/scripts/ajaxtwits/](http://www.gayadesign.com/scripts/ajaxtwits/)
+Example of AjaxTwits is located at: [http://gaya.github.io/scripts/ajaxtwits/](http://gaya.github.io/scripts/ajaxtwits/)
 
-AjaxTwits and all it's files can be downloaded here: [http://www.gayadesign.com/scripts/ajaxtwits/ajaxtwits.zip](http://www.gayadesign.com/scripts/ajaxtwits/ajaxtwits.zip) or the [old version](http://www.gayadesign.com/scripts/ajaxtwits/ajaxtwits_old.zip)
+AjaxTwits and all it's files can be downloaded here: [http://gaya.github.io/scripts/ajaxtwits/ajaxtwits.zip](http://gaya.github.io/scripts/ajaxtwits/ajaxtwits.zip) or the [old version](http://gaya.github.io/scripts/ajaxtwits/ajaxtwits_old.zip)
 
 Update notice:
 --------------
 
 There were a few things going from in the AjaxTwits class which have been fixed. Some tweets seems to make AjaxTwits stop working. I also included the date in the Javascript code.  
-[Download the new zip](http://www.gayadesign.com/scripts/ajaxtwits/ajaxtwits.zip) to gain access to the improved code.
+[Download the new zip](http://gaya.github.io/scripts/ajaxtwits/ajaxtwits.zip) to gain access to the improved code.
 
-If you have an installation of AjaxTwits on your site you can replace the AjaxTwits.php class with the file from the [new zip](http://www.gayadesign.com/scripts/ajaxtwits/ajaxtwits.zip). The Javascript has changed to, but it's not necessary to change.
+If you have an installation of AjaxTwits on your site you can replace the AjaxTwits.php class with the file from the [new zip](http://gaya.github.io/scripts/ajaxtwits/ajaxtwits.zip). The Javascript has changed to, but it's not necessary to change.
 
 What does AjaxTwits do?
 -----------------------
@@ -76,7 +76,7 @@ AjaxTwits is fairly easy to install, the following steps will enable AjaxTwits o
 Step 1: Download and upload AjaxTwits
 -------------------------------------
 
-Download AjaxTwits here: [http://www.gayadesign.com/scripts/ajaxtwits/ajaxtwits.zip](http://www.gayadesign.com/scripts/ajaxtwits/ajaxtwits.zip).
+Download AjaxTwits here: [http://gaya.github.io/scripts/ajaxtwits/ajaxtwits.zip](http://gaya.github.io/scripts/ajaxtwits/ajaxtwits.zip).
 
 Unzip the contents and upload them to your web server. Anywhere you'd like!
 

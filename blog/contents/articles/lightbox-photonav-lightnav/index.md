@@ -7,11 +7,11 @@ links:
   -
     title: Download
     desc: LightNav zip-archive
-    url: http://www.gayadesign.com/scripts/lightnav/lightnav.zip
+    url: http://gaya.github.io/scripts/lightnav/lightnav.zip
   -
     title: Example
     desc: Open the LightNav examples
-    url: http://www.gayadesign.com/scripts/lightnav/
+    url: http://gaya.github.io/scripts/lightnav/
 ---
 If you've been around the web for a while, you might have heard of [Lightbox](http://www.huddletogether.com/projects/lightbox2/). And if you used it, you might also know the limitations.
 
@@ -24,10 +24,10 @@ I created LightNav for this. It runs along Lightbox without changing the script,
 <div class="border">[![Lightbox + PhotoNav = LightNav](/articles/lightbox-photonav-lightnav/lightnav.jpg "Lightbox + PhotoNav = LightNav")](/articles/lightbox-photonav-lightnav/)</div><span class="more"></span>
 
 The *example page* is located here:  
-[http://www.gayadesign.com/scripts/lightnav/](http://www.gayadesign.com/scripts/lightnav/)
+[http://gaya.github.io/scripts/lightnav/](http://gaya.github.io/scripts/lightnav/)
 
 And the *archive is downloadable* here:  
-[http://www.gayadesign.com/scripts/lightnav/lightnav.zip](http://www.gayadesign.com/scripts/lightnav/lightnav.zip)
+[http://gaya.github.io/scripts/lightnav/lightnav.zip](http://gaya.github.io/scripts/lightnav/lightnav.zip)
 
 Using LightNav is easy! I'll tell you what you need to do in this step-by-step guide:
 
@@ -65,7 +65,7 @@ Now it's time to make use of Lightbox and Scriptaculous on your webpage by placi
 **3. Download LightNav and use with Lightbox.**
 -----------------------------------------------
 
-**Download** LightNav here: [http://www.gayadesign.com/scripts/lightnav/lightnav.zip](http://www.gayadesign.com/scripts/lightnav/lightnav.zip)
+**Download** LightNav here: [http://gaya.github.io/scripts/lightnav/lightnav.zip](http://gaya.github.io/scripts/lightnav/lightnav.zip)
 
 **Upload **the contents to your server.
 
