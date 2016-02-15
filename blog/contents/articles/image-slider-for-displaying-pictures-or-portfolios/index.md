@@ -7,11 +7,11 @@ links:
   -
     title: Download
     desc: Image Slider zip-archive
-    url: http://www.gayadesign.com/scripts/slider/gdslider.zip
+    url: http://gaya.github.io/scripts/slider/gdslider.zip
   -
     title: Example
     desc: See the image slider in action
-    url: http://www.gayadesign.com/scripts/slider/
+    url: http://gaya.github.io/scripts/slider/
 ---
 I love [image slideshows](http://www.noupe.com/javascript/30-javascriptajax-techniques-for-sliders-scrollers-and-scrollbars.html) and [portfolios with an extra bit of interaction and effects](http://www.siebdesign.nl/ "Sieb Design"). The problem I found when I wanted to make one of my own was that I always ran out of ideas how to display portfolio items / pictures in a special way. But then it hit me, and the idea for this image slider was born.
 
@@ -19,9 +19,9 @@ I love [image slideshows](http://www.noupe.com/javascript/30-javascriptajax-tech
 
 <span class="more"></span>
 
-Example of the image slider is located at: [http://www.gayadesign.com/scripts/slider/](http://www.gayadesign.com/scripts/slider/)
+Example of the image slider is located at: [http://gaya.github.io/scripts/slider/](http://gaya.github.io/scripts/slider/)
 
-The slider and all its files can be downloaded here: [http://www.gayadesign.com/scripts/slider/gdslider.zip](http://www.gayadesign.com/scripts/slider/gdslider.zip)
+The slider and all its files can be downloaded here: [http://gaya.github.io/scripts/slider/gdslider.zip](http://gaya.github.io/scripts/slider/gdslider.zip)
 
 First I want to explain what this image slider does:  
  This image slider creates a slideshow of images and makes it look like the images have been cropped to only thin strokes. Once the user clicks on an image it will expand across the slideshow and show the picture in its full galore. Click of the left or the right side of the container to navigate to other pictures, the images will keep appearing as if there is an infinite loop of images. It also preloads the images that will be shown on the page.
@@ -31,11 +31,11 @@ The pictures in the example are all pictures from [http://www.sxc.hu/](http://ww
 **Please note that this script does not work in IE6.  
 **
 
-Implementing this script is fairly easy. [The zip-archive](http://www.gayadesign.com/scripts/slider/gdslider.zip) contains everything you need except from [Scriptaculous and Prototype](http://script.aculo.us/ "Scriptaculous"). So [let's download that](http://script.aculo.us/downloads "Download scriptaculous") first.
+Implementing this script is fairly easy. [The zip-archive](http://gaya.github.io/scripts/slider/gdslider.zip) contains everything you need except from [Scriptaculous and Prototype](http://script.aculo.us/ "Scriptaculous"). So [let's download that](http://script.aculo.us/downloads "Download scriptaculous") first.
 
 Next, unzip the archive somewhere and upload the contents of the **/src/** and **/lib/** folders to you web server.
 
-Great! Now that you have Scriptaculous uploaded, [download the image slider](http://www.gayadesign.com/scripts/slider/gdslider.zip) and unzip it. Upload the contents to your web server (I used the **js** folder to put the Scriptaculous files in to keep things separated).
+Great! Now that you have Scriptaculous uploaded, [download the image slider](http://gaya.github.io/scripts/slider/gdslider.zip) and unzip it. Upload the contents to your web server (I used the **js** folder to put the Scriptaculous files in to keep things separated).
 
 Now it's time to make things work. Add the following code to your  tag. Adjust the following code to your preferences:
 

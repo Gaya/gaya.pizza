@@ -8,11 +8,11 @@ links:
   -
     title: Download
     desc: Get the goods
-    url: http://www.gayadesign.com/scripts/presentationCycle/presentationCycle.zip
+    url: http://gaya.github.io/scripts/presentationCycle/presentationCycle.zip
   -
     title: Example
     desc: See it in action!
-    url: http://www.gayadesign.com/scripts/presentationCycle/
+    url: http://gaya.github.io/scripts/presentationCycle/
 ---
 [Cycle](http://www.malsup.com/jquery/cycle/) is a script that supports image presentations to easily display multiple images. This script supports a lot of effects and the cycling of html elements.
 
@@ -25,12 +25,12 @@ In this article I'll explain how to implement this on your web page and give you
 <span class="more"></span>
 
 Download the source code here:  
-[http://www.gayadesign.com/scripts/presentationCycle/presentationCycle.zip](http://www.gayadesign.com/scripts/presentationCycle/presentationCycle.zip)
+[http://gaya.github.io/scripts/presentationCycle/presentationCycle.zip](http://gaya.github.io/scripts/presentationCycle/presentationCycle.zip)
 
 View the example here:  
-[http://www.gayadesign.com/scripts/presentationCycle/](http://www.gayadesign.com/scripts/presentationCycle/)
+[http://gaya.github.io/scripts/presentationCycle/](http://gaya.github.io/scripts/presentationCycle/)
 
-As shown on the [example page](http://www.gayadesign.com/scripts/presentationCycle/), this script generates a progress bar automatically instead of the developer adding some html.  
+As shown on the [example page](http://gaya.github.io/scripts/presentationCycle/), this script generates a progress bar automatically instead of the developer adding some html.
  Depending on the settings of the script, it dynamically generates a progress bar adjusted to the number of slides in the Cycle container.
 
 Features
@@ -44,9 +44,9 @@ Features
 Implementing the script
 -----------------------
 
-The [zip archive](http://www.gayadesign.com/scripts/presentationCycle/presentationCycle.zip) contains an example page to see how to get things to work, but the following steps will tell you how to make your own.
+The [zip archive](http://gaya.github.io/scripts/presentationCycle/presentationCycle.zip) contains an example page to see how to get things to work, but the following steps will tell you how to make your own.
 
-First we need to upload the contents of the [zip archive](http://www.gayadesign.com/scripts/presentationCycle/presentationCycle.zip) to your web server (or local for testing).
+First we need to upload the contents of the [zip archive](http://gaya.github.io/scripts/presentationCycle/presentationCycle.zip) to your web server (or local for testing).
 
 Create a new html page and include the following code in the `` section:
 
@@ -164,6 +164,6 @@ cycleSpeed: 600,
 
 I used `<div>` elements to add text to the slides, you can play around with the elements to make them fit your needs, that's the great thing about Cycle!
 
-For [more examples](http://www.gayadesign.com/scripts/presentationCycle/index.php?style=1) on how to adjust the script you can take a look at the source of the [different examples](http://www.gayadesign.com/scripts/presentationCycle/index.php?style=2) on the example page.
+For [more examples](http://gaya.github.io/scripts/presentationCycle/index.php?style=1) on how to adjust the script you can take a look at the source of the [different examples](http://gaya.github.io/scripts/presentationCycle/index.php?style=2) on the example page.
 
 Good luck!

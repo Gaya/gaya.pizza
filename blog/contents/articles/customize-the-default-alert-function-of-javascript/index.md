@@ -7,11 +7,11 @@ links:
   -
     title: Download
     desc: GdAlert zip-archive
-    url: http://www.gayadesign.com/scripts/gdalert/gdalert.zip
+    url: http://gaya.github.io/scripts/gdalert/gdalert.zip
   -
     title: Example
     desc: Open the GdAlert example
-    url: http://www.gayadesign.com/scripts/gdalert/
+    url: http://gaya.github.io/scripts/gdalert/
 ---
 Web designers, developers and web users know them. We all have run across one of these; the Javascript alert message. Most of the time, I don't even read them and click them away. But the more important thing is that they just look ugly, no matter which browser you use.
 
@@ -33,7 +33,7 @@ To display the message, I created a quick container which will be centered. Ther
 Okay, so now for the things you need to do.
 
 Go to [http://script.aculo.us/downloads](http://script.aculo.us/downloads) and download the latest version of scriptaculous.  
- Also download GdAlert: [http://www.gayadesign.com/scripts/gdalert/gdalert.zip](http://www.gayadesign.com/scripts/gdalert/gdalert.zip)
+ Also download GdAlert: [http://gaya.github.io/scripts/gdalert/gdalert.zip](http://gaya.github.io/scripts/gdalert/gdalert.zip)
 
 Upload the contents to your server.
 

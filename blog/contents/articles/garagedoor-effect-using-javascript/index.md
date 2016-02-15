@@ -7,11 +7,11 @@ links:
   -
     title: Download
     desc: Garage Door Effect zip-archive
-    url: http://www.gayadesign.com/scripts/garagedoor/garagedoor.zip
+    url: http://gaya.github.io/scripts/garagedoor/garagedoor.zip
   -
     title: Example
     desc: Open the Garage Door example
-    url: http://www.gayadesign.com/scripts/garagedoor/
+    url: http://gaya.github.io/scripts/garagedoor/
 ---
 You might have noticed the menu at the top right corner of the website. That's something what I like to call the GarageDoor effect.
 
@@ -21,8 +21,8 @@ Creating one has now been made easy! This tutorial explains everything you need 
 
 <span class="more"></span>
 
-An example of the GarageDoor effect in work is found here: [http://www.gayadesign.com/scripts/garagedoor/](http://gayadesign.com/scripts/garagedoor/)  
-*Download* the following archive containing everything you need: [http://www.gayadesign.com/scripts/garagedoor/garagedoor.zip](http://gayadesign.com/scripts/garagedoor/garagedoor.zip)
+An example of the GarageDoor effect in work is found here: [http://gaya.github.io/scripts/garagedoor/](http://gaya.github.io/scripts/garagedoor/)
+*Download* the following archive containing everything you need: [http://gaya.github.io/scripts/garagedoor/garagedoor.zip](http://gaya.github.io/scripts/garagedoor/garagedoor.zip)
 
 *Unzip *the contents of the archive and upload the contents to your server, the set folders can be adjusted to your needs.
 

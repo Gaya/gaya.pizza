@@ -8,7 +8,7 @@ links:
   -
     title: Example
     desc: How does this look?
-    url: http://www.gayadesign.com/scripts/textmovingbg/
+    url: http://gaya.github.io/scripts/textmovingbg/
 ---
 Personally, I am a huge fan of negative space in design. This got me thinking while I was trying to accomplish something different. Normally a textual caption would be positioned above a background, but I wanted to do it the other way around: place the background in the letters.  
  I also wanted to add some nice dynamic effects to enhance the effect. This was amazingly easy to accomplish in jQuery with the use of a little creativity.

@@ -12,7 +12,7 @@ links:
   -
     title: Example
     desc: Demo (check with a retina device)
-    url: http://gayadesign.com/scripts/retina-example/
+    url: http://gaya.github.io/scripts/retina-example/
 ---
 Creating CSS rules for retina sprites and background images can be a drag. I wrote a quick mixin that will help you with this. It allows you to use sprites in Compass with added retina variants. Works just like the normal sprites helpers, but has been made a lot easier with these mixins.
 

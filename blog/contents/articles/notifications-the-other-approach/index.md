@@ -8,7 +8,7 @@ links:
   -
     title: Download
     desc: Get the code of this post
-    url: http://www.gayadesign.com/scripts/notification/notification.zip
+    url: http://gaya.github.io/scripts/notification/notification.zip
   -
     title: Example
     desc: Watch the example video

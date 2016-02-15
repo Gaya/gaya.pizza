@@ -8,11 +8,11 @@ links:
   -
     title: Download
     desc: Get the InterAction zip-archive
-    url: http://gayadesign.com/scripts/interaction/interaction.zip
+    url: http://gaya.github.io/scripts/interaction/interaction.zip
   -
     title: Example
     desc: See the menu in action
-    url: http://gayadesign.com/scripts/interaction/
+    url: http://gaya.github.io/scripts/interaction/
 ---
 It's time for another jQuery script from Gaya Design. This time I created an interactive menu, which can be used in CMSes, applications or just on your own website.  
  This post will show you how this script works and how to apply it in your own environment.
@@ -21,9 +21,9 @@ It's time for another jQuery script from Gaya Design. This time I created an int
 
 <span class="more"></span>
 
-Download the source code here: [http://gayadesign.com/scripts/interaction/interaction.zip](http://gayadesign.com/scripts/interaction/interaction.zip)
+Download the source code here: [http://gaya.github.io/scripts/interaction/interaction.zip](http://gaya.github.io/scripts/interaction/interaction.zip)
 
-View the examples here: [http://gayadesign.com/scripts/interaction/](http://gayadesign.com/scripts/interaction/)
+View the examples here: [http://gaya.github.io/scripts/interaction/](http://gaya.github.io/scripts/interaction/)
 
 Have you ever run into this problem? You have a nice CMS with a list of items a client can edit, delete, move etc etc. The page becomes kind of cluttered with icons, problem!  
  Not anymore. This script offers a minor solution to that problem. It is a menu that opens once you click on an object of your choice. It loads the options and shows them in a circular way around the center of the object.  

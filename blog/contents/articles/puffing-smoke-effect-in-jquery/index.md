@@ -7,11 +7,11 @@ links:
   -
     title: Download
     desc: Get the code to puff
-    url: http://www.gayadesign.com/scripts/smokeeffect/smokeEffect.zip
+    url: http://gaya.github.io/scripts/smokeeffect/smokeEffect.zip
   -
     title: Example
     desc: View the puffs
-    url: http://www.gayadesign.com/scripts/smokeeffect/
+    url: http://gaya.github.io/scripts/smokeeffect/
 ---
 Since the launch of the new looks, I've been getting some requests on how to make the puffing smoke effect that you can see in the header.
 
@@ -21,9 +21,9 @@ Thinking it might be a funny effect, I'd like to take this opportunity to discus
 
 <span class="more"></span>
 
-Download the source code here: [http://www.gayadesign.com/scripts/smokeeffect/smokeEffect.zip](http://www.gayadesign.com/scripts/smokeeffect/smokeEffect.zip)
+Download the source code here: [http://gaya.github.io/scripts/smokeeffect/smokeEffect.zip](http://gaya.github.io/scripts/smokeeffect/smokeEffect.zip)
 
-View the examples here: [http://www.gayadesign.com/scripts/smokeeffect/](http://www.gayadesign.com/scripts/smokeeffect/)
+View the examples here: [http://gaya.github.io/scripts/smokeeffect/](http://gaya.github.io/scripts/smokeeffect/)
 
 As you can see on the example page, you can selected different types of smoke that will adjust the effect while keeping the code intact.
 

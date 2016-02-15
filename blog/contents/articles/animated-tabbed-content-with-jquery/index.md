@@ -7,11 +7,11 @@ links:
   -
     title: Download
     desc: Tabbed Content zip-archive
-    url: http://www.gayadesign.com/scripts/tabbed/tabbedContent.zip
+    url: http://gaya.github.io/scripts/tabbed/tabbedContent.zip
   -
     title: Example
     desc: View the Tabbed Content in action!
-    url: http://www.gayadesign.com/scripts/tabbed/
+    url: http://gaya.github.io/scripts/tabbed/
 ---
 A lot of websites on the Internet have tabbed content now a days. The problem I find with most of them is that most of the time they can be quite dull. For my new looks I created a container which has the ability to switch content through tabs, but with an animation. This tutorial will show you how to create your own tabbed content step by step.
 
@@ -21,9 +21,9 @@ A lot of websites on the Internet have tabbed content now a days. The problem I 
 
 In this tutorial I am going to show you some web development techniques that can be used in your next projects. This will cover some CSS, HTML and jQuery tricks.
 
-The sources of this tutorial are downloadable here: [http://www.gayadesign.com/scripts/tabbed/tabbedContent.zip](http://www.gayadesign.com/scripts/tabbed/tabbedContent.zip)
+The sources of this tutorial are downloadable here: [http://gaya.github.io/scripts/tabbed/tabbedContent.zip](http://gaya.github.io/scripts/tabbed/tabbedContent.zip)
 
-Example of the outcome is found here: [http://www.gayadesign.com/scripts/tabbed/](http://www.gayadesign.com/scripts/tabbed/)
+Example of the outcome is found here: [http://gaya.github.io/scripts/tabbed/](http://gaya.github.io/scripts/tabbed/)
 
 First thing we need is some basic HTML layout to fit what we are going to make.
 
@@ -89,7 +89,7 @@ Take a look at the following code:
 ```
 
 
-It's time to do a little styling to the tabs section and the overall container. Note that in the next part I am going to use an image which is included in [the source archive](http://www.gayadesign.com/scripts/tabbed/tabbedContent.zip). This will enhance the looks of the tabbed container.
+It's time to do a little styling to the tabs section and the overall container. Note that in the next part I am going to use an image which is included in [the source archive](http://gaya.github.io/scripts/tabbed/tabbedContent.zip). This will enhance the looks of the tabbed container.
 
 This following CSS will make the tabs appear as tabs:
 

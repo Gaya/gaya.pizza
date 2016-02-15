@@ -12,7 +12,7 @@ links:
   -
     title: Example
     desc: Look at the goods
-    url: http://gayadesign.com/scripts/fullscreenbackground/
+    url: http://gaya.github.io/scripts/fullscreenbackground/
 docs:
   name: "Fullscreen Background: Options"
   functions:

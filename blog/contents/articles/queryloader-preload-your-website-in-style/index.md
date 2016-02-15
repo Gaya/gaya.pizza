@@ -8,11 +8,11 @@ links:
   -
     title: Download
     desc: Get the preloader script!
-    url: http://www.gayadesign.com/scripts/queryLoader/queryLoader.zip
+    url: http://gaya.github.io/scripts/queryLoader/queryLoader.zip
   -
     title: Example
     desc: See the preloader in action.
-    url: http://www.gayadesign.com/scripts/queryLoader/
+    url: http://gaya.github.io/scripts/queryLoader/
 ---
 There is always a minor problem when it comes to preloading image on a website. Nobody really has a full solution for it. There are a lot of preloaders available, but most of the time they only display the words: "Loading page" or have an animated image that spins. Why can't there be a nice loading bar of some kind?  
  I've gotten a few request on how to make a preloader, or people asking me how to get all the images of a web page and preload them (even the images in CSS).
@@ -26,13 +26,13 @@ This preloader has it all. Loading bar, custom animations and getting all images
 <div style="background-color: #fcf8bb; text-align: center; margin-bottom: 1.5em; padding: 0.75em;">[ There is a new version of QueryLoader. Consider this one obselete!](/articles/queryloader2-preload-your-images-with-ease/)</div>(a special shout out goes to Sieb of [Siebdesign](http://www.siebdesign.nl) for coming up with the animation and the idea of building a preloader)
 
 Download the source code here:  
-[http://www.gayadesign.com/scripts/queryLoader/queryLoader.zip](http://www.gayadesign.com/scripts/queryLoader/queryLoader.zip)
+[http://gaya.github.io/scripts/queryLoader/queryLoader.zip](http://gaya.github.io/scripts/queryLoader/queryLoader.zip)
 
 View the example here:  
-[http://www.gayadesign.com/scripts/queryLoader/](http://www.gayadesign.com/scripts/queryLoader/)
+[http://gaya.github.io/scripts/queryLoader/](http://gaya.github.io/scripts/queryLoader/)
 
 Example with percentage visible:  
-[http://www.gayadesign.com/scripts/queryLoaderPercentage/](http://www.gayadesign.com/scripts/queryLoaderPercentage/) or download: [http://www.gayadesign.com/scripts/queryLoader2/qL2.zip](http://www.gayadesign.com/scripts/queryLoaderPercentage/qL2.zip) (thanks to Olivier Dumetz)
+[http://gaya.github.io/scripts/queryLoaderPercentage/](http://gaya.github.io/scripts/queryLoaderPercentage/) or download: [http://gaya.github.io/scripts/queryLoader2/qL2.zip](http://gaya.github.io/scripts/queryLoaderPercentage/qL2.zip) (thanks to Olivier Dumetz)
 
 Features:
 ---------
@@ -49,7 +49,7 @@ Implementation:
 
 To implement this script you don't need any Javascript experience. Just follow these easy steps:
 
-**1.** Download [the zipped archive](http://www.gayadesign.com/scripts/queryLoader/queryLoader.zip).
+**1.** Download [the zipped archive](http://gaya.github.io/scripts/queryLoader/queryLoader.zip).
 
 **2.** Upload the contents to your webserver.
 

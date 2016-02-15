@@ -12,7 +12,7 @@ links:
   -
     title: Example
     desc: See it in action!
-    url: http://scripts.gayadesign.com/queryLoader2/
+    url: http://gaya.github.io/scripts/queryLoader2/
 docs:
   name: "QueryLoader2"
   functions:
@@ -83,7 +83,7 @@ A direct link to the zipfile:
 [https://github.com/Gaya/QueryLoader2/zipball/master](https://github.com/Gaya/QueryLoader2/zipball/master)
 
 View the example here:  
-[http://scripts.gayadesign.com/queryLoader2/](http://scripts.gayadesign.com/queryLoader2/)
+[http://gaya.github.io/scripts/queryLoader2/](http://gaya.github.io/scripts/queryLoader2/)
 
 Reason behind v2
 ----------------
