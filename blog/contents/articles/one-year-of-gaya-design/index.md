@@ -38,7 +38,7 @@ We've experienced some crazy stuff thanks to this blog, but the servers will alw
 **You guys ROCK!**
 
 Also a HUGE thank you to YOU, my readers, you make this all happen! If it weren't for you, I'd be eating some crisps and play Nintendo games in all the time I've spend in the social networks of this wonderful community.  
- I really love how a lot of people from all around the world are contacting me and talk about stuff I've written on my website. A lot of this conversing goes on [on Twitter](http://twitter.com/gayadesign). Really love how fast stuff goes over there and the ease of just starting a conversation. Thank you all readers, followers and subscribers!
+ I really love how a lot of people from all around the world are contacting me and talk about stuff I've written on my website. A lot of this conversing goes on [on Twitter](http://twitter.com/gayaninja). Really love how fast stuff goes over there and the ease of just starting a conversation. Thank you all readers, followers and subscribers!
 
 I'd also like to thank the people at FUEL for giving me the opportunity to write for one of their blogs. As some of you may know, I was an editor at [FUEL Your Coding](http://fuelyourcoding.com/) for a while and let them use my articles to give the website a kick start. Since it started to take up way too much of my time I had to stop, which was a bummer.  
  But as you can see, mister [Douglass Neiner](http://dougneiner.com/) is doing a great job keeping that site alive!

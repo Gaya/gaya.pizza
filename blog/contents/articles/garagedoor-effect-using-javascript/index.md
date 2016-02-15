@@ -21,8 +21,8 @@ Creating one has now been made easy! This tutorial explains everything you need 
 
 <span class="more"></span>
 
-An example of the GarageDoor effect in work is found here: [http://gaya.github.io/scripts/garagedoor/](http://gayadesign.com/scripts/garagedoor/)
-*Download* the following archive containing everything you need: [http://gaya.github.io/scripts/garagedoor/garagedoor.zip](http://gayadesign.com/scripts/garagedoor/garagedoor.zip)
+An example of the GarageDoor effect in work is found here: [http://gaya.github.io/scripts/garagedoor/](http://gaya.github.io/scripts/garagedoor/)
+*Download* the following archive containing everything you need: [http://gaya.github.io/scripts/garagedoor/garagedoor.zip](http://gaya.github.io/scripts/garagedoor/garagedoor.zip)
 
 *Unzip *the contents of the archive and upload the contents to your server, the set folders can be adjusted to your needs.
 
