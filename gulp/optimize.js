@@ -18,7 +18,7 @@ module.exports = [{
     name: "image-min",
     task: function () {
         "use strict";
-        return gulp.src(gulp.config.dist + '/**/*{.jpg,.jpeg,.png,.gif,.bmp,.svg}')
+        return gulp.src(gulp.config.dist + '/**/*{.jpg,.jpeg,.png,.gif,.bmp}')
             .pipe(imageop({
                 progressive: true,
                 svgoPlugins: [{removeViewBox: false}]
