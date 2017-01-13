@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    cssshrink = require('gulp-cssshrink'),
+    cssmin = require('gulp-cssmin'),
     imageop = require('gulp-image-optimization'),
     critical = require('critical'),
     uglify = require('gulp-uglify'),
@@ -11,14 +11,14 @@ module.exports = [{
     task: function () {
         "use strict";
         return gulp.src(gulp.config.dist + '/css/*.css')
-            .pipe(cssshrink())
+            .pipe(cssmin())
             .pipe(gulp.dest(gulp.config.dist + '/css/'));
     }
 }, {
     name: "image-min",
     task: function () {
         "use strict";
-        return gulp.src(gulp.config.dist + '/**/*{.jpg,.jpeg,.png,.gif,.bmp}')
+        return gulp.src(gulp.config.dist + '/**/*{.jpg,.jpeg,.png,.gif,.bmp,.svg}')
             .pipe(imageop({
                 progressive: true,
                 svgoPlugins: [{removeViewBox: false}]
