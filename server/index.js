@@ -1,16 +1,8 @@
 var app = require('express')(),
-    mail = require("./mail.js"),
-    bodyParser = require('body-parser'),
     serveStatic = require('serve-static'),
     compression = require('compression'),
     fs = require("fs"),
     __public_root = __dirname.replace('server', 'public') + '/';
-
-//parse form data
-app.use(bodyParser.urlencoded({ extended: false }));
-
-//contact form
-app.post('/contact', mail);
 
 //compress output
 app.use(compression());

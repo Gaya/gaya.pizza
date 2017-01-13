@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "Gaya Ninja's weblog",
   "engines": {
-    "npm": "2.1.5",
-    "node": "0.10.35"
+    "npm": "4.0.5",
+    "node": "7.4.0"
   },
   "dependencies": {
-    "akismet": "0.0.13",
-    "body-parser": "^1.11.0",
     "browser-sync": "^1.3.6",
     "browserify": "^5.11.2",
     "compression": "^1.4.0",
@@ -26,7 +24,7 @@
     "nodemailer": "^0.7.1",
     "picturefill": "^2.2.0",
     "serve-static": "^1.8.1",
-    "svg-sprite": "0.3.2",
+    "svg-sprite": "^1.3.6",
     "typogr": "0.5.x",
     "underscore": "1.4.x",
     "urlencode": "^0.2.0",
