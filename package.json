@@ -26,7 +26,7 @@
     "nodemailer": "^0.7.1",
     "picturefill": "^2.2.0",
     "serve-static": "^1.8.1",
-    "svg-sprite": "^0.3.2",
+    "svg-sprite": "0.3.2",
     "typogr": "0.5.x",
     "underscore": "1.4.x",
     "urlencode": "^0.2.0",
