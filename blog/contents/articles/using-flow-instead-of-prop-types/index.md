@@ -11,7 +11,7 @@ through [`prop-types`](https://github.com/facebook/prop-types). The main problem
 type checking is done on run-time, and not statically.
 
 This article will explain how to go from type checking with `prop-types` to static type checking
-with [Flow](https://flow.org).
+with [Flow](https://flow.org) in React.
 
 <span class="more"></span>
 
@@ -21,18 +21,19 @@ The first and foremost reason for choosing Flow is that is opt-in. You can choos
 file or not.
 
 When a project is already alive and well **the last thing we want to do is rewrite everything**. Flow
-enable you to add type checking step by step into your application.<br />
+enables you to add type checking step by step into your application.<br />
 [Typescript](http://www.typescriptlang.org/) forces you to go all the way with checking (which is a
 good idea for new projects!), with Flow you can go all the way too, but _it's optional_.
 
-Type checking is for some the missing part in JavaScript, which some developers might question. Is
-is really needed? Does it make my code any better? **Is type checking not just a tool for the
-developer?**
+Type checking is for some a missing part in JavaScript, which some developers might question. Is it
+really necessary? Does it make my code any better? **Isn't type checking just a tool for the
+developer?** (Yes it is)
 
 The main reason I choose to add a tool like Flow to my projects is to ensure I think about what goes
-in and goes out of my application. **Type strictness helps my IDE** understand what I type and what I
-should pass in function and props of React Components.
-Now I am already documenting my code in a way, which makes my developer self quite happy in a month.
+in and goes out throughout my application. **Type strictness helps my IDE understand** what I type
+and what I should pass in function and props of React Components.<br />
+In a way I am already documenting my code, which makes my developer self quite happy if I look back
+at components I made a month ago.
 
 Because Flow checks types statically it can be run outside of the run-time environment. This makes
 type checking errors in the browser a thing of the past and can be detected before building the
@@ -72,10 +73,13 @@ const otherComponent = () => (
 );
 ```
 
-In my opinion, throwing this error at run-time, most of the time in the browser, is kind of late.
+In my opinion, throwing this error at run-time, most of the time in the browser, is kind of too
+late.
 
 Reporting the mistake a developer has made in the IDE or different tool he's using is a lot more
 convenient. This also helps with components other developers made and how to use them.
+
+Type strictness here would also be documenting the use of the component.
 
 Type checking with Flow
 -----------------------
@@ -87,12 +91,13 @@ Let's rewrite the previous example using Flow.
 import React from 'react';
 import type { Element, Children } from 'react';
 
-type propTypes = {
+// define the type of the props object which gets passed to the PureComponent
+type toggleType = {
     visible?: boolean,     // visible is optional
     children: Children,    // children is mandatory
 };
 
-const Toggle = ({ visible, children }: propTypes): Element<any> => (
+const Toggle = ({ visible, children }: toggleType): Element<any> => (
     <div style={{ display: visible ? 'block' : 'none' }}>
         { children }
     </div>
@@ -111,12 +116,13 @@ const otherComponent = (): Element<any> => (
 );
 ```
 
-All the errors in the last example would have been reported in the IDE or when you run Flow.
+All the errors in the last example would have been reported in the IDE or when you run Flow. And
+yes: Flow supports JSX, so that's pretty awesome!
 
 In closing
 ----------
 
-Flow makes it easier for me to enforce the correct uses of my components in my applications. Adding
+Flow makes it easier for me to enforce the correct use of my components in my applications. Adding
 type checking on other parts of your application is also a great idea, as you might grow more aware
 of the code you're writing.
 
