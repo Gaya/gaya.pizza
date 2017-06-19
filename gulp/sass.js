@@ -1,12 +1,10 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    neat = require('node-neat').includePaths,
-    sourcemaps = require('gulp-sourcemaps');
+    neat = require('node-neat').includePaths;
 
 function sassSource(type) {
     "use strict";
     return gulp.src(gulp.config.src + '/sass/style.scss')
-        .pipe(sourcemaps.init())
         .pipe(sass({
             style: (type === "build" ? 'compressed' : 'expanded'),
             includePaths: neat
@@ -14,7 +12,6 @@ function sassSource(type) {
             console.log(err.toString());
             this.emit('end');
         }))
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest((type === "build" ? gulp.config.build + '/css/' : gulp.config.dist + '/css/')))
         .pipe(gulp.browserSync.reload({stream:true}));
 }
