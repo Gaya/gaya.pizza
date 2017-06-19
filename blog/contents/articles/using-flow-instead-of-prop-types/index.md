@@ -20,18 +20,107 @@ Why Flow?
 The first and foremost reason for choosing Flow is that is opt-in. You can choose to type check a
 file or not.
 
-When a project is already alive and well the last thing we want to do is rewrite everything. Flow
-enable you to add type checking step by step into your application. [Typescript](http://www.typescriptlang.org/)
-forces you to go all the way though (which is a good idea for new projects!), but with Flow you can
-go all the way too.
+When a project is already alive and well **the last thing we want to do is rewrite everything**. Flow
+enable you to add type checking step by step into your application.<br />
+[Typescript](http://www.typescriptlang.org/) forces you to go all the way with checking (which is a
+good idea for new projects!), with Flow you can go all the way too, but _it's optional_.
 
-Type checking is a missing part in JavaScript which some developers fight about. Is is really needed?
-Does it make your code better? Is type checking not just a tool for the developer?
+Type checking is for some the missing part in JavaScript, which some developers might question. Is
+is really needed? Does it make my code any better? **Is type checking not just a tool for the
+developer?**
 
-The mean reason I choose to add a tool like Flow to my project is to ensure I think about what goes
-in and goes out of my application. Type strictness helps my IDE understand what I type and what I
+The main reason I choose to add a tool like Flow to my projects is to ensure I think about what goes
+in and goes out of my application. **Type strictness helps my IDE** understand what I type and what I
 should pass in function and props of React Components.
 Now I am already documenting my code in a way, which makes my developer self quite happy in a month.
 
-Static versus runtime type checking
------------------------------------
+Because Flow checks types statically it can be run outside of the run-time environment. This makes
+type checking errors in the browser a thing of the past and can be detected before building the
+application.
+
+Type checking with prop-types
+-----------------------------
+Consider the following setup, done with plain old `prop-types`.
+
+```javascript
+import React from 'react';
+import { bool, node } from 'prop-types';
+
+const propTypes = {
+    visible: bool,
+    children: node.isRequired,
+};
+
+const Toggle = ({ visible, children }) => (
+    <div style={{ display: visible ? 'block' : 'none' }}>
+        { children }
+    </div>
+);
+
+Toggle.propTypes = propTypes;
+
+const otherComponent = () => (
+    <section>
+        <Toggle visible=true /> {/* Error at run-time! Missing children */}
+        <Toggle visible="true"> {/* Error at run-time! Not boolean */}
+            ...
+        </Toggle>
+        <Toggle visible> {/* Passes */}
+            ...
+        </Toggle>
+    </section>
+);
+```
+
+In my opinion, throwing this error at run-time, most of the time in the browser, is kind of late.
+
+Reporting the mistake a developer has made in the IDE or different tool he's using is a lot more
+convenient. This also helps with components other developers made and how to use them.
+
+Type checking with Flow
+-----------------------
+Let's rewrite the previous example using Flow.
+
+```javascript
+// @flow
+
+import React from 'react';
+import type { Element, Children } from 'react';
+
+type propTypes = {
+    visible?: boolean,     // visible is optional
+    children: Children,    // children is mandatory
+};
+
+const Toggle = ({ visible, children }: propTypes): Element<any> => (
+    <div style={{ display: visible ? 'block' : 'none' }}>
+        { children }
+    </div>
+);
+
+const otherComponent = (): Element<any> => (
+    <section>
+        <Toggle visible=true /> {/* Error! Missing children */}
+        <Toggle visible="true"> {/* Error! Not boolean */}
+            ...
+        </Toggle>
+        <Toggle visible> {/* Passes */}
+            ...
+        </Toggle>
+    </section>
+);
+```
+
+All the errors in the last example would have been reported in the IDE or when you run Flow.
+
+In closing
+----------
+
+Flow makes it easier for me to enforce the correct uses of my components in my applications. Adding
+type checking on other parts of your application is also a great idea, as you might grow more aware
+of the code you're writing.
+
+There is a great [getting started guide](https://flow.org/en/docs/getting-started/) on Flow's website.
+Also a page on how to [get Flow up and running in your favourite editor](https://flow.org/en/docs/editors/).
+
+Happy checking!
