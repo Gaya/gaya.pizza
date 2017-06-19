@@ -22,8 +22,8 @@ file or not.
 
 When a project is already alive and well **the last thing we want to do is rewrite everything**. Flow
 enables you to add type checking step by step into your application.<br />
-[Typescript](http://www.typescriptlang.org/) forces you to go all the way with checking (which is a
-good idea for new projects!), with Flow you can go all the way too, but _it's optional_.
+This is also true for [Typescript](http://www.typescriptlang.org/), but I choose Flow because it's
+not a compiler, simply a checker. Babel can take care of the extra annotations.
 
 Type checking is for some a missing part in JavaScript, which some developers might question. Is it
 really necessary? Does it make my code any better? **Isn't type checking just a tool for the
