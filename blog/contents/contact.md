@@ -6,7 +6,7 @@ subtitle: Any questions? Contact Gaya.
 ---
 
 There are multiple ways to contact me, but the most used way is just to email me at: [hi@gaya.ninja](mailto:hi@gaya.ninja).
-You can also [send me a mention on Twitter](http://twitter.com/GayaNinja).
+You can also [send me a mention on Twitter](http://twitter.com/GayaKessler).
 
 I strive to answer any questions as soon as I possibly can.
 

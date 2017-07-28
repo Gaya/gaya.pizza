@@ -158,4 +158,4 @@ test if it worked afterwards. Then it will switch my current running version wit
 
 Now I can finally keep all my source the same on every machine and deploy my article whenever I want them to.
 
-Have suggestions or found better ways to go static? Feel free to [reach out on Twitter](https://twitter.com/GayaNinja).
+Have suggestions or found better ways to go static? Feel free to [reach out on Twitter](https://twitter.com/GayaKessler).

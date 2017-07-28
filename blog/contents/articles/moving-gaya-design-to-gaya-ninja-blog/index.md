@@ -20,7 +20,7 @@ At that time I didn't even know whether I'd go with a design or development care
 went with development pretty soon, and I am glad I made that choice.
 
 When I finally found the time to do something about this problem I began re-branding small parts of my online presence.
-[My Twitter account](https://twitter.com/gayaninja) has been renamed to @GayaNinja for a while now and I launched a
+[My Twitter account](https://twitter.com/GayaKessler) has been renamed to @GayaNinja for a while now and I launched a
 website for my personal / professional profile at [http://gaya.ninja](http://gaya.ninja).
 
 ##New looks
@@ -55,4 +55,4 @@ to Wintersmith](/articles/migrating-wordpress-to-wintersmith/).
 
 ##Let me know what you think
 I'd love to hear what you think about the new blog. If you have any suggestions you can tell my on
-[Twitter](http://twitter.com/GayaNinja) or [use my contact form](/contact/).
+[Twitter](http://twitter.com/GayaKessler) or [use my contact form](/contact/).

@@ -26,4 +26,4 @@ As much as I love working in offices, I am also open to working remote.
 ##Let me know if you know something
 If you might know a company that is looking for a JavaScript developer and wants to talk to me, please let me know by
 sending an [email to hi@gaya.ninja](mailto:hi@gaya.ninja). You can also [reach me through my contact page](/contact) or
-[my Twitter profile](https://twitter.com/GayaNinja).
+[my Twitter profile](https://twitter.com/GayaKessler).

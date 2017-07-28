@@ -189,4 +189,4 @@ Summary
 
 You now know how to create your own droplet using DigitalOcean and how to run a simple HTTP server on it. To access the files through your Internet browser you can go to the ip address of your droplet directly.
 
-Suggestions for a better, safer solution are welcome. [Reach out on Twitter](http://twitter.com/GayaNinja) or [use my contact form](/contact/).
+Suggestions for a better, safer solution are welcome. [Reach out on Twitter](http://twitter.com/GayaKessler) or [use my contact form](/contact/).
