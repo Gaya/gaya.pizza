@@ -30,6 +30,6 @@ are free to use.
 
 Reach out to me
 ---------------
-You can [find me on Twitter](http://twitter.com/gayaninja), where I tweet about web development and other stuff.
+You can [find me on Twitter](http://twitter.com/GayaKessler), where I tweet about web development and other stuff.
 You can also [use my contact form](/contact/) to send me an email. I also have a website focused on my professional
 achievements at: [https://www.theclevernode.com](https://www.theclevernode.com).
