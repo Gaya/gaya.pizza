@@ -99,6 +99,8 @@ flag to ensure they both got minified in the process.
 Look at the difference compared to the other libraries living in the bundle! I was amazed by the
 decrease in size I was able to get.
 
+The bundle went from 111.97KB gzipped to 57.47KB gzipped. That's a whooping 54.5KB less.
+
 ## Compatibility with other libraries and IDEs
 
 The great thing about `preact-compat` is, is that it also provides compatibility with popular
