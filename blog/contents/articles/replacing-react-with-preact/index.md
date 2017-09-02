@@ -107,6 +107,9 @@ The great thing about `preact-compat` is, is that it also provides compatibility
 libraries you might already use in your project. For me, `react-redux` and `react-router` just worked
 after I applied the alias technique described earlier. You should test your app thoroughly though.
 
+You could go without this compatibility layer and go plain Preact, but it might require some extra
+working making your components and 3th party libraries work.
+
 Another thing I really like is how well `eslint` and `flow` work with this approach. They'll still
 think you're using React, which certain rules in `eslint` can check for.
 
@@ -116,6 +119,10 @@ me to include React in `JSX` files, but I was using Preact for that. Aliasing so
 Another really great win is **compatibility with the IDE** I use most: WebStorm. Same as for `eslint` it
 will still consider `import React from 'react';` to be just React, while in truth it's Preact which
 get included in your bundle in the end.
+
+Jason Miller, the author of the library, reached out to me to tell that if you're running a plain
+Preact without `preact-compat` setup you can also get these benefits by aliasing `react` to `preact`
+in your WebPack config. So that's a *pro-tip* there!
 
 ## Wrapping up
 
