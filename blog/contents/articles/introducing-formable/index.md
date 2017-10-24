@@ -10,7 +10,7 @@ Today I am very pleased to reveal to you what I've been working on for the last 
 
 [Formable](https://www.getformable.com) is a service I developed which will help you create forms and embed them on your websites. Without the hassle of coding the whole form yourself or installing another unnecessary plugin.
 
-[![Formable - Beautiful forms for your websites](/articles/introducing-formable/formable_og_image.png)](https://www.getformable.com)
+[![Formable - Beautiful forms for your websites](/articles/introducing-formable/formable_og_image.png)](/articles/introducing-formable/)
 
 <span class="more"></span>
 
