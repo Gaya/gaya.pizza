@@ -4,6 +4,7 @@ author: Gaya
 date: 2017-10-24
 template: article.html
 seo_desc: "The online form builder to embed forms on your websites is here!"
+poster: "/articles/introducing-formable/formable_og_image.png"
 ---
 
 Today I am very pleased to reveal to you what I've been working on for the last couple of months.

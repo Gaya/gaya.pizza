@@ -14,6 +14,10 @@
     {% block description %}{{ page.metadata.seo_desc }}{% endblock %}
 {% endif %}
 
+{% if page.metadata.poster %}
+    {% block poster %}{{ env.locals.url }}{{ page.metadata.poster }}{% endblock %}
+{% endif %}
+
 {% block content %}
     <section class="breadcrumbs">
         <a href="{{ env.locals.url }}" class="breadcrumbs__link">{{ env.locals.name }}</a>
