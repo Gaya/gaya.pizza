@@ -6,8 +6,8 @@ template: article.html
 seo_desc: "Handling data flow and actions in Redux can be hard. This middleware will help you orchestrate Redux."
 links:
   -
-    title: Repository
-    desc: on GitHub
+    title: redux-listeners
+    desc: repository on GitHub
     url: https://github.com/Gaya/redux-listeners
 ---
 
@@ -24,14 +24,14 @@ It's the sweet spot in-between `redux-thunk` and `redux-saga`
 ## What is redux-listeners?
 
 With [redux-listeners](https://github.com/Gaya/redux-listeners) I aim to make it easy to respond to
-actions being dispatched on the store without adjusting the action itself.
+actions being dispatched to the store without adjusting the action itself.
 
-It allows you to listen in on action types being dispatched on the store and dispatching new actions
+It allows you to listen in on action types being dispatched to the store and dispatching new actions
 afterwards. This way you can separate your action creators from the logic which follows the action.
 
 The data flow can be described as such:
 
-1. Action is dispatched on store
+1. Action is dispatched to the store
 2. `redux-listener` middleware sees type of action matches a registered listener
 3. Listener is executed, which chooses to dispatch a new action to the store
 4. Reducers of the original action are handled
