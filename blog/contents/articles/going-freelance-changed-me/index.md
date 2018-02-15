@@ -1,9 +1,9 @@
 ---
 title: "Going Freelance Changed Me"
 author: Gaya
-date: 2018-02-14
+date: 2018-02-15
 template: article.html
-seo_desc: "SEO description here or else people will get mad."
+seo_desc: "The last couple of months of freelancing have changed my life, professionally and personally."
 ---
 
 As some of you might know, I quit my day job last September to focus on my own projects and go
@@ -119,7 +119,7 @@ this for long.
 
 The most important thing for me is to keep validating the projects I am working on and if they work
 for me as a person. I'd rather spend my client's money on things I get excited about than things I'd
-rather not be doing and losing motivation in the process.
+rather not be doing, losing motivation in the process.
 
 Going freelance has been the best move I made in recent years, professionally and personally. I can
 truly say I live a better life.
