@@ -37,7 +37,8 @@
   "main": "server/index.js",
   "scripts": {
     "postinstall": "node ./node_modules/gulp/bin/gulp.js build",
-    "start": "node ./server/"
+    "start": "node ./server/",
+    "deploy": "git push dokku main:master"
   },
   "repository": {
     "type": "git",
