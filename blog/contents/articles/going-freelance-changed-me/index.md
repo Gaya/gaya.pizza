@@ -58,7 +58,7 @@ some work for them. They needed my expertise for an in-house project.
 This was a perfectly scoped and low risk assignment, perfect to start out with. Familiar faces and
 people I already knew how to work with.
 
-It felt really good to accept my first official job as a freelance web developer. I was all
+It felt really good to accept my first official job as a freelance web developer. It was all
 beginning to look like I made the right choice.
 
 ## Responsibilities and being more responsible
@@ -70,11 +70,11 @@ In my day jobs, I usually found myself struggling to find motivation and inspira
 absolute best for the tasks and features at hand. I had to take my own responsibility to make it the
 best I could, but the motivation just wasn't quite there.
 
-I always wished I could give these jobs my best, but always found that my personal projects were the
-ones that got me at my best.
+I always wished I could have given these jobs my best, but always found that my personal projects
+were the ones that got me at my best.
 
 The intrinsic motivation to give it my best was lacking for projects I got from employers. A lot of
-times I got the feeling that whatever I wanted to do would have to pass a lot of layers of
+times I got the feeling that whatever I wanted to change would have to pass a lot of layers of
 management and reviews before I was able move on.
 
 At a point, it got tiring to work like this. Especially if you're not really invested in the project
