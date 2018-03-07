@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     cssmin = require('gulp-cssmin'),
-    imageop = require('gulp-image-optimization'),
+    // imageop = require('gulp-image-optimization'),
     critical = require('critical'),
     uglify = require('gulp-uglify'),
     findit = require('findit');
@@ -19,10 +19,10 @@ module.exports = [{
     task: function () {
         "use strict";
         return gulp.src(gulp.config.dist + '/**/*{.jpg,.jpeg,.png,.gif,.bmp,.svg}')
-            .pipe(imageop({
-                progressive: true,
-                svgoPlugins: [{removeViewBox: false}]
-            }))
+            // .pipe(imageop({
+            //     progressive: true,
+            //     svgoPlugins: [{removeViewBox: false}]
+            // }))
             .pipe(gulp.dest(gulp.config.dist + '/'));
     }
 }, {
