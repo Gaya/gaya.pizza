@@ -11,6 +11,8 @@ For the last couple of years I’ve been working with React, and as of late I’
 
 There is simply no short or correct answer to this question. There are a lot of factors which come into play. That’s why I wanted to start writing a mini-series on some topics which demonstrate differences between Vue and React and the pros and cons using either one of the frameworks.
 
+In this first instalment of this “React vs Vue“ series, I want to get into how both frameworks allow you to render content.
+
 <span class="more"></span>
 
 ## The articles in this series
@@ -24,7 +26,7 @@ There is simply no short or correct answer to this question. There are a lot of 
 
 ## How To Render?
 
-In this first instalment of this “React vs Vue“ series, I want to get into how both frameworks allow you to render content.
+Rendering content on the page is one of the most important things React and Vue do for us. Given some data and definitions of how to render will give the desired output. That is the promise they give us.
 
 First I want to take a look at how React does things. Which is mainly two different approaches. You can either go 100% plain old JavaScript or use JSX to simplify the process.
 
