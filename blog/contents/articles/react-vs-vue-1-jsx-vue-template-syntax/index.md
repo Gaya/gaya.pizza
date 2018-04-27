@@ -14,7 +14,7 @@ There is simply no short or correct answer to this question. There are a lot of 
 
 In this first instalment of this “React vs Vue“ series, I want to get into how both frameworks allow you to render content.
 
-[![React vs Vue pt. 1: JSX and Vue Template Syntax](/articles/react-vs-vue-1-jsx-vue-template-syntax/react_vs_vue_1_og_image.png)](/articles/react-vs-vue-1-jsx-vue-template-syntax/)
+[![React vs Vue pt. 1: JSX and Vue Template Syntax](/articles/react-vs-vue-1-jsx-vue-template-syntax/react_vs_vue_1_og_image.jpg)](/articles/react-vs-vue-1-jsx-vue-template-syntax/)
 
 <span class="more"></span>
 
