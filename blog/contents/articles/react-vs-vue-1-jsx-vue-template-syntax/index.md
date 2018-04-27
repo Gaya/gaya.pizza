@@ -4,6 +4,7 @@ author: Gaya
 date: 2018-04-26
 template: article.html
 seo_desc: "This article compares how React and Vue handle rendering. With some personal experience added."
+poster: "/articles/react-vs-vue-1-jsx-vue-template-syntax/react_vs_vue_1_og_image.png"
 ---
 For the last couple of years I’ve been working with React, and as of late I’ve been getting into Vue as well. A question lots of people ask me is:
 
@@ -12,6 +13,8 @@ For the last couple of years I’ve been working with React, and as of late I’
 There is simply no short or correct answer to this question. There are a lot of factors which come into play. That’s why I wanted to start writing a mini-series on some topics which demonstrate differences between Vue and React and the pros and cons using either one of the frameworks.
 
 In this first instalment of this “React vs Vue“ series, I want to get into how both frameworks allow you to render content.
+
+[![React vs Vue pt. 1: JSX and Vue Template Syntax](/articles/react-vs-vue-1-jsx-vue-template-syntax/react_vs_vue_1_og_image.png)](/articles/react-vs-vue-1-jsx-vue-template-syntax/)
 
 <span class="more"></span>
 
