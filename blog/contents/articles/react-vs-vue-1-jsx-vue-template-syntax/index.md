@@ -18,15 +18,6 @@ In this first instalment of this “React vs Vue“ series, I want to get into h
 
 <span class="more"></span>
 
-## The articles in this series
-
-1. [JSX and Vue Template Syntax](/articles/react-vs-vue-1-jsx-vue-template-syntax)
-2. Component structure _(to be released)_
-3. State management _(to be released)_
-4. Learning and opportunities _(to be released)_
-5. Tooling and community _(to be released)_
-6. Recap and final thoughts _(to be released)_
-
 ## How To Render?
 
 Rendering content on the page is one of the most important things React and Vue do for us. Given some data and definitions of how to render will give the desired output. That is the promise they give us.
@@ -234,5 +225,3 @@ To me there is no clear winner here, it all depends on what you like more. If yo
 Vue helps the developer solve a lot of "hard" stuff which is not baked into React. React on the other hand allows the developer more control over how the code works.
 
 My personal preference goes to React + JSX, not just because I don't like templating languages in general, but because it's just JavaScript, and it made me a way better developer than I used to be, being way more conscious about what I was doing.
-
-_Next time_ I am going to tell you about the component structure, file structure, and how both frameworks handle these problems differently.
