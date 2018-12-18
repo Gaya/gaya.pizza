@@ -51,3 +51,19 @@
         }
     }
 }
+
+.post__body .big-button {
+    background: #f7f7f7;
+    border: 1.5px solid $highlight-1;
+    padding: 0.5em 1.5em;
+    border-radius: 1em;
+    color: #C4141D;
+    text-decoration: none;
+    display: block;
+    margin: 1em auto;
+
+    &:hover {
+        background: $highlight-1;
+        color: $light-4;
+    }
+}
