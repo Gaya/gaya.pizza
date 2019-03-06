@@ -94,8 +94,8 @@ always more likely to find enjoyment in it. An ideal job at a company would look
 but that is really hard to come by.
 
 However, going freelance has allowed me to do this. I know I am in a lucky position as the things I
-do are quite niche and there is a lot of market for it, but I cannot not take advantage of this 
-situation.
+do are quite niche and there is a lot of market for it, but to not take advantage of this situation 
+would be foolish.
 
 ## Side Projects Are an Investment
 
