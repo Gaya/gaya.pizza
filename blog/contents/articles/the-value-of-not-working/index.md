@@ -20,7 +20,7 @@ This article is not strictly meant for freelancers, but also people working on a
 
 ## Short Attention Span
 
-I've worked at quite a few companies, some better than the other, but never have I worked at a
+I've worked at quite a few companies, some better than others, but never have I worked at a
 single company for too long. I have never hit the five year mark anywhere I have worked.
 
 A lot of times I felt stuck in the work I was doing, and could not get out of it. Of course there
@@ -31,8 +31,8 @@ I get bored way too easily when I solve the same problem repeatedly. Even if thi
 something other people were not so good at solving. I could not find joy in doing these tasks at a
 certain point.
 
-This resulted in me searching for new challenges outside of what I was doing at the time. Resulting 
-in job switching quite a few times. 
+This resulted in me searching for new challenges outside of what I was doing at the time. Meaning I
+switched jobs quite a few times. 
 
 ## How I Tried to Keep Myself Motivated
 
