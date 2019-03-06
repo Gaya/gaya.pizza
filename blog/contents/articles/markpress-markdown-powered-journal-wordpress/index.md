@@ -67,4 +67,4 @@ More information about how to contribute to this plugin can be found on GitHub:
 Having trouble?
 ---------------
 
-You can shoot me an email with any questions on: [hi@gaya.ninja](mailto:hi@gaya.ninja) or you can file issues on GitHub via: [https://github.com/Gaya/MarkPress/issues](https://github.com/Gaya/MarkPress/issues)
+You can shoot me an email with any questions on: [hi@gaya.pizza](mailto:hi@gaya.ninja) or you can file issues on GitHub via: [https://github.com/Gaya/MarkPress/issues](https://github.com/Gaya/MarkPress/issues)

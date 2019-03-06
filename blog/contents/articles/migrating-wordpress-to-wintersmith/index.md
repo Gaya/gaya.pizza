@@ -21,7 +21,7 @@ comfort of not having to write my own content management system for posting blog
 helped me implement stuff I didn't really know how to make.
 
 Years and a lot of web development related experience later I learned that WordPress is not for me. I explained why in
-a [previous post about rebranding Gaya Design](https://blog.gaya.ninja/articles/moving-gaya-design-to-gaya-ninja-blog/).
+a [previous post about rebranding Gaya Design](https://gaya.pizza/articles/moving-gaya-design-to-gaya-ninja-blog/).
 
 With a static approach I could make my blog behave the way I think it should behave. Calculate the content before it
 will is served, not at the time it is requested, like what happens on a typical blog system. You *can* kind of prevent

@@ -1,7 +1,7 @@
 {
-  "name": "gaya-ninja-blog",
+  "name": "gaya-pizza",
   "version": "1.0.0",
-  "description": "Gaya Ninja's weblog",
+  "description": "Gaya Kessler's weblog",
   "engines": {
     "npm": "2.1.5",
     "node": "0.10.35"
@@ -42,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:Gaya/gaya-ninja-blog.git"
+    "url": "git@github.com:Gaya/gaya.pizza.git"
   },
   "author": "Gaya Kessler",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {}
 }

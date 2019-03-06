@@ -1,11 +1,11 @@
 ---
 filename: about/index.html
 template: page.html
-title: About Gaya Ninja Blog
-subtitle: What is Gaya Ninja Blog all about?
+title: About Gaya Kessler's Blog
+subtitle: What is Gaya Kessler's Blog all about?
 ---
 
-Gaya Ninja Blog is a weblog about web development written and managed by [Gaya Kessler](http://gaya.ninja), a guy
+Gaya Kessler's Blog is a weblog about web development written and managed by [Gaya Kessler](https://theclevernode.com), a guy
 from a small town in the Netherlands.
 
 Ever since I got the chance to get my hands dirty with web development I’ve been in love with it. Two years after

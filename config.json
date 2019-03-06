@@ -3,7 +3,7 @@
   "templates": "./src/templates",
   "locals": {
     "url": "http://localhost:3000",
-    "name": "Gaya Ninja Blog",
+    "name": "Gaya Kessler's Blog",
     "owner": "Gaya Kessler",
     "description": "Web development articles written for web developers",
     "feedurl": "http://feeds.feedburner.com/GayaNinja/"
