@@ -63,7 +63,7 @@ Full code to this example can be found at [https://github.com/Gaya/fetch-with-re
 
 The app has a component which displays profile information. It will request the data using a `Promise`. The profile will be loaded each time the requested profile id changes.
 
-### Writing the data fetching mechanism
+### Writing the Data Fetching Mechanism
 
 First, let’s write the profile fetching mechanism inside our functional component:
 
@@ -76,7 +76,7 @@ We use `useCallback` to prevent React from creating a new function each time the
 
 `fetchProfile` is a function which returns a `Promise` and resolves the requested profile information. [Read the implementation on GitHub](https://github.com/Gaya/fetch-with-react-hooks/blob/master/src/fetch.js).
 
-### Preparing the hook
+### Preparing the Hook
 
 We want to create a hook which will except the resolver from before and use it to return the data to use when it’s ready. It’s also good to have a loading state and error state would anything go wrong. The basis of the hook could look like the following.
 
@@ -102,7 +102,7 @@ const [profile, isPending, error] = usePromise(resolver);
 
 If there is an error, we can render an error component. If the `Promise` is still pending, we can render a loader. If all is good, we can render the profile data. It’s as simple as that!
 
-### Writing the resolve mechanism
+### Writing the Resolve Mechanism
 
 Now we want to resolve the `Promise` provided to the hook as a side-effect of the hook being called.
 
@@ -152,7 +152,7 @@ This will instruct React to re-render the component using the hook because the s
 
 When the component calls the hook this next time, it will get the resolved data back.
 
-Further thoughts
+Further Thoughts
 ----------------
 
 The reason I came up with this strategy for fetching and handling async data was because I was finding different ways to handle Redux fetching and side effects.
@@ -167,8 +167,8 @@ Dispatching data received / fetch failed would happen as a side-effect just like
 
 We can prevent the making complex constructions like this and make our apps easier to read and understand.
 
-In closing
-=======
+In Closing
+----------
 
 I keep falling in love with React Hooks more and more. The way we can approach problems is so much more clear and easy to follow right now. It’s almost a crime how complicated we were making things before. Luckily we can reason about what we make a lot easier using hooks.
 
