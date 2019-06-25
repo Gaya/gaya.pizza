@@ -4,6 +4,7 @@ author: Gaya
 date: 2019-06-25
 template: article.html
 seo_desc: "An in-depth view into async data fetching using hook in React."
+poster: "/articles/leveraging-hooks-fetch-data-async-react/async_fetch_hooks_poster.jpg"
 ---
 Most of the React mindset is thinking synchronous and has a lot of similarities with functional programming. Output is generated based on input and is calculated at each render. This means that handling information which is not available at the moment of rendering a bit harder.
 
