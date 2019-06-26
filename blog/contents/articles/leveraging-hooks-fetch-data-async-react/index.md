@@ -4,13 +4,13 @@ author: Gaya
 date: 2019-06-25
 template: article.html
 seo_desc: "An in-depth view into async data fetching using hook in React."
-poster: "/articles/leveraging-hooks-fetch-data-async-react/async_fetch_hooks_poster.jpg"
+poster: "/articles/leveraging-hooks-fetch-data-async-react/async_fetch_hooks_poster_1.jpg"
 ---
 Most of the React mindset is thinking synchronous and has a lot of similarities with functional programming. Output is generated based on input and is calculated at each render. This means that handling information which is not available at the moment of rendering a bit harder.
 
 This article aims to give a solution to this problem using React Hooks.
 
-[![Leveraging Hooks to Fetch Data Async in React](/articles/leveraging-hooks-fetch-data-async-react/async_fetch_hooks_poster.jpg "Leveraging Hooks to Fetch Data Async in React")](/articles/leveraging-hooks-fetch-data-async-react)
+[![Leveraging Hooks to Fetch Data Async in React](/articles/leveraging-hooks-fetch-data-async-react/async_fetch_hooks_poster_1.jpg "Leveraging Hooks to Fetch Data Async in React")](/articles/leveraging-hooks-fetch-data-async-react)
 
 <span class="more"></span>
 
