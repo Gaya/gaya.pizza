@@ -1,16 +1,20 @@
-{% if pageTitle == false %}
+{% if pageTitle %}
+{% else %}
     {% set pageTitle = env.locals.name %}
 {% endif %}
 
-{% if pageDescription == false %}
+{% if pageDescription %}
+{% else %}
     {% set pageDescription = env.locals.description %}
 {% endif %}
 
-{% if pageCanonical == false %}
+{% if pageCanonical %}
+{% else %}
     {% set pageCanonical = env.locals.url %}
 {% endif %}
 
-{% if pagePoster == false %}
+{% if pagePoster %}
+{% else %}
     {% set pagePoster = env.locals.url + "/images/fb-poster.jpg" %}
 {% endif %}
 

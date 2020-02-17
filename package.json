@@ -9,6 +9,7 @@
   "dependencies": {
     "critical": "^1.3.9",
     "glob": "^7.1.6",
+    "html-minifier": "^4.0.0",
     "imagemin": "^7.0.1",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-jpegtran": "^6.0.0",
@@ -25,12 +26,17 @@
     "wintersmith-nunjucks": "^2.0.0"
   },
   "scripts": {
-    "build": "npm run build:wintersmith && npm run build:js && npm run images:copy && npm run images:minify && npm run sass",
+    "clean": "rm -rf ./public && mkdir public",
     "build:wintersmith": "wintersmith build",
+    "prebuild:js": "mkdir ./public/js",
     "build:js": "uglifyjs -c toplevel -m -o ./public/js/gaya-pizza.js -- ./src/js/main.js",
     "images:copy": "cp -r ./src/images ./public",
     "images:minify": "node ./scripts/imagemin.js",
     "sass": "node ./scripts/sass.js",
+    "html:minify": "html-minifier --input-dir ./public --output-dir ./public --file-ext html --collapse-whitespace",
+    "prebuild": "npm run clean",
+    "build": "npm run build:wintersmith && npm run build:js && npm run images:copy &&  npm run sass",
+    "postbuild": "npm run images:minify",
     "serve": "serve ./public"
   },
   "repository": {
