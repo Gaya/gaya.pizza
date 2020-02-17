@@ -1,5 +1,3 @@
-var _ = require("underscore");
-
 var inlineObject = {
     init: function (object, lineHeight) {
         "use strict";
@@ -7,8 +5,8 @@ var inlineObject = {
         this.lineHeight = lineHeight;
 
         //bind the events
-        this.element.addEventListener("load", _.bind(this.fixInline, this), false);
-        window.addEventListener("resize", _.bind(this.fixInline, this), false);
+        this.element.addEventListener("load", this.fixInline.bind(this), false);
+        window.addEventListener("resize", this.fixInline.bind(this), false);
     },
 
     fixInline: function () {

@@ -2,7 +2,7 @@
   "contents": "./blog/contents",
   "templates": "./src/templates",
   "locals": {
-    "url": "http://localhost:3000",
+    "url": "http://localhost:5000",
     "name": "Gaya Kessler's Blog",
     "owner": "Gaya Kessler",
     "description": "Web development articles written for web developers",
