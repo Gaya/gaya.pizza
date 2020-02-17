@@ -1,7 +1,7 @@
 ---
 filename: contact/index.html
 template: contact.html
-title: Contact Gaya
+title: Contact Gaya Kessler
 subtitle: Any questions? Contact Gaya.
 ---
 
