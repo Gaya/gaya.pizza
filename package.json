@@ -18,7 +18,8 @@
     "wintersmith-nunjucks": "^2.0.0"
   },
   "scripts": {
-    "wintersmith:build": "wintersmith build"
+    "wintersmith:build": "wintersmith build",
+    "serve": "serve ./public"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,7 @@
   },
   "author": "Gaya Kessler",
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {
+    "serve": "^11.3.0"
+  }
 }
