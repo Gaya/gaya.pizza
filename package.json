@@ -25,12 +25,12 @@
     "wintersmith-nunjucks": "^2.0.0"
   },
   "scripts": {
+    "build": "npm run build:wintersmith && npm run build:js && npm run images:copy && npm run images:minify && npm run sass",
     "build:wintersmith": "wintersmith build",
     "build:js": "uglifyjs -c toplevel -m -o ./public/js/gaya-pizza.js -- ./src/js/main.js",
     "images:copy": "cp -r ./src/images ./public",
     "images:minify": "node ./scripts/imagemin.js",
-    "sass": "",
-    "css:minify": "",
+    "sass": "node ./scripts/sass.js",
     "serve": "serve ./public"
   },
   "repository": {

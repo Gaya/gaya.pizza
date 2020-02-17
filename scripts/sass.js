@@ -6,6 +6,7 @@ sass.render(
   {
     file: './src/sass/style.scss',
     includePaths: require('node-neat').includePaths,
+    outputStyle: 'compressed',
   },
   function(err, result) {
     if (err) throw err;
