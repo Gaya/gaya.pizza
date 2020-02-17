@@ -1,19 +1,17 @@
 {% extends "base.html" %}
 
-{% block extraClass %} page{% endblock %}
+{% set extraClass = "page" %}
 
-{% block canonical %}{{ url }}{{ page.url }}{% endblock %}
+{% set pageCanonical = url + page.url %}
 
 {% if page.metadata.seo_title %}
-    {% block title %}{{ page.metadata.seo_title }}{% endblock %}
+    {% set pageTitle = page.metadata.seo_title %}
 {% else %}
-    {% block title %}{{ page.title }}{% endblock %}
+    {% set pageTitle = page.title %}
 {% endif %}
 
 {% if page.metadata.seo_desc %}
-    {% block description %}{{ page.metadata.seo_desc }}{% endblock %}
-{% else %}
-    {% block description %}{{ env.locals.description }}{% endblock %}
+    {% set pageDescription = page.metadata.seo_desc %}
 {% endif %}
 
 {% block content %}

@@ -1,3 +1,25 @@
+{% if pageTitle == false %}
+    {% set pageTitle = env.locals.name %}
+{% endif %}
+
+{% if pageDescription == false %}
+    {% set pageDescription = env.locals.description %}
+{% endif %}
+
+{% if pageCanonical == false %}
+    {% set pageCanonical = env.locals.url %}
+{% endif %}
+
+{% if pagePoster == false %}
+    {% set pagePoster = env.locals.url + "/images/fb-poster.jpg" %}
+{% endif %}
+
+{% if extraClass %}
+    {% set extraClass = " " + extraClass %}
+{% else %}
+    {% set extraClass = "" %}
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +28,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="robots" content="noodp,noydir">
 
-    <title>{% block title %}{{ env.locals.name }}{% endblock %}</title>
-    <meta name="description" content="{% block description %}{{ env.locals.description }}{% endblock %}">
+    <title>{{ pageTitle }}</title>
+    <meta name="description" content="{{ pageDescription }}">
 
-    <link rel="canonical" href="{% block canonical %}{{ env.locals.url }}{% endblock %}">
+    <link rel="canonical" href="{{ pageCanonical }}">
     {% if prevPage %}<link rel="prev" href="{{ env.locals.url }}{{ prevPage.url }}">{% endif %}
     {% if nextPage %}<link rel="next" href="{{ env.locals.url }}{{ nextPage.url }}">{% endif %}
 
@@ -20,23 +42,23 @@
 
     <meta property="og:locale" content="en_US"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="{% block title %}{{ env.locals.name }}{% endblock %}"/>
-    <meta property="og:description" content="{% block description %}{{ env.locals.description }}{% endblock %}"/>
-    <meta property="og:url" content="{% block canonical %}{{ env.locals.url }}{% endblock %}"/>
+    <meta property="og:title" content="{{ pageTitle }}"/>
+    <meta property="og:description" content="{{ pageDescription }}"/>
+    <meta property="og:url" content="{{ pageCanonical }}"/>
     <meta property="og:site_name" content="{{ env.locals.name }}"/>
     <meta property="article:publisher" content="https://www.facebook.com/gayaninja"/>
     <meta property="fb:admins" content="100000090654216"/>
     <meta property="article:published_time" content="{{ moment.utc(page.date).format() }}"/>
     <meta property="article:modified_time" content="{{ moment.utc(page.date).format() }}"/>
     <meta property="og:updated_time" content="{{ moment.utc(page.date).format() }}"/>
-    <meta property="og:image" content="{% block poster %}{{ env.locals.url }}/images/fb-poster.jpg{% endblock %}"/>
+    <meta property="og:image" content="{{ pagePoster }}"/>
 
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:description" content="{% block description %}{{ env.locals.description }}{% endblock %}"/>
-    <meta name="twitter:title" content="{% block title %}{{ env.locals.name }}{% endblock %}"/>
+    <meta name="twitter:description" content="{{ pageDescription }}"/>
+    <meta name="twitter:title" content="{{ pageTitle }}"/>
     <meta name="twitter:site" content="@GayaKessler"/>
     <meta name="twitter:creator" content="@GayaKessler"/>
-    <meta name="twitter:image:src" content="{% block poster %}{{ env.locals.url }}/images/fb-poster.jpg{% endblock %}"/>
+    <meta name="twitter:image:src" content="{{ pagePoster }}"/>
 
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ env.locals.url }}/images/app-icons/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ env.locals.url }}/images/app-icons/apple-touch-icon-114x114.png" />
@@ -61,7 +83,6 @@
     <meta name="msapplication-square150x150logo" content="{{ env.locals.url }}/images/app-icons/mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="{{ env.locals.url }}/images/app-icons/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="{{ env.locals.url }}/images/app-icons/mstile-310x310.png" />
-    <meta name="msapplication-notification" content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed={{ env.locals.feedurl }}&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed={{ env.locals.feedurl }}&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed={{ env.locals.feedurl }}&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed={{ env.locals.feedurl }}&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed={{ env.locals.feedurl }}&amp;id=5;cycle=1" />
 </head>
 <body itemscope itemtype="http://schema.org/Blog">
     <header class="main-header">
@@ -83,7 +104,7 @@
     </nav>
 
     <section class="main-content">
-        <section class="posts{% block extraClass %}{% endblock %}" role="main">
+        <section class="posts{{ extraClass }}" role="main">
             {% block content %}
                 <article class="post" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
                     <header class="post__header">
