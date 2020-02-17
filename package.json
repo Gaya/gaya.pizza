@@ -3,43 +3,22 @@
   "version": "1.0.0",
   "description": "Gaya Kessler's weblog",
   "engines": {
-    "npm": "2.1.5",
-    "node": "0.10.35"
+    "npm": "6.13.4",
+    "node": "13.6.0"
   },
   "dependencies": {
-    "akismet": "0.0.13",
-    "body-parser": "^1.11.0",
-    "browser-sync": "^1.3.6",
-    "browserify": "^5.11.2",
-    "compression": "^1.4.0",
     "critical": "^0.5.4",
-    "express": "^4.11.2",
-    "findit": "^2.0.0",
-    "gulp": "^3.8.7",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-cssshrink": "^0.1.4",
-    "gulp-image-optimization": "^0.1.3",
-    "gulp-sass": "3.1.0",
-    "gulp-uglify": "^1.1.0",
     "moment": "2.3.x",
     "node-neat": "^1.4.2",
     "nodemailer": "^0.7.1",
     "picturefill": "^2.2.0",
-    "serve-static": "^1.8.1",
-    "svg-sprite": "^0.3.2",
     "typogr": "0.5.x",
     "underscore": "1.4.x",
     "urlencode": "^0.2.0",
-    "vinyl-source-stream": "^1.0.0",
     "wintersmith": "^2.1.0",
     "wintersmith-nunjucks": "^0.5.1"
   },
-  "main": "server/index.js",
-  "scripts": {
-    "postinstall": "node ./node_modules/gulp/bin/gulp.js build",
-    "start": "node ./server/",
-    "deploy": "git push dokku main:master"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git@github.com:Gaya/gaya.pizza.git"

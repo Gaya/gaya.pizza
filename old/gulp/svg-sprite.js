@@ -1,5 +1,5 @@
 var gulp = require("gulp"),
-    SVGSprite = require('svg-sprite');
+    SVGSprite = require('old/gulp/svg-sprite');
 
 module.exports = [{
     name: "svg-sprite",

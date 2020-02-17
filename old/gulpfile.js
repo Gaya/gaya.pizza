@@ -3,7 +3,7 @@ var gulp = require('gulp'),
 
 gulp.browserSync = require('browser-sync');
 gulp.config = require('./gulpconfig.js');
-gulp.pkg = require('./package.json');
+gulp.pkg = require('../package.json');
 
 //read all tasks
 var files = fs.readdirSync("./" + gulp.config.gulp);

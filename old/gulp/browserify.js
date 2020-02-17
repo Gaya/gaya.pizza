@@ -1,6 +1,6 @@
 var gulp = require("gulp"),
     source = require('vinyl-source-stream'),
-    browserify = require('browserify');
+    browserify = require('old/gulp/browserify');
 
 function browserifySource(type) {
     'use strict';

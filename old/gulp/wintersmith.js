@@ -1,6 +1,6 @@
 var gulp = require("gulp"),
-    wintersmith = require("wintersmith"),
-    config = require('../config.json');
+    wintersmith = require("old/gulp/wintersmith"),
+    config = require('../../config.json');
 
 module.exports = [{
     name: "wintersmith",
