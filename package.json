@@ -11,15 +11,15 @@
     "moment": "^2.24.0",
     "node-neat": "^1.4.2",
     "typogr": "^0.6.8",
+    "uglify-js": "^3.7.7",
     "underscore": "^1.9.2",
     "urlencode": "^1.1.0",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
     "wintersmith": "^2.1.0",
     "wintersmith-nunjucks": "^2.0.0"
   },
   "scripts": {
-    "wintersmith:build": "wintersmith build",
+    "build:wintersmith": "wintersmith build",
+    "build:js": "uglifyjs -c toplevel -m -o ./public/js/gaya-pizza.js -- ./src/js/main.js",
     "serve": "serve ./public"
   },
   "repository": {
