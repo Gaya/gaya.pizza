@@ -3,10 +3,11 @@ const wintersmith = require('wintersmith');
 
 const env = wintersmith('./config.json');
 
-console.log(process.env);
+const replaceUrl = !!process.env.URL;
+const url = process.env.BRANCH === 'main' ? process.env.URL : process.env.DEPLOY_URL;
 
-if (process.env.URL) {
-  env.locals.url = process.env.URL;
+if (replaceUrl) {
+  env.locals.url = url;
 }
 
 env.build((error) => {
@@ -18,7 +19,7 @@ env.build((error) => {
     const options = {
       files: './public/**/*.{html,xml}',
       from: /(?:src|href)=(?:"|&quot;)(\/)/g,
-      to: (match) => match.replace('\/', `${process.env.URL}/`),
+      to: (match) => match.replace('\/', `${url}/`),
     };
 
     replace.sync(options);
