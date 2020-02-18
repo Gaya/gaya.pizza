@@ -34,7 +34,7 @@
       headerElement.style.marginBottom = "0px";
       fixed = false;
     }
-  }, 5);
+  }, 10);
 
   //bind on scroll
   window.onscroll = scrollHeader;
