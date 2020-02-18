@@ -16,7 +16,7 @@ env.build((error) => {
     const options = {
       files: './public/**/*.{html,xml}',
       from: /(?:src|href)=(?:"|&quot;)(\/)/g,
-      to: (match) => match.replace('\/', `${process.env.URL}/`),
+      to: (match) => match.replace('\/', `${process.env.DEPLOY_URL}/`),
     };
 
     replace.sync(options);
