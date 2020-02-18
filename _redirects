@@ -1,0 +1,4 @@
+https://blog.gaya.pizza/* https://gaya.pizza/:splat 301!
+https://www.gaya.pizza/* https://gaya.pizza/:splat 301!
+https://www.gaya.ninja/* https://gaya.pizza/:splat 301!
+https://blog.gaya.ninja/* https://gaya.pizza/:splat 301!
