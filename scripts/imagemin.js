@@ -2,7 +2,7 @@ const path = require('path');
 const glob = require('glob');
 
 const imagemin = require('imagemin');
-const imageminJpegtran = require('imagemin-jpegtran');
+const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageminPngquant = require('imagemin-pngquant');
 const imageminGifsicle = require('imagemin-gifsicle');
 const imageminSvgo = require('imagemin-svgo');
@@ -17,7 +17,7 @@ glob('./public/**/*{.jpg,.jpeg,.png,.gif,.svg}', (err, files) => {
       imagemin([file], {
         destination: path.dirname(file),
         plugins: [
-          imageminJpegtran(),
+          imageminMozjpeg(),
           imageminPngquant({
             quality: [0.6, 0.8]
           }),
