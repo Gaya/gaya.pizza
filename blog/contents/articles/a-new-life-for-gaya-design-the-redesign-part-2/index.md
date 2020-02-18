@@ -16,7 +16,7 @@ I needed a redo of the website. From the ground up.
 
 A while ago I started to regret the fact that there are so little posts on Gaya Design lately and realised I never got / made the time to create content for this blog. It takes a lot of time researching new stuff and getting to know cool new findings around web development.
 
-As some of you might have already heard, [I switched jobs](http://www.brandmerchandise.nl/2013/02/25/hello-merchandise-nl/) and so far it has been awesome. Working here makes me realise just more and more how important it is to inspire myself to get to know new stuff about web development. You can get stuck in a pace at your job where you just do the same trick over and over again. It's time to step out of that comfort zone.
+As some of you might have already heard, [I switched jobs](https://www.brandmerchandise.nl/2013/02/25/hello-merchandise-nl/) and so far it has been awesome. Working here makes me realise just more and more how important it is to inspire myself to get to know new stuff about web development. You can get stuck in a pace at your job where you just do the same trick over and over again. It's time to step out of that comfort zone.
 
 Gaya Design has been a great escape from that before, and will be again, but I needed a different approach since I also learned a thing or two the last couple of years as a web developer. I will get back on the subject of getting stuck in your comfort zone in a later post.
 
@@ -27,7 +27,7 @@ Time for something fresh.
 
 The previous design was made in a time when I wanted to show off what I could accomplish with CSS styling a few funky ideas. I really went all the way with cool gadgets and images not thinking about the main point of the website, which was the content. I am not a designer as profession, but I like to do it as a hobby, and that's what the website portrayed.
 
-I got a lot of great feedback at the time and make some changes along the way. Implemented some easter eggs ([Konami code](http://en.wikipedia.org/wiki/Konami_Code "Konami code") anyone?), included some third party api streams and fixed some styling along the way.
+I got a lot of great feedback at the time and make some changes along the way. Implemented some easter eggs ([Konami code](https://en.wikipedia.org/wiki/Konami_Code "Konami code") anyone?), included some third party api streams and fixed some styling along the way.
 
 Since I've been working in this business I came across various trends and saw what worked and what did not. I summed up the good and the bad trends before creating my new website and came with a list of requirements:
 

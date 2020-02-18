@@ -6,7 +6,7 @@
     "name": "Gaya Kessler's Blog",
     "owner": "Gaya Kessler",
     "description": "Web development articles written for web developers",
-    "feedurl": "http://feeds.feedburner.com/GayaNinja/"
+    "feedurl": "https://feeds.feedburner.com/GayaNinja/"
   },
   "plugins": [
     "./blog/plugins/paginator.coffee", "./node_modules/wintersmith-nunjucks"
