@@ -1,21 +1,21 @@
 {% extends "base.html" %}
 
-{% block extraClass %}{% endblock %}
+{% set extraClass = "" %}
 
-{% block canonical %}{{ url }}{{ page.url }}{% endblock %}
+{% set pageCanonical = url + page.url %}
 
 {% if page.metadata.seo_title %}
-    {% block title %}{{ page.metadata.seo_title }}{% endblock %}
+    {% set pageTitle = page.metadata.seo_title %}
 {% else %}
-    {% block title %}{{ page.title }}{% endblock %}
+    {% set pageTitle = page.title %}
 {% endif %}
 
 {% if page.metadata.seo_desc %}
-    {% block description %}{{ page.metadata.seo_desc }}{% endblock %}
+    {% set pageDescription = page.metadata.seo_desc %}
 {% endif %}
 
 {% if page.metadata.poster %}
-    {% block poster %}{{ env.locals.url }}{{ page.metadata.poster }}{% endblock %}
+    {% set pagePoster = env.locals.url + page.metadata.poster %}
 {% endif %}
 
 {% block content %}
@@ -25,7 +25,7 @@
         <span class="breadcrumbs__item">{{ page.title }}</span>
     </section>
 
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
         <header class="post__header">
             <h1 class="post__header__text"><a href="{{ url }}{{ page.url }}" itemprop="name headline">{{ page.title }}</a></h1>
         </header>
@@ -65,7 +65,7 @@
                 Published on <time content="{{ moment.utc(page.date).format() }}" datetime="{{ moment.utc(page.date).format() }}" itemprop="datePublished">{{ moment.utc(page.date).format('DD MMMM, YYYY') }}</time>
             </section>
             <section class="post__meta__closing">
-                If you have any remarks or questions, tell me so on Twitter using <a href="http://twitter.com/GayaKessler">@GayaKessler</a>.
+                If you have any remarks or questions, tell me so on Twitter using <a href="https://twitter.com/GayaKessler">@GayaKessler</a>.
             </section>
         </section>
     </article>

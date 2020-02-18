@@ -1,12 +1,12 @@
 ---
 filename: contact/index.html
 template: contact.html
-title: Contact Gaya
+title: Contact Gaya Kessler
 subtitle: Any questions? Contact Gaya.
 ---
 
 There are multiple ways to contact me, but the most used way is just to email me at: [hi@gaya.pizza](mailto:hi@gaya.pizza).
-You can also [send me a mention on Twitter](http://twitter.com/GayaKessler).
+You can also [send me a mention on Twitter](https://twitter.com/GayaKessler).
 
 I strive to answer any questions as soon as I possibly can.
 

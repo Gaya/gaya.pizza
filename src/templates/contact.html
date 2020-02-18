@@ -1,19 +1,17 @@
 {% extends "base.html" %}
 
-{% block extraClass %} page contact{% endblock %}
+{% set extraClass = "page contact" %}
 
-{% block canonical %}{{ url }}{{ page.url }}{% endblock %}
+{% set pageCanonical = url + page.url %}
 
 {% if page.metadata.seo_title %}
-    {% block title %}{{ page.metadata.seo_title }}{% endblock %}
+    {% set pageTitle = page.metadata.seo_title %}
 {% else %}
-    {% block title %}{{ page.title }}{% endblock %}
+    {% set pageTitle = page.title %}
 {% endif %}
 
 {% if page.metadata.seo_desc %}
-    {% block description %}{{ page.metadata.seo_desc }}{% endblock %}
-{% else %}
-    {% block description %}{{ env.locals.description }}{% endblock %}
+    {% set pageDescription = page.metadata.seo_desc %}
 {% endif %}
 
 {% block content %}
@@ -23,7 +21,7 @@
     <span class="breadcrumbs__item">{{ page.title }}</span>
 </section>
 
-<article class="post" itemscope itemtype="http://schema.org/WebPage">
+<article class="post" itemscope itemtype="https://schema.org/WebPage">
     <header class="post__header">
         <h1 class="post__header__text"><a href="{{ url }}{{ page.url }}" itemprop="name headline">{{ page.metadata.subtitle }}</a></h1>
     </header>

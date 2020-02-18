@@ -2,11 +2,11 @@
   "contents": "./blog/contents",
   "templates": "./src/templates",
   "locals": {
-    "url": "http://localhost:3000",
+    "url": "http://localhost:5000",
     "name": "Gaya Kessler's Blog",
     "owner": "Gaya Kessler",
     "description": "Web development articles written for web developers",
-    "feedurl": "http://feeds.feedburner.com/GayaNinja/"
+    "feedurl": "https://feeds.feedburner.com/GayaNinja/"
   },
   "plugins": [
     "./blog/plugins/paginator.coffee", "./node_modules/wintersmith-nunjucks"
@@ -28,5 +28,5 @@
     "perPage": 5,
     "template": "index.html"
   },
-  "output": "./dist"
+  "output": "./public"
 }
