@@ -1,5 +1,5 @@
 ---
-title: "Cleaning and Recycling Old Projects (or How I Removed Gulp)"
+title: "Cleaning and Recycling Old Projects (or How I Simplified my Build)"
 author: Gaya
 date: 2020-02-18
 template: article.html
@@ -13,7 +13,7 @@ I was writing for my blog occasionally, but the system it was built on was terri
 
 In this article I want to take you through my process of dusting off and cleaning up an old project to breathe new life into it all without starting over completely from scratch.
 
-[![Cleaning and Recycling Old Projects (or How I Removed Gulp)](/articles/cleaning-recycling-old-projects/cleaning-recycling-old-projects-poster.jpg "Cleaning and Recycling Old Projects (or How I Removed Gulp)")](/articles/cleaning-recycling-old-projects)
+[![Cleaning and Recycling Old Projects (or How I Simplified my Build)](/articles/cleaning-recycling-old-projects/cleaning-recycling-old-projects-poster.jpg "Cleaning and Recycling Old Projects (or How I Simplified my Build)")](/articles/cleaning-recycling-old-projects)
 
 <span class="more"></span>
 
