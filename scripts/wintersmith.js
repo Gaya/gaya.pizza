@@ -1,6 +1,8 @@
 const replace = require('replace-in-file');
 const wintersmith = require('wintersmith');
 
+console.info(process.env);
+
 const env = wintersmith('./config.json');
 
 if (process.env.URL) {
