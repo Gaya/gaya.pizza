@@ -14,8 +14,8 @@ env.build((error) => {
   // place absolute paths
   if (process.env.URL) {
     const options = {
-      files: './public/**/*.html',
-      from: /(?:src|href)="(\/)/g,
+      files: './public/**/*.{html,xml}',
+      from: /(?:src|href)=(?:"|&quot;)(\/)/g,
       to: (match) => match.replace('\/', `${process.env.URL}/`),
     };
 
