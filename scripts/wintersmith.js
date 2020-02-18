@@ -3,8 +3,10 @@ const wintersmith = require('wintersmith');
 
 const env = wintersmith('./config.json');
 
-if (process.env.DEPLOY_URL) {
-  env.locals.url = process.env.DEPLOY_URL;
+console.log(process.env);
+
+if (process.env.URL) {
+  env.locals.url = process.env.URL;
 }
 
 env.build((error) => {
@@ -12,11 +14,11 @@ env.build((error) => {
   console.log('Generated site HTML');
 
   // place absolute paths
-  if (process.env.DEPLOY_URL) {
+  if (process.env.URL) {
     const options = {
       files: './public/**/*.{html,xml}',
       from: /(?:src|href)=(?:"|&quot;)(\/)/g,
-      to: (match) => match.replace('\/', `${process.env.DEPLOY_URL}/`),
+      to: (match) => match.replace('\/', `${process.env.URL}/`),
     };
 
     replace.sync(options);
