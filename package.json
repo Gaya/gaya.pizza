@@ -35,7 +35,7 @@
     "html:minify": "html-minifier --input-dir ./public --output-dir ./public --file-ext html --collapse-whitespace",
     "prebuild": "npm run clean",
     "build": "npm run build:wintersmith && npm run build:js && npm run images:copy && npm run sass",
-    "postbuild": "npm run images:minify",
+    "postbuild": "npm run images:minify && npm run html:minify",
     "preserve": "npm run build",
     "serve": "serve ./public"
   },
