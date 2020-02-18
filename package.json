@@ -27,18 +27,20 @@
   },
   "scripts": {
     "clean": "rm -rf ./public && mkdir public",
-    "build:wintersmith": "node ./scripts/wintersmith.js",
-    "prebuild:js": "mkdir ./public/js",
-    "build:js": "uglifyjs -c toplevel -m -o ./public/js/gaya-pizza.js -- ./src/js/main.js",
+    "wintersmith:build": "node ./scripts/wintersmith.js",
+    "wintersmith:preview": "wintersmith preview",
+    "prejs:build": "mkdir ./public/js",
+    "js:build": "uglifyjs -c toplevel -m -o ./public/js/gaya-pizza.js -- ./src/js/main.js",
     "images:copy": "cp -r ./src/images ./public",
     "images:minify": "node ./scripts/imagemin.js",
-    "sass": "node ./scripts/sass.js",
+    "sass:build": "node ./scripts/sass.js",
     "html:minify": "html-minifier --input-dir ./public --output-dir ./public --file-ext html --collapse-whitespace",
     "prebuild": "npm run clean",
-    "build": "npm run build:wintersmith && npm run build:js && npm run images:copy && npm run sass",
+    "build": "npm run wintersmith:build && npm run js:build && npm run images:copy && npm run sass:build",
     "postbuild": "npm run images:minify && npm run html:minify",
     "preserve": "npm run build",
-    "serve": "wintersmith preview & serve ./public"
+    "serve": "serve ./public",
+    "preview": "npm run wintersmith:preview & npm run serve"
   },
   "repository": {
     "type": "git",
