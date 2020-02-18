@@ -38,7 +38,7 @@
     "build": "npm run build:wintersmith && npm run build:js && npm run images:copy && npm run sass",
     "postbuild": "npm run images:minify && npm run html:minify",
     "preserve": "npm run build",
-    "serve": "serve ./public"
+    "serve": "wintersmith preview & serve ./public"
   },
   "repository": {
     "type": "git",
