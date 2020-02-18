@@ -8,7 +8,3 @@ You can see the articles' source in this sub folder: [https://github.com/Gaya/ga
 ## Suggestions
 If you have any suggestions how I can improve the build process or inner workings of my blog, please add an issue or
 pull request.
-
-## Old stuff
-
-Yes. This blog is build on old technologies. Deal with it.
