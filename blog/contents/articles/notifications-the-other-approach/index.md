@@ -251,7 +251,7 @@ The frontend script will output the contents of the file once it has been change
 
 The following clip will show you this functionality:
 
-<iframe allowfullscreen="" frameborder="0" height="375" src="http://player.vimeo.com/video/7160768" width="500"></iframe>
+<iframe allowfullscreen="" frameborder="0" height="375" src="https://player.vimeo.com/video/7160768" width="500"></iframe>
 
 Future:
 -------
