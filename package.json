@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Gaya Kessler's weblog",
   "engines": {
-    "npm": "6.13.4",
-    "node": "13.6.0"
+    "npm": "6.11.3",
+    "node": "12.11.1"
   },
   "dependencies": {
     "glob": "^7.1.6",
