@@ -25,7 +25,7 @@ Have you ever been asked to review a pull request and immediately saw a _large p
 
 The author might understand it perfectly, and you yourself might have written code like this before too: a large complex block of code that is using all kinds of cool tricks to create a desired outcome. While this can be smart, it _might be very hard to understand_ for the next person.
 
-A simple trick I like to use is to **write code as if the next person reading it will be able to follow it without context**. This means I stay away from code that has the reader jump up and down in the code to be able to follow what's going on.
+A simple trick I like to use is to **write code so that the next person reading it will be able to follow it without context**. This means I stay away from code that has the reader jump up and down in the code to be able to follow what's going on.
 
 Write in short blocks of code, use clear naming, break it in smaller digestible bits, and give all your functions names. Good names.
 
