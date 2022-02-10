@@ -16,7 +16,7 @@
     "imagemin-svgo": "^7.0.0",
     "moment": "^2.24.0",
     "node-neat": "^1.7.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "replace-in-file": "^5.0.2",
     "typogr": "^0.6.8",
     "uglify-js": "^3.7.7",
